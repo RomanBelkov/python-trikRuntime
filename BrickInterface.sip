@@ -4,14 +4,10 @@
 
 namespace trikControl {
 
-	class BrickInterface : public QObject {
+	class BrickInterface : public QObject /Abstract/  {
 
 		%TypeHeaderCode
 		#include <brickInterface.h>
-		%End
-
-		%InstanceCode
-    		bla bla
 		%End
 
 	};
