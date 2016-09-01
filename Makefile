@@ -3,6 +3,7 @@ SIP_SRC = $(wildcard *.sip)
 OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC))
 #OFILES = siptrikControlcmodule.o siptrikControltrikControlBrickFactory.o siptrikControltrikControlBrickInterface.o siptrikControltrikControl.o
 HFILES = sipAPItrikControl.h 
+CPPFILES = $(patsubst %.o, %.cpp, $(OFILES))
 
 CC = gcc
 CXX = g++
@@ -14,12 +15,13 @@ CXXFLAGS = $(CFLAGS)
 LFLAGS = -shared -Wl,--version-script=trikControl.exp
 LIBS = -ltrikControl
 
-siptrikControltrikControl%.cpp: %.sip
-	/usr/bin/sip -c . -b trikControl.sbf -I /usr/share/sip/PyQt5/ $(INCPATH) -t WS_X11 -t Qt_5_7_0 $<
+all: $(TARGET)
+
+$(CPPFILES) $(HFILES): $(SIP_SRC)
+	/usr/bin/sip -c . -b trikControl.sbf -I /usr/share/sip/PyQt5/ $(INCPATH) -t WS_X11 -t Qt_5_7_0 BrickFactory.sip
 	
 # INTERMEDIATE SECONDARY
 
-all: $(TARGET)
 
 #$(OFILES): $(HFILES)
 
