@@ -1,4 +1,4 @@
-%Module trikControl
+//%Module trikControl
 
 //%Include QtCore/QString.sip
 %Include BrickInterface.sip
