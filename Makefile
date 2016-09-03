@@ -4,21 +4,29 @@ OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC)) siptrikCont
 #OFILES = siptrikControlcmodule.o siptrikControltrikControlBrickFactory.o siptrikControltrikControlBrickInterface.o siptrikControltrikControl.o
 HFILES = sipAPItrikControl.h 
 CPPFILES = $(patsubst %.o, %.cpp, $(OFILES))
+#note the default assignment
+QT_VERSION ?= $(shell qmake -query QT_VERSION | sed -r 's/^([0-9]+)\.([0-9]+)\.([0-9]+)$$/Qt_\1_\2\_\3/')
+QT_INSTALL_HEADERS ?= $(shell qmake -query QT_INSTALL_HEADERS)
+TRIK_CONTROL_LIB_DIR ?= /home/rb/Documents/trikRuntime/bin/x86-release/  
+PYQT_INSTALL_LOCATION ?= /usr/share/sip/PyQt5
+
 
 CC = gcc
 CXX = g++
 LINK = g++
-INCPATH  = -I. -I. -I../include/trikControl -I../../../../Qt/5.7/gcc_64/include/QtCore -I../../../../Qt/5.7/gcc_64/include/ -I../qslog -I../../trikKernel/include -I../trikHal/include -I../../../Qt/5.7/gcc_64/include -I../../../Qt/5.7/gcc_64/include/QtMultimedia -I../../../../Qt/5.7/gcc_64/include/QtWidgets -I../../../../Qt/5.7/gcc_64/include/QtGui -I../../../Qt/5.7/gcc_64/include/QtXml -I../../../Qt/5.7/gcc_64/include/QtNetwork -I../../../Qt/5.7/gcc_64/include/QtCore -I.build/x86-release/.moc -I../../../Qt/5.7/gcc_64/mkspecs/linux-g++
+INCPATH  = -I. -I../include/trikControl -I$(QT_INSTALL_HEADERS)/QtCore -I$(QT_INSTALL_HEADERS)/ -I../qslog -I../../trikKernel/include \
+-I../trikHal/include -I../../../Qt/5.7/gcc_64/include -I../../../Qt/5.7/gcc_64/include/QtMultimedia -I$(QT_INSTALL_HEADERS)/QtWidgets -I$(QT_INSTALL_HEADERS)/QtGui 
+# -I../../../Qt/5.7/gcc_64/include/QtXml -I../../../Qt/5.7/gcc_64/include/QtNetwork -I../../../Qt/5.7/gcc_64/include/QtCore -I.build/x86-release/.moc -I../../../Qt/5.7/gcc_64/mkspecs/linux-g++
 CPPFLAGS = -DNDEBUG -I. -I/usr/include/python3.5m $(INCPATH)
 CFLAGS = -pipe -fPIC -O2 -Wall -W
 CXXFLAGS = $(CFLAGS)
 LFLAGS = -shared -Wl,--version-script=trikControl.exp
-LIBS = -L/home/rb/Documents/trikRuntime/bin/x86-release/ -ltrikControl
+LIBS = -L$(TRIK_CONTROL_LIB_DIR) -ltrikControl
 
 all: $(TARGET)
 
-$(CPPFILES) $(HFILES): $(SIP_SRC)
-	/usr/bin/sip -c . -b trikControl.sbf -I /usr/share/sip/PyQt5 $(INCPATH) -t WS_X11 -t Qt_5_7_0 TCmod.sip 
+$(CPPFILES) $(HFILES): $(SIP_SRC) TCmod.sip
+	/usr/bin/sip -c . -b trikControl.sbf -I $(PYQT_INSTALL_LOCATION) $(INCPATH) -t WS_X11 -t $(QT_VERSION) TCmod.sip 
 	
 # INTERMEDIATE SECONDARY
 
