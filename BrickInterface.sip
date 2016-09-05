@@ -3,6 +3,7 @@
 %Import QtCore/QtCoremod.sip
 //%Include DisplayWidgetInterface.sip
 %Include DisplayInterface.sip
+%Include MotorInterface.sip
 
 namespace trikControl {
 
@@ -16,6 +17,8 @@ namespace trikControl {
 
 		/// Returns a widget on which display output is drawn.
 		virtual trikControl::DisplayWidgetInterface *graphicsWidget() = 0;
+
+		virtual trikControl::MotorInterface *motor(const QString &port) = 0;
 
 		public slots:
 

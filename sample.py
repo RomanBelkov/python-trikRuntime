@@ -17,9 +17,13 @@ w.show()
 #print(dir(trikControl))
 b = trikControl.trikControl.BrickFactory.create(".", ".")
 b.playSound("beep.wav")
-scr = b.display()
-scr.drawPoint(10,10)
-scr.reset()
-scr.showImage("/home/rb/Documents/trikRuntime/trikControl/pythonPlayground/wat.jpg")
+# scr = b.display()
+# scr.drawPoint(10,10)
+# scr.reset()
+# scr.showImage("/home/rb/Documents/trikRuntime/trikControl/pythonPlayground/wat.jpg")
+
+m = b.motor("M2")
+
+print(m.minControl())
 
 sys.exit(app.exec_())

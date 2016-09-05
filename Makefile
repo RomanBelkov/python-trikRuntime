@@ -8,7 +8,7 @@ CPPFILES = $(patsubst %.o, %.cpp, $(OFILES))
 QT_VERSION ?= $(shell qmake -query QT_VERSION | sed -r 's/^([0-9]+)\.([0-9]+)\.([0-9]+)$$/Qt_\1_\2\_\3/')
 QT_INSTALL_HEADERS ?= $(shell qmake -query QT_INSTALL_HEADERS)
 TRIK_CONTROL_LIB_DIR ?= /home/rb/Documents/trikRuntime/bin/x86-release/  
-PYQT_INSTALL_LOCATION ?= /usr/share/sip/PyQt4
+PYQT_INSTALL_LOCATION ?= /usr/share/sip/PyQt5
 
 ifneq ($(OE_QMAKE_INCDIR_QT),)
 	QT_INSTALL_HEADERS = $(OE_QMAKE_INCDIR_QT)

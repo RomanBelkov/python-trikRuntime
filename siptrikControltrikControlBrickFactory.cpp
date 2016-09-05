@@ -10,10 +10,10 @@
 		#include <brickFactory.h>
 #line 12 "./siptrikControltrikControlBrickFactory.cpp"
 
-#line 12 "BrickInterface.sip"
+#line 13 "BrickInterface.sip"
 		#include <brickInterface.h>
 #line 16 "./siptrikControltrikControlBrickFactory.cpp"
-#line 31 "/usr/share/sip/PyQt4/QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt5/QtCore/qstring.sip"
 #include <qstring.h>
 #line 19 "./siptrikControltrikControlBrickFactory.cpp"
 
@@ -144,13 +144,13 @@ static PyMethodDef methods_trikControl_BrickFactory[] = {
 };
 
 
-pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_BrickFactory = {
+pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_BrickFactory = {
 {
     {
         -1,
         0,
         0,
-        SIP_TYPE_CLASS,
+        SIP_TYPE_SUPER_INIT|SIP_TYPE_CLASS,
         sipNameNr_trikControl__BrickFactory,
         {0}
     },
@@ -163,7 +163,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_BrickFactory = {
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
     },
     0,
-    sipNameNr_PyQt4_QtCore_pyqtWrapperType,
+    sipNameNr_PyQt5_QtCore_pyqtWrapperType,
     -1,
     0,
     0,
@@ -192,6 +192,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_BrickFactory = {
     0,
     0
 },
+    0,
     0,
     0,
     0
