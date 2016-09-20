@@ -6,40 +6,47 @@
 
 #include "sipAPItrikControl.h"
 
-#line 28 "/usr/share/sip/PyQt5/QtCore/qobject.sip"
+#line 29 "/usr/share/sip/PyQt4/QtCore/qobject.sip"
 #include <qobject.h>
 #line 12 "./siptrikControlcmodule.cpp"
-#line 13 "DisplayInterface.sip"
-		#include <displayInterface.h>
-#line 15 "./siptrikControlcmodule.cpp"
 #line 10 "MotorInterface.sip"
 		#include <motorInterface.h>
-#line 18 "./siptrikControlcmodule.cpp"
-#line 27 "/usr/share/sip/PyQt5/QtCore/qstring.sip"
+#line 15 "./siptrikControlcmodule.cpp"
+#line 31 "/usr/share/sip/PyQt4/QtCore/qstring.sip"
 #include <qstring.h>
+#line 18 "./siptrikControlcmodule.cpp"
+#line 12 "KeysInterface.sip"
+		#include <keysInterface.h>
 #line 21 "./siptrikControlcmodule.cpp"
+#line 13 "DisplayInterface.sip"
+		#include <displayInterface.h>
+#line 24 "./siptrikControlcmodule.cpp"
 #line 16 "DisplayWidgetInterface.sip"
 		#include <displayWidgetInterface.h>
-#line 24 "./siptrikControlcmodule.cpp"
+#line 27 "./siptrikControlcmodule.cpp"
 #line 20 "BrickFactory.sip"
 		#include <brickFactory.h>
-#line 27 "./siptrikControlcmodule.cpp"
+#line 30 "./siptrikControlcmodule.cpp"
 
 /* Define the strings used by this module. */
 const char sipStrings_trikControl[] = {
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'D', 'i', 's', 'p', 'l', 'a', 'y', 'W', 'i', 'd', 'g', 'e', 't', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'M', 'o', 't', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', ':', ':', 'T', 'y', 'p', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'D', 'i', 's', 'p', 'l', 'a', 'y', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
-    'P', 'y', 'Q', 't', '5', '.', 'Q', 't', 'C', 'o', 'r', 'e', '.', 'p', 'y', 'q', 't', 'W', 'r', 'a', 'p', 'p', 'e', 'r', 'T', 'y', 'p', 'e', 0,
+    'P', 'y', 'Q', 't', '4', '.', 'Q', 't', 'C', 'o', 'r', 'e', '.', 'p', 'y', 'q', 't', 'W', 'r', 'a', 'p', 'p', 'e', 'r', 'T', 'y', 'p', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'B', 'r', 'i', 'c', 'k', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'M', 'o', 't', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'K', 'e', 'y', 's', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'B', 'r', 'i', 'c', 'k', 'F', 'a', 'c', 't', 'o', 'r', 'y', 0,
+    'w', 'i', 'n', 'd', 'o', 'w', 'A', 'c', 't', 'i', 'v', 'a', 't', 'i', 'o', 'n', 'C', 'h', 'a', 'n', 'g', 'e', 0,
     'm', 'o', 'u', 's', 'e', 'D', 'o', 'u', 'b', 'l', 'e', 'C', 'l', 'i', 'c', 'k', 'E', 'v', 'e', 'n', 't', 0,
+    'd', 'e', 'f', 'a', 'u', 'l', 't', 'B', 'u', 't', 't', 'o', 'n', 'N', 'u', 'm', 'b', 'e', 'r', 0,
     'f', 'o', 'c', 'u', 's', 'P', 'r', 'e', 'v', 'i', 'o', 'u', 's', 'C', 'h', 'i', 'l', 'd', 0,
+    'e', 's', 'c', 'a', 'p', 'e', 'B', 'u', 't', 't', 'o', 'n', 'N', 'u', 'm', 'b', 'e', 'r', 0,
     'f', 'o', 'c', 'u', 's', 'N', 'e', 'x', 't', 'P', 'r', 'e', 'v', 'C', 'h', 'i', 'l', 'd', 0,
     'd', 'e', 's', 't', 'r', 'o', 'y', 'S', 'u', 'b', 'W', 'i', 'n', 'd', 'o', 'w', 's', 0,
+    'r', 'e', 's', 'e', 't', 'I', 'n', 'p', 'u', 't', 'C', 'o', 'n', 't', 'e', 'x', 't', 0,
     'm', 'o', 'u', 's', 'e', 'R', 'e', 'l', 'e', 'a', 's', 'e', 'E', 'v', 'e', 'n', 't', 0,
-    'i', 's', 'S', 'i', 'g', 'n', 'a', 'l', 'C', 'o', 'n', 'n', 'e', 'c', 't', 'e', 'd', 0,
     's', 'e', 'n', 'd', 'e', 'r', 'S', 'i', 'g', 'n', 'a', 'l', 'I', 'n', 'd', 'e', 'x', 0,
     'd', 'e', 's', 't', 'r', 'o', 'y', 'O', 'l', 'd', 'W', 'i', 'n', 'd', 'o', 'w', 0,
     'i', 'n', 'i', 't', 'i', 'a', 'l', 'i', 'z', 'e', 'W', 'i', 'n', 'd', 'o', 'w', 0,
@@ -49,65 +56,71 @@ const char sipStrings_trikControl[] = {
     'd', 'i', 's', 'c', 'o', 'n', 'n', 'e', 'c', 't', 'N', 'o', 't', 'i', 'f', 'y', 0,
     's', 'e', 't', 'P', 'a', 'i', 'n', 't', 'e', 'r', 'W', 'i', 'd', 't', 'h', 0,
     's', 'e', 't', 'P', 'a', 'i', 'n', 't', 'e', 'r', 'C', 'o', 'l', 'o', 'r', 0,
+    'a', 's', 'p', 'e', 'c', 't', 'R', 'a', 't', 'i', 'o', 'M', 'o', 'd', 'e', 0,
+    'd', 'e', 'v', 'i', 'c', 'e', 'T', 'r', 'a', 'n', 's', 'f', 'o', 'r', 'm', 0,
     'm', 'o', 'u', 's', 'e', 'P', 'r', 'e', 's', 's', 'E', 'v', 'e', 'n', 't', 0,
     'k', 'e', 'y', 'R', 'e', 'l', 'e', 'a', 's', 'e', 'E', 'v', 'e', 'n', 't', 0,
-    'd', 'e', 'v', 'i', 'c', 'e', 'T', 'r', 'a', 'n', 's', 'f', 'o', 'r', 'm', 0,
-    'i', 'n', 't', 'e', 'r', 'n', 'a', 'l', '_', 'f', 'o', 'r', 'm', 'a', 't', 0,
-    'a', 's', 'p', 'e', 'c', 't', 'R', 'a', 't', 'i', 'o', 'M', 'o', 'd', 'e', 0,
     'g', 'r', 'a', 'p', 'h', 'i', 'c', 's', 'W', 'i', 'd', 'g', 'e', 't', 0,
+    'l', 'a', 'n', 'g', 'u', 'a', 'g', 'e', 'C', 'h', 'a', 'n', 'g', 'e', 0,
     'f', 'o', 'c', 'u', 's', 'N', 'e', 'x', 't', 'C', 'h', 'i', 'l', 'd', 0,
+    's', 'e', 'l', 'e', 'c', 't', 'e', 'd', 'F', 'i', 'l', 't', 'e', 'r', 0,
     'd', 'r', 'a', 'g', 'L', 'e', 'a', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'd', 'r', 'a', 'g', 'E', 'n', 't', 'e', 'r', 'E', 'v', 'e', 'n', 't', 0,
     'm', 'o', 'u', 's', 'e', 'M', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'c', 'h', 'a', 'n', 'g', 'e', 'd', 'S', 'i', 'g', 'n', 'a', 'l', 0,
-    's', 'h', 'a', 'r', 'e', 'd', 'P', 'a', 'i', 'n', 't', 'e', 'r', 0,
+    'p', 'a', 'l', 'e', 't', 't', 'e', 'C', 'h', 'a', 'n', 'g', 'e', 0,
+    'e', 'n', 'a', 'b', 'l', 'e', 'd', 'C', 'h', 'a', 'n', 'g', 'e', 0,
     'd', 'e', 's', 't', 'r', 'o', 'y', 'W', 'i', 'n', 'd', 'o', 'w', 0,
-    't', 'h', 'r', 'e', 's', 'h', 'o', 'l', 'd', 'T', 'i', 'm', 'e', 0,
-    'd', 'r', 'a', 'g', 'M', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
-    'k', 'e', 'y', 'P', 'r', 'e', 's', 's', 'E', 'v', 'e', 'n', 't', 0,
-    'f', 'o', 'c', 'u', 's', 'O', 'u', 't', 'E', 'v', 'e', 'n', 't', 0,
     's', 'e', 't', 'B', 'a', 'c', 'k', 'g', 'r', 'o', 'u', 'n', 'd', 0,
     't', 'r', 'a', 'n', 's', 'f', 'o', 'r', 'm', 'M', 'o', 'd', 'e', 0,
+    'b', 'u', 't', 't', 'o', 'n', 'P', 'r', 'e', 's', 's', 'e', 'd', 0,
+    't', 'h', 'r', 'e', 's', 'h', 'o', 'l', 'd', 'T', 'i', 'm', 'e', 0,
+    'd', 'r', 'a', 'g', 'M', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
+    'f', 'o', 'c', 'u', 's', 'O', 'u', 't', 'E', 'v', 'e', 'n', 't', 0,
+    'k', 'e', 'y', 'P', 'r', 'e', 's', 's', 'E', 'v', 'e', 'n', 't', 0,
     'r', 'e', 'm', 'o', 'v', 'e', 'L', 'a', 'b', 'e', 'l', 's', 0,
     's', 'o', 'u', 'r', 'c', 'e', 'R', 'e', 'g', 'i', 'o', 'n', 0,
     't', 'a', 'r', 'g', 'e', 't', 'O', 'f', 'f', 's', 'e', 't', 0,
+    'b', 'o', 'u', 'n', 'd', 'i', 'n', 'g', 'R', 'e', 'c', 't', 0,
     'm', 'i', 'd', 'L', 'i', 'n', 'e', 'W', 'i', 'd', 't', 'h', 0,
     'f', 'o', 'c', 'u', 's', 'I', 'n', 'E', 'v', 'e', 'n', 't', 0,
-    'b', 'o', 'u', 'n', 'd', 'i', 'n', 'g', 'R', 'e', 'c', 't', 0,
-    'i', 'n', 'i', 't', 'P', 'a', 'i', 'n', 't', 'e', 'r', 0,
-    'n', 'a', 't', 'i', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
-    'a', 'c', 't', 'i', 'o', 'n', 'E', 'v', 'e', 'n', 't', 0,
-    'c', 'h', 'a', 'n', 'g', 'e', 'E', 'v', 'e', 'n', 't', 0,
     't', 'a', 'b', 'l', 'e', 't', 'E', 'v', 'e', 'n', 't', 0,
     'd', 'r', 'a', 'w', 'E', 'l', 'l', 'i', 'p', 's', 'e', 0,
-    'm', 'a', 't', 'c', 'h', 'P', 'o', 'l', 'i', 'c', 'y', 0,
+    'b', 'u', 't', 't', 'o', 'n', '2', 'T', 'e', 'x', 't', 0,
+    'b', 'u', 't', 't', 'o', 'n', '1', 'T', 'e', 'x', 't', 0,
+    'a', 'c', 't', 'i', 'o', 'n', 'E', 'v', 'e', 'n', 't', 0,
     'r', 'e', 's', 'i', 'z', 'e', 'E', 'v', 'e', 'n', 't', 0,
+    'c', 'h', 'a', 'n', 'g', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'c', 'u', 's', 't', 'o', 'm', 'E', 'v', 'e', 'n', 't', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', 0,
+    'b', 'u', 't', 't', 'o', 'n', 'C', 'o', 'd', 'e', 0,
+    'w', 'a', 's', 'P', 'r', 'e', 's', 's', 'e', 'd', 0,
     'm', 'a', 'x', 'C', 'o', 'n', 't', 'r', 'o', 'l', 0,
     'm', 'i', 'n', 'C', 'o', 'n', 't', 'r', 'o', 'l', 0,
     's', 'e', 'r', 'v', 'o', 'M', 'o', 't', 'o', 'r', 0,
     'p', 'o', 'w', 'e', 'r', 'M', 'o', 't', 'o', 'r', 0,
+    'f', 'o', 'n', 't', 'C', 'h', 'a', 'n', 'g', 'e', 0,
     'e', 'n', 't', 'e', 'r', 'E', 'v', 'e', 'n', 't', 0,
     'l', 'e', 'a', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
+    'c', 'o', 'l', 'u', 'm', 'n', 'S', 'p', 'a', 'n', 0,
     'c', 'o', 'n', 's', 't', 'r', 'a', 'i', 'n', 't', 0,
     'c', 'l', 'o', 's', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'r', 'e', 'p', 'e', 'a', 't', 'T', 'i', 'm', 'e', 0,
     'w', 'h', 'e', 'e', 'l', 'E', 'v', 'e', 'n', 't', 0,
-    'c', 'o', 'l', 'u', 'm', 'n', 'S', 'p', 'a', 'n', 0,
     'p', 'a', 'i', 'n', 't', 'E', 'v', 'e', 'n', 't', 0,
-    'g', 'e', 'n', 'M', 'i', 'p', 'M', 'a', 'p', 's', 0,
+    'f', 'i', 'e', 'l', 'd', 'W', 'i', 'd', 't', 'h', 0,
     'c', 'h', 'i', 'l', 'd', 'E', 'v', 'e', 'n', 't', 0,
     't', 'i', 'm', 'e', 'r', 'E', 'v', 'e', 'n', 't', 0,
     'p', 'l', 'a', 'y', 'S', 'o', 'u', 'n', 'd', 0,
+    'i', 's', 'P', 'r', 'e', 's', 's', 'e', 'd', 0,
     's', 'h', 'o', 'w', 'I', 'm', 'a', 'g', 'e', 0,
-    'd', 'r', 'o', 'p', 'E', 'v', 'e', 'n', 't', 0,
-    'h', 'i', 'd', 'e', 'E', 'v', 'e', 'n', 't', 0,
-    's', 'h', 'o', 'w', 'E', 'v', 'e', 'n', 't', 0,
-    'm', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'd', 'r', 'a', 'w', 'P', 'o', 'i', 'n', 't', 0,
     'o', 'p', 'e', 'r', 'a', 't', 'i', 'o', 'n', 0,
+    'm', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'l', 'i', 'n', 'e', 'W', 'i', 'd', 't', 'h', 0,
+    's', 'h', 'o', 'w', 'E', 'v', 'e', 'n', 't', 0,
+    'h', 'i', 'd', 'e', 'E', 'v', 'e', 'n', 't', 0,
+    'd', 'r', 'o', 'p', 'E', 'v', 'e', 'n', 't', 0,
     'd', 'i', 'r', 'e', 'c', 't', 'o', 'r', 'y', 0,
     'a', 'l', 'i', 'g', 'n', 'm', 'e', 'n', 't', 0,
     'r', 'e', 'c', 'e', 'i', 'v', 'e', 'r', 's', 0,
@@ -115,36 +128,40 @@ const char sipStrings_trikControl[] = {
     'p', 'o', 'w', 'e', 'r', 'O', 'f', 'f', 0,
     's', 'e', 't', 'P', 'o', 'w', 'e', 'r', 0,
     'a', 'd', 'd', 'L', 'a', 'b', 'e', 'l', 0,
-    's', 'h', 'o', 'r', 't', 'c', 'u', 't', 0,
-    'u', 's', 'e', 'r', 'D', 'a', 't', 'a', 0,
     'd', 'r', 'a', 'w', 'R', 'e', 'c', 't', 0,
     'd', 'r', 'a', 'w', 'L', 'i', 'n', 'e', 0,
     'f', 'i', 'l', 'l', 'R', 'u', 'l', 'e', 0,
     't', 'a', 'b', 'A', 'r', 'r', 'a', 'y', 0,
     't', 'a', 'b', 'S', 't', 'o', 'p', 's', 0,
-    'n', 'a', 'm', 'e', 'T', 'y', 'p', 'e', 0,
+    'u', 's', 'e', 'r', 'D', 'a', 't', 'a', 0,
+    's', 'h', 'o', 'r', 't', 'c', 'u', 't', 0,
+    'b', 'e', 'h', 'a', 'v', 'i', 'o', 'r', 0,
     'p', 'o', 's', 'i', 't', 'i', 'o', 'n', 0,
+    'f', 'i', 'l', 'l', 'C', 'h', 'a', 'r', 0,
     'p', 'r', 'o', 'p', 'e', 'r', 't', 'y', 0,
-    'd', 'i', 's', 'p', 'l', 'a', 'y', 0,
+    'd', 'e', 's', 't', 'r', 'o', 'y', 0,
+    'e', 'x', 'p', 'o', 's', 'e', 'd', 0,
+    'd', 'r', 'a', 'w', 'A', 'r', 'c', 0,
+    'b', 'u', 't', 't', 'o', 'n', '2', 0,
+    'b', 'u', 't', 't', 'o', 'n', '1', 0,
+    'q', 'u', 'a', 'l', 'i', 't', 'y', 0,
     'y', 'M', 'a', 'r', 'g', 'i', 'n', 0,
     'x', 'M', 'a', 'r', 'g', 'i', 'n', 0,
     'r', 'o', 'w', 'S', 'p', 'a', 'n', 0,
-    'e', 'x', 'p', 'o', 's', 'e', 'd', 0,
-    'd', 'r', 'a', 'w', 'A', 'r', 'c', 0,
-    'b', 'u', 'f', 'f', 'e', 'r', 's', 0,
-    's', 'o', 'u', 'r', 'c', 'e', 's', 0,
-    'd', 'e', 's', 't', 'r', 'o', 'y', 0,
-    'q', 'u', 'a', 'l', 'i', 't', 'y', 0,
-    'f', 'i', 'l', 't', 'e', 'r', 's', 0,
-    'e', 'n', 'a', 'b', 'l', 'e', 'd', 0,
+    'c', 'a', 'p', 't', 'i', 'o', 'n', 0,
+    'd', 'i', 's', 'p', 'l', 'a', 'y', 0,
     'o', 'p', 't', 'i', 'o', 'n', 's', 0,
+    'e', 'n', 'a', 'b', 'l', 'e', 'd', 0,
+    'f', 'i', 'l', 't', 'e', 'r', 's', 0,
     'r', 'e', 'd', 'r', 'a', 'w', 0,
-    's', 'u', 'n', 'k', 'e', 'n', 0,
-    'l', 'a', 'y', 'e', 'r', 's', 0,
-    's', 't', 'r', 'i', 'd', 'e', 0,
+    'y', 'R', 'o', 'u', 'n', 'd', 0,
+    'x', 'R', 'o', 'u', 'n', 'd', 0,
     'm', 'e', 't', 'r', 'i', 'c', 0,
+    'l', 'a', 'y', 'e', 'r', 's', 0,
     'w', 'i', 'n', 'd', 'o', 'w', 0,
-    'c', 'r', 'e', 'a', 't', 'e', 0,
+    's', 'u', 'n', 'k', 'e', 'n', 0,
+    'o', 'p', 't', 'i', 'o', 'n', 0,
+    'w', 'i', 'd', 'g', 'e', 't', 0,
     'p', 'r', 'o', 'p', 'e', 'r', 0,
     's', 'e', 'n', 'd', 'e', 'r', 0,
     'v', 'a', 'l', 'u', 'e', '9', 0,
@@ -154,33 +171,33 @@ const char sipStrings_trikControl[] = {
     'v', 'a', 'l', 'u', 'e', '5', 0,
     'v', 'a', 'l', 'u', 'e', '4', 0,
     'v', 'a', 'l', 'u', 'e', '3', 0,
-    'v', 'a', 'l', 'u', 'e', '2', 0,
-    'v', 'a', 'l', 'u', 'e', '1', 0,
     'v', 'a', 'l', 'u', 'e', '0', 0,
     's', 'y', 's', 't', 'e', 'm', 0,
     's', 'y', 'm', 'b', 'o', 'l', 0,
     's', 'u', 'f', 'f', 'i', 'x', 0,
-    'o', 'f', 'f', 's', 'e', 't', 0,
     'p', 'r', 'e', 'f', 'i', 'x', 0,
-    'f', 'i', 'l', 't', 'e', 'r', 0,
-    'o', 'p', 't', 'i', 'o', 'n', 0,
-    'l', 'o', 'c', 'a', 'l', 'e', 0,
+    'f', 'o', 'r', 'm', 'a', 't', 0,
+    'v', 'a', 'l', 'u', 'e', '2', 0,
+    'v', 'a', 'l', 'u', 'e', '1', 0,
+    'a', 'c', 't', 'i', 'o', 'n', 0,
     'c', 'o', 'l', 'u', 'm', 'n', 0,
+    'o', 'f', 'f', 's', 'e', 't', 0,
+    'c', 'r', 'e', 'a', 't', 'e', 0,
+    'f', 'i', 'l', 't', 'e', 'r', 0,
     'o', 'b', 'j', 'e', 'c', 't', 0,
     'p', 'a', 'r', 'e', 'n', 't', 0,
     'm', 'o', 't', 'o', 'r', 0,
     'p', 'o', 'w', 'e', 'r', 0,
     'b', 'r', 'u', 's', 'h', 0,
-    't', 'y', 'p', 'e', 's', 0,
-    'r', 'e', 's', 'e', 't', 0,
+    'h', 'i', 'n', 't', 's', 0,
     'c', 'l', 'e', 'a', 'r', 0,
-    'o', 'r', 'd', 'e', 'r', 0,
-    'r', 'o', 'l', 'e', 's', 0,
+    'r', 'e', 's', 'e', 't', 0,
     'f', 'l', 'a', 'g', 's', 0,
     'e', 'v', 'e', 'n', 't', 0,
     'm', 's', 'e', 'c', 's', 0,
     's', 't', 'a', 't', 'e', 0,
     'h', 'i', 'd', 'e', 0,
+    'k', 'e', 'y', 's', 0,
     'm', 'o', 'd', 'e', 0,
     'n', 'a', 'm', 'e', 0,
     'b', 'a', 's', 'e', 0,
@@ -188,23 +205,14 @@ const char sipStrings_trikControl[] = {
     'f', 'r', 'o', 'm', 0,
     's', 'o', 'r', 't', 0,
     'p', 'e', 'n', 0,
+    'e', 'n', 'd', 0,
     'p', 'o', 's', 0,
     's', 'w', 0,
     's', 'y', 0,
     's', 'x', 0,
 };
 
-trikControl::DisplayInterface* sipVH_trikControl_0(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
-{
-    trikControl::DisplayInterface* sipRes = 0;
-    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
-
-    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_DisplayInterface, &sipRes);
-
-    return sipRes;
-}
-
-trikControl::MotorInterface* sipVH_trikControl_1(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
+trikControl::MotorInterface* sipVH_trikControl_0(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
 {
     trikControl::MotorInterface* sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "N",new QString(a0),sipType_QString,NULL);
@@ -214,7 +222,27 @@ trikControl::MotorInterface* sipVH_trikControl_1(sip_gilstate_t sipGILState, sip
     return sipRes;
 }
 
-trikControl::DisplayWidgetInterface* sipVH_trikControl_2(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+trikControl::KeysInterface* sipVH_trikControl_1(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    trikControl::KeysInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_KeysInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::DisplayInterface* sipVH_trikControl_2(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    trikControl::DisplayInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_DisplayInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::DisplayWidgetInterface* sipVH_trikControl_3(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
 {
     trikControl::DisplayWidgetInterface* sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
@@ -224,42 +252,52 @@ trikControl::DisplayWidgetInterface* sipVH_trikControl_2(sip_gilstate_t sipGILSt
     return sipRes;
 }
 
-void sipVH_trikControl_3(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,bool a1)
+int sipVH_trikControl_4(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, bool a0)
+{
+    int sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "b",a0);
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "i", &sipRes);
+
+    return sipRes;
+}
+
+void sipVH_trikControl_5(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,bool a1)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "ib",a0,a1);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_4(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,int a4,int a5)
+void sipVH_trikControl_6(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,int a4,int a5)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "iiiiii",a0,a1,a2,a3,a4,a5);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_5(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,bool a4)
+void sipVH_trikControl_7(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,bool a4)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "iiiib",a0,a1,a2,a3,a4);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_6(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3)
+void sipVH_trikControl_8(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "iiii",a0,a1,a2,a3);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_7(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0,int a1,int a2)
+void sipVH_trikControl_9(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0,int a1,int a2)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "Nii",new QString(a0),sipType_QString,NULL,a1,a2);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-trikControl::DisplayWidgetInterface& sipVH_trikControl_8(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+trikControl::DisplayWidgetInterface& sipVH_trikControl_10(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
 {
     trikControl::DisplayWidgetInterface *sipRes;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
@@ -272,7 +310,7 @@ trikControl::DisplayWidgetInterface& sipVH_trikControl_8(sip_gilstate_t sipGILSt
     return *sipRes;
 }
 static sipEnumTypeDef enumTypes[] = {
-    {{-1, 0, 0, SIP_TYPE_ENUM, sipNameNr_trikControl__MotorInterface__Type, {0}}, sipNameNr_Type, 5, NULL},
+    {{-1, 0, 0, SIP_TYPE_ENUM, sipNameNr_trikControl__MotorInterface__Type, {0}}, sipNameNr_Type, 6, NULL},
 };
 
 
@@ -285,6 +323,7 @@ static sipTypeDef *typesTable[] = {
     &sipTypeDef_trikControl_trikControl_BrickInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_DisplayInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_DisplayWidgetInterface.super.ctd_base,
+    &sipTypeDef_trikControl_trikControl_KeysInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_MotorInterface.super.ctd_base,
     &enumTypes[0].etd_base,
 };
@@ -304,14 +343,15 @@ static sipVirtHandlerFunc virtHandlersTable[] = {
     (sipVirtHandlerFunc)sipVH_trikControl_6,
     (sipVirtHandlerFunc)sipVH_trikControl_7,
     (sipVirtHandlerFunc)sipVH_trikControl_8,
+    (sipVirtHandlerFunc)sipVH_trikControl_9,
+    (sipVirtHandlerFunc)sipVH_trikControl_10,
 };
 
 
 /* This defines the modules that this module needs to import. */
 static sipImportedModuleDef importsTable[] = {
-    {"PyQt5.QtCore", 1, NULL},
-    {"PyQt5.QtGui", -1, NULL},
-    {"PyQt5.QtWidgets", -1, NULL},
+    {"PyQt4.QtCore", 1, NULL},
+    {"PyQt4.QtGui", -1, NULL},
     {NULL, -1, NULL}
 };
 
@@ -326,7 +366,7 @@ sipExportedModuleDef sipModuleAPI_trikControl = {
     sipStrings_trikControl,
     importsTable,
     NULL,
-    7,
+    8,
     typesTable,
     NULL,
     0,
@@ -352,7 +392,6 @@ sipExportedModuleDef sipModuleAPI_trikControl = {
 const sipAPIDef *sipAPI_trikControl;
 const sipExportedModuleDef *sipModuleAPI_trikControl_QtCore;
 const sipExportedModuleDef *sipModuleAPI_trikControl_QtGui;
-const sipExportedModuleDef *sipModuleAPI_trikControl_QtWidgets;
 
 sip_qt_metaobject_func sip_trikControl_qt_metaobject;
 sip_qt_metacall_func sip_trikControl_qt_metacall;
@@ -477,7 +516,6 @@ PyMODINIT_FUNC SIP_MODULE_ENTRY()
     /* Get the APIs of the modules that this one is dependent on. */
     sipModuleAPI_trikControl_QtCore = sipModuleAPI_trikControl.em_imports[0].im_module;
     sipModuleAPI_trikControl_QtGui = sipModuleAPI_trikControl.em_imports[1].im_module;
-    sipModuleAPI_trikControl_QtWidgets = sipModuleAPI_trikControl.em_imports[2].im_module;
 
     SIP_MODULE_RETURN(sipModule);
 }

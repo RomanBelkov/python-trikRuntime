@@ -4,6 +4,7 @@
 //%Include DisplayWidgetInterface.sip
 %Include DisplayInterface.sip
 %Include MotorInterface.sip
+%Include KeysInterface.sip
 
 namespace trikControl {
 
@@ -18,8 +19,6 @@ namespace trikControl {
 		/// Returns a widget on which display output is drawn.
 		virtual trikControl::DisplayWidgetInterface *graphicsWidget() = 0;
 
-		virtual trikControl::MotorInterface *motor(const QString &port) = 0;
-
 		public slots:
 
 		/// Plays given music file on a speaker (in format accepted by aplay or cvlc utilities).
@@ -27,6 +26,11 @@ namespace trikControl {
 
 		/// Returns class that provides drawing on display.
 		virtual trikControl::DisplayInterface *display() = 0;
+
+		/// Returns keys on a control brick.
+		virtual trikControl::KeysInterface *keys() = 0;
+
+		virtual trikControl::MotorInterface *motor(const QString &port) = 0;
 
 	};
 };

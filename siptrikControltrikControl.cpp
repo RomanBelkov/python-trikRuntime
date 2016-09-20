@@ -9,13 +9,13 @@
 
 
 
-pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl = {
+pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl = {
 {
     {
         -1,
         0,
         0,
-        SIP_TYPE_SUPER_INIT|SIP_TYPE_NAMESPACE,
+        SIP_TYPE_NAMESPACE,
         sipNameNr_trikControl,
         {0}
     },
@@ -57,7 +57,6 @@ pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl = {
     0,
     0
 },
-    0,
     0,
     0,
     0

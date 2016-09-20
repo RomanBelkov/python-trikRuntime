@@ -14,23 +14,28 @@
 #include <QThread>
 
 /* These are the qualifiers that are enabled. */
-#define SIP_FEATURE_PyQt_MacOSXOnly
-#define SIP_FEATURE_PyQt_Process
 #define SIP_FEATURE_PyQt_NotBootstrapped
-#define SIP_FEATURE_PyQt_Desktop_OpenGL
-#define SIP_FEATURE_PyQt_OpenGL
+#define SIP_FEATURE_PyQt_Deprecated_5_0
+#define SIP_FEATURE_PyQt_NoOpenGLES
 #define SIP_FEATURE_PyQt_RawFont
+#define SIP_FEATURE_PyQt_SystemTrayIcon
 #define SIP_FEATURE_PyQt_PrintPreviewDialog
 #define SIP_FEATURE_PyQt_PrintPreviewWidget
 #define SIP_FEATURE_PyQt_Printer
 #define SIP_FEATURE_PyQt_PrintDialog
 #define SIP_FEATURE_Py_v3
 #define SIP_FEATURE_PyQt_qreal_double
-#define SIP_FEATURE_PyQt_SSL
+#define SIP_FEATURE_PyQt_SizeGrip
+#define SIP_FEATURE_PyQt_OpenSSL
+#define SIP_FEATURE_Py_DateTime
+#define SIP_FEATURE_PyQt_NoQtPrintRangeBug
+#define SIP_FEATURE_PyQt_WhatsThis
+#define SIP_FEATURE_PyQt_ToolTip
+#define SIP_FEATURE_PyQt_StatusTip
 #define SIP_FEATURE_PyQt_SessionManager
 #define SIP_FEATURE_PyQt_Accessibility
 #define SIP_PLATFORM_WS_X11
-#define SIP_TIMELINE_Qt_5_7_0
+#define SIP_TIMELINE_Qt_4_8_7
 
 
 /*
@@ -43,350 +48,380 @@
 #define sipName_trikControl__MotorInterface__Type &sipStrings_trikControl[36]
 #define sipNameNr_trikControl__DisplayInterface 70
 #define sipName_trikControl__DisplayInterface &sipStrings_trikControl[70]
-#define sipNameNr_PyQt5_QtCore_pyqtWrapperType 100
-#define sipName_PyQt5_QtCore_pyqtWrapperType &sipStrings_trikControl[100]
+#define sipNameNr_PyQt4_QtCore_pyqtWrapperType 100
+#define sipName_PyQt4_QtCore_pyqtWrapperType &sipStrings_trikControl[100]
 #define sipNameNr_trikControl__BrickInterface 129
 #define sipName_trikControl__BrickInterface &sipStrings_trikControl[129]
 #define sipNameNr_trikControl__MotorInterface 157
 #define sipName_trikControl__MotorInterface &sipStrings_trikControl[157]
-#define sipNameNr_trikControl__BrickFactory 185
-#define sipName_trikControl__BrickFactory &sipStrings_trikControl[185]
+#define sipNameNr_trikControl__KeysInterface 185
+#define sipName_trikControl__KeysInterface &sipStrings_trikControl[185]
+#define sipNameNr_trikControl__BrickFactory 212
+#define sipName_trikControl__BrickFactory &sipStrings_trikControl[212]
 #define sipNameNr_DisplayWidgetInterface 13
 #define sipName_DisplayWidgetInterface &sipStrings_trikControl[13]
-#define sipNameNr_mouseDoubleClickEvent 211
-#define sipName_mouseDoubleClickEvent &sipStrings_trikControl[211]
-#define sipNameNr_focusPreviousChild 233
-#define sipName_focusPreviousChild &sipStrings_trikControl[233]
-#define sipNameNr_focusNextPrevChild 252
-#define sipName_focusNextPrevChild &sipStrings_trikControl[252]
-#define sipNameNr_destroySubWindows 271
-#define sipName_destroySubWindows &sipStrings_trikControl[271]
-#define sipNameNr_mouseReleaseEvent 289
-#define sipName_mouseReleaseEvent &sipStrings_trikControl[289]
-#define sipNameNr_isSignalConnected 307
-#define sipName_isSignalConnected &sipStrings_trikControl[307]
-#define sipNameNr_senderSignalIndex 325
-#define sipName_senderSignalIndex &sipStrings_trikControl[325]
+#define sipNameNr_windowActivationChange 238
+#define sipName_windowActivationChange &sipStrings_trikControl[238]
+#define sipNameNr_mouseDoubleClickEvent 261
+#define sipName_mouseDoubleClickEvent &sipStrings_trikControl[261]
+#define sipNameNr_defaultButtonNumber 283
+#define sipName_defaultButtonNumber &sipStrings_trikControl[283]
+#define sipNameNr_focusPreviousChild 303
+#define sipName_focusPreviousChild &sipStrings_trikControl[303]
+#define sipNameNr_escapeButtonNumber 322
+#define sipName_escapeButtonNumber &sipStrings_trikControl[322]
+#define sipNameNr_focusNextPrevChild 341
+#define sipName_focusNextPrevChild &sipStrings_trikControl[341]
+#define sipNameNr_destroySubWindows 360
+#define sipName_destroySubWindows &sipStrings_trikControl[360]
+#define sipNameNr_resetInputContext 378
+#define sipName_resetInputContext &sipStrings_trikControl[378]
+#define sipNameNr_mouseReleaseEvent 396
+#define sipName_mouseReleaseEvent &sipStrings_trikControl[396]
+#define sipNameNr_senderSignalIndex 414
+#define sipName_senderSignalIndex &sipStrings_trikControl[414]
 #define sipNameNr_DisplayInterface 83
 #define sipName_DisplayInterface &sipStrings_trikControl[83]
-#define sipNameNr_destroyOldWindow 343
-#define sipName_destroyOldWindow &sipStrings_trikControl[343]
-#define sipNameNr_initializeWindow 360
-#define sipName_initializeWindow &sipStrings_trikControl[360]
-#define sipNameNr_updateMicroFocus 377
-#define sipName_updateMicroFocus &sipStrings_trikControl[377]
-#define sipNameNr_contextMenuEvent 394
-#define sipName_contextMenuEvent &sipStrings_trikControl[394]
-#define sipNameNr_inputMethodEvent 411
-#define sipName_inputMethodEvent &sipStrings_trikControl[411]
-#define sipNameNr_disconnectNotify 428
-#define sipName_disconnectNotify &sipStrings_trikControl[428]
-#define sipNameNr_setPainterWidth 445
-#define sipName_setPainterWidth &sipStrings_trikControl[445]
-#define sipNameNr_setPainterColor 461
-#define sipName_setPainterColor &sipStrings_trikControl[461]
-#define sipNameNr_mousePressEvent 477
-#define sipName_mousePressEvent &sipStrings_trikControl[477]
-#define sipNameNr_keyReleaseEvent 493
-#define sipName_keyReleaseEvent &sipStrings_trikControl[493]
-#define sipNameNr_deviceTransform 509
-#define sipName_deviceTransform &sipStrings_trikControl[509]
-#define sipNameNr_internal_format 525
-#define sipName_internal_format &sipStrings_trikControl[525]
-#define sipNameNr_aspectRatioMode 541
-#define sipName_aspectRatioMode &sipStrings_trikControl[541]
+#define sipNameNr_destroyOldWindow 432
+#define sipName_destroyOldWindow &sipStrings_trikControl[432]
+#define sipNameNr_initializeWindow 449
+#define sipName_initializeWindow &sipStrings_trikControl[449]
+#define sipNameNr_updateMicroFocus 466
+#define sipName_updateMicroFocus &sipStrings_trikControl[466]
+#define sipNameNr_contextMenuEvent 483
+#define sipName_contextMenuEvent &sipStrings_trikControl[483]
+#define sipNameNr_inputMethodEvent 500
+#define sipName_inputMethodEvent &sipStrings_trikControl[500]
+#define sipNameNr_disconnectNotify 517
+#define sipName_disconnectNotify &sipStrings_trikControl[517]
+#define sipNameNr_setPainterWidth 534
+#define sipName_setPainterWidth &sipStrings_trikControl[534]
+#define sipNameNr_setPainterColor 550
+#define sipName_setPainterColor &sipStrings_trikControl[550]
+#define sipNameNr_aspectRatioMode 566
+#define sipName_aspectRatioMode &sipStrings_trikControl[566]
+#define sipNameNr_deviceTransform 582
+#define sipName_deviceTransform &sipStrings_trikControl[582]
+#define sipNameNr_mousePressEvent 598
+#define sipName_mousePressEvent &sipStrings_trikControl[598]
+#define sipNameNr_keyReleaseEvent 614
+#define sipName_keyReleaseEvent &sipStrings_trikControl[614]
 #define sipNameNr_BrickInterface 142
 #define sipName_BrickInterface &sipStrings_trikControl[142]
 #define sipNameNr_MotorInterface 170
 #define sipName_MotorInterface &sipStrings_trikControl[170]
-#define sipNameNr_graphicsWidget 557
-#define sipName_graphicsWidget &sipStrings_trikControl[557]
-#define sipNameNr_focusNextChild 572
-#define sipName_focusNextChild &sipStrings_trikControl[572]
-#define sipNameNr_dragLeaveEvent 587
-#define sipName_dragLeaveEvent &sipStrings_trikControl[587]
-#define sipNameNr_dragEnterEvent 602
-#define sipName_dragEnterEvent &sipStrings_trikControl[602]
-#define sipNameNr_mouseMoveEvent 617
-#define sipName_mouseMoveEvent &sipStrings_trikControl[617]
-#define sipNameNr_changedSignal 632
-#define sipName_changedSignal &sipStrings_trikControl[632]
-#define sipNameNr_sharedPainter 646
-#define sipName_sharedPainter &sipStrings_trikControl[646]
-#define sipNameNr_destroyWindow 660
-#define sipName_destroyWindow &sipStrings_trikControl[660]
-#define sipNameNr_thresholdTime 674
-#define sipName_thresholdTime &sipStrings_trikControl[674]
-#define sipNameNr_dragMoveEvent 688
-#define sipName_dragMoveEvent &sipStrings_trikControl[688]
-#define sipNameNr_keyPressEvent 702
-#define sipName_keyPressEvent &sipStrings_trikControl[702]
-#define sipNameNr_focusOutEvent 716
-#define sipName_focusOutEvent &sipStrings_trikControl[716]
-#define sipNameNr_setBackground 730
-#define sipName_setBackground &sipStrings_trikControl[730]
-#define sipNameNr_transformMode 744
-#define sipName_transformMode &sipStrings_trikControl[744]
-#define sipNameNr_connectNotify 431
-#define sipName_connectNotify &sipStrings_trikControl[431]
-#define sipNameNr_BrickFactory 198
-#define sipName_BrickFactory &sipStrings_trikControl[198]
-#define sipNameNr_removeLabels 758
-#define sipName_removeLabels &sipStrings_trikControl[758]
-#define sipNameNr_sourceRegion 771
-#define sipName_sourceRegion &sipStrings_trikControl[771]
-#define sipNameNr_targetOffset 784
-#define sipName_targetOffset &sipStrings_trikControl[784]
-#define sipNameNr_midLineWidth 797
-#define sipName_midLineWidth &sipStrings_trikControl[797]
-#define sipNameNr_focusInEvent 810
-#define sipName_focusInEvent &sipStrings_trikControl[810]
-#define sipNameNr_boundingRect 823
-#define sipName_boundingRect &sipStrings_trikControl[823]
-#define sipNameNr_initPainter 836
-#define sipName_initPainter &sipStrings_trikControl[836]
-#define sipNameNr_nativeEvent 848
-#define sipName_nativeEvent &sipStrings_trikControl[848]
-#define sipNameNr_actionEvent 860
-#define sipName_actionEvent &sipStrings_trikControl[860]
-#define sipNameNr_changeEvent 872
-#define sipName_changeEvent &sipStrings_trikControl[872]
-#define sipNameNr_tabletEvent 884
-#define sipName_tabletEvent &sipStrings_trikControl[884]
-#define sipNameNr_drawEllipse 896
-#define sipName_drawEllipse &sipStrings_trikControl[896]
-#define sipNameNr_matchPolicy 908
-#define sipName_matchPolicy &sipStrings_trikControl[908]
-#define sipNameNr_resizeEvent 920
-#define sipName_resizeEvent &sipStrings_trikControl[920]
-#define sipNameNr_customEvent 932
-#define sipName_customEvent &sipStrings_trikControl[932]
-#define sipNameNr_trikControl 944
-#define sipName_trikControl &sipStrings_trikControl[944]
-#define sipNameNr_maxControl 956
-#define sipName_maxControl &sipStrings_trikControl[956]
-#define sipNameNr_minControl 967
-#define sipName_minControl &sipStrings_trikControl[967]
-#define sipNameNr_servoMotor 978
-#define sipName_servoMotor &sipStrings_trikControl[978]
-#define sipNameNr_powerMotor 989
-#define sipName_powerMotor &sipStrings_trikControl[989]
-#define sipNameNr_enterEvent 1000
-#define sipName_enterEvent &sipStrings_trikControl[1000]
-#define sipNameNr_leaveEvent 1011
-#define sipName_leaveEvent &sipStrings_trikControl[1011]
-#define sipNameNr_constraint 1022
-#define sipName_constraint &sipStrings_trikControl[1022]
-#define sipNameNr_closeEvent 1033
-#define sipName_closeEvent &sipStrings_trikControl[1033]
-#define sipNameNr_repeatTime 1044
-#define sipName_repeatTime &sipStrings_trikControl[1044]
-#define sipNameNr_wheelEvent 1055
-#define sipName_wheelEvent &sipStrings_trikControl[1055]
-#define sipNameNr_columnSpan 1066
-#define sipName_columnSpan &sipStrings_trikControl[1066]
-#define sipNameNr_paintEvent 1077
-#define sipName_paintEvent &sipStrings_trikControl[1077]
-#define sipNameNr_genMipMaps 1088
-#define sipName_genMipMaps &sipStrings_trikControl[1088]
-#define sipNameNr_childEvent 1099
-#define sipName_childEvent &sipStrings_trikControl[1099]
-#define sipNameNr_timerEvent 1110
-#define sipName_timerEvent &sipStrings_trikControl[1110]
-#define sipNameNr_playSound 1121
-#define sipName_playSound &sipStrings_trikControl[1121]
-#define sipNameNr_showImage 1131
-#define sipName_showImage &sipStrings_trikControl[1131]
-#define sipNameNr_dropEvent 1141
-#define sipName_dropEvent &sipStrings_trikControl[1141]
-#define sipNameNr_hideEvent 1151
-#define sipName_hideEvent &sipStrings_trikControl[1151]
-#define sipNameNr_showEvent 1161
-#define sipName_showEvent &sipStrings_trikControl[1161]
-#define sipNameNr_moveEvent 1171
-#define sipName_moveEvent &sipStrings_trikControl[1171]
-#define sipNameNr_drawPoint 1181
-#define sipName_drawPoint &sipStrings_trikControl[1181]
-#define sipNameNr_operation 1191
-#define sipName_operation &sipStrings_trikControl[1191]
-#define sipNameNr_lineWidth 1201
-#define sipName_lineWidth &sipStrings_trikControl[1201]
-#define sipNameNr_directory 1211
-#define sipName_directory &sipStrings_trikControl[1211]
-#define sipNameNr_alignment 1221
-#define sipName_alignment &sipStrings_trikControl[1221]
-#define sipNameNr_receivers 1231
-#define sipName_receivers &sipStrings_trikControl[1231]
-#define sipNameNr_precision 1241
-#define sipName_precision &sipStrings_trikControl[1241]
-#define sipNameNr_powerOff 1251
-#define sipName_powerOff &sipStrings_trikControl[1251]
-#define sipNameNr_setPower 1260
-#define sipName_setPower &sipStrings_trikControl[1260]
-#define sipNameNr_addLabel 1269
-#define sipName_addLabel &sipStrings_trikControl[1269]
-#define sipNameNr_shortcut 1278
-#define sipName_shortcut &sipStrings_trikControl[1278]
-#define sipNameNr_userData 1287
-#define sipName_userData &sipStrings_trikControl[1287]
-#define sipNameNr_drawRect 1296
-#define sipName_drawRect &sipStrings_trikControl[1296]
-#define sipNameNr_drawLine 1305
-#define sipName_drawLine &sipStrings_trikControl[1305]
-#define sipNameNr_fillRule 1314
-#define sipName_fillRule &sipStrings_trikControl[1314]
-#define sipNameNr_tabArray 1323
-#define sipName_tabArray &sipStrings_trikControl[1323]
-#define sipNameNr_tabStops 1332
-#define sipName_tabStops &sipStrings_trikControl[1332]
-#define sipNameNr_nameType 1341
-#define sipName_nameType &sipStrings_trikControl[1341]
-#define sipNameNr_position 1350
-#define sipName_position &sipStrings_trikControl[1350]
-#define sipNameNr_property 1359
-#define sipName_property &sipStrings_trikControl[1359]
-#define sipNameNr_display 1368
-#define sipName_display &sipStrings_trikControl[1368]
-#define sipNameNr_yMargin 1376
-#define sipName_yMargin &sipStrings_trikControl[1376]
-#define sipNameNr_xMargin 1384
-#define sipName_xMargin &sipStrings_trikControl[1384]
-#define sipNameNr_rowSpan 1392
-#define sipName_rowSpan &sipStrings_trikControl[1392]
-#define sipNameNr_exposed 1400
-#define sipName_exposed &sipStrings_trikControl[1400]
-#define sipNameNr_drawArc 1408
-#define sipName_drawArc &sipStrings_trikControl[1408]
-#define sipNameNr_buffers 1416
-#define sipName_buffers &sipStrings_trikControl[1416]
-#define sipNameNr_sources 1424
-#define sipName_sources &sipStrings_trikControl[1424]
-#define sipNameNr_destroy 1432
-#define sipName_destroy &sipStrings_trikControl[1432]
-#define sipNameNr_quality 1440
-#define sipName_quality &sipStrings_trikControl[1440]
-#define sipNameNr_filters 1448
-#define sipName_filters &sipStrings_trikControl[1448]
-#define sipNameNr_enabled 1456
-#define sipName_enabled &sipStrings_trikControl[1456]
-#define sipNameNr_options 1464
-#define sipName_options &sipStrings_trikControl[1464]
-#define sipNameNr_redraw 1472
-#define sipName_redraw &sipStrings_trikControl[1472]
-#define sipNameNr_sunken 1479
-#define sipName_sunken &sipStrings_trikControl[1479]
-#define sipNameNr_layers 1486
-#define sipName_layers &sipStrings_trikControl[1486]
-#define sipNameNr_stride 1493
-#define sipName_stride &sipStrings_trikControl[1493]
-#define sipNameNr_metric 1500
-#define sipName_metric &sipStrings_trikControl[1500]
-#define sipNameNr_window 1507
-#define sipName_window &sipStrings_trikControl[1507]
-#define sipNameNr_create 1514
-#define sipName_create &sipStrings_trikControl[1514]
-#define sipNameNr_proper 1521
-#define sipName_proper &sipStrings_trikControl[1521]
-#define sipNameNr_sender 1528
-#define sipName_sender &sipStrings_trikControl[1528]
-#define sipNameNr_value9 1535
-#define sipName_value9 &sipStrings_trikControl[1535]
-#define sipNameNr_value8 1542
-#define sipName_value8 &sipStrings_trikControl[1542]
-#define sipNameNr_value7 1549
-#define sipName_value7 &sipStrings_trikControl[1549]
-#define sipNameNr_value6 1556
-#define sipName_value6 &sipStrings_trikControl[1556]
-#define sipNameNr_value5 1563
-#define sipName_value5 &sipStrings_trikControl[1563]
-#define sipNameNr_value4 1570
-#define sipName_value4 &sipStrings_trikControl[1570]
-#define sipNameNr_value3 1577
-#define sipName_value3 &sipStrings_trikControl[1577]
-#define sipNameNr_value2 1584
-#define sipName_value2 &sipStrings_trikControl[1584]
-#define sipNameNr_value1 1591
-#define sipName_value1 &sipStrings_trikControl[1591]
-#define sipNameNr_value0 1598
-#define sipName_value0 &sipStrings_trikControl[1598]
-#define sipNameNr_system 1605
-#define sipName_system &sipStrings_trikControl[1605]
-#define sipNameNr_symbol 1612
-#define sipName_symbol &sipStrings_trikControl[1612]
-#define sipNameNr_suffix 1619
-#define sipName_suffix &sipStrings_trikControl[1619]
-#define sipNameNr_offset 1626
-#define sipName_offset &sipStrings_trikControl[1626]
-#define sipNameNr_prefix 1633
-#define sipName_prefix &sipStrings_trikControl[1633]
-#define sipNameNr_filter 1640
-#define sipName_filter &sipStrings_trikControl[1640]
-#define sipNameNr_option 1647
-#define sipName_option &sipStrings_trikControl[1647]
-#define sipNameNr_locale 1654
-#define sipName_locale &sipStrings_trikControl[1654]
-#define sipNameNr_format 534
-#define sipName_format &sipStrings_trikControl[534]
-#define sipNameNr_column 1661
-#define sipName_column &sipStrings_trikControl[1661]
-#define sipNameNr_object 1668
-#define sipName_object &sipStrings_trikControl[1668]
-#define sipNameNr_parent 1675
-#define sipName_parent &sipStrings_trikControl[1675]
-#define sipNameNr_motor 1682
-#define sipName_motor &sipStrings_trikControl[1682]
-#define sipNameNr_power 1688
-#define sipName_power &sipStrings_trikControl[1688]
-#define sipNameNr_brush 1694
-#define sipName_brush &sipStrings_trikControl[1694]
-#define sipNameNr_types 1700
-#define sipName_types &sipStrings_trikControl[1700]
-#define sipNameNr_reset 1706
-#define sipName_reset &sipStrings_trikControl[1706]
-#define sipNameNr_clear 1712
-#define sipName_clear &sipStrings_trikControl[1712]
-#define sipNameNr_order 1718
-#define sipName_order &sipStrings_trikControl[1718]
-#define sipNameNr_roles 1724
-#define sipName_roles &sipStrings_trikControl[1724]
-#define sipNameNr_flags 1730
-#define sipName_flags &sipStrings_trikControl[1730]
-#define sipNameNr_event 1736
-#define sipName_event &sipStrings_trikControl[1736]
-#define sipNameNr_msecs 1742
-#define sipName_msecs &sipStrings_trikControl[1742]
-#define sipNameNr_state 1748
-#define sipName_state &sipStrings_trikControl[1748]
-#define sipNameNr_hide 1754
-#define sipName_hide &sipStrings_trikControl[1754]
+#define sipNameNr_graphicsWidget 630
+#define sipName_graphicsWidget &sipStrings_trikControl[630]
+#define sipNameNr_languageChange 645
+#define sipName_languageChange &sipStrings_trikControl[645]
+#define sipNameNr_focusNextChild 660
+#define sipName_focusNextChild &sipStrings_trikControl[660]
+#define sipNameNr_selectedFilter 675
+#define sipName_selectedFilter &sipStrings_trikControl[675]
+#define sipNameNr_dragLeaveEvent 690
+#define sipName_dragLeaveEvent &sipStrings_trikControl[690]
+#define sipNameNr_dragEnterEvent 705
+#define sipName_dragEnterEvent &sipStrings_trikControl[705]
+#define sipNameNr_mouseMoveEvent 720
+#define sipName_mouseMoveEvent &sipStrings_trikControl[720]
+#define sipNameNr_KeysInterface 198
+#define sipName_KeysInterface &sipStrings_trikControl[198]
+#define sipNameNr_changedSignal 735
+#define sipName_changedSignal &sipStrings_trikControl[735]
+#define sipNameNr_paletteChange 749
+#define sipName_paletteChange &sipStrings_trikControl[749]
+#define sipNameNr_enabledChange 763
+#define sipName_enabledChange &sipStrings_trikControl[763]
+#define sipNameNr_destroyWindow 777
+#define sipName_destroyWindow &sipStrings_trikControl[777]
+#define sipNameNr_setBackground 791
+#define sipName_setBackground &sipStrings_trikControl[791]
+#define sipNameNr_transformMode 805
+#define sipName_transformMode &sipStrings_trikControl[805]
+#define sipNameNr_buttonPressed 819
+#define sipName_buttonPressed &sipStrings_trikControl[819]
+#define sipNameNr_thresholdTime 833
+#define sipName_thresholdTime &sipStrings_trikControl[833]
+#define sipNameNr_dragMoveEvent 847
+#define sipName_dragMoveEvent &sipStrings_trikControl[847]
+#define sipNameNr_focusOutEvent 861
+#define sipName_focusOutEvent &sipStrings_trikControl[861]
+#define sipNameNr_keyPressEvent 875
+#define sipName_keyPressEvent &sipStrings_trikControl[875]
+#define sipNameNr_connectNotify 520
+#define sipName_connectNotify &sipStrings_trikControl[520]
+#define sipNameNr_BrickFactory 225
+#define sipName_BrickFactory &sipStrings_trikControl[225]
+#define sipNameNr_removeLabels 889
+#define sipName_removeLabels &sipStrings_trikControl[889]
+#define sipNameNr_sourceRegion 902
+#define sipName_sourceRegion &sipStrings_trikControl[902]
+#define sipNameNr_targetOffset 915
+#define sipName_targetOffset &sipStrings_trikControl[915]
+#define sipNameNr_boundingRect 928
+#define sipName_boundingRect &sipStrings_trikControl[928]
+#define sipNameNr_midLineWidth 941
+#define sipName_midLineWidth &sipStrings_trikControl[941]
+#define sipNameNr_focusInEvent 954
+#define sipName_focusInEvent &sipStrings_trikControl[954]
+#define sipNameNr_tabletEvent 967
+#define sipName_tabletEvent &sipStrings_trikControl[967]
+#define sipNameNr_drawEllipse 979
+#define sipName_drawEllipse &sipStrings_trikControl[979]
+#define sipNameNr_button2Text 991
+#define sipName_button2Text &sipStrings_trikControl[991]
+#define sipNameNr_button1Text 1003
+#define sipName_button1Text &sipStrings_trikControl[1003]
+#define sipNameNr_actionEvent 1015
+#define sipName_actionEvent &sipStrings_trikControl[1015]
+#define sipNameNr_resizeEvent 1027
+#define sipName_resizeEvent &sipStrings_trikControl[1027]
+#define sipNameNr_changeEvent 1039
+#define sipName_changeEvent &sipStrings_trikControl[1039]
+#define sipNameNr_customEvent 1051
+#define sipName_customEvent &sipStrings_trikControl[1051]
+#define sipNameNr_trikControl 1063
+#define sipName_trikControl &sipStrings_trikControl[1063]
+#define sipNameNr_buttonCode 1075
+#define sipName_buttonCode &sipStrings_trikControl[1075]
+#define sipNameNr_wasPressed 1086
+#define sipName_wasPressed &sipStrings_trikControl[1086]
+#define sipNameNr_maxControl 1097
+#define sipName_maxControl &sipStrings_trikControl[1097]
+#define sipNameNr_minControl 1108
+#define sipName_minControl &sipStrings_trikControl[1108]
+#define sipNameNr_servoMotor 1119
+#define sipName_servoMotor &sipStrings_trikControl[1119]
+#define sipNameNr_powerMotor 1130
+#define sipName_powerMotor &sipStrings_trikControl[1130]
+#define sipNameNr_fontChange 1141
+#define sipName_fontChange &sipStrings_trikControl[1141]
+#define sipNameNr_enterEvent 1152
+#define sipName_enterEvent &sipStrings_trikControl[1152]
+#define sipNameNr_leaveEvent 1163
+#define sipName_leaveEvent &sipStrings_trikControl[1163]
+#define sipNameNr_columnSpan 1174
+#define sipName_columnSpan &sipStrings_trikControl[1174]
+#define sipNameNr_constraint 1185
+#define sipName_constraint &sipStrings_trikControl[1185]
+#define sipNameNr_closeEvent 1196
+#define sipName_closeEvent &sipStrings_trikControl[1196]
+#define sipNameNr_repeatTime 1207
+#define sipName_repeatTime &sipStrings_trikControl[1207]
+#define sipNameNr_wheelEvent 1218
+#define sipName_wheelEvent &sipStrings_trikControl[1218]
+#define sipNameNr_paintEvent 1229
+#define sipName_paintEvent &sipStrings_trikControl[1229]
+#define sipNameNr_fieldWidth 1240
+#define sipName_fieldWidth &sipStrings_trikControl[1240]
+#define sipNameNr_childEvent 1251
+#define sipName_childEvent &sipStrings_trikControl[1251]
+#define sipNameNr_timerEvent 1262
+#define sipName_timerEvent &sipStrings_trikControl[1262]
+#define sipNameNr_playSound 1273
+#define sipName_playSound &sipStrings_trikControl[1273]
+#define sipNameNr_isPressed 1283
+#define sipName_isPressed &sipStrings_trikControl[1283]
+#define sipNameNr_showImage 1293
+#define sipName_showImage &sipStrings_trikControl[1293]
+#define sipNameNr_drawPoint 1303
+#define sipName_drawPoint &sipStrings_trikControl[1303]
+#define sipNameNr_operation 1313
+#define sipName_operation &sipStrings_trikControl[1313]
+#define sipNameNr_moveEvent 1323
+#define sipName_moveEvent &sipStrings_trikControl[1323]
+#define sipNameNr_lineWidth 1333
+#define sipName_lineWidth &sipStrings_trikControl[1333]
+#define sipNameNr_showEvent 1343
+#define sipName_showEvent &sipStrings_trikControl[1343]
+#define sipNameNr_hideEvent 1353
+#define sipName_hideEvent &sipStrings_trikControl[1353]
+#define sipNameNr_dropEvent 1363
+#define sipName_dropEvent &sipStrings_trikControl[1363]
+#define sipNameNr_directory 1373
+#define sipName_directory &sipStrings_trikControl[1373]
+#define sipNameNr_alignment 1383
+#define sipName_alignment &sipStrings_trikControl[1383]
+#define sipNameNr_receivers 1393
+#define sipName_receivers &sipStrings_trikControl[1393]
+#define sipNameNr_precision 1403
+#define sipName_precision &sipStrings_trikControl[1403]
+#define sipNameNr_powerOff 1413
+#define sipName_powerOff &sipStrings_trikControl[1413]
+#define sipNameNr_setPower 1422
+#define sipName_setPower &sipStrings_trikControl[1422]
+#define sipNameNr_addLabel 1431
+#define sipName_addLabel &sipStrings_trikControl[1431]
+#define sipNameNr_drawRect 1440
+#define sipName_drawRect &sipStrings_trikControl[1440]
+#define sipNameNr_drawLine 1449
+#define sipName_drawLine &sipStrings_trikControl[1449]
+#define sipNameNr_fillRule 1458
+#define sipName_fillRule &sipStrings_trikControl[1458]
+#define sipNameNr_tabArray 1467
+#define sipName_tabArray &sipStrings_trikControl[1467]
+#define sipNameNr_tabStops 1476
+#define sipName_tabStops &sipStrings_trikControl[1476]
+#define sipNameNr_userData 1485
+#define sipName_userData &sipStrings_trikControl[1485]
+#define sipNameNr_shortcut 1494
+#define sipName_shortcut &sipStrings_trikControl[1494]
+#define sipNameNr_behavior 1503
+#define sipName_behavior &sipStrings_trikControl[1503]
+#define sipNameNr_position 1512
+#define sipName_position &sipStrings_trikControl[1512]
+#define sipNameNr_fillChar 1521
+#define sipName_fillChar &sipStrings_trikControl[1521]
+#define sipNameNr_property 1530
+#define sipName_property &sipStrings_trikControl[1530]
+#define sipNameNr_destroy 1539
+#define sipName_destroy &sipStrings_trikControl[1539]
+#define sipNameNr_exposed 1547
+#define sipName_exposed &sipStrings_trikControl[1547]
+#define sipNameNr_drawArc 1555
+#define sipName_drawArc &sipStrings_trikControl[1555]
+#define sipNameNr_button2 1563
+#define sipName_button2 &sipStrings_trikControl[1563]
+#define sipNameNr_button1 1571
+#define sipName_button1 &sipStrings_trikControl[1571]
+#define sipNameNr_quality 1579
+#define sipName_quality &sipStrings_trikControl[1579]
+#define sipNameNr_yMargin 1587
+#define sipName_yMargin &sipStrings_trikControl[1587]
+#define sipNameNr_xMargin 1595
+#define sipName_xMargin &sipStrings_trikControl[1595]
+#define sipNameNr_rowSpan 1603
+#define sipName_rowSpan &sipStrings_trikControl[1603]
+#define sipNameNr_caption 1611
+#define sipName_caption &sipStrings_trikControl[1611]
+#define sipNameNr_display 1619
+#define sipName_display &sipStrings_trikControl[1619]
+#define sipNameNr_options 1627
+#define sipName_options &sipStrings_trikControl[1627]
+#define sipNameNr_enabled 1635
+#define sipName_enabled &sipStrings_trikControl[1635]
+#define sipNameNr_filters 1643
+#define sipName_filters &sipStrings_trikControl[1643]
+#define sipNameNr_redraw 1651
+#define sipName_redraw &sipStrings_trikControl[1651]
+#define sipNameNr_yRound 1658
+#define sipName_yRound &sipStrings_trikControl[1658]
+#define sipNameNr_xRound 1665
+#define sipName_xRound &sipStrings_trikControl[1665]
+#define sipNameNr_metric 1672
+#define sipName_metric &sipStrings_trikControl[1672]
+#define sipNameNr_layers 1679
+#define sipName_layers &sipStrings_trikControl[1679]
+#define sipNameNr_window 1686
+#define sipName_window &sipStrings_trikControl[1686]
+#define sipNameNr_sunken 1693
+#define sipName_sunken &sipStrings_trikControl[1693]
+#define sipNameNr_option 1700
+#define sipName_option &sipStrings_trikControl[1700]
+#define sipNameNr_widget 1707
+#define sipName_widget &sipStrings_trikControl[1707]
+#define sipNameNr_proper 1714
+#define sipName_proper &sipStrings_trikControl[1714]
+#define sipNameNr_sender 1721
+#define sipName_sender &sipStrings_trikControl[1721]
+#define sipNameNr_value9 1728
+#define sipName_value9 &sipStrings_trikControl[1728]
+#define sipNameNr_value8 1735
+#define sipName_value8 &sipStrings_trikControl[1735]
+#define sipNameNr_value7 1742
+#define sipName_value7 &sipStrings_trikControl[1742]
+#define sipNameNr_value6 1749
+#define sipName_value6 &sipStrings_trikControl[1749]
+#define sipNameNr_value5 1756
+#define sipName_value5 &sipStrings_trikControl[1756]
+#define sipNameNr_value4 1763
+#define sipName_value4 &sipStrings_trikControl[1763]
+#define sipNameNr_value3 1770
+#define sipName_value3 &sipStrings_trikControl[1770]
+#define sipNameNr_value0 1777
+#define sipName_value0 &sipStrings_trikControl[1777]
+#define sipNameNr_system 1784
+#define sipName_system &sipStrings_trikControl[1784]
+#define sipNameNr_symbol 1791
+#define sipName_symbol &sipStrings_trikControl[1791]
+#define sipNameNr_suffix 1798
+#define sipName_suffix &sipStrings_trikControl[1798]
+#define sipNameNr_prefix 1805
+#define sipName_prefix &sipStrings_trikControl[1805]
+#define sipNameNr_format 1812
+#define sipName_format &sipStrings_trikControl[1812]
+#define sipNameNr_value2 1819
+#define sipName_value2 &sipStrings_trikControl[1819]
+#define sipNameNr_value1 1826
+#define sipName_value1 &sipStrings_trikControl[1826]
+#define sipNameNr_action 1833
+#define sipName_action &sipStrings_trikControl[1833]
+#define sipNameNr_column 1840
+#define sipName_column &sipStrings_trikControl[1840]
+#define sipNameNr_offset 1847
+#define sipName_offset &sipStrings_trikControl[1847]
+#define sipNameNr_create 1854
+#define sipName_create &sipStrings_trikControl[1854]
+#define sipNameNr_filter 1861
+#define sipName_filter &sipStrings_trikControl[1861]
+#define sipNameNr_object 1868
+#define sipName_object &sipStrings_trikControl[1868]
+#define sipNameNr_parent 1875
+#define sipName_parent &sipStrings_trikControl[1875]
+#define sipNameNr_motor 1882
+#define sipName_motor &sipStrings_trikControl[1882]
+#define sipNameNr_power 1888
+#define sipName_power &sipStrings_trikControl[1888]
+#define sipNameNr_brush 1894
+#define sipName_brush &sipStrings_trikControl[1894]
+#define sipNameNr_hints 1900
+#define sipName_hints &sipStrings_trikControl[1900]
+#define sipNameNr_clear 1906
+#define sipName_clear &sipStrings_trikControl[1906]
+#define sipNameNr_reset 1912
+#define sipName_reset &sipStrings_trikControl[1912]
+#define sipNameNr_flags 1918
+#define sipName_flags &sipStrings_trikControl[1918]
+#define sipNameNr_event 1924
+#define sipName_event &sipStrings_trikControl[1924]
+#define sipNameNr_msecs 1930
+#define sipName_msecs &sipStrings_trikControl[1930]
+#define sipNameNr_state 1936
+#define sipName_state &sipStrings_trikControl[1936]
+#define sipNameNr_hide 1942
+#define sipName_hide &sipStrings_trikControl[1942]
+#define sipNameNr_keys 1947
+#define sipName_keys &sipStrings_trikControl[1947]
+#define sipNameNr_mode 1952
+#define sipName_mode &sipStrings_trikControl[1952]
+#define sipNameNr_name 1957
+#define sipName_name &sipStrings_trikControl[1957]
 #define sipNameNr_Type 65
 #define sipName_Type &sipStrings_trikControl[65]
-#define sipNameNr_mode 1759
-#define sipName_mode &sipStrings_trikControl[1759]
-#define sipNameNr_name 1764
-#define sipName_name &sipStrings_trikControl[1764]
-#define sipNameNr_base 1769
-#define sipName_base &sipStrings_trikControl[1769]
-#define sipNameNr_fill 1774
-#define sipName_fill &sipStrings_trikControl[1774]
-#define sipNameNr_from 1779
-#define sipName_from &sipStrings_trikControl[1779]
-#define sipNameNr_sort 1784
-#define sipName_sort &sipStrings_trikControl[1784]
-#define sipNameNr_pen 1789
-#define sipName_pen &sipStrings_trikControl[1789]
-#define sipNameNr_pos 1793
-#define sipName_pos &sipStrings_trikControl[1793]
-#define sipNameNr_sw 1797
-#define sipName_sw &sipStrings_trikControl[1797]
-#define sipNameNr_sh 1697
-#define sipName_sh &sipStrings_trikControl[1697]
-#define sipNameNr_sy 1800
-#define sipName_sy &sipStrings_trikControl[1800]
-#define sipNameNr_sx 1803
-#define sipName_sx &sipStrings_trikControl[1803]
-#define sipNameNr_at 538
-#define sipName_at &sipStrings_trikControl[538]
+#define sipNameNr_base 1962
+#define sipName_base &sipStrings_trikControl[1962]
+#define sipNameNr_fill 1967
+#define sipName_fill &sipStrings_trikControl[1967]
+#define sipNameNr_from 1972
+#define sipName_from &sipStrings_trikControl[1972]
+#define sipNameNr_sort 1977
+#define sipName_sort &sipStrings_trikControl[1977]
+#define sipNameNr_pen 1982
+#define sipName_pen &sipStrings_trikControl[1982]
+#define sipNameNr_end 1986
+#define sipName_end &sipStrings_trikControl[1986]
+#define sipNameNr_pos 1990
+#define sipName_pos &sipStrings_trikControl[1990]
+#define sipNameNr_sw 1994
+#define sipName_sw &sipStrings_trikControl[1994]
+#define sipNameNr_sy 1997
+#define sipName_sy &sipStrings_trikControl[1997]
+#define sipNameNr_sx 2000
+#define sipName_sx &sipStrings_trikControl[2000]
+#define sipNameNr_sh 1897
+#define sipName_sh &sipStrings_trikControl[1897]
+#define sipNameNr_cs 1933
+#define sipName_cs &sipStrings_trikControl[1933]
 
 #define sipMalloc                   sipAPI_trikControl->api_malloc
 #define sipFree                     sipAPI_trikControl->api_free
@@ -513,284 +548,253 @@
 /* The strings used by this module. */
 extern const char sipStrings_trikControl[];
 
-#define sipType_QtMsgType              sipModuleAPI_trikControl_QtCore->em_types[419]
-#define sipEnum_QtMsgType              sipModuleAPI_trikControl_QtCore->em_types[419]->u.td_py_type
+#define sipType_QtMsgType              sipModuleAPI_trikControl_QtCore->em_types[359]
+#define sipEnum_QtMsgType              sipModuleAPI_trikControl_QtCore->em_types[359]->u.td_py_type
 
 #define sipType_trikControl              sipModuleAPI_trikControl.em_types[0]
 #define sipClass_trikControl             sipModuleAPI_trikControl.em_types[0]->u.td_wrapper_type
 
-extern pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl;
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl;
 
 #define sipType_trikControl_DisplayWidgetInterface              sipModuleAPI_trikControl.em_types[4]
 #define sipClass_trikControl_DisplayWidgetInterface             sipModuleAPI_trikControl.em_types[4]->u.td_wrapper_type
 
-extern pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayWidgetInterface;
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayWidgetInterface;
 
 #define sipType_trikControl_DisplayInterface              sipModuleAPI_trikControl.em_types[3]
 #define sipClass_trikControl_DisplayInterface             sipModuleAPI_trikControl.em_types[3]->u.td_wrapper_type
 
-extern pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayInterface;
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayInterface;
 
-#define sipType_trikControl_MotorInterface              sipModuleAPI_trikControl.em_types[5]
-#define sipClass_trikControl_MotorInterface             sipModuleAPI_trikControl.em_types[5]->u.td_wrapper_type
+#define sipType_trikControl_MotorInterface              sipModuleAPI_trikControl.em_types[6]
+#define sipClass_trikControl_MotorInterface             sipModuleAPI_trikControl.em_types[6]->u.td_wrapper_type
 
-#define sipType_trikControl_MotorInterface_Type              sipModuleAPI_trikControl.em_types[6]
-#define sipEnum_trikControl_MotorInterface_Type              sipModuleAPI_trikControl.em_types[6]->u.td_py_type
+#define sipType_trikControl_MotorInterface_Type              sipModuleAPI_trikControl.em_types[7]
+#define sipEnum_trikControl_MotorInterface_Type              sipModuleAPI_trikControl.em_types[7]->u.td_py_type
 
-extern pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_MotorInterface;
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_MotorInterface;
+
+#define sipType_trikControl_KeysInterface              sipModuleAPI_trikControl.em_types[5]
+#define sipClass_trikControl_KeysInterface             sipModuleAPI_trikControl.em_types[5]->u.td_wrapper_type
+
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_KeysInterface;
 
 #define sipType_trikControl_BrickInterface              sipModuleAPI_trikControl.em_types[2]
 #define sipClass_trikControl_BrickInterface             sipModuleAPI_trikControl.em_types[2]->u.td_wrapper_type
 
-extern pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_BrickInterface;
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_BrickInterface;
 
 #define sipType_trikControl_BrickFactory              sipModuleAPI_trikControl.em_types[1]
 #define sipClass_trikControl_BrickFactory             sipModuleAPI_trikControl.em_types[1]->u.td_wrapper_type
 
-extern pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_BrickFactory;
+extern pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_BrickFactory;
 
 /* The SIP API, this module's API and the APIs of any imported modules. */
 extern const sipAPIDef *sipAPI_trikControl;
 extern sipExportedModuleDef sipModuleAPI_trikControl;
 
+#define sipType_QSysInfo              sipModuleAPI_trikControl_QtCore->em_types[205]
+#define sipClass_QSysInfo             sipModuleAPI_trikControl_QtCore->em_types[205]->u.td_wrapper_type
+
+#define sipType_QSysInfo_Endian              sipModuleAPI_trikControl_QtCore->em_types[206]
+#define sipEnum_QSysInfo_Endian              sipModuleAPI_trikControl_QtCore->em_types[206]->u.td_py_type
+#define sipType_QSysInfo_Sizes              sipModuleAPI_trikControl_QtCore->em_types[207]
+#define sipEnum_QSysInfo_Sizes              sipModuleAPI_trikControl_QtCore->em_types[207]->u.td_py_type
+
 #if !defined(sipType_Qt)
-#define sipType_Qt              sipModuleAPI_trikControl_QtCore->em_types[314]
-#define sipClass_Qt             sipModuleAPI_trikControl_QtCore->em_types[314]->u.td_wrapper_type
+#define sipType_Qt              sipModuleAPI_trikControl_QtCore->em_types[273]
+#define sipClass_Qt             sipModuleAPI_trikControl_QtCore->em_types[273]->u.td_wrapper_type
 #endif
 
-#define sipType_Qt_EnterKeyType              sipModuleAPI_trikControl_QtCore->em_types[343]
-#define sipEnum_Qt_EnterKeyType              sipModuleAPI_trikControl_QtCore->em_types[343]->u.td_py_type
-#define sipType_Qt_ItemSelectionOperation              sipModuleAPI_trikControl_QtCore->em_types[366]
-#define sipEnum_Qt_ItemSelectionOperation              sipModuleAPI_trikControl_QtCore->em_types[366]->u.td_py_type
-#define sipType_Qt_TabFocusBehavior              sipModuleAPI_trikControl_QtCore->em_types[395]
-#define sipEnum_Qt_TabFocusBehavior              sipModuleAPI_trikControl_QtCore->em_types[395]->u.td_py_type
-#define sipType_Qt_MouseEventFlag              sipModuleAPI_trikControl_QtCore->em_types[377]
-#define sipEnum_Qt_MouseEventFlag              sipModuleAPI_trikControl_QtCore->em_types[377]->u.td_py_type
-#define sipType_Qt_MouseEventSource              sipModuleAPI_trikControl_QtCore->em_types[379]
-#define sipEnum_Qt_MouseEventSource              sipModuleAPI_trikControl_QtCore->em_types[379]->u.td_py_type
-#define sipType_Qt_ScrollPhase              sipModuleAPI_trikControl_QtCore->em_types[390]
-#define sipEnum_Qt_ScrollPhase              sipModuleAPI_trikControl_QtCore->em_types[390]->u.td_py_type
-#define sipType_Qt_NativeGestureType              sipModuleAPI_trikControl_QtCore->em_types[380]
-#define sipEnum_Qt_NativeGestureType              sipModuleAPI_trikControl_QtCore->em_types[380]->u.td_py_type
-#define sipType_Qt_Edge              sipModuleAPI_trikControl_QtCore->em_types[341]
-#define sipEnum_Qt_Edge              sipModuleAPI_trikControl_QtCore->em_types[341]->u.td_py_type
-#define sipType_Qt_ApplicationState              sipModuleAPI_trikControl_QtCore->em_types[319]
-#define sipEnum_Qt_ApplicationState              sipModuleAPI_trikControl_QtCore->em_types[319]->u.td_py_type
-#define sipType_Qt_HitTestAccuracy              sipModuleAPI_trikControl_QtCore->em_types[355]
-#define sipEnum_Qt_HitTestAccuracy              sipModuleAPI_trikControl_QtCore->em_types[355]->u.td_py_type
-#define sipType_Qt_WhiteSpaceMode              sipModuleAPI_trikControl_QtCore->em_types[411]
-#define sipEnum_Qt_WhiteSpaceMode              sipModuleAPI_trikControl_QtCore->em_types[411]->u.td_py_type
-#define sipType_Qt_FindChildOption              sipModuleAPI_trikControl_QtCore->em_types[346]
-#define sipEnum_Qt_FindChildOption              sipModuleAPI_trikControl_QtCore->em_types[346]->u.td_py_type
-#define sipType_Qt_ScreenOrientation              sipModuleAPI_trikControl_QtCore->em_types[387]
-#define sipEnum_Qt_ScreenOrientation              sipModuleAPI_trikControl_QtCore->em_types[387]->u.td_py_type
-#define sipType_Qt_CursorMoveStyle              sipModuleAPI_trikControl_QtCore->em_types[333]
-#define sipEnum_Qt_CursorMoveStyle              sipModuleAPI_trikControl_QtCore->em_types[333]->u.td_py_type
-#define sipType_Qt_NavigationMode              sipModuleAPI_trikControl_QtCore->em_types[381]
-#define sipEnum_Qt_NavigationMode              sipModuleAPI_trikControl_QtCore->em_types[381]->u.td_py_type
-#define sipType_Qt_GestureFlag              sipModuleAPI_trikControl_QtCore->em_types[350]
-#define sipEnum_Qt_GestureFlag              sipModuleAPI_trikControl_QtCore->em_types[350]->u.td_py_type
-#define sipType_Qt_GestureType              sipModuleAPI_trikControl_QtCore->em_types[353]
-#define sipEnum_Qt_GestureType              sipModuleAPI_trikControl_QtCore->em_types[353]->u.td_py_type
-#define sipType_Qt_GestureState              sipModuleAPI_trikControl_QtCore->em_types[352]
-#define sipEnum_Qt_GestureState              sipModuleAPI_trikControl_QtCore->em_types[352]->u.td_py_type
-#define sipType_Qt_TouchPointState              sipModuleAPI_trikControl_QtCore->em_types[407]
-#define sipEnum_Qt_TouchPointState              sipModuleAPI_trikControl_QtCore->em_types[407]->u.td_py_type
-#define sipType_Qt_CoordinateSystem              sipModuleAPI_trikControl_QtCore->em_types[331]
-#define sipEnum_Qt_CoordinateSystem              sipModuleAPI_trikControl_QtCore->em_types[331]->u.td_py_type
-#define sipType_Qt_AnchorPoint              sipModuleAPI_trikControl_QtCore->em_types[317]
-#define sipEnum_Qt_AnchorPoint              sipModuleAPI_trikControl_QtCore->em_types[317]->u.td_py_type
-#define sipType_Qt_InputMethodHint              sipModuleAPI_trikControl_QtCore->em_types[358]
-#define sipEnum_Qt_InputMethodHint              sipModuleAPI_trikControl_QtCore->em_types[358]->u.td_py_type
-#define sipType_Qt_TileRule              sipModuleAPI_trikControl_QtCore->em_types[401]
-#define sipEnum_Qt_TileRule              sipModuleAPI_trikControl_QtCore->em_types[401]->u.td_py_type
-#define sipType_Qt_WindowFrameSection              sipModuleAPI_trikControl_QtCore->em_types[414]
-#define sipEnum_Qt_WindowFrameSection              sipModuleAPI_trikControl_QtCore->em_types[414]->u.td_py_type
-#define sipType_Qt_SizeHint              sipModuleAPI_trikControl_QtCore->em_types[392]
-#define sipEnum_Qt_SizeHint              sipModuleAPI_trikControl_QtCore->em_types[392]->u.td_py_type
-#define sipType_Qt_SizeMode              sipModuleAPI_trikControl_QtCore->em_types[393]
-#define sipEnum_Qt_SizeMode              sipModuleAPI_trikControl_QtCore->em_types[393]->u.td_py_type
-#define sipType_Qt_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[344]
-#define sipEnum_Qt_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[344]->u.td_py_type
-#define sipType_Qt_Axis              sipModuleAPI_trikControl_QtCore->em_types[323]
-#define sipEnum_Qt_Axis              sipModuleAPI_trikControl_QtCore->em_types[323]->u.td_py_type
-#define sipType_Qt_MaskMode              sipModuleAPI_trikControl_QtCore->em_types[371]
-#define sipEnum_Qt_MaskMode              sipModuleAPI_trikControl_QtCore->em_types[371]->u.td_py_type
-#define sipType_Qt_TextInteractionFlag              sipModuleAPI_trikControl_QtCore->em_types[399]
-#define sipEnum_Qt_TextInteractionFlag              sipModuleAPI_trikControl_QtCore->em_types[399]->u.td_py_type
-#define sipType_Qt_ItemSelectionMode              sipModuleAPI_trikControl_QtCore->em_types[365]
-#define sipEnum_Qt_ItemSelectionMode              sipModuleAPI_trikControl_QtCore->em_types[365]->u.td_py_type
-#define sipType_Qt_ApplicationAttribute              sipModuleAPI_trikControl_QtCore->em_types[318]
-#define sipEnum_Qt_ApplicationAttribute              sipModuleAPI_trikControl_QtCore->em_types[318]->u.td_py_type
-#define sipType_Qt_WindowModality              sipModuleAPI_trikControl_QtCore->em_types[415]
-#define sipEnum_Qt_WindowModality              sipModuleAPI_trikControl_QtCore->em_types[415]->u.td_py_type
-#define sipType_Qt_MatchFlag              sipModuleAPI_trikControl_QtCore->em_types[372]
-#define sipEnum_Qt_MatchFlag              sipModuleAPI_trikControl_QtCore->em_types[372]->u.td_py_type
-#define sipType_Qt_ItemFlag              sipModuleAPI_trikControl_QtCore->em_types[363]
-#define sipEnum_Qt_ItemFlag              sipModuleAPI_trikControl_QtCore->em_types[363]->u.td_py_type
-#define sipType_Qt_ItemDataRole              sipModuleAPI_trikControl_QtCore->em_types[362]
-#define sipEnum_Qt_ItemDataRole              sipModuleAPI_trikControl_QtCore->em_types[362]->u.td_py_type
-#define sipType_Qt_CheckState              sipModuleAPI_trikControl_QtCore->em_types[327]
-#define sipEnum_Qt_CheckState              sipModuleAPI_trikControl_QtCore->em_types[327]->u.td_py_type
-#define sipType_Qt_DropAction              sipModuleAPI_trikControl_QtCore->em_types[339]
-#define sipEnum_Qt_DropAction              sipModuleAPI_trikControl_QtCore->em_types[339]->u.td_py_type
-#define sipType_Qt_LayoutDirection              sipModuleAPI_trikControl_QtCore->em_types[370]
-#define sipEnum_Qt_LayoutDirection              sipModuleAPI_trikControl_QtCore->em_types[370]->u.td_py_type
-#define sipType_Qt_ToolButtonStyle              sipModuleAPI_trikControl_QtCore->em_types[406]
-#define sipEnum_Qt_ToolButtonStyle              sipModuleAPI_trikControl_QtCore->em_types[406]->u.td_py_type
-#define sipType_Qt_InputMethodQuery              sipModuleAPI_trikControl_QtCore->em_types[361]
-#define sipEnum_Qt_InputMethodQuery              sipModuleAPI_trikControl_QtCore->em_types[361]->u.td_py_type
-#define sipType_Qt_ContextMenuPolicy              sipModuleAPI_trikControl_QtCore->em_types[330]
-#define sipEnum_Qt_ContextMenuPolicy              sipModuleAPI_trikControl_QtCore->em_types[330]->u.td_py_type
-#define sipType_Qt_FocusReason              sipModuleAPI_trikControl_QtCore->em_types[349]
-#define sipEnum_Qt_FocusReason              sipModuleAPI_trikControl_QtCore->em_types[349]->u.td_py_type
-#define sipType_Qt_TransformationMode              sipModuleAPI_trikControl_QtCore->em_types[409]
-#define sipEnum_Qt_TransformationMode              sipModuleAPI_trikControl_QtCore->em_types[409]->u.td_py_type
-#define sipType_Qt_ClipOperation              sipModuleAPI_trikControl_QtCore->em_types[328]
-#define sipEnum_Qt_ClipOperation              sipModuleAPI_trikControl_QtCore->em_types[328]->u.td_py_type
-#define sipType_Qt_FillRule              sipModuleAPI_trikControl_QtCore->em_types[345]
-#define sipEnum_Qt_FillRule              sipModuleAPI_trikControl_QtCore->em_types[345]->u.td_py_type
-#define sipType_Qt_ShortcutContext              sipModuleAPI_trikControl_QtCore->em_types[391]
-#define sipEnum_Qt_ShortcutContext              sipModuleAPI_trikControl_QtCore->em_types[391]->u.td_py_type
-#define sipType_Qt_ConnectionType              sipModuleAPI_trikControl_QtCore->em_types[329]
-#define sipEnum_Qt_ConnectionType              sipModuleAPI_trikControl_QtCore->em_types[329]->u.td_py_type
-#define sipType_Qt_Corner              sipModuleAPI_trikControl_QtCore->em_types[332]
-#define sipEnum_Qt_Corner              sipModuleAPI_trikControl_QtCore->em_types[332]->u.td_py_type
-#define sipType_Qt_CaseSensitivity              sipModuleAPI_trikControl_QtCore->em_types[326]
-#define sipEnum_Qt_CaseSensitivity              sipModuleAPI_trikControl_QtCore->em_types[326]->u.td_py_type
-#define sipType_Qt_ScrollBarPolicy              sipModuleAPI_trikControl_QtCore->em_types[389]
-#define sipEnum_Qt_ScrollBarPolicy              sipModuleAPI_trikControl_QtCore->em_types[389]->u.td_py_type
-#define sipType_Qt_DayOfWeek              sipModuleAPI_trikControl_QtCore->em_types[336]
-#define sipEnum_Qt_DayOfWeek              sipModuleAPI_trikControl_QtCore->em_types[336]->u.td_py_type
-#define sipType_Qt_TimeSpec              sipModuleAPI_trikControl_QtCore->em_types[402]
-#define sipEnum_Qt_TimeSpec              sipModuleAPI_trikControl_QtCore->em_types[402]->u.td_py_type
-#define sipType_Qt_DateFormat              sipModuleAPI_trikControl_QtCore->em_types[335]
-#define sipEnum_Qt_DateFormat              sipModuleAPI_trikControl_QtCore->em_types[335]->u.td_py_type
-#define sipType_Qt_ToolBarArea              sipModuleAPI_trikControl_QtCore->em_types[404]
-#define sipEnum_Qt_ToolBarArea              sipModuleAPI_trikControl_QtCore->em_types[404]->u.td_py_type
-#define sipType_Qt_TimerType              sipModuleAPI_trikControl_QtCore->em_types[403]
-#define sipEnum_Qt_TimerType              sipModuleAPI_trikControl_QtCore->em_types[403]->u.td_py_type
-#define sipType_Qt_DockWidgetArea              sipModuleAPI_trikControl_QtCore->em_types[337]
-#define sipEnum_Qt_DockWidgetArea              sipModuleAPI_trikControl_QtCore->em_types[337]->u.td_py_type
-#define sipType_Qt_AspectRatioMode              sipModuleAPI_trikControl_QtCore->em_types[322]
-#define sipEnum_Qt_AspectRatioMode              sipModuleAPI_trikControl_QtCore->em_types[322]->u.td_py_type
-#define sipType_Qt_TextFormat              sipModuleAPI_trikControl_QtCore->em_types[398]
-#define sipEnum_Qt_TextFormat              sipModuleAPI_trikControl_QtCore->em_types[398]->u.td_py_type
-#define sipType_Qt_CursorShape              sipModuleAPI_trikControl_QtCore->em_types[334]
-#define sipEnum_Qt_CursorShape              sipModuleAPI_trikControl_QtCore->em_types[334]->u.td_py_type
-#define sipType_Qt_UIEffect              sipModuleAPI_trikControl_QtCore->em_types[410]
-#define sipEnum_Qt_UIEffect              sipModuleAPI_trikControl_QtCore->em_types[410]->u.td_py_type
-#define sipType_Qt_BrushStyle              sipModuleAPI_trikControl_QtCore->em_types[325]
-#define sipEnum_Qt_BrushStyle              sipModuleAPI_trikControl_QtCore->em_types[325]->u.td_py_type
-#define sipType_Qt_PenJoinStyle              sipModuleAPI_trikControl_QtCore->em_types[385]
-#define sipEnum_Qt_PenJoinStyle              sipModuleAPI_trikControl_QtCore->em_types[385]->u.td_py_type
-#define sipType_Qt_PenCapStyle              sipModuleAPI_trikControl_QtCore->em_types[384]
-#define sipEnum_Qt_PenCapStyle              sipModuleAPI_trikControl_QtCore->em_types[384]->u.td_py_type
-#define sipType_Qt_PenStyle              sipModuleAPI_trikControl_QtCore->em_types[386]
-#define sipEnum_Qt_PenStyle              sipModuleAPI_trikControl_QtCore->em_types[386]->u.td_py_type
-#define sipType_Qt_ArrowType              sipModuleAPI_trikControl_QtCore->em_types[321]
-#define sipEnum_Qt_ArrowType              sipModuleAPI_trikControl_QtCore->em_types[321]->u.td_py_type
-#define sipType_Qt_Key              sipModuleAPI_trikControl_QtCore->em_types[367]
-#define sipEnum_Qt_Key              sipModuleAPI_trikControl_QtCore->em_types[367]->u.td_py_type
-#define sipType_Qt_BGMode              sipModuleAPI_trikControl_QtCore->em_types[324]
-#define sipEnum_Qt_BGMode              sipModuleAPI_trikControl_QtCore->em_types[324]->u.td_py_type
-#define sipType_Qt_ImageConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[356]
-#define sipEnum_Qt_ImageConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[356]->u.td_py_type
-#define sipType_Qt_WidgetAttribute              sipModuleAPI_trikControl_QtCore->em_types[412]
-#define sipEnum_Qt_WidgetAttribute              sipModuleAPI_trikControl_QtCore->em_types[412]->u.td_py_type
-#define sipType_Qt_WindowState              sipModuleAPI_trikControl_QtCore->em_types[416]
-#define sipEnum_Qt_WindowState              sipModuleAPI_trikControl_QtCore->em_types[416]->u.td_py_type
-#define sipType_Qt_WindowType              sipModuleAPI_trikControl_QtCore->em_types[418]
-#define sipEnum_Qt_WindowType              sipModuleAPI_trikControl_QtCore->em_types[418]->u.td_py_type
-#define sipType_Qt_TextElideMode              sipModuleAPI_trikControl_QtCore->em_types[396]
-#define sipEnum_Qt_TextElideMode              sipModuleAPI_trikControl_QtCore->em_types[396]->u.td_py_type
-#define sipType_Qt_TextFlag              sipModuleAPI_trikControl_QtCore->em_types[397]
-#define sipEnum_Qt_TextFlag              sipModuleAPI_trikControl_QtCore->em_types[397]->u.td_py_type
-#define sipType_Qt_AlignmentFlag              sipModuleAPI_trikControl_QtCore->em_types[316]
-#define sipEnum_Qt_AlignmentFlag              sipModuleAPI_trikControl_QtCore->em_types[316]->u.td_py_type
-#define sipType_Qt_SortOrder              sipModuleAPI_trikControl_QtCore->em_types[394]
-#define sipEnum_Qt_SortOrder              sipModuleAPI_trikControl_QtCore->em_types[394]->u.td_py_type
-#define sipType_Qt_FocusPolicy              sipModuleAPI_trikControl_QtCore->em_types[348]
-#define sipEnum_Qt_FocusPolicy              sipModuleAPI_trikControl_QtCore->em_types[348]->u.td_py_type
-#define sipType_Qt_Orientation              sipModuleAPI_trikControl_QtCore->em_types[382]
-#define sipEnum_Qt_Orientation              sipModuleAPI_trikControl_QtCore->em_types[382]->u.td_py_type
-#define sipType_Qt_MouseButton              sipModuleAPI_trikControl_QtCore->em_types[375]
-#define sipEnum_Qt_MouseButton              sipModuleAPI_trikControl_QtCore->em_types[375]->u.td_py_type
-#define sipType_Qt_Modifier              sipModuleAPI_trikControl_QtCore->em_types[374]
-#define sipEnum_Qt_Modifier              sipModuleAPI_trikControl_QtCore->em_types[374]->u.td_py_type
-#define sipType_Qt_KeyboardModifier              sipModuleAPI_trikControl_QtCore->em_types[368]
-#define sipEnum_Qt_KeyboardModifier              sipModuleAPI_trikControl_QtCore->em_types[368]->u.td_py_type
-#define sipType_Qt_GlobalColor              sipModuleAPI_trikControl_QtCore->em_types[354]
-#define sipEnum_Qt_GlobalColor              sipModuleAPI_trikControl_QtCore->em_types[354]->u.td_py_type
+#define sipType_Qt_CursorMoveStyle              sipModuleAPI_trikControl_QtCore->em_types[291]
+#define sipEnum_Qt_CursorMoveStyle              sipModuleAPI_trikControl_QtCore->em_types[291]->u.td_py_type
+#define sipType_Qt_NavigationMode              sipModuleAPI_trikControl_QtCore->em_types[327]
+#define sipEnum_Qt_NavigationMode              sipModuleAPI_trikControl_QtCore->em_types[327]->u.td_py_type
+#define sipType_Qt_GestureFlag              sipModuleAPI_trikControl_QtCore->em_types[303]
+#define sipEnum_Qt_GestureFlag              sipModuleAPI_trikControl_QtCore->em_types[303]->u.td_py_type
+#define sipType_Qt_GestureType              sipModuleAPI_trikControl_QtCore->em_types[306]
+#define sipEnum_Qt_GestureType              sipModuleAPI_trikControl_QtCore->em_types[306]->u.td_py_type
+#define sipType_Qt_GestureState              sipModuleAPI_trikControl_QtCore->em_types[305]
+#define sipEnum_Qt_GestureState              sipModuleAPI_trikControl_QtCore->em_types[305]->u.td_py_type
+#define sipType_Qt_TouchPointState              sipModuleAPI_trikControl_QtCore->em_types[348]
+#define sipEnum_Qt_TouchPointState              sipModuleAPI_trikControl_QtCore->em_types[348]->u.td_py_type
+#define sipType_Qt_CoordinateSystem              sipModuleAPI_trikControl_QtCore->em_types[289]
+#define sipEnum_Qt_CoordinateSystem              sipModuleAPI_trikControl_QtCore->em_types[289]->u.td_py_type
+#define sipType_Qt_AnchorPoint              sipModuleAPI_trikControl_QtCore->em_types[277]
+#define sipEnum_Qt_AnchorPoint              sipModuleAPI_trikControl_QtCore->em_types[277]->u.td_py_type
+#define sipType_Qt_InputMethodHint              sipModuleAPI_trikControl_QtCore->em_types[310]
+#define sipEnum_Qt_InputMethodHint              sipModuleAPI_trikControl_QtCore->em_types[310]->u.td_py_type
+#define sipType_Qt_TileRule              sipModuleAPI_trikControl_QtCore->em_types[343]
+#define sipEnum_Qt_TileRule              sipModuleAPI_trikControl_QtCore->em_types[343]->u.td_py_type
+#define sipType_Qt_WindowFrameSection              sipModuleAPI_trikControl_QtCore->em_types[354]
+#define sipEnum_Qt_WindowFrameSection              sipModuleAPI_trikControl_QtCore->em_types[354]->u.td_py_type
+#define sipType_Qt_SizeHint              sipModuleAPI_trikControl_QtCore->em_types[335]
+#define sipEnum_Qt_SizeHint              sipModuleAPI_trikControl_QtCore->em_types[335]->u.td_py_type
+#define sipType_Qt_SizeMode              sipModuleAPI_trikControl_QtCore->em_types[336]
+#define sipEnum_Qt_SizeMode              sipModuleAPI_trikControl_QtCore->em_types[336]->u.td_py_type
+#define sipType_Qt_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[299]
+#define sipEnum_Qt_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[299]->u.td_py_type
+#define sipType_Qt_Axis              sipModuleAPI_trikControl_QtCore->em_types[281]
+#define sipEnum_Qt_Axis              sipModuleAPI_trikControl_QtCore->em_types[281]->u.td_py_type
+#define sipType_Qt_MaskMode              sipModuleAPI_trikControl_QtCore->em_types[321]
+#define sipEnum_Qt_MaskMode              sipModuleAPI_trikControl_QtCore->em_types[321]->u.td_py_type
+#define sipType_Qt_TextInteractionFlag              sipModuleAPI_trikControl_QtCore->em_types[341]
+#define sipEnum_Qt_TextInteractionFlag              sipModuleAPI_trikControl_QtCore->em_types[341]->u.td_py_type
+#define sipType_Qt_ItemSelectionMode              sipModuleAPI_trikControl_QtCore->em_types[316]
+#define sipEnum_Qt_ItemSelectionMode              sipModuleAPI_trikControl_QtCore->em_types[316]->u.td_py_type
+#define sipType_Qt_ApplicationAttribute              sipModuleAPI_trikControl_QtCore->em_types[278]
+#define sipEnum_Qt_ApplicationAttribute              sipModuleAPI_trikControl_QtCore->em_types[278]->u.td_py_type
+#define sipType_Qt_WindowModality              sipModuleAPI_trikControl_QtCore->em_types[355]
+#define sipEnum_Qt_WindowModality              sipModuleAPI_trikControl_QtCore->em_types[355]->u.td_py_type
+#define sipType_Qt_MatchFlag              sipModuleAPI_trikControl_QtCore->em_types[322]
+#define sipEnum_Qt_MatchFlag              sipModuleAPI_trikControl_QtCore->em_types[322]->u.td_py_type
+#define sipType_Qt_ItemFlag              sipModuleAPI_trikControl_QtCore->em_types[314]
+#define sipEnum_Qt_ItemFlag              sipModuleAPI_trikControl_QtCore->em_types[314]->u.td_py_type
+#define sipType_Qt_ItemDataRole              sipModuleAPI_trikControl_QtCore->em_types[313]
+#define sipEnum_Qt_ItemDataRole              sipModuleAPI_trikControl_QtCore->em_types[313]->u.td_py_type
+#define sipType_Qt_CheckState              sipModuleAPI_trikControl_QtCore->em_types[285]
+#define sipEnum_Qt_CheckState              sipModuleAPI_trikControl_QtCore->em_types[285]->u.td_py_type
+#define sipType_Qt_DropAction              sipModuleAPI_trikControl_QtCore->em_types[297]
+#define sipEnum_Qt_DropAction              sipModuleAPI_trikControl_QtCore->em_types[297]->u.td_py_type
+#define sipType_Qt_LayoutDirection              sipModuleAPI_trikControl_QtCore->em_types[320]
+#define sipEnum_Qt_LayoutDirection              sipModuleAPI_trikControl_QtCore->em_types[320]->u.td_py_type
+#define sipType_Qt_ToolButtonStyle              sipModuleAPI_trikControl_QtCore->em_types[347]
+#define sipEnum_Qt_ToolButtonStyle              sipModuleAPI_trikControl_QtCore->em_types[347]->u.td_py_type
+#define sipType_Qt_InputMethodQuery              sipModuleAPI_trikControl_QtCore->em_types[312]
+#define sipEnum_Qt_InputMethodQuery              sipModuleAPI_trikControl_QtCore->em_types[312]->u.td_py_type
+#define sipType_Qt_ContextMenuPolicy              sipModuleAPI_trikControl_QtCore->em_types[288]
+#define sipEnum_Qt_ContextMenuPolicy              sipModuleAPI_trikControl_QtCore->em_types[288]->u.td_py_type
+#define sipType_Qt_FocusReason              sipModuleAPI_trikControl_QtCore->em_types[302]
+#define sipEnum_Qt_FocusReason              sipModuleAPI_trikControl_QtCore->em_types[302]->u.td_py_type
+#define sipType_Qt_TransformationMode              sipModuleAPI_trikControl_QtCore->em_types[350]
+#define sipEnum_Qt_TransformationMode              sipModuleAPI_trikControl_QtCore->em_types[350]->u.td_py_type
+#define sipType_Qt_ClipOperation              sipModuleAPI_trikControl_QtCore->em_types[286]
+#define sipEnum_Qt_ClipOperation              sipModuleAPI_trikControl_QtCore->em_types[286]->u.td_py_type
+#define sipType_Qt_FillRule              sipModuleAPI_trikControl_QtCore->em_types[300]
+#define sipEnum_Qt_FillRule              sipModuleAPI_trikControl_QtCore->em_types[300]->u.td_py_type
+#define sipType_Qt_ShortcutContext              sipModuleAPI_trikControl_QtCore->em_types[334]
+#define sipEnum_Qt_ShortcutContext              sipModuleAPI_trikControl_QtCore->em_types[334]->u.td_py_type
+#define sipType_Qt_ConnectionType              sipModuleAPI_trikControl_QtCore->em_types[287]
+#define sipEnum_Qt_ConnectionType              sipModuleAPI_trikControl_QtCore->em_types[287]->u.td_py_type
+#define sipType_Qt_Corner              sipModuleAPI_trikControl_QtCore->em_types[290]
+#define sipEnum_Qt_Corner              sipModuleAPI_trikControl_QtCore->em_types[290]->u.td_py_type
+#define sipType_Qt_CaseSensitivity              sipModuleAPI_trikControl_QtCore->em_types[284]
+#define sipEnum_Qt_CaseSensitivity              sipModuleAPI_trikControl_QtCore->em_types[284]->u.td_py_type
+#define sipType_Qt_ScrollBarPolicy              sipModuleAPI_trikControl_QtCore->em_types[333]
+#define sipEnum_Qt_ScrollBarPolicy              sipModuleAPI_trikControl_QtCore->em_types[333]->u.td_py_type
+#define sipType_Qt_DayOfWeek              sipModuleAPI_trikControl_QtCore->em_types[294]
+#define sipEnum_Qt_DayOfWeek              sipModuleAPI_trikControl_QtCore->em_types[294]->u.td_py_type
+#define sipType_Qt_TimeSpec              sipModuleAPI_trikControl_QtCore->em_types[344]
+#define sipEnum_Qt_TimeSpec              sipModuleAPI_trikControl_QtCore->em_types[344]->u.td_py_type
+#define sipType_Qt_DateFormat              sipModuleAPI_trikControl_QtCore->em_types[293]
+#define sipEnum_Qt_DateFormat              sipModuleAPI_trikControl_QtCore->em_types[293]->u.td_py_type
+#define sipType_Qt_ToolBarArea              sipModuleAPI_trikControl_QtCore->em_types[345]
+#define sipEnum_Qt_ToolBarArea              sipModuleAPI_trikControl_QtCore->em_types[345]->u.td_py_type
+#define sipType_Qt_DockWidgetArea              sipModuleAPI_trikControl_QtCore->em_types[295]
+#define sipEnum_Qt_DockWidgetArea              sipModuleAPI_trikControl_QtCore->em_types[295]->u.td_py_type
+#define sipType_Qt_AnchorAttribute              sipModuleAPI_trikControl_QtCore->em_types[276]
+#define sipEnum_Qt_AnchorAttribute              sipModuleAPI_trikControl_QtCore->em_types[276]->u.td_py_type
+#define sipType_Qt_AspectRatioMode              sipModuleAPI_trikControl_QtCore->em_types[280]
+#define sipEnum_Qt_AspectRatioMode              sipModuleAPI_trikControl_QtCore->em_types[280]->u.td_py_type
+#define sipType_Qt_TextFormat              sipModuleAPI_trikControl_QtCore->em_types[340]
+#define sipEnum_Qt_TextFormat              sipModuleAPI_trikControl_QtCore->em_types[340]->u.td_py_type
+#define sipType_Qt_CursorShape              sipModuleAPI_trikControl_QtCore->em_types[292]
+#define sipEnum_Qt_CursorShape              sipModuleAPI_trikControl_QtCore->em_types[292]->u.td_py_type
+#define sipType_Qt_UIEffect              sipModuleAPI_trikControl_QtCore->em_types[351]
+#define sipEnum_Qt_UIEffect              sipModuleAPI_trikControl_QtCore->em_types[351]->u.td_py_type
+#define sipType_Qt_BrushStyle              sipModuleAPI_trikControl_QtCore->em_types[283]
+#define sipEnum_Qt_BrushStyle              sipModuleAPI_trikControl_QtCore->em_types[283]->u.td_py_type
+#define sipType_Qt_PenJoinStyle              sipModuleAPI_trikControl_QtCore->em_types[331]
+#define sipEnum_Qt_PenJoinStyle              sipModuleAPI_trikControl_QtCore->em_types[331]->u.td_py_type
+#define sipType_Qt_PenCapStyle              sipModuleAPI_trikControl_QtCore->em_types[330]
+#define sipEnum_Qt_PenCapStyle              sipModuleAPI_trikControl_QtCore->em_types[330]->u.td_py_type
+#define sipType_Qt_PenStyle              sipModuleAPI_trikControl_QtCore->em_types[332]
+#define sipEnum_Qt_PenStyle              sipModuleAPI_trikControl_QtCore->em_types[332]->u.td_py_type
+#define sipType_Qt_ArrowType              sipModuleAPI_trikControl_QtCore->em_types[279]
+#define sipEnum_Qt_ArrowType              sipModuleAPI_trikControl_QtCore->em_types[279]->u.td_py_type
+#define sipType_Qt_Key              sipModuleAPI_trikControl_QtCore->em_types[317]
+#define sipEnum_Qt_Key              sipModuleAPI_trikControl_QtCore->em_types[317]->u.td_py_type
+#define sipType_Qt_BGMode              sipModuleAPI_trikControl_QtCore->em_types[282]
+#define sipEnum_Qt_BGMode              sipModuleAPI_trikControl_QtCore->em_types[282]->u.td_py_type
+#define sipType_Qt_ImageConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[308]
+#define sipEnum_Qt_ImageConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[308]->u.td_py_type
+#define sipType_Qt_WidgetAttribute              sipModuleAPI_trikControl_QtCore->em_types[352]
+#define sipEnum_Qt_WidgetAttribute              sipModuleAPI_trikControl_QtCore->em_types[352]->u.td_py_type
+#define sipType_Qt_WindowState              sipModuleAPI_trikControl_QtCore->em_types[356]
+#define sipEnum_Qt_WindowState              sipModuleAPI_trikControl_QtCore->em_types[356]->u.td_py_type
+#define sipType_Qt_WindowType              sipModuleAPI_trikControl_QtCore->em_types[358]
+#define sipEnum_Qt_WindowType              sipModuleAPI_trikControl_QtCore->em_types[358]->u.td_py_type
+#define sipType_Qt_TextElideMode              sipModuleAPI_trikControl_QtCore->em_types[338]
+#define sipEnum_Qt_TextElideMode              sipModuleAPI_trikControl_QtCore->em_types[338]->u.td_py_type
+#define sipType_Qt_TextFlag              sipModuleAPI_trikControl_QtCore->em_types[339]
+#define sipEnum_Qt_TextFlag              sipModuleAPI_trikControl_QtCore->em_types[339]->u.td_py_type
+#define sipType_Qt_AlignmentFlag              sipModuleAPI_trikControl_QtCore->em_types[275]
+#define sipEnum_Qt_AlignmentFlag              sipModuleAPI_trikControl_QtCore->em_types[275]->u.td_py_type
+#define sipType_Qt_SortOrder              sipModuleAPI_trikControl_QtCore->em_types[337]
+#define sipEnum_Qt_SortOrder              sipModuleAPI_trikControl_QtCore->em_types[337]->u.td_py_type
+#define sipType_Qt_FocusPolicy              sipModuleAPI_trikControl_QtCore->em_types[301]
+#define sipEnum_Qt_FocusPolicy              sipModuleAPI_trikControl_QtCore->em_types[301]->u.td_py_type
+#define sipType_Qt_Orientation              sipModuleAPI_trikControl_QtCore->em_types[328]
+#define sipEnum_Qt_Orientation              sipModuleAPI_trikControl_QtCore->em_types[328]->u.td_py_type
+#define sipType_Qt_MouseButton              sipModuleAPI_trikControl_QtCore->em_types[325]
+#define sipEnum_Qt_MouseButton              sipModuleAPI_trikControl_QtCore->em_types[325]->u.td_py_type
+#define sipType_Qt_Modifier              sipModuleAPI_trikControl_QtCore->em_types[324]
+#define sipEnum_Qt_Modifier              sipModuleAPI_trikControl_QtCore->em_types[324]->u.td_py_type
+#define sipType_Qt_KeyboardModifier              sipModuleAPI_trikControl_QtCore->em_types[318]
+#define sipEnum_Qt_KeyboardModifier              sipModuleAPI_trikControl_QtCore->em_types[318]->u.td_py_type
+#define sipType_Qt_GlobalColor              sipModuleAPI_trikControl_QtCore->em_types[307]
+#define sipEnum_Qt_GlobalColor              sipModuleAPI_trikControl_QtCore->em_types[307]->u.td_py_type
 
-#define sipType_Qt_KeyboardModifiers              sipModuleAPI_trikControl_QtCore->em_types[369]
-#define sipClass_Qt_KeyboardModifiers             sipModuleAPI_trikControl_QtCore->em_types[369]->u.td_wrapper_type
+#define sipType_Qt_KeyboardModifiers              sipModuleAPI_trikControl_QtCore->em_types[319]
+#define sipClass_Qt_KeyboardModifiers             sipModuleAPI_trikControl_QtCore->em_types[319]->u.td_wrapper_type
 
-#define sipType_Qt_MouseButtons              sipModuleAPI_trikControl_QtCore->em_types[376]
-#define sipClass_Qt_MouseButtons             sipModuleAPI_trikControl_QtCore->em_types[376]->u.td_wrapper_type
+#define sipType_Qt_MouseButtons              sipModuleAPI_trikControl_QtCore->em_types[326]
+#define sipClass_Qt_MouseButtons             sipModuleAPI_trikControl_QtCore->em_types[326]->u.td_wrapper_type
 
-#define sipType_Qt_Orientations              sipModuleAPI_trikControl_QtCore->em_types[383]
-#define sipClass_Qt_Orientations             sipModuleAPI_trikControl_QtCore->em_types[383]->u.td_wrapper_type
+#define sipType_Qt_Orientations              sipModuleAPI_trikControl_QtCore->em_types[329]
+#define sipClass_Qt_Orientations             sipModuleAPI_trikControl_QtCore->em_types[329]->u.td_wrapper_type
 
-#define sipType_Qt_Alignment              sipModuleAPI_trikControl_QtCore->em_types[315]
-#define sipClass_Qt_Alignment             sipModuleAPI_trikControl_QtCore->em_types[315]->u.td_wrapper_type
+#define sipType_Qt_Alignment              sipModuleAPI_trikControl_QtCore->em_types[274]
+#define sipClass_Qt_Alignment             sipModuleAPI_trikControl_QtCore->em_types[274]->u.td_wrapper_type
 
-#define sipType_Qt_WindowFlags              sipModuleAPI_trikControl_QtCore->em_types[413]
-#define sipClass_Qt_WindowFlags             sipModuleAPI_trikControl_QtCore->em_types[413]->u.td_wrapper_type
+#define sipType_Qt_WindowFlags              sipModuleAPI_trikControl_QtCore->em_types[353]
+#define sipClass_Qt_WindowFlags             sipModuleAPI_trikControl_QtCore->em_types[353]->u.td_wrapper_type
 
-#define sipType_Qt_WindowStates              sipModuleAPI_trikControl_QtCore->em_types[417]
-#define sipClass_Qt_WindowStates             sipModuleAPI_trikControl_QtCore->em_types[417]->u.td_wrapper_type
+#define sipType_Qt_WindowStates              sipModuleAPI_trikControl_QtCore->em_types[357]
+#define sipClass_Qt_WindowStates             sipModuleAPI_trikControl_QtCore->em_types[357]->u.td_wrapper_type
 
-#define sipType_Qt_ImageConversionFlags              sipModuleAPI_trikControl_QtCore->em_types[357]
-#define sipClass_Qt_ImageConversionFlags             sipModuleAPI_trikControl_QtCore->em_types[357]->u.td_wrapper_type
+#define sipType_Qt_ImageConversionFlags              sipModuleAPI_trikControl_QtCore->em_types[309]
+#define sipClass_Qt_ImageConversionFlags             sipModuleAPI_trikControl_QtCore->em_types[309]->u.td_wrapper_type
 
-#define sipType_Qt_DockWidgetAreas              sipModuleAPI_trikControl_QtCore->em_types[338]
-#define sipClass_Qt_DockWidgetAreas             sipModuleAPI_trikControl_QtCore->em_types[338]->u.td_wrapper_type
+#define sipType_Qt_DockWidgetAreas              sipModuleAPI_trikControl_QtCore->em_types[296]
+#define sipClass_Qt_DockWidgetAreas             sipModuleAPI_trikControl_QtCore->em_types[296]->u.td_wrapper_type
 
-#define sipType_Qt_ToolBarAreas              sipModuleAPI_trikControl_QtCore->em_types[405]
-#define sipClass_Qt_ToolBarAreas             sipModuleAPI_trikControl_QtCore->em_types[405]->u.td_wrapper_type
+#define sipType_Qt_ToolBarAreas              sipModuleAPI_trikControl_QtCore->em_types[346]
+#define sipClass_Qt_ToolBarAreas             sipModuleAPI_trikControl_QtCore->em_types[346]->u.td_wrapper_type
 
-#define sipType_Qt_InputMethodQueries              sipModuleAPI_trikControl_QtCore->em_types[360]
-#define sipClass_Qt_InputMethodQueries             sipModuleAPI_trikControl_QtCore->em_types[360]->u.td_wrapper_type
+#define sipType_Qt_DropActions              sipModuleAPI_trikControl_QtCore->em_types[298]
+#define sipClass_Qt_DropActions             sipModuleAPI_trikControl_QtCore->em_types[298]->u.td_wrapper_type
 
-#define sipType_Qt_DropActions              sipModuleAPI_trikControl_QtCore->em_types[340]
-#define sipClass_Qt_DropActions             sipModuleAPI_trikControl_QtCore->em_types[340]->u.td_wrapper_type
+#define sipType_Qt_ItemFlags              sipModuleAPI_trikControl_QtCore->em_types[315]
+#define sipClass_Qt_ItemFlags             sipModuleAPI_trikControl_QtCore->em_types[315]->u.td_wrapper_type
 
-#define sipType_Qt_ItemFlags              sipModuleAPI_trikControl_QtCore->em_types[364]
-#define sipClass_Qt_ItemFlags             sipModuleAPI_trikControl_QtCore->em_types[364]->u.td_wrapper_type
+#define sipType_Qt_MatchFlags              sipModuleAPI_trikControl_QtCore->em_types[323]
+#define sipClass_Qt_MatchFlags             sipModuleAPI_trikControl_QtCore->em_types[323]->u.td_wrapper_type
 
-#define sipType_Qt_MatchFlags              sipModuleAPI_trikControl_QtCore->em_types[373]
-#define sipClass_Qt_MatchFlags             sipModuleAPI_trikControl_QtCore->em_types[373]->u.td_wrapper_type
+#define sipType_Qt_TextInteractionFlags              sipModuleAPI_trikControl_QtCore->em_types[342]
+#define sipClass_Qt_TextInteractionFlags             sipModuleAPI_trikControl_QtCore->em_types[342]->u.td_wrapper_type
 
-#define sipType_Qt_TextInteractionFlags              sipModuleAPI_trikControl_QtCore->em_types[400]
-#define sipClass_Qt_TextInteractionFlags             sipModuleAPI_trikControl_QtCore->em_types[400]->u.td_wrapper_type
+#define sipType_Qt_InputMethodHints              sipModuleAPI_trikControl_QtCore->em_types[311]
+#define sipClass_Qt_InputMethodHints             sipModuleAPI_trikControl_QtCore->em_types[311]->u.td_wrapper_type
 
-#define sipType_Qt_InputMethodHints              sipModuleAPI_trikControl_QtCore->em_types[359]
-#define sipClass_Qt_InputMethodHints             sipModuleAPI_trikControl_QtCore->em_types[359]->u.td_wrapper_type
+#define sipType_Qt_TouchPointStates              sipModuleAPI_trikControl_QtCore->em_types[349]
+#define sipClass_Qt_TouchPointStates             sipModuleAPI_trikControl_QtCore->em_types[349]->u.td_wrapper_type
 
-#define sipType_Qt_TouchPointStates              sipModuleAPI_trikControl_QtCore->em_types[408]
-#define sipClass_Qt_TouchPointStates             sipModuleAPI_trikControl_QtCore->em_types[408]->u.td_wrapper_type
+#define sipType_Qt_GestureFlags              sipModuleAPI_trikControl_QtCore->em_types[304]
+#define sipClass_Qt_GestureFlags             sipModuleAPI_trikControl_QtCore->em_types[304]->u.td_wrapper_type
 
-#define sipType_Qt_GestureFlags              sipModuleAPI_trikControl_QtCore->em_types[351]
-#define sipClass_Qt_GestureFlags             sipModuleAPI_trikControl_QtCore->em_types[351]->u.td_wrapper_type
-
-#define sipType_Qt_ScreenOrientations              sipModuleAPI_trikControl_QtCore->em_types[388]
-#define sipClass_Qt_ScreenOrientations             sipModuleAPI_trikControl_QtCore->em_types[388]->u.td_wrapper_type
-
-#define sipType_Qt_FindChildOptions              sipModuleAPI_trikControl_QtCore->em_types[347]
-#define sipClass_Qt_FindChildOptions             sipModuleAPI_trikControl_QtCore->em_types[347]->u.td_wrapper_type
-
-#define sipType_Qt_ApplicationStates              sipModuleAPI_trikControl_QtCore->em_types[320]
-#define sipClass_Qt_ApplicationStates             sipModuleAPI_trikControl_QtCore->em_types[320]->u.td_wrapper_type
-
-#define sipType_Qt_Edges              sipModuleAPI_trikControl_QtCore->em_types[342]
-#define sipClass_Qt_Edges             sipModuleAPI_trikControl_QtCore->em_types[342]->u.td_wrapper_type
-
-#define sipType_Qt_MouseEventFlags              sipModuleAPI_trikControl_QtCore->em_types[378]
-#define sipClass_Qt_MouseEventFlags             sipModuleAPI_trikControl_QtCore->em_types[378]->u.td_wrapper_type
-
-#define sipType_QObject              sipModuleAPI_trikControl_QtCore->em_types[165]
-#define sipClass_QObject             sipModuleAPI_trikControl_QtCore->em_types[165]->u.td_wrapper_type
+#define sipType_QObject              sipModuleAPI_trikControl_QtCore->em_types[141]
+#define sipClass_QObject             sipModuleAPI_trikControl_QtCore->em_types[141]->u.td_wrapper_type
 
 #define sipType_QAbstractAnimation              sipModuleAPI_trikControl_QtCore->em_types[0]
 #define sipClass_QAbstractAnimation             sipModuleAPI_trikControl_QtCore->em_types[0]->u.td_wrapper_type
@@ -805,3123 +809,2843 @@ extern sipExportedModuleDef sipModuleAPI_trikControl;
 #define sipType_QAbstractEventDispatcher              sipModuleAPI_trikControl_QtCore->em_types[4]
 #define sipClass_QAbstractEventDispatcher             sipModuleAPI_trikControl_QtCore->em_types[4]->u.td_wrapper_type
 
-#define sipType_QAbstractEventDispatcher_TimerInfo              sipModuleAPI_trikControl_QtCore->em_types[5]
-#define sipClass_QAbstractEventDispatcher_TimerInfo             sipModuleAPI_trikControl_QtCore->em_types[5]->u.td_wrapper_type
+#define sipType_QAbstractFileEngine              sipModuleAPI_trikControl_QtCore->em_types[5]
+#define sipClass_QAbstractFileEngine             sipModuleAPI_trikControl_QtCore->em_types[5]->u.td_wrapper_type
 
-#define sipType_QModelIndex              sipModuleAPI_trikControl_QtCore->em_types[161]
-#define sipClass_QModelIndex             sipModuleAPI_trikControl_QtCore->em_types[161]->u.td_wrapper_type
+#define sipType_QAbstractFileEngine_FileTime              sipModuleAPI_trikControl_QtCore->em_types[10]
+#define sipEnum_QAbstractFileEngine_FileTime              sipModuleAPI_trikControl_QtCore->em_types[10]->u.td_py_type
+#define sipType_QAbstractFileEngine_FileOwner              sipModuleAPI_trikControl_QtCore->em_types[9]
+#define sipEnum_QAbstractFileEngine_FileOwner              sipModuleAPI_trikControl_QtCore->em_types[9]->u.td_py_type
+#define sipType_QAbstractFileEngine_FileName              sipModuleAPI_trikControl_QtCore->em_types[8]
+#define sipEnum_QAbstractFileEngine_FileName              sipModuleAPI_trikControl_QtCore->em_types[8]->u.td_py_type
+#define sipType_QAbstractFileEngine_FileFlag              sipModuleAPI_trikControl_QtCore->em_types[6]
+#define sipEnum_QAbstractFileEngine_FileFlag              sipModuleAPI_trikControl_QtCore->em_types[6]->u.td_py_type
 
-#define sipType_QPersistentModelIndex              sipModuleAPI_trikControl_QtCore->em_types[170]
-#define sipClass_QPersistentModelIndex             sipModuleAPI_trikControl_QtCore->em_types[170]->u.td_wrapper_type
+#define sipType_QAbstractFileEngine_FileFlags              sipModuleAPI_trikControl_QtCore->em_types[7]
+#define sipClass_QAbstractFileEngine_FileFlags             sipModuleAPI_trikControl_QtCore->em_types[7]->u.td_wrapper_type
 
-#define sipType_QAbstractItemModel              sipModuleAPI_trikControl_QtCore->em_types[6]
-#define sipClass_QAbstractItemModel             sipModuleAPI_trikControl_QtCore->em_types[6]->u.td_wrapper_type
+#define sipType_QAbstractFileEngineHandler              sipModuleAPI_trikControl_QtCore->em_types[11]
+#define sipClass_QAbstractFileEngineHandler             sipModuleAPI_trikControl_QtCore->em_types[11]->u.td_wrapper_type
 
-#define sipType_QAbstractItemModel_LayoutChangeHint              sipModuleAPI_trikControl_QtCore->em_types[7]
-#define sipEnum_QAbstractItemModel_LayoutChangeHint              sipModuleAPI_trikControl_QtCore->em_types[7]->u.td_py_type
+#define sipType_QAbstractFileEngineIterator              sipModuleAPI_trikControl_QtCore->em_types[12]
+#define sipClass_QAbstractFileEngineIterator             sipModuleAPI_trikControl_QtCore->em_types[12]->u.td_wrapper_type
 
-#define sipType_QAbstractTableModel              sipModuleAPI_trikControl_QtCore->em_types[12]
-#define sipClass_QAbstractTableModel             sipModuleAPI_trikControl_QtCore->em_types[12]->u.td_wrapper_type
+#define sipType_QModelIndex              sipModuleAPI_trikControl_QtCore->em_types[137]
+#define sipClass_QModelIndex             sipModuleAPI_trikControl_QtCore->em_types[137]->u.td_wrapper_type
 
-#define sipType_QAbstractListModel              sipModuleAPI_trikControl_QtCore->em_types[8]
-#define sipClass_QAbstractListModel             sipModuleAPI_trikControl_QtCore->em_types[8]->u.td_wrapper_type
+#define sipType_QPersistentModelIndex              sipModuleAPI_trikControl_QtCore->em_types[147]
+#define sipClass_QPersistentModelIndex             sipModuleAPI_trikControl_QtCore->em_types[147]->u.td_wrapper_type
 
-#define sipType_QAbstractNativeEventFilter              sipModuleAPI_trikControl_QtCore->em_types[9]
-#define sipClass_QAbstractNativeEventFilter             sipModuleAPI_trikControl_QtCore->em_types[9]->u.td_wrapper_type
+#define sipType_QAbstractItemModel              sipModuleAPI_trikControl_QtCore->em_types[13]
+#define sipClass_QAbstractItemModel             sipModuleAPI_trikControl_QtCore->em_types[13]->u.td_wrapper_type
 
-#define sipType_QAbstractProxyModel              sipModuleAPI_trikControl_QtCore->em_types[10]
-#define sipClass_QAbstractProxyModel             sipModuleAPI_trikControl_QtCore->em_types[10]->u.td_wrapper_type
+#define sipType_QAbstractTableModel              sipModuleAPI_trikControl_QtCore->em_types[16]
+#define sipClass_QAbstractTableModel             sipModuleAPI_trikControl_QtCore->em_types[16]->u.td_wrapper_type
 
-#define sipType_QAbstractState              sipModuleAPI_trikControl_QtCore->em_types[11]
-#define sipClass_QAbstractState             sipModuleAPI_trikControl_QtCore->em_types[11]->u.td_wrapper_type
+#define sipType_QAbstractListModel              sipModuleAPI_trikControl_QtCore->em_types[14]
+#define sipClass_QAbstractListModel             sipModuleAPI_trikControl_QtCore->em_types[14]->u.td_wrapper_type
 
-#define sipType_QAbstractTransition              sipModuleAPI_trikControl_QtCore->em_types[13]
-#define sipClass_QAbstractTransition             sipModuleAPI_trikControl_QtCore->em_types[13]->u.td_wrapper_type
+#define sipType_QAbstractState              sipModuleAPI_trikControl_QtCore->em_types[15]
+#define sipClass_QAbstractState             sipModuleAPI_trikControl_QtCore->em_types[15]->u.td_wrapper_type
 
-#define sipType_QAbstractTransition_TransitionType              sipModuleAPI_trikControl_QtCore->em_types[14]
-#define sipEnum_QAbstractTransition_TransitionType              sipModuleAPI_trikControl_QtCore->em_types[14]->u.td_py_type
+#define sipType_QAbstractTransition              sipModuleAPI_trikControl_QtCore->em_types[17]
+#define sipClass_QAbstractTransition             sipModuleAPI_trikControl_QtCore->em_types[17]->u.td_wrapper_type
 
-#define sipType_QAnimationGroup              sipModuleAPI_trikControl_QtCore->em_types[15]
-#define sipClass_QAnimationGroup             sipModuleAPI_trikControl_QtCore->em_types[15]->u.td_wrapper_type
+#define sipType_QAnimationGroup              sipModuleAPI_trikControl_QtCore->em_types[18]
+#define sipClass_QAnimationGroup             sipModuleAPI_trikControl_QtCore->em_types[18]->u.td_wrapper_type
 
-#define sipType_QBasicTimer              sipModuleAPI_trikControl_QtCore->em_types[16]
-#define sipClass_QBasicTimer             sipModuleAPI_trikControl_QtCore->em_types[16]->u.td_wrapper_type
+#define sipType_QBasicTimer              sipModuleAPI_trikControl_QtCore->em_types[19]
+#define sipClass_QBasicTimer             sipModuleAPI_trikControl_QtCore->em_types[19]->u.td_wrapper_type
 
-#define sipType_QBitArray              sipModuleAPI_trikControl_QtCore->em_types[17]
-#define sipClass_QBitArray             sipModuleAPI_trikControl_QtCore->em_types[17]->u.td_wrapper_type
+#define sipType_QBitArray              sipModuleAPI_trikControl_QtCore->em_types[20]
+#define sipClass_QBitArray             sipModuleAPI_trikControl_QtCore->em_types[20]->u.td_wrapper_type
 
-#define sipType_QIODevice              sipModuleAPI_trikControl_QtCore->em_types[80]
-#define sipClass_QIODevice             sipModuleAPI_trikControl_QtCore->em_types[80]->u.td_wrapper_type
+#define sipType_QIODevice              sipModuleAPI_trikControl_QtCore->em_types[81]
+#define sipClass_QIODevice             sipModuleAPI_trikControl_QtCore->em_types[81]->u.td_wrapper_type
 
-#define sipType_QIODevice_OpenModeFlag              sipModuleAPI_trikControl_QtCore->em_types[82]
-#define sipEnum_QIODevice_OpenModeFlag              sipModuleAPI_trikControl_QtCore->em_types[82]->u.td_py_type
+#define sipType_QIODevice_OpenModeFlag              sipModuleAPI_trikControl_QtCore->em_types[83]
+#define sipEnum_QIODevice_OpenModeFlag              sipModuleAPI_trikControl_QtCore->em_types[83]->u.td_py_type
 
-#define sipType_QBuffer              sipModuleAPI_trikControl_QtCore->em_types[18]
-#define sipClass_QBuffer             sipModuleAPI_trikControl_QtCore->em_types[18]->u.td_wrapper_type
+#define sipType_QBuffer              sipModuleAPI_trikControl_QtCore->em_types[21]
+#define sipClass_QBuffer             sipModuleAPI_trikControl_QtCore->em_types[21]->u.td_wrapper_type
 
-#define sipType_QByteArray              sipModuleAPI_trikControl_QtCore->em_types[19]
-#define sipClass_QByteArray             sipModuleAPI_trikControl_QtCore->em_types[19]->u.td_wrapper_type
+#define sipType_QByteArray              sipModuleAPI_trikControl_QtCore->em_types[22]
+#define sipClass_QByteArray             sipModuleAPI_trikControl_QtCore->em_types[22]->u.td_wrapper_type
 
-#define sipType_QByteArray_Base64Option              sipModuleAPI_trikControl_QtCore->em_types[20]
-#define sipEnum_QByteArray_Base64Option              sipModuleAPI_trikControl_QtCore->em_types[20]->u.td_py_type
+#define sipType_QByteArrayMatcher              sipModuleAPI_trikControl_QtCore->em_types[23]
+#define sipClass_QByteArrayMatcher             sipModuleAPI_trikControl_QtCore->em_types[23]->u.td_wrapper_type
 
-#define sipType_QByteArray_Base64Options              sipModuleAPI_trikControl_QtCore->em_types[21]
-#define sipClass_QByteArray_Base64Options             sipModuleAPI_trikControl_QtCore->em_types[21]->u.td_wrapper_type
+#define sipType_QLatin1Char              sipModuleAPI_trikControl_QtCore->em_types[84]
+#define sipClass_QLatin1Char             sipModuleAPI_trikControl_QtCore->em_types[84]->u.td_wrapper_type
 
-#define sipType_QByteArrayMatcher              sipModuleAPI_trikControl_QtCore->em_types[22]
-#define sipClass_QByteArrayMatcher             sipModuleAPI_trikControl_QtCore->em_types[22]->u.td_wrapper_type
 
-#define sipType_QCollatorSortKey              sipModuleAPI_trikControl_QtCore->em_types[26]
-#define sipClass_QCollatorSortKey             sipModuleAPI_trikControl_QtCore->em_types[26]->u.td_wrapper_type
+#define sipType_QChar_UnicodeVersion              sipModuleAPI_trikControl_QtCore->em_types[31]
+#define sipEnum_QChar_UnicodeVersion              sipModuleAPI_trikControl_QtCore->em_types[31]->u.td_py_type
+#define sipType_QChar_CombiningClass              sipModuleAPI_trikControl_QtCore->em_types[26]
+#define sipEnum_QChar_CombiningClass              sipModuleAPI_trikControl_QtCore->em_types[26]->u.td_py_type
+#define sipType_QChar_Joining              sipModuleAPI_trikControl_QtCore->em_types[29]
+#define sipEnum_QChar_Joining              sipModuleAPI_trikControl_QtCore->em_types[29]->u.td_py_type
+#define sipType_QChar_Decomposition              sipModuleAPI_trikControl_QtCore->em_types[27]
+#define sipEnum_QChar_Decomposition              sipModuleAPI_trikControl_QtCore->em_types[27]->u.td_py_type
+#define sipType_QChar_Direction              sipModuleAPI_trikControl_QtCore->em_types[28]
+#define sipEnum_QChar_Direction              sipModuleAPI_trikControl_QtCore->em_types[28]->u.td_py_type
+#define sipType_QChar_Category              sipModuleAPI_trikControl_QtCore->em_types[25]
+#define sipEnum_QChar_Category              sipModuleAPI_trikControl_QtCore->em_types[25]->u.td_py_type
+#define sipType_QChar_SpecialCharacter              sipModuleAPI_trikControl_QtCore->em_types[30]
+#define sipEnum_QChar_SpecialCharacter              sipModuleAPI_trikControl_QtCore->em_types[30]->u.td_py_type
 
-#define sipType_QCollator              sipModuleAPI_trikControl_QtCore->em_types[25]
-#define sipClass_QCollator             sipModuleAPI_trikControl_QtCore->em_types[25]->u.td_wrapper_type
+#define sipType_QCoreApplication              sipModuleAPI_trikControl_QtCore->em_types[33]
+#define sipClass_QCoreApplication             sipModuleAPI_trikControl_QtCore->em_types[33]->u.td_wrapper_type
 
-#define sipType_QCommandLineOption              sipModuleAPI_trikControl_QtCore->em_types[27]
-#define sipClass_QCommandLineOption             sipModuleAPI_trikControl_QtCore->em_types[27]->u.td_wrapper_type
+#define sipType_QCoreApplication_Encoding              sipModuleAPI_trikControl_QtCore->em_types[34]
+#define sipEnum_QCoreApplication_Encoding              sipModuleAPI_trikControl_QtCore->em_types[34]->u.td_py_type
 
-#define sipType_QCommandLineParser              sipModuleAPI_trikControl_QtCore->em_types[28]
-#define sipClass_QCommandLineParser             sipModuleAPI_trikControl_QtCore->em_types[28]->u.td_wrapper_type
+#define sipType_QEvent              sipModuleAPI_trikControl_QtCore->em_types[58]
+#define sipClass_QEvent             sipModuleAPI_trikControl_QtCore->em_types[58]->u.td_wrapper_type
 
-#define sipType_QCommandLineParser_OptionsAfterPositionalArgumentsMode              sipModuleAPI_trikControl_QtCore->em_types[29]
-#define sipEnum_QCommandLineParser_OptionsAfterPositionalArgumentsMode              sipModuleAPI_trikControl_QtCore->em_types[29]->u.td_py_type
-#define sipType_QCommandLineParser_SingleDashWordOptionMode              sipModuleAPI_trikControl_QtCore->em_types[30]
-#define sipEnum_QCommandLineParser_SingleDashWordOptionMode              sipModuleAPI_trikControl_QtCore->em_types[30]->u.td_py_type
+#define sipType_QEvent_Type              sipModuleAPI_trikControl_QtCore->em_types[59]
+#define sipEnum_QEvent_Type              sipModuleAPI_trikControl_QtCore->em_types[59]->u.td_py_type
 
-#define sipType_QCoreApplication              sipModuleAPI_trikControl_QtCore->em_types[31]
-#define sipClass_QCoreApplication             sipModuleAPI_trikControl_QtCore->em_types[31]->u.td_wrapper_type
+#define sipType_QTimerEvent              sipModuleAPI_trikControl_QtCore->em_types[240]
+#define sipClass_QTimerEvent             sipModuleAPI_trikControl_QtCore->em_types[240]->u.td_wrapper_type
 
-#define sipType_QEvent              sipModuleAPI_trikControl_QtCore->em_types[55]
-#define sipClass_QEvent             sipModuleAPI_trikControl_QtCore->em_types[55]->u.td_wrapper_type
+#define sipType_QChildEvent              sipModuleAPI_trikControl_QtCore->em_types[32]
+#define sipClass_QChildEvent             sipModuleAPI_trikControl_QtCore->em_types[32]->u.td_wrapper_type
 
-#define sipType_QEvent_Type              sipModuleAPI_trikControl_QtCore->em_types[56]
-#define sipEnum_QEvent_Type              sipModuleAPI_trikControl_QtCore->em_types[56]->u.td_py_type
+#define sipType_QDynamicPropertyChangeEvent              sipModuleAPI_trikControl_QtCore->em_types[53]
+#define sipClass_QDynamicPropertyChangeEvent             sipModuleAPI_trikControl_QtCore->em_types[53]->u.td_wrapper_type
 
-#define sipType_QTimerEvent              sipModuleAPI_trikControl_QtCore->em_types[275]
-#define sipClass_QTimerEvent             sipModuleAPI_trikControl_QtCore->em_types[275]->u.td_wrapper_type
+#define sipType_QCryptographicHash              sipModuleAPI_trikControl_QtCore->em_types[35]
+#define sipClass_QCryptographicHash             sipModuleAPI_trikControl_QtCore->em_types[35]->u.td_wrapper_type
 
-#define sipType_QChildEvent              sipModuleAPI_trikControl_QtCore->em_types[24]
-#define sipClass_QChildEvent             sipModuleAPI_trikControl_QtCore->em_types[24]->u.td_wrapper_type
+#define sipType_QCryptographicHash_Algorithm              sipModuleAPI_trikControl_QtCore->em_types[36]
+#define sipEnum_QCryptographicHash_Algorithm              sipModuleAPI_trikControl_QtCore->em_types[36]->u.td_py_type
 
-#define sipType_QDynamicPropertyChangeEvent              sipModuleAPI_trikControl_QtCore->em_types[50]
-#define sipClass_QDynamicPropertyChangeEvent             sipModuleAPI_trikControl_QtCore->em_types[50]->u.td_wrapper_type
+#define sipType_QDataStream              sipModuleAPI_trikControl_QtCore->em_types[37]
+#define sipClass_QDataStream             sipModuleAPI_trikControl_QtCore->em_types[37]->u.td_wrapper_type
 
-#define sipType_QCryptographicHash              sipModuleAPI_trikControl_QtCore->em_types[32]
-#define sipClass_QCryptographicHash             sipModuleAPI_trikControl_QtCore->em_types[32]->u.td_wrapper_type
+#define sipType_QDataStream_FloatingPointPrecision              sipModuleAPI_trikControl_QtCore->em_types[39]
+#define sipEnum_QDataStream_FloatingPointPrecision              sipModuleAPI_trikControl_QtCore->em_types[39]->u.td_py_type
+#define sipType_QDataStream_Status              sipModuleAPI_trikControl_QtCore->em_types[40]
+#define sipEnum_QDataStream_Status              sipModuleAPI_trikControl_QtCore->em_types[40]->u.td_py_type
+#define sipType_QDataStream_ByteOrder              sipModuleAPI_trikControl_QtCore->em_types[38]
+#define sipEnum_QDataStream_ByteOrder              sipModuleAPI_trikControl_QtCore->em_types[38]->u.td_py_type
+#define sipType_QDataStream_Version              sipModuleAPI_trikControl_QtCore->em_types[41]
+#define sipEnum_QDataStream_Version              sipModuleAPI_trikControl_QtCore->em_types[41]->u.td_py_type
 
-#define sipType_QCryptographicHash_Algorithm              sipModuleAPI_trikControl_QtCore->em_types[33]
-#define sipEnum_QCryptographicHash_Algorithm              sipModuleAPI_trikControl_QtCore->em_types[33]->u.td_py_type
+#define sipType_QDate              sipModuleAPI_trikControl_QtCore->em_types[42]
+#define sipClass_QDate             sipModuleAPI_trikControl_QtCore->em_types[42]->u.td_wrapper_type
 
-#define sipType_QDataStream              sipModuleAPI_trikControl_QtCore->em_types[34]
-#define sipClass_QDataStream             sipModuleAPI_trikControl_QtCore->em_types[34]->u.td_wrapper_type
+#define sipType_QDate_MonthNameType              sipModuleAPI_trikControl_QtCore->em_types[43]
+#define sipEnum_QDate_MonthNameType              sipModuleAPI_trikControl_QtCore->em_types[43]->u.td_py_type
 
-#define sipType_QDataStream_FloatingPointPrecision              sipModuleAPI_trikControl_QtCore->em_types[36]
-#define sipEnum_QDataStream_FloatingPointPrecision              sipModuleAPI_trikControl_QtCore->em_types[36]->u.td_py_type
-#define sipType_QDataStream_Status              sipModuleAPI_trikControl_QtCore->em_types[37]
-#define sipEnum_QDataStream_Status              sipModuleAPI_trikControl_QtCore->em_types[37]->u.td_py_type
-#define sipType_QDataStream_ByteOrder              sipModuleAPI_trikControl_QtCore->em_types[35]
-#define sipEnum_QDataStream_ByteOrder              sipModuleAPI_trikControl_QtCore->em_types[35]->u.td_py_type
-#define sipType_QDataStream_Version              sipModuleAPI_trikControl_QtCore->em_types[38]
-#define sipEnum_QDataStream_Version              sipModuleAPI_trikControl_QtCore->em_types[38]->u.td_py_type
+#define sipType_QTime              sipModuleAPI_trikControl_QtCore->em_types[234]
+#define sipClass_QTime             sipModuleAPI_trikControl_QtCore->em_types[234]->u.td_wrapper_type
 
-#define sipType_QDate              sipModuleAPI_trikControl_QtCore->em_types[39]
-#define sipClass_QDate             sipModuleAPI_trikControl_QtCore->em_types[39]->u.td_wrapper_type
+#define sipType_QDateTime              sipModuleAPI_trikControl_QtCore->em_types[44]
+#define sipClass_QDateTime             sipModuleAPI_trikControl_QtCore->em_types[44]->u.td_wrapper_type
 
-#define sipType_QDate_MonthNameType              sipModuleAPI_trikControl_QtCore->em_types[40]
-#define sipEnum_QDate_MonthNameType              sipModuleAPI_trikControl_QtCore->em_types[40]->u.td_py_type
+#define sipType_QDir              sipModuleAPI_trikControl_QtCore->em_types[45]
+#define sipClass_QDir             sipModuleAPI_trikControl_QtCore->em_types[45]->u.td_wrapper_type
 
-#define sipType_QTime              sipModuleAPI_trikControl_QtCore->em_types[265]
-#define sipClass_QTime             sipModuleAPI_trikControl_QtCore->em_types[265]->u.td_wrapper_type
+#define sipType_QDir_SortFlag              sipModuleAPI_trikControl_QtCore->em_types[48]
+#define sipEnum_QDir_SortFlag              sipModuleAPI_trikControl_QtCore->em_types[48]->u.td_py_type
+#define sipType_QDir_Filter              sipModuleAPI_trikControl_QtCore->em_types[46]
+#define sipEnum_QDir_Filter              sipModuleAPI_trikControl_QtCore->em_types[46]->u.td_py_type
 
-#define sipType_QDateTime              sipModuleAPI_trikControl_QtCore->em_types[41]
-#define sipClass_QDateTime             sipModuleAPI_trikControl_QtCore->em_types[41]->u.td_wrapper_type
+#define sipType_QDir_Filters              sipModuleAPI_trikControl_QtCore->em_types[47]
+#define sipClass_QDir_Filters             sipModuleAPI_trikControl_QtCore->em_types[47]->u.td_wrapper_type
 
-#define sipType_QDir              sipModuleAPI_trikControl_QtCore->em_types[42]
-#define sipClass_QDir             sipModuleAPI_trikControl_QtCore->em_types[42]->u.td_wrapper_type
+#define sipType_QDir_SortFlags              sipModuleAPI_trikControl_QtCore->em_types[49]
+#define sipClass_QDir_SortFlags             sipModuleAPI_trikControl_QtCore->em_types[49]->u.td_wrapper_type
 
-#define sipType_QDir_SortFlag              sipModuleAPI_trikControl_QtCore->em_types[45]
-#define sipEnum_QDir_SortFlag              sipModuleAPI_trikControl_QtCore->em_types[45]->u.td_py_type
-#define sipType_QDir_Filter              sipModuleAPI_trikControl_QtCore->em_types[43]
-#define sipEnum_QDir_Filter              sipModuleAPI_trikControl_QtCore->em_types[43]->u.td_py_type
+#define sipType_QDirIterator              sipModuleAPI_trikControl_QtCore->em_types[50]
+#define sipClass_QDirIterator             sipModuleAPI_trikControl_QtCore->em_types[50]->u.td_wrapper_type
 
-#define sipType_QDir_Filters              sipModuleAPI_trikControl_QtCore->em_types[44]
-#define sipClass_QDir_Filters             sipModuleAPI_trikControl_QtCore->em_types[44]->u.td_wrapper_type
+#define sipType_QDirIterator_IteratorFlag              sipModuleAPI_trikControl_QtCore->em_types[51]
+#define sipEnum_QDirIterator_IteratorFlag              sipModuleAPI_trikControl_QtCore->em_types[51]->u.td_py_type
 
-#define sipType_QDir_SortFlags              sipModuleAPI_trikControl_QtCore->em_types[46]
-#define sipClass_QDir_SortFlags             sipModuleAPI_trikControl_QtCore->em_types[46]->u.td_wrapper_type
+#define sipType_QDirIterator_IteratorFlags              sipModuleAPI_trikControl_QtCore->em_types[52]
+#define sipClass_QDirIterator_IteratorFlags             sipModuleAPI_trikControl_QtCore->em_types[52]->u.td_wrapper_type
 
-#define sipType_QDirIterator              sipModuleAPI_trikControl_QtCore->em_types[47]
-#define sipClass_QDirIterator             sipModuleAPI_trikControl_QtCore->em_types[47]->u.td_wrapper_type
+#define sipType_QEasingCurve              sipModuleAPI_trikControl_QtCore->em_types[54]
+#define sipClass_QEasingCurve             sipModuleAPI_trikControl_QtCore->em_types[54]->u.td_wrapper_type
 
-#define sipType_QDirIterator_IteratorFlag              sipModuleAPI_trikControl_QtCore->em_types[48]
-#define sipEnum_QDirIterator_IteratorFlag              sipModuleAPI_trikControl_QtCore->em_types[48]->u.td_py_type
+#define sipType_QEasingCurve_Type              sipModuleAPI_trikControl_QtCore->em_types[55]
+#define sipEnum_QEasingCurve_Type              sipModuleAPI_trikControl_QtCore->em_types[55]->u.td_py_type
 
-#define sipType_QDirIterator_IteratorFlags              sipModuleAPI_trikControl_QtCore->em_types[49]
-#define sipClass_QDirIterator_IteratorFlags             sipModuleAPI_trikControl_QtCore->em_types[49]->u.td_wrapper_type
+#define sipType_QElapsedTimer              sipModuleAPI_trikControl_QtCore->em_types[56]
+#define sipClass_QElapsedTimer             sipModuleAPI_trikControl_QtCore->em_types[56]->u.td_wrapper_type
 
-#define sipType_QEasingCurve              sipModuleAPI_trikControl_QtCore->em_types[51]
-#define sipClass_QEasingCurve             sipModuleAPI_trikControl_QtCore->em_types[51]->u.td_wrapper_type
+#define sipType_QElapsedTimer_ClockType              sipModuleAPI_trikControl_QtCore->em_types[57]
+#define sipEnum_QElapsedTimer_ClockType              sipModuleAPI_trikControl_QtCore->em_types[57]->u.td_py_type
 
-#define sipType_QEasingCurve_Type              sipModuleAPI_trikControl_QtCore->em_types[52]
-#define sipEnum_QEasingCurve_Type              sipModuleAPI_trikControl_QtCore->em_types[52]->u.td_py_type
+#define sipType_QEventLoop              sipModuleAPI_trikControl_QtCore->em_types[60]
+#define sipClass_QEventLoop             sipModuleAPI_trikControl_QtCore->em_types[60]->u.td_wrapper_type
 
-#define sipType_QElapsedTimer              sipModuleAPI_trikControl_QtCore->em_types[53]
-#define sipClass_QElapsedTimer             sipModuleAPI_trikControl_QtCore->em_types[53]->u.td_wrapper_type
+#define sipType_QEventLoop_ProcessEventsFlag              sipModuleAPI_trikControl_QtCore->em_types[61]
+#define sipEnum_QEventLoop_ProcessEventsFlag              sipModuleAPI_trikControl_QtCore->em_types[61]->u.td_py_type
 
-#define sipType_QElapsedTimer_ClockType              sipModuleAPI_trikControl_QtCore->em_types[54]
-#define sipEnum_QElapsedTimer_ClockType              sipModuleAPI_trikControl_QtCore->em_types[54]->u.td_py_type
+#define sipType_QEventLoop_ProcessEventsFlags              sipModuleAPI_trikControl_QtCore->em_types[62]
+#define sipClass_QEventLoop_ProcessEventsFlags             sipModuleAPI_trikControl_QtCore->em_types[62]->u.td_wrapper_type
 
-#define sipType_QEventLoop              sipModuleAPI_trikControl_QtCore->em_types[57]
-#define sipClass_QEventLoop             sipModuleAPI_trikControl_QtCore->em_types[57]->u.td_wrapper_type
+#define sipType_QEventTransition              sipModuleAPI_trikControl_QtCore->em_types[63]
+#define sipClass_QEventTransition             sipModuleAPI_trikControl_QtCore->em_types[63]->u.td_wrapper_type
 
-#define sipType_QEventLoop_ProcessEventsFlag              sipModuleAPI_trikControl_QtCore->em_types[58]
-#define sipEnum_QEventLoop_ProcessEventsFlag              sipModuleAPI_trikControl_QtCore->em_types[58]->u.td_py_type
+#define sipType_QFile              sipModuleAPI_trikControl_QtCore->em_types[65]
+#define sipClass_QFile             sipModuleAPI_trikControl_QtCore->em_types[65]->u.td_wrapper_type
 
-#define sipType_QEventLoop_ProcessEventsFlags              sipModuleAPI_trikControl_QtCore->em_types[59]
-#define sipClass_QEventLoop_ProcessEventsFlags             sipModuleAPI_trikControl_QtCore->em_types[59]->u.td_wrapper_type
+#define sipType_QFile_FileHandleFlag              sipModuleAPI_trikControl_QtCore->em_types[67]
+#define sipEnum_QFile_FileHandleFlag              sipModuleAPI_trikControl_QtCore->em_types[67]->u.td_py_type
+#define sipType_QFile_Permission              sipModuleAPI_trikControl_QtCore->em_types[70]
+#define sipEnum_QFile_Permission              sipModuleAPI_trikControl_QtCore->em_types[70]->u.td_py_type
+#define sipType_QFile_MemoryMapFlags              sipModuleAPI_trikControl_QtCore->em_types[69]
+#define sipEnum_QFile_MemoryMapFlags              sipModuleAPI_trikControl_QtCore->em_types[69]->u.td_py_type
+#define sipType_QFile_FileError              sipModuleAPI_trikControl_QtCore->em_types[66]
+#define sipEnum_QFile_FileError              sipModuleAPI_trikControl_QtCore->em_types[66]->u.td_py_type
 
-#define sipType_QEventLoopLocker              sipModuleAPI_trikControl_QtCore->em_types[60]
-#define sipClass_QEventLoopLocker             sipModuleAPI_trikControl_QtCore->em_types[60]->u.td_wrapper_type
+#define sipType_QFile_Permissions              sipModuleAPI_trikControl_QtCore->em_types[71]
+#define sipClass_QFile_Permissions             sipModuleAPI_trikControl_QtCore->em_types[71]->u.td_wrapper_type
 
-#define sipType_QEventTransition              sipModuleAPI_trikControl_QtCore->em_types[61]
-#define sipClass_QEventTransition             sipModuleAPI_trikControl_QtCore->em_types[61]->u.td_wrapper_type
+#define sipType_QFile_FileHandleFlags              sipModuleAPI_trikControl_QtCore->em_types[68]
+#define sipClass_QFile_FileHandleFlags             sipModuleAPI_trikControl_QtCore->em_types[68]->u.td_wrapper_type
 
-#define sipType_QFileDevice              sipModuleAPI_trikControl_QtCore->em_types[63]
-#define sipClass_QFileDevice             sipModuleAPI_trikControl_QtCore->em_types[63]->u.td_wrapper_type
+#define sipType_QFileInfo              sipModuleAPI_trikControl_QtCore->em_types[72]
+#define sipClass_QFileInfo             sipModuleAPI_trikControl_QtCore->em_types[72]->u.td_wrapper_type
 
-#define sipType_QFileDevice_MemoryMapFlags              sipModuleAPI_trikControl_QtCore->em_types[67]
-#define sipEnum_QFileDevice_MemoryMapFlags              sipModuleAPI_trikControl_QtCore->em_types[67]->u.td_py_type
-#define sipType_QFileDevice_FileHandleFlag              sipModuleAPI_trikControl_QtCore->em_types[65]
-#define sipEnum_QFileDevice_FileHandleFlag              sipModuleAPI_trikControl_QtCore->em_types[65]->u.td_py_type
-#define sipType_QFileDevice_Permission              sipModuleAPI_trikControl_QtCore->em_types[68]
-#define sipEnum_QFileDevice_Permission              sipModuleAPI_trikControl_QtCore->em_types[68]->u.td_py_type
-#define sipType_QFileDevice_FileError              sipModuleAPI_trikControl_QtCore->em_types[64]
-#define sipEnum_QFileDevice_FileError              sipModuleAPI_trikControl_QtCore->em_types[64]->u.td_py_type
+#define sipType_QFileSystemWatcher              sipModuleAPI_trikControl_QtCore->em_types[73]
+#define sipClass_QFileSystemWatcher             sipModuleAPI_trikControl_QtCore->em_types[73]->u.td_wrapper_type
 
-#define sipType_QFile              sipModuleAPI_trikControl_QtCore->em_types[62]
-#define sipClass_QFile             sipModuleAPI_trikControl_QtCore->em_types[62]->u.td_wrapper_type
+#define sipType_QFinalState              sipModuleAPI_trikControl_QtCore->em_types[74]
+#define sipClass_QFinalState             sipModuleAPI_trikControl_QtCore->em_types[74]->u.td_wrapper_type
 
-#define sipType_QFileDevice_Permissions              sipModuleAPI_trikControl_QtCore->em_types[69]
-#define sipClass_QFileDevice_Permissions             sipModuleAPI_trikControl_QtCore->em_types[69]->u.td_wrapper_type
+#define sipType_QFSFileEngine              sipModuleAPI_trikControl_QtCore->em_types[64]
+#define sipClass_QFSFileEngine             sipModuleAPI_trikControl_QtCore->em_types[64]->u.td_wrapper_type
 
-#define sipType_QFileDevice_FileHandleFlags              sipModuleAPI_trikControl_QtCore->em_types[66]
-#define sipClass_QFileDevice_FileHandleFlags             sipModuleAPI_trikControl_QtCore->em_types[66]->u.td_wrapper_type
+#define sipType_QHistoryState              sipModuleAPI_trikControl_QtCore->em_types[79]
+#define sipClass_QHistoryState             sipModuleAPI_trikControl_QtCore->em_types[79]->u.td_wrapper_type
 
-#define sipType_QFileInfo              sipModuleAPI_trikControl_QtCore->em_types[70]
-#define sipClass_QFileInfo             sipModuleAPI_trikControl_QtCore->em_types[70]->u.td_wrapper_type
+#define sipType_QHistoryState_HistoryType              sipModuleAPI_trikControl_QtCore->em_types[80]
+#define sipEnum_QHistoryState_HistoryType              sipModuleAPI_trikControl_QtCore->em_types[80]->u.td_py_type
 
-#define sipType_QFileSelector              sipModuleAPI_trikControl_QtCore->em_types[71]
-#define sipClass_QFileSelector             sipModuleAPI_trikControl_QtCore->em_types[71]->u.td_wrapper_type
+#define sipType_QIODevice_OpenMode              sipModuleAPI_trikControl_QtCore->em_types[82]
+#define sipClass_QIODevice_OpenMode             sipModuleAPI_trikControl_QtCore->em_types[82]->u.td_wrapper_type
 
-#define sipType_QFileSystemWatcher              sipModuleAPI_trikControl_QtCore->em_types[72]
-#define sipClass_QFileSystemWatcher             sipModuleAPI_trikControl_QtCore->em_types[72]->u.td_wrapper_type
+#define sipType_QLibrary              sipModuleAPI_trikControl_QtCore->em_types[86]
+#define sipClass_QLibrary             sipModuleAPI_trikControl_QtCore->em_types[86]->u.td_wrapper_type
 
-#define sipType_QFinalState              sipModuleAPI_trikControl_QtCore->em_types[73]
-#define sipClass_QFinalState             sipModuleAPI_trikControl_QtCore->em_types[73]->u.td_wrapper_type
+#define sipType_QLibrary_LoadHint              sipModuleAPI_trikControl_QtCore->em_types[87]
+#define sipEnum_QLibrary_LoadHint              sipModuleAPI_trikControl_QtCore->em_types[87]->u.td_py_type
 
-#define sipType_QHistoryState              sipModuleAPI_trikControl_QtCore->em_types[78]
-#define sipClass_QHistoryState             sipModuleAPI_trikControl_QtCore->em_types[78]->u.td_wrapper_type
+#define sipType_QLibrary_LoadHints              sipModuleAPI_trikControl_QtCore->em_types[88]
+#define sipClass_QLibrary_LoadHints             sipModuleAPI_trikControl_QtCore->em_types[88]->u.td_wrapper_type
 
-#define sipType_QHistoryState_HistoryType              sipModuleAPI_trikControl_QtCore->em_types[79]
-#define sipEnum_QHistoryState_HistoryType              sipModuleAPI_trikControl_QtCore->em_types[79]->u.td_py_type
+#define sipType_QLibraryInfo              sipModuleAPI_trikControl_QtCore->em_types[89]
+#define sipClass_QLibraryInfo             sipModuleAPI_trikControl_QtCore->em_types[89]->u.td_wrapper_type
 
-#define sipType_QIdentityProxyModel              sipModuleAPI_trikControl_QtCore->em_types[83]
-#define sipClass_QIdentityProxyModel             sipModuleAPI_trikControl_QtCore->em_types[83]->u.td_wrapper_type
+#define sipType_QLibraryInfo_LibraryLocation              sipModuleAPI_trikControl_QtCore->em_types[90]
+#define sipEnum_QLibraryInfo_LibraryLocation              sipModuleAPI_trikControl_QtCore->em_types[90]->u.td_py_type
 
-#define sipType_QIODevice_OpenMode              sipModuleAPI_trikControl_QtCore->em_types[81]
-#define sipClass_QIODevice_OpenMode             sipModuleAPI_trikControl_QtCore->em_types[81]->u.td_wrapper_type
+#define sipType_QLine              sipModuleAPI_trikControl_QtCore->em_types[91]
+#define sipClass_QLine             sipModuleAPI_trikControl_QtCore->em_types[91]->u.td_wrapper_type
 
-#define sipType_QItemSelectionRange              sipModuleAPI_trikControl_QtCore->em_types[88]
-#define sipClass_QItemSelectionRange             sipModuleAPI_trikControl_QtCore->em_types[88]->u.td_wrapper_type
+#define sipType_QLineF              sipModuleAPI_trikControl_QtCore->em_types[92]
+#define sipClass_QLineF             sipModuleAPI_trikControl_QtCore->em_types[92]->u.td_wrapper_type
 
-#define sipType_QItemSelectionModel              sipModuleAPI_trikControl_QtCore->em_types[85]
-#define sipClass_QItemSelectionModel             sipModuleAPI_trikControl_QtCore->em_types[85]->u.td_wrapper_type
+#define sipType_QLineF_IntersectType              sipModuleAPI_trikControl_QtCore->em_types[93]
+#define sipEnum_QLineF_IntersectType              sipModuleAPI_trikControl_QtCore->em_types[93]->u.td_py_type
 
-#define sipType_QItemSelectionModel_SelectionFlag              sipModuleAPI_trikControl_QtCore->em_types[86]
-#define sipEnum_QItemSelectionModel_SelectionFlag              sipModuleAPI_trikControl_QtCore->em_types[86]->u.td_py_type
+#define sipType_QLocale              sipModuleAPI_trikControl_QtCore->em_types[114]
+#define sipClass_QLocale             sipModuleAPI_trikControl_QtCore->em_types[114]->u.td_wrapper_type
 
-#define sipType_QItemSelectionModel_SelectionFlags              sipModuleAPI_trikControl_QtCore->em_types[87]
-#define sipClass_QItemSelectionModel_SelectionFlags             sipModuleAPI_trikControl_QtCore->em_types[87]->u.td_wrapper_type
+#define sipType_QLocale_QuotationStyle              sipModuleAPI_trikControl_QtCore->em_types[122]
+#define sipEnum_QLocale_QuotationStyle              sipModuleAPI_trikControl_QtCore->em_types[122]->u.td_py_type
+#define sipType_QLocale_CurrencySymbolFormat              sipModuleAPI_trikControl_QtCore->em_types[116]
+#define sipEnum_QLocale_CurrencySymbolFormat              sipModuleAPI_trikControl_QtCore->em_types[116]->u.td_py_type
+#define sipType_QLocale_Script              sipModuleAPI_trikControl_QtCore->em_types[123]
+#define sipEnum_QLocale_Script              sipModuleAPI_trikControl_QtCore->em_types[123]->u.td_py_type
+#define sipType_QLocale_MeasurementSystem              sipModuleAPI_trikControl_QtCore->em_types[119]
+#define sipEnum_QLocale_MeasurementSystem              sipModuleAPI_trikControl_QtCore->em_types[119]->u.td_py_type
+#define sipType_QLocale_FormatType              sipModuleAPI_trikControl_QtCore->em_types[117]
+#define sipEnum_QLocale_FormatType              sipModuleAPI_trikControl_QtCore->em_types[117]->u.td_py_type
+#define sipType_QLocale_NumberOption              sipModuleAPI_trikControl_QtCore->em_types[120]
+#define sipEnum_QLocale_NumberOption              sipModuleAPI_trikControl_QtCore->em_types[120]->u.td_py_type
+#define sipType_QLocale_Country              sipModuleAPI_trikControl_QtCore->em_types[115]
+#define sipEnum_QLocale_Country              sipModuleAPI_trikControl_QtCore->em_types[115]->u.td_py_type
+#define sipType_QLocale_Language              sipModuleAPI_trikControl_QtCore->em_types[118]
+#define sipEnum_QLocale_Language              sipModuleAPI_trikControl_QtCore->em_types[118]->u.td_py_type
 
-#define sipType_QItemSelection              sipModuleAPI_trikControl_QtCore->em_types[84]
-#define sipClass_QItemSelection             sipModuleAPI_trikControl_QtCore->em_types[84]->u.td_wrapper_type
+#define sipType_QLocale_NumberOptions              sipModuleAPI_trikControl_QtCore->em_types[121]
+#define sipClass_QLocale_NumberOptions             sipModuleAPI_trikControl_QtCore->em_types[121]->u.td_wrapper_type
 
-#define sipType_QJsonParseError              sipModuleAPI_trikControl_QtCore->em_types[94]
-#define sipClass_QJsonParseError             sipModuleAPI_trikControl_QtCore->em_types[94]->u.td_wrapper_type
+#define sipType_QSystemLocale              sipModuleAPI_trikControl_QtCore->em_types[208]
+#define sipClass_QSystemLocale             sipModuleAPI_trikControl_QtCore->em_types[208]->u.td_wrapper_type
 
-#define sipType_QJsonParseError_ParseError              sipModuleAPI_trikControl_QtCore->em_types[95]
-#define sipEnum_QJsonParseError_ParseError              sipModuleAPI_trikControl_QtCore->em_types[95]->u.td_py_type
+#define sipType_QSystemLocale_QueryType              sipModuleAPI_trikControl_QtCore->em_types[209]
+#define sipEnum_QSystemLocale_QueryType              sipModuleAPI_trikControl_QtCore->em_types[209]->u.td_py_type
 
-#define sipType_QJsonDocument              sipModuleAPI_trikControl_QtCore->em_types[90]
-#define sipClass_QJsonDocument             sipModuleAPI_trikControl_QtCore->em_types[90]->u.td_wrapper_type
+#define sipType_QMargins              sipModuleAPI_trikControl_QtCore->em_types[126]
+#define sipClass_QMargins             sipModuleAPI_trikControl_QtCore->em_types[126]->u.td_wrapper_type
 
-#define sipType_QJsonDocument_JsonFormat              sipModuleAPI_trikControl_QtCore->em_types[92]
-#define sipEnum_QJsonDocument_JsonFormat              sipModuleAPI_trikControl_QtCore->em_types[92]->u.td_py_type
-#define sipType_QJsonDocument_DataValidation              sipModuleAPI_trikControl_QtCore->em_types[91]
-#define sipEnum_QJsonDocument_DataValidation              sipModuleAPI_trikControl_QtCore->em_types[91]->u.td_py_type
+#define sipType_QMetaMethod              sipModuleAPI_trikControl_QtCore->em_types[129]
+#define sipClass_QMetaMethod             sipModuleAPI_trikControl_QtCore->em_types[129]->u.td_wrapper_type
 
-#define sipType_QJsonValue              sipModuleAPI_trikControl_QtCore->em_types[96]
-#define sipClass_QJsonValue             sipModuleAPI_trikControl_QtCore->em_types[96]->u.td_wrapper_type
+#define sipType_QMetaMethod_MethodType              sipModuleAPI_trikControl_QtCore->em_types[131]
+#define sipEnum_QMetaMethod_MethodType              sipModuleAPI_trikControl_QtCore->em_types[131]->u.td_py_type
+#define sipType_QMetaMethod_Access              sipModuleAPI_trikControl_QtCore->em_types[130]
+#define sipEnum_QMetaMethod_Access              sipModuleAPI_trikControl_QtCore->em_types[130]->u.td_py_type
 
-#define sipType_QJsonValue_Type              sipModuleAPI_trikControl_QtCore->em_types[97]
-#define sipEnum_QJsonValue_Type              sipModuleAPI_trikControl_QtCore->em_types[97]->u.td_py_type
+#define sipType_QMetaEnum              sipModuleAPI_trikControl_QtCore->em_types[128]
+#define sipClass_QMetaEnum             sipModuleAPI_trikControl_QtCore->em_types[128]->u.td_wrapper_type
 
-#define sipType_QLibrary              sipModuleAPI_trikControl_QtCore->em_types[98]
-#define sipClass_QLibrary             sipModuleAPI_trikControl_QtCore->em_types[98]->u.td_wrapper_type
+#define sipType_QMetaProperty              sipModuleAPI_trikControl_QtCore->em_types[133]
+#define sipClass_QMetaProperty             sipModuleAPI_trikControl_QtCore->em_types[133]->u.td_wrapper_type
 
-#define sipType_QLibrary_LoadHint              sipModuleAPI_trikControl_QtCore->em_types[99]
-#define sipEnum_QLibrary_LoadHint              sipModuleAPI_trikControl_QtCore->em_types[99]->u.td_py_type
+#define sipType_QMetaClassInfo              sipModuleAPI_trikControl_QtCore->em_types[127]
+#define sipClass_QMetaClassInfo             sipModuleAPI_trikControl_QtCore->em_types[127]->u.td_wrapper_type
 
-#define sipType_QLibrary_LoadHints              sipModuleAPI_trikControl_QtCore->em_types[100]
-#define sipClass_QLibrary_LoadHints             sipModuleAPI_trikControl_QtCore->em_types[100]->u.td_wrapper_type
+#define sipType_QMetaType              sipModuleAPI_trikControl_QtCore->em_types[134]
+#define sipClass_QMetaType             sipModuleAPI_trikControl_QtCore->em_types[134]->u.td_wrapper_type
 
-#define sipType_QLibraryInfo              sipModuleAPI_trikControl_QtCore->em_types[101]
-#define sipClass_QLibraryInfo             sipModuleAPI_trikControl_QtCore->em_types[101]->u.td_wrapper_type
+#define sipType_QMetaType_Type              sipModuleAPI_trikControl_QtCore->em_types[135]
+#define sipEnum_QMetaType_Type              sipModuleAPI_trikControl_QtCore->em_types[135]->u.td_py_type
 
-#define sipType_QLibraryInfo_LibraryLocation              sipModuleAPI_trikControl_QtCore->em_types[102]
-#define sipEnum_QLibraryInfo_LibraryLocation              sipModuleAPI_trikControl_QtCore->em_types[102]->u.td_py_type
+#define sipType_QMimeData              sipModuleAPI_trikControl_QtCore->em_types[136]
+#define sipClass_QMimeData             sipModuleAPI_trikControl_QtCore->em_types[136]->u.td_wrapper_type
 
-#define sipType_QLine              sipModuleAPI_trikControl_QtCore->em_types[103]
-#define sipClass_QLine             sipModuleAPI_trikControl_QtCore->em_types[103]->u.td_wrapper_type
+#define sipType_QMutex              sipModuleAPI_trikControl_QtCore->em_types[138]
+#define sipClass_QMutex             sipModuleAPI_trikControl_QtCore->em_types[138]->u.td_wrapper_type
 
-#define sipType_QLineF              sipModuleAPI_trikControl_QtCore->em_types[104]
-#define sipClass_QLineF             sipModuleAPI_trikControl_QtCore->em_types[104]->u.td_wrapper_type
+#define sipType_QMutex_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[139]
+#define sipEnum_QMutex_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[139]->u.td_py_type
 
-#define sipType_QLineF_IntersectType              sipModuleAPI_trikControl_QtCore->em_types[105]
-#define sipEnum_QLineF_IntersectType              sipModuleAPI_trikControl_QtCore->em_types[105]->u.td_py_type
+#define sipType_QMutexLocker              sipModuleAPI_trikControl_QtCore->em_types[140]
+#define sipClass_QMutexLocker             sipModuleAPI_trikControl_QtCore->em_types[140]->u.td_wrapper_type
 
-#define sipType_QLocale              sipModuleAPI_trikControl_QtCore->em_types[126]
-#define sipClass_QLocale             sipModuleAPI_trikControl_QtCore->em_types[126]->u.td_wrapper_type
+#define sipType_QObjectCleanupHandler              sipModuleAPI_trikControl_QtCore->em_types[142]
+#define sipClass_QObjectCleanupHandler             sipModuleAPI_trikControl_QtCore->em_types[142]->u.td_wrapper_type
 
-#define sipType_QLocale_FloatingPointPrecisionOption              sipModuleAPI_trikControl_QtCore->em_types[129]
-#define sipEnum_QLocale_FloatingPointPrecisionOption              sipModuleAPI_trikControl_QtCore->em_types[129]->u.td_py_type
-#define sipType_QLocale_QuotationStyle              sipModuleAPI_trikControl_QtCore->em_types[135]
-#define sipEnum_QLocale_QuotationStyle              sipModuleAPI_trikControl_QtCore->em_types[135]->u.td_py_type
-#define sipType_QLocale_CurrencySymbolFormat              sipModuleAPI_trikControl_QtCore->em_types[128]
-#define sipEnum_QLocale_CurrencySymbolFormat              sipModuleAPI_trikControl_QtCore->em_types[128]->u.td_py_type
-#define sipType_QLocale_Script              sipModuleAPI_trikControl_QtCore->em_types[136]
-#define sipEnum_QLocale_Script              sipModuleAPI_trikControl_QtCore->em_types[136]->u.td_py_type
-#define sipType_QLocale_MeasurementSystem              sipModuleAPI_trikControl_QtCore->em_types[132]
-#define sipEnum_QLocale_MeasurementSystem              sipModuleAPI_trikControl_QtCore->em_types[132]->u.td_py_type
-#define sipType_QLocale_FormatType              sipModuleAPI_trikControl_QtCore->em_types[130]
-#define sipEnum_QLocale_FormatType              sipModuleAPI_trikControl_QtCore->em_types[130]->u.td_py_type
-#define sipType_QLocale_NumberOption              sipModuleAPI_trikControl_QtCore->em_types[133]
-#define sipEnum_QLocale_NumberOption              sipModuleAPI_trikControl_QtCore->em_types[133]->u.td_py_type
-#define sipType_QLocale_Country              sipModuleAPI_trikControl_QtCore->em_types[127]
-#define sipEnum_QLocale_Country              sipModuleAPI_trikControl_QtCore->em_types[127]->u.td_py_type
-#define sipType_QLocale_Language              sipModuleAPI_trikControl_QtCore->em_types[131]
-#define sipEnum_QLocale_Language              sipModuleAPI_trikControl_QtCore->em_types[131]->u.td_py_type
+#define sipType_QMetaObject              sipModuleAPI_trikControl_QtCore->em_types[132]
+#define sipClass_QMetaObject             sipModuleAPI_trikControl_QtCore->em_types[132]->u.td_wrapper_type
 
-#define sipType_QLocale_NumberOptions              sipModuleAPI_trikControl_QtCore->em_types[134]
-#define sipClass_QLocale_NumberOptions             sipModuleAPI_trikControl_QtCore->em_types[134]->u.td_wrapper_type
+#define sipType_QGenericArgument              sipModuleAPI_trikControl_QtCore->em_types[75]
+#define sipClass_QGenericArgument             sipModuleAPI_trikControl_QtCore->em_types[75]->u.td_wrapper_type
 
-#define sipType_QLockFile              sipModuleAPI_trikControl_QtCore->em_types[137]
-#define sipClass_QLockFile             sipModuleAPI_trikControl_QtCore->em_types[137]->u.td_wrapper_type
+#define sipType_QGenericReturnArgument              sipModuleAPI_trikControl_QtCore->em_types[76]
+#define sipClass_QGenericReturnArgument             sipModuleAPI_trikControl_QtCore->em_types[76]->u.td_wrapper_type
 
-#define sipType_QLockFile_LockError              sipModuleAPI_trikControl_QtCore->em_types[138]
-#define sipEnum_QLockFile_LockError              sipModuleAPI_trikControl_QtCore->em_types[138]->u.td_py_type
+#define sipType_QParallelAnimationGroup              sipModuleAPI_trikControl_QtCore->em_types[145]
+#define sipClass_QParallelAnimationGroup             sipModuleAPI_trikControl_QtCore->em_types[145]->u.td_wrapper_type
 
-#define sipType_QMessageLogContext              sipModuleAPI_trikControl_QtCore->em_types[144]
-#define sipClass_QMessageLogContext             sipModuleAPI_trikControl_QtCore->em_types[144]->u.td_wrapper_type
+#define sipType_QPauseAnimation              sipModuleAPI_trikControl_QtCore->em_types[146]
+#define sipClass_QPauseAnimation             sipModuleAPI_trikControl_QtCore->em_types[146]->u.td_wrapper_type
 
-#define sipType_QMessageLogger              sipModuleAPI_trikControl_QtCore->em_types[145]
-#define sipClass_QMessageLogger             sipModuleAPI_trikControl_QtCore->em_types[145]->u.td_wrapper_type
+#define sipType_QVariantAnimation              sipModuleAPI_trikControl_QtCore->em_types[251]
+#define sipClass_QVariantAnimation             sipModuleAPI_trikControl_QtCore->em_types[251]->u.td_wrapper_type
 
-#define sipType_QMargins              sipModuleAPI_trikControl_QtCore->em_types[141]
-#define sipClass_QMargins             sipModuleAPI_trikControl_QtCore->em_types[141]->u.td_wrapper_type
+#define sipType_QPropertyAnimation              sipModuleAPI_trikControl_QtCore->em_types[158]
+#define sipClass_QPropertyAnimation             sipModuleAPI_trikControl_QtCore->em_types[158]->u.td_wrapper_type
 
-#define sipType_QMarginsF              sipModuleAPI_trikControl_QtCore->em_types[142]
-#define sipClass_QMarginsF             sipModuleAPI_trikControl_QtCore->em_types[142]->u.td_wrapper_type
+#define sipType_QPluginLoader              sipModuleAPI_trikControl_QtCore->em_types[148]
+#define sipClass_QPluginLoader             sipModuleAPI_trikControl_QtCore->em_types[148]->u.td_wrapper_type
 
-#define sipType_QMessageAuthenticationCode              sipModuleAPI_trikControl_QtCore->em_types[143]
-#define sipClass_QMessageAuthenticationCode             sipModuleAPI_trikControl_QtCore->em_types[143]->u.td_wrapper_type
+#define sipType_QPoint              sipModuleAPI_trikControl_QtCore->em_types[149]
+#define sipClass_QPoint             sipModuleAPI_trikControl_QtCore->em_types[149]->u.td_wrapper_type
 
-#define sipType_QMetaMethod              sipModuleAPI_trikControl_QtCore->em_types[148]
-#define sipClass_QMetaMethod             sipModuleAPI_trikControl_QtCore->em_types[148]->u.td_wrapper_type
+#define sipType_QPointF              sipModuleAPI_trikControl_QtCore->em_types[150]
+#define sipClass_QPointF             sipModuleAPI_trikControl_QtCore->em_types[150]->u.td_wrapper_type
 
-#define sipType_QMetaMethod_MethodType              sipModuleAPI_trikControl_QtCore->em_types[150]
-#define sipEnum_QMetaMethod_MethodType              sipModuleAPI_trikControl_QtCore->em_types[150]->u.td_py_type
-#define sipType_QMetaMethod_Access              sipModuleAPI_trikControl_QtCore->em_types[149]
-#define sipEnum_QMetaMethod_Access              sipModuleAPI_trikControl_QtCore->em_types[149]->u.td_py_type
+#define sipType_QProcess              sipModuleAPI_trikControl_QtCore->em_types[151]
+#define sipClass_QProcess             sipModuleAPI_trikControl_QtCore->em_types[151]->u.td_wrapper_type
 
-#define sipType_QMetaEnum              sipModuleAPI_trikControl_QtCore->em_types[147]
-#define sipClass_QMetaEnum             sipModuleAPI_trikControl_QtCore->em_types[147]->u.td_wrapper_type
+#define sipType_QProcess_ProcessChannelMode              sipModuleAPI_trikControl_QtCore->em_types[154]
+#define sipEnum_QProcess_ProcessChannelMode              sipModuleAPI_trikControl_QtCore->em_types[154]->u.td_py_type
+#define sipType_QProcess_ProcessChannel              sipModuleAPI_trikControl_QtCore->em_types[153]
+#define sipEnum_QProcess_ProcessChannel              sipModuleAPI_trikControl_QtCore->em_types[153]->u.td_py_type
+#define sipType_QProcess_ProcessState              sipModuleAPI_trikControl_QtCore->em_types[156]
+#define sipEnum_QProcess_ProcessState              sipModuleAPI_trikControl_QtCore->em_types[156]->u.td_py_type
+#define sipType_QProcess_ProcessError              sipModuleAPI_trikControl_QtCore->em_types[155]
+#define sipEnum_QProcess_ProcessError              sipModuleAPI_trikControl_QtCore->em_types[155]->u.td_py_type
+#define sipType_QProcess_ExitStatus              sipModuleAPI_trikControl_QtCore->em_types[152]
+#define sipEnum_QProcess_ExitStatus              sipModuleAPI_trikControl_QtCore->em_types[152]->u.td_py_type
 
-#define sipType_QMetaProperty              sipModuleAPI_trikControl_QtCore->em_types[152]
-#define sipClass_QMetaProperty             sipModuleAPI_trikControl_QtCore->em_types[152]->u.td_wrapper_type
+#define sipType_QProcessEnvironment              sipModuleAPI_trikControl_QtCore->em_types[157]
+#define sipClass_QProcessEnvironment             sipModuleAPI_trikControl_QtCore->em_types[157]->u.td_wrapper_type
 
-#define sipType_QMetaClassInfo              sipModuleAPI_trikControl_QtCore->em_types[146]
-#define sipClass_QMetaClassInfo             sipModuleAPI_trikControl_QtCore->em_types[146]->u.td_wrapper_type
+#define sipType_QReadWriteLock              sipModuleAPI_trikControl_QtCore->em_types[161]
+#define sipClass_QReadWriteLock             sipModuleAPI_trikControl_QtCore->em_types[161]->u.td_wrapper_type
 
-#define sipType_QMetaType              sipModuleAPI_trikControl_QtCore->em_types[153]
-#define sipClass_QMetaType             sipModuleAPI_trikControl_QtCore->em_types[153]->u.td_wrapper_type
+#define sipType_QReadWriteLock_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[162]
+#define sipEnum_QReadWriteLock_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[162]->u.td_py_type
 
-#define sipType_QMetaType_TypeFlag              sipModuleAPI_trikControl_QtCore->em_types[155]
-#define sipEnum_QMetaType_TypeFlag              sipModuleAPI_trikControl_QtCore->em_types[155]->u.td_py_type
-#define sipType_QMetaType_Type              sipModuleAPI_trikControl_QtCore->em_types[154]
-#define sipEnum_QMetaType_Type              sipModuleAPI_trikControl_QtCore->em_types[154]->u.td_py_type
+#define sipType_QReadLocker              sipModuleAPI_trikControl_QtCore->em_types[160]
+#define sipClass_QReadLocker             sipModuleAPI_trikControl_QtCore->em_types[160]->u.td_wrapper_type
 
-#define sipType_QMetaType_TypeFlags              sipModuleAPI_trikControl_QtCore->em_types[156]
-#define sipClass_QMetaType_TypeFlags             sipModuleAPI_trikControl_QtCore->em_types[156]->u.td_wrapper_type
+#define sipType_QWriteLocker              sipModuleAPI_trikControl_QtCore->em_types[261]
+#define sipClass_QWriteLocker             sipModuleAPI_trikControl_QtCore->em_types[261]->u.td_wrapper_type
 
-#define sipType_QMimeData              sipModuleAPI_trikControl_QtCore->em_types[157]
-#define sipClass_QMimeData             sipModuleAPI_trikControl_QtCore->em_types[157]->u.td_wrapper_type
+#define sipType_QRect              sipModuleAPI_trikControl_QtCore->em_types[163]
+#define sipClass_QRect             sipModuleAPI_trikControl_QtCore->em_types[163]->u.td_wrapper_type
 
-#define sipType_QMimeDatabase              sipModuleAPI_trikControl_QtCore->em_types[158]
-#define sipClass_QMimeDatabase             sipModuleAPI_trikControl_QtCore->em_types[158]->u.td_wrapper_type
+#define sipType_QRectF              sipModuleAPI_trikControl_QtCore->em_types[164]
+#define sipClass_QRectF             sipModuleAPI_trikControl_QtCore->em_types[164]->u.td_wrapper_type
 
-#define sipType_QMimeDatabase_MatchMode              sipModuleAPI_trikControl_QtCore->em_types[159]
-#define sipEnum_QMimeDatabase_MatchMode              sipModuleAPI_trikControl_QtCore->em_types[159]->u.td_py_type
+#define sipType_QRegExp              sipModuleAPI_trikControl_QtCore->em_types[165]
+#define sipClass_QRegExp             sipModuleAPI_trikControl_QtCore->em_types[165]->u.td_wrapper_type
 
-#define sipType_QMimeType              sipModuleAPI_trikControl_QtCore->em_types[160]
-#define sipClass_QMimeType             sipModuleAPI_trikControl_QtCore->em_types[160]->u.td_wrapper_type
+#define sipType_QRegExp_CaretMode              sipModuleAPI_trikControl_QtCore->em_types[166]
+#define sipEnum_QRegExp_CaretMode              sipModuleAPI_trikControl_QtCore->em_types[166]->u.td_py_type
+#define sipType_QRegExp_PatternSyntax              sipModuleAPI_trikControl_QtCore->em_types[167]
+#define sipEnum_QRegExp_PatternSyntax              sipModuleAPI_trikControl_QtCore->em_types[167]->u.td_py_type
 
-#define sipType_QMutexLocker              sipModuleAPI_trikControl_QtCore->em_types[164]
-#define sipClass_QMutexLocker             sipModuleAPI_trikControl_QtCore->em_types[164]->u.td_wrapper_type
+#define sipType_QResource              sipModuleAPI_trikControl_QtCore->em_types[168]
+#define sipClass_QResource             sipModuleAPI_trikControl_QtCore->em_types[168]->u.td_wrapper_type
 
-#define sipType_QMutex              sipModuleAPI_trikControl_QtCore->em_types[162]
-#define sipClass_QMutex             sipModuleAPI_trikControl_QtCore->em_types[162]->u.td_wrapper_type
+#define sipType_QRunnable              sipModuleAPI_trikControl_QtCore->em_types[169]
+#define sipClass_QRunnable             sipModuleAPI_trikControl_QtCore->em_types[169]->u.td_wrapper_type
 
-#define sipType_QMutex_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[163]
-#define sipEnum_QMutex_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[163]->u.td_py_type
+#define sipType_QSemaphore              sipModuleAPI_trikControl_QtCore->em_types[170]
+#define sipClass_QSemaphore             sipModuleAPI_trikControl_QtCore->em_types[170]->u.td_wrapper_type
 
-#define sipType_QSignalBlocker              sipModuleAPI_trikControl_QtCore->em_types[212]
-#define sipClass_QSignalBlocker             sipModuleAPI_trikControl_QtCore->em_types[212]->u.td_wrapper_type
+#define sipType_QSequentialAnimationGroup              sipModuleAPI_trikControl_QtCore->em_types[171]
+#define sipClass_QSequentialAnimationGroup             sipModuleAPI_trikControl_QtCore->em_types[171]->u.td_wrapper_type
 
-#define sipType_QObjectCleanupHandler              sipModuleAPI_trikControl_QtCore->em_types[166]
-#define sipClass_QObjectCleanupHandler             sipModuleAPI_trikControl_QtCore->em_types[166]->u.td_wrapper_type
+#define sipType_QSettings              sipModuleAPI_trikControl_QtCore->em_types[176]
+#define sipClass_QSettings             sipModuleAPI_trikControl_QtCore->em_types[176]->u.td_wrapper_type
 
-#define sipType_QMetaObject              sipModuleAPI_trikControl_QtCore->em_types[151]
-#define sipClass_QMetaObject             sipModuleAPI_trikControl_QtCore->em_types[151]->u.td_wrapper_type
+#define sipType_QSettings_Scope              sipModuleAPI_trikControl_QtCore->em_types[178]
+#define sipEnum_QSettings_Scope              sipModuleAPI_trikControl_QtCore->em_types[178]->u.td_py_type
+#define sipType_QSettings_Format              sipModuleAPI_trikControl_QtCore->em_types[177]
+#define sipEnum_QSettings_Format              sipModuleAPI_trikControl_QtCore->em_types[177]->u.td_py_type
+#define sipType_QSettings_Status              sipModuleAPI_trikControl_QtCore->em_types[179]
+#define sipEnum_QSettings_Status              sipModuleAPI_trikControl_QtCore->em_types[179]->u.td_py_type
 
-#define sipType_QGenericArgument              sipModuleAPI_trikControl_QtCore->em_types[74]
-#define sipClass_QGenericArgument             sipModuleAPI_trikControl_QtCore->em_types[74]->u.td_wrapper_type
+#define sipType_QSharedMemory              sipModuleAPI_trikControl_QtCore->em_types[180]
+#define sipClass_QSharedMemory             sipModuleAPI_trikControl_QtCore->em_types[180]->u.td_wrapper_type
 
-#define sipType_QGenericReturnArgument              sipModuleAPI_trikControl_QtCore->em_types[75]
-#define sipClass_QGenericReturnArgument             sipModuleAPI_trikControl_QtCore->em_types[75]->u.td_wrapper_type
+#define sipType_QSharedMemory_SharedMemoryError              sipModuleAPI_trikControl_QtCore->em_types[182]
+#define sipEnum_QSharedMemory_SharedMemoryError              sipModuleAPI_trikControl_QtCore->em_types[182]->u.td_py_type
+#define sipType_QSharedMemory_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[181]
+#define sipEnum_QSharedMemory_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[181]->u.td_py_type
 
-#define sipType_QParallelAnimationGroup              sipModuleAPI_trikControl_QtCore->em_types[168]
-#define sipClass_QParallelAnimationGroup             sipModuleAPI_trikControl_QtCore->em_types[168]->u.td_wrapper_type
+#define sipType_QSignalMapper              sipModuleAPI_trikControl_QtCore->em_types[183]
+#define sipClass_QSignalMapper             sipModuleAPI_trikControl_QtCore->em_types[183]->u.td_wrapper_type
 
-#define sipType_QPauseAnimation              sipModuleAPI_trikControl_QtCore->em_types[169]
-#define sipClass_QPauseAnimation             sipModuleAPI_trikControl_QtCore->em_types[169]->u.td_wrapper_type
+#define sipType_QSignalTransition              sipModuleAPI_trikControl_QtCore->em_types[184]
+#define sipClass_QSignalTransition             sipModuleAPI_trikControl_QtCore->em_types[184]->u.td_wrapper_type
 
-#define sipType_QVariantAnimation              sipModuleAPI_trikControl_QtCore->em_types[291]
-#define sipClass_QVariantAnimation             sipModuleAPI_trikControl_QtCore->em_types[291]->u.td_wrapper_type
+#define sipType_QSize              sipModuleAPI_trikControl_QtCore->em_types[185]
+#define sipClass_QSize             sipModuleAPI_trikControl_QtCore->em_types[185]->u.td_wrapper_type
 
-#define sipType_QPropertyAnimation              sipModuleAPI_trikControl_QtCore->em_types[182]
-#define sipClass_QPropertyAnimation             sipModuleAPI_trikControl_QtCore->em_types[182]->u.td_wrapper_type
+#define sipType_QSizeF              sipModuleAPI_trikControl_QtCore->em_types[186]
+#define sipClass_QSizeF             sipModuleAPI_trikControl_QtCore->em_types[186]->u.td_wrapper_type
 
-#define sipType_QPluginLoader              sipModuleAPI_trikControl_QtCore->em_types[171]
-#define sipClass_QPluginLoader             sipModuleAPI_trikControl_QtCore->em_types[171]->u.td_wrapper_type
+#define sipType_QSocketNotifier              sipModuleAPI_trikControl_QtCore->em_types[187]
+#define sipClass_QSocketNotifier             sipModuleAPI_trikControl_QtCore->em_types[187]->u.td_wrapper_type
 
-#define sipType_QPoint              sipModuleAPI_trikControl_QtCore->em_types[172]
-#define sipClass_QPoint             sipModuleAPI_trikControl_QtCore->em_types[172]->u.td_wrapper_type
+#define sipType_QSocketNotifier_Type              sipModuleAPI_trikControl_QtCore->em_types[188]
+#define sipEnum_QSocketNotifier_Type              sipModuleAPI_trikControl_QtCore->em_types[188]->u.td_py_type
 
-#define sipType_QPointF              sipModuleAPI_trikControl_QtCore->em_types[173]
-#define sipClass_QPointF             sipModuleAPI_trikControl_QtCore->em_types[173]->u.td_wrapper_type
+#define sipType_QState              sipModuleAPI_trikControl_QtCore->em_types[189]
+#define sipClass_QState             sipModuleAPI_trikControl_QtCore->em_types[189]->u.td_wrapper_type
 
-#define sipType_QProcess              sipModuleAPI_trikControl_QtCore->em_types[174]
-#define sipClass_QProcess             sipModuleAPI_trikControl_QtCore->em_types[174]->u.td_wrapper_type
+#define sipType_QState_ChildMode              sipModuleAPI_trikControl_QtCore->em_types[190]
+#define sipEnum_QState_ChildMode              sipModuleAPI_trikControl_QtCore->em_types[190]->u.td_py_type
 
-#define sipType_QProcess_InputChannelMode              sipModuleAPI_trikControl_QtCore->em_types[176]
-#define sipEnum_QProcess_InputChannelMode              sipModuleAPI_trikControl_QtCore->em_types[176]->u.td_py_type
-#define sipType_QProcess_ProcessChannelMode              sipModuleAPI_trikControl_QtCore->em_types[178]
-#define sipEnum_QProcess_ProcessChannelMode              sipModuleAPI_trikControl_QtCore->em_types[178]->u.td_py_type
-#define sipType_QProcess_ProcessChannel              sipModuleAPI_trikControl_QtCore->em_types[177]
-#define sipEnum_QProcess_ProcessChannel              sipModuleAPI_trikControl_QtCore->em_types[177]->u.td_py_type
-#define sipType_QProcess_ProcessState              sipModuleAPI_trikControl_QtCore->em_types[180]
-#define sipEnum_QProcess_ProcessState              sipModuleAPI_trikControl_QtCore->em_types[180]->u.td_py_type
-#define sipType_QProcess_ProcessError              sipModuleAPI_trikControl_QtCore->em_types[179]
-#define sipEnum_QProcess_ProcessError              sipModuleAPI_trikControl_QtCore->em_types[179]->u.td_py_type
-#define sipType_QProcess_ExitStatus              sipModuleAPI_trikControl_QtCore->em_types[175]
-#define sipEnum_QProcess_ExitStatus              sipModuleAPI_trikControl_QtCore->em_types[175]->u.td_py_type
+#define sipType_QStateMachine              sipModuleAPI_trikControl_QtCore->em_types[191]
+#define sipClass_QStateMachine             sipModuleAPI_trikControl_QtCore->em_types[191]->u.td_wrapper_type
 
-#define sipType_QProcessEnvironment              sipModuleAPI_trikControl_QtCore->em_types[181]
-#define sipClass_QProcessEnvironment             sipModuleAPI_trikControl_QtCore->em_types[181]->u.td_wrapper_type
+#define sipType_QStateMachine_Error              sipModuleAPI_trikControl_QtCore->em_types[192]
+#define sipEnum_QStateMachine_Error              sipModuleAPI_trikControl_QtCore->em_types[192]->u.td_py_type
+#define sipType_QStateMachine_RestorePolicy              sipModuleAPI_trikControl_QtCore->em_types[194]
+#define sipEnum_QStateMachine_RestorePolicy              sipModuleAPI_trikControl_QtCore->em_types[194]->u.td_py_type
+#define sipType_QStateMachine_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[193]
+#define sipEnum_QStateMachine_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[193]->u.td_py_type
 
-#define sipType_QReadWriteLock              sipModuleAPI_trikControl_QtCore->em_types[184]
-#define sipClass_QReadWriteLock             sipModuleAPI_trikControl_QtCore->em_types[184]->u.td_wrapper_type
+#define sipType_QStateMachine_SignalEvent              sipModuleAPI_trikControl_QtCore->em_types[195]
+#define sipClass_QStateMachine_SignalEvent             sipModuleAPI_trikControl_QtCore->em_types[195]->u.td_wrapper_type
 
-#define sipType_QReadWriteLock_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[185]
-#define sipEnum_QReadWriteLock_RecursionMode              sipModuleAPI_trikControl_QtCore->em_types[185]->u.td_py_type
+#define sipType_QStateMachine_WrappedEvent              sipModuleAPI_trikControl_QtCore->em_types[196]
+#define sipClass_QStateMachine_WrappedEvent             sipModuleAPI_trikControl_QtCore->em_types[196]->u.td_wrapper_type
 
-#define sipType_QReadLocker              sipModuleAPI_trikControl_QtCore->em_types[183]
-#define sipClass_QReadLocker             sipModuleAPI_trikControl_QtCore->em_types[183]->u.td_wrapper_type
 
-#define sipType_QWriteLocker              sipModuleAPI_trikControl_QtCore->em_types[302]
-#define sipClass_QWriteLocker             sipModuleAPI_trikControl_QtCore->em_types[302]->u.td_wrapper_type
+#define sipType_QString_NormalizationForm              sipModuleAPI_trikControl_QtCore->em_types[198]
+#define sipEnum_QString_NormalizationForm              sipModuleAPI_trikControl_QtCore->em_types[198]->u.td_py_type
+#define sipType_QString_SplitBehavior              sipModuleAPI_trikControl_QtCore->em_types[201]
+#define sipEnum_QString_SplitBehavior              sipModuleAPI_trikControl_QtCore->em_types[201]->u.td_py_type
+#define sipType_QString_SectionFlag              sipModuleAPI_trikControl_QtCore->em_types[199]
+#define sipEnum_QString_SectionFlag              sipModuleAPI_trikControl_QtCore->em_types[199]->u.td_py_type
 
-#define sipType_QRect              sipModuleAPI_trikControl_QtCore->em_types[186]
-#define sipClass_QRect             sipModuleAPI_trikControl_QtCore->em_types[186]->u.td_wrapper_type
+#define sipType_QString_SectionFlags              sipModuleAPI_trikControl_QtCore->em_types[200]
+#define sipClass_QString_SectionFlags             sipModuleAPI_trikControl_QtCore->em_types[200]->u.td_wrapper_type
 
-#define sipType_QRectF              sipModuleAPI_trikControl_QtCore->em_types[187]
-#define sipClass_QRectF             sipModuleAPI_trikControl_QtCore->em_types[187]->u.td_wrapper_type
+#define sipType_QLatin1String              sipModuleAPI_trikControl_QtCore->em_types[85]
+#define sipClass_QLatin1String             sipModuleAPI_trikControl_QtCore->em_types[85]->u.td_wrapper_type
 
-#define sipType_QRegExp              sipModuleAPI_trikControl_QtCore->em_types[188]
-#define sipClass_QRegExp             sipModuleAPI_trikControl_QtCore->em_types[188]->u.td_wrapper_type
 
-#define sipType_QRegExp_CaretMode              sipModuleAPI_trikControl_QtCore->em_types[189]
-#define sipEnum_QRegExp_CaretMode              sipModuleAPI_trikControl_QtCore->em_types[189]->u.td_py_type
-#define sipType_QRegExp_PatternSyntax              sipModuleAPI_trikControl_QtCore->em_types[190]
-#define sipEnum_QRegExp_PatternSyntax              sipModuleAPI_trikControl_QtCore->em_types[190]->u.td_py_type
 
-#define sipType_QRegularExpression              sipModuleAPI_trikControl_QtCore->em_types[191]
-#define sipClass_QRegularExpression             sipModuleAPI_trikControl_QtCore->em_types[191]->u.td_wrapper_type
+#define sipType_QStringMatcher              sipModuleAPI_trikControl_QtCore->em_types[203]
+#define sipClass_QStringMatcher             sipModuleAPI_trikControl_QtCore->em_types[203]->u.td_wrapper_type
 
-#define sipType_QRegularExpression_MatchOption              sipModuleAPI_trikControl_QtCore->em_types[192]
-#define sipEnum_QRegularExpression_MatchOption              sipModuleAPI_trikControl_QtCore->em_types[192]->u.td_py_type
-#define sipType_QRegularExpression_MatchType              sipModuleAPI_trikControl_QtCore->em_types[194]
-#define sipEnum_QRegularExpression_MatchType              sipModuleAPI_trikControl_QtCore->em_types[194]->u.td_py_type
-#define sipType_QRegularExpression_PatternOption              sipModuleAPI_trikControl_QtCore->em_types[195]
-#define sipEnum_QRegularExpression_PatternOption              sipModuleAPI_trikControl_QtCore->em_types[195]->u.td_py_type
+#define sipType_QSystemSemaphore              sipModuleAPI_trikControl_QtCore->em_types[210]
+#define sipClass_QSystemSemaphore             sipModuleAPI_trikControl_QtCore->em_types[210]->u.td_wrapper_type
 
-#define sipType_QRegularExpression_PatternOptions              sipModuleAPI_trikControl_QtCore->em_types[196]
-#define sipClass_QRegularExpression_PatternOptions             sipModuleAPI_trikControl_QtCore->em_types[196]->u.td_wrapper_type
+#define sipType_QSystemSemaphore_SystemSemaphoreError              sipModuleAPI_trikControl_QtCore->em_types[212]
+#define sipEnum_QSystemSemaphore_SystemSemaphoreError              sipModuleAPI_trikControl_QtCore->em_types[212]->u.td_py_type
+#define sipType_QSystemSemaphore_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[211]
+#define sipEnum_QSystemSemaphore_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[211]->u.td_py_type
 
-#define sipType_QRegularExpression_MatchOptions              sipModuleAPI_trikControl_QtCore->em_types[193]
-#define sipClass_QRegularExpression_MatchOptions             sipModuleAPI_trikControl_QtCore->em_types[193]->u.td_wrapper_type
+#define sipType_QTemporaryFile              sipModuleAPI_trikControl_QtCore->em_types[213]
+#define sipClass_QTemporaryFile             sipModuleAPI_trikControl_QtCore->em_types[213]->u.td_wrapper_type
 
-#define sipType_QRegularExpressionMatch              sipModuleAPI_trikControl_QtCore->em_types[197]
-#define sipClass_QRegularExpressionMatch             sipModuleAPI_trikControl_QtCore->em_types[197]->u.td_wrapper_type
+#define sipType_QTextBoundaryFinder              sipModuleAPI_trikControl_QtCore->em_types[214]
+#define sipClass_QTextBoundaryFinder             sipModuleAPI_trikControl_QtCore->em_types[214]->u.td_wrapper_type
 
-#define sipType_QRegularExpressionMatchIterator              sipModuleAPI_trikControl_QtCore->em_types[198]
-#define sipClass_QRegularExpressionMatchIterator             sipModuleAPI_trikControl_QtCore->em_types[198]->u.td_wrapper_type
+#define sipType_QTextBoundaryFinder_BoundaryType              sipModuleAPI_trikControl_QtCore->em_types[217]
+#define sipEnum_QTextBoundaryFinder_BoundaryType              sipModuleAPI_trikControl_QtCore->em_types[217]->u.td_py_type
+#define sipType_QTextBoundaryFinder_BoundaryReason              sipModuleAPI_trikControl_QtCore->em_types[215]
+#define sipEnum_QTextBoundaryFinder_BoundaryReason              sipModuleAPI_trikControl_QtCore->em_types[215]->u.td_py_type
 
-#define sipType_QResource              sipModuleAPI_trikControl_QtCore->em_types[199]
-#define sipClass_QResource             sipModuleAPI_trikControl_QtCore->em_types[199]->u.td_wrapper_type
+#define sipType_QTextBoundaryFinder_BoundaryReasons              sipModuleAPI_trikControl_QtCore->em_types[216]
+#define sipClass_QTextBoundaryFinder_BoundaryReasons             sipModuleAPI_trikControl_QtCore->em_types[216]->u.td_wrapper_type
 
-#define sipType_QRunnable              sipModuleAPI_trikControl_QtCore->em_types[200]
-#define sipClass_QRunnable             sipModuleAPI_trikControl_QtCore->em_types[200]->u.td_wrapper_type
+#define sipType_QTextCodec              sipModuleAPI_trikControl_QtCore->em_types[218]
+#define sipClass_QTextCodec             sipModuleAPI_trikControl_QtCore->em_types[218]->u.td_wrapper_type
 
-#define sipType_QSaveFile              sipModuleAPI_trikControl_QtCore->em_types[201]
-#define sipClass_QSaveFile             sipModuleAPI_trikControl_QtCore->em_types[201]->u.td_wrapper_type
+#define sipType_QTextCodec_ConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[219]
+#define sipEnum_QTextCodec_ConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[219]->u.td_py_type
 
-#define sipType_QSemaphore              sipModuleAPI_trikControl_QtCore->em_types[202]
-#define sipClass_QSemaphore             sipModuleAPI_trikControl_QtCore->em_types[202]->u.td_wrapper_type
+#define sipType_QTextCodec_ConversionFlags              sipModuleAPI_trikControl_QtCore->em_types[220]
+#define sipClass_QTextCodec_ConversionFlags             sipModuleAPI_trikControl_QtCore->em_types[220]->u.td_wrapper_type
 
-#define sipType_QSequentialAnimationGroup              sipModuleAPI_trikControl_QtCore->em_types[203]
-#define sipClass_QSequentialAnimationGroup             sipModuleAPI_trikControl_QtCore->em_types[203]->u.td_wrapper_type
+#define sipType_QTextCodec_ConverterState              sipModuleAPI_trikControl_QtCore->em_types[221]
+#define sipClass_QTextCodec_ConverterState             sipModuleAPI_trikControl_QtCore->em_types[221]->u.td_wrapper_type
 
-#define sipType_QSettings              sipModuleAPI_trikControl_QtCore->em_types[205]
-#define sipClass_QSettings             sipModuleAPI_trikControl_QtCore->em_types[205]->u.td_wrapper_type
+#define sipType_QTextEncoder              sipModuleAPI_trikControl_QtCore->em_types[223]
+#define sipClass_QTextEncoder             sipModuleAPI_trikControl_QtCore->em_types[223]->u.td_wrapper_type
 
-#define sipType_QSettings_Scope              sipModuleAPI_trikControl_QtCore->em_types[207]
-#define sipEnum_QSettings_Scope              sipModuleAPI_trikControl_QtCore->em_types[207]->u.td_py_type
-#define sipType_QSettings_Format              sipModuleAPI_trikControl_QtCore->em_types[206]
-#define sipEnum_QSettings_Format              sipModuleAPI_trikControl_QtCore->em_types[206]->u.td_py_type
-#define sipType_QSettings_Status              sipModuleAPI_trikControl_QtCore->em_types[208]
-#define sipEnum_QSettings_Status              sipModuleAPI_trikControl_QtCore->em_types[208]->u.td_py_type
+#define sipType_QTextDecoder              sipModuleAPI_trikControl_QtCore->em_types[222]
+#define sipClass_QTextDecoder             sipModuleAPI_trikControl_QtCore->em_types[222]->u.td_wrapper_type
 
-#define sipType_QSharedMemory              sipModuleAPI_trikControl_QtCore->em_types[209]
-#define sipClass_QSharedMemory             sipModuleAPI_trikControl_QtCore->em_types[209]->u.td_wrapper_type
+#define sipType_QTextStream              sipModuleAPI_trikControl_QtCore->em_types[224]
+#define sipClass_QTextStream             sipModuleAPI_trikControl_QtCore->em_types[224]->u.td_wrapper_type
 
-#define sipType_QSharedMemory_SharedMemoryError              sipModuleAPI_trikControl_QtCore->em_types[211]
-#define sipEnum_QSharedMemory_SharedMemoryError              sipModuleAPI_trikControl_QtCore->em_types[211]->u.td_py_type
-#define sipType_QSharedMemory_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[210]
-#define sipEnum_QSharedMemory_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[210]->u.td_py_type
+#define sipType_QTextStream_Status              sipModuleAPI_trikControl_QtCore->em_types[229]
+#define sipEnum_QTextStream_Status              sipModuleAPI_trikControl_QtCore->em_types[229]->u.td_py_type
+#define sipType_QTextStream_NumberFlag              sipModuleAPI_trikControl_QtCore->em_types[226]
+#define sipEnum_QTextStream_NumberFlag              sipModuleAPI_trikControl_QtCore->em_types[226]->u.td_py_type
+#define sipType_QTextStream_FieldAlignment              sipModuleAPI_trikControl_QtCore->em_types[225]
+#define sipEnum_QTextStream_FieldAlignment              sipModuleAPI_trikControl_QtCore->em_types[225]->u.td_py_type
+#define sipType_QTextStream_RealNumberNotation              sipModuleAPI_trikControl_QtCore->em_types[228]
+#define sipEnum_QTextStream_RealNumberNotation              sipModuleAPI_trikControl_QtCore->em_types[228]->u.td_py_type
 
-#define sipType_QSignalMapper              sipModuleAPI_trikControl_QtCore->em_types[213]
-#define sipClass_QSignalMapper             sipModuleAPI_trikControl_QtCore->em_types[213]->u.td_wrapper_type
+#define sipType_QTextStream_NumberFlags              sipModuleAPI_trikControl_QtCore->em_types[227]
+#define sipClass_QTextStream_NumberFlags             sipModuleAPI_trikControl_QtCore->em_types[227]->u.td_wrapper_type
 
-#define sipType_QSignalTransition              sipModuleAPI_trikControl_QtCore->em_types[214]
-#define sipClass_QSignalTransition             sipModuleAPI_trikControl_QtCore->em_types[214]->u.td_wrapper_type
+#define sipType_QTextStreamManipulator              sipModuleAPI_trikControl_QtCore->em_types[230]
+#define sipClass_QTextStreamManipulator             sipModuleAPI_trikControl_QtCore->em_types[230]->u.td_wrapper_type
 
-#define sipType_QSize              sipModuleAPI_trikControl_QtCore->em_types[215]
-#define sipClass_QSize             sipModuleAPI_trikControl_QtCore->em_types[215]->u.td_wrapper_type
+#define sipType_QThread              sipModuleAPI_trikControl_QtCore->em_types[231]
+#define sipClass_QThread             sipModuleAPI_trikControl_QtCore->em_types[231]->u.td_wrapper_type
 
-#define sipType_QSizeF              sipModuleAPI_trikControl_QtCore->em_types[216]
-#define sipClass_QSizeF             sipModuleAPI_trikControl_QtCore->em_types[216]->u.td_wrapper_type
+#define sipType_QThread_Priority              sipModuleAPI_trikControl_QtCore->em_types[232]
+#define sipEnum_QThread_Priority              sipModuleAPI_trikControl_QtCore->em_types[232]->u.td_py_type
 
-#define sipType_QSocketNotifier              sipModuleAPI_trikControl_QtCore->em_types[217]
-#define sipClass_QSocketNotifier             sipModuleAPI_trikControl_QtCore->em_types[217]->u.td_wrapper_type
+#define sipType_QThreadPool              sipModuleAPI_trikControl_QtCore->em_types[233]
+#define sipClass_QThreadPool             sipModuleAPI_trikControl_QtCore->em_types[233]->u.td_wrapper_type
 
-#define sipType_QSocketNotifier_Type              sipModuleAPI_trikControl_QtCore->em_types[218]
-#define sipEnum_QSocketNotifier_Type              sipModuleAPI_trikControl_QtCore->em_types[218]->u.td_py_type
+#define sipType_QTimeLine              sipModuleAPI_trikControl_QtCore->em_types[235]
+#define sipClass_QTimeLine             sipModuleAPI_trikControl_QtCore->em_types[235]->u.td_wrapper_type
 
-#define sipType_QSortFilterProxyModel              sipModuleAPI_trikControl_QtCore->em_types[219]
-#define sipClass_QSortFilterProxyModel             sipModuleAPI_trikControl_QtCore->em_types[219]->u.td_wrapper_type
+#define sipType_QTimeLine_State              sipModuleAPI_trikControl_QtCore->em_types[238]
+#define sipEnum_QTimeLine_State              sipModuleAPI_trikControl_QtCore->em_types[238]->u.td_py_type
+#define sipType_QTimeLine_Direction              sipModuleAPI_trikControl_QtCore->em_types[237]
+#define sipEnum_QTimeLine_Direction              sipModuleAPI_trikControl_QtCore->em_types[237]->u.td_py_type
+#define sipType_QTimeLine_CurveShape              sipModuleAPI_trikControl_QtCore->em_types[236]
+#define sipEnum_QTimeLine_CurveShape              sipModuleAPI_trikControl_QtCore->em_types[236]->u.td_py_type
 
-#define sipType_QStandardPaths              sipModuleAPI_trikControl_QtCore->em_types[220]
-#define sipClass_QStandardPaths             sipModuleAPI_trikControl_QtCore->em_types[220]->u.td_wrapper_type
+#define sipType_QTimer              sipModuleAPI_trikControl_QtCore->em_types[239]
+#define sipClass_QTimer             sipModuleAPI_trikControl_QtCore->em_types[239]->u.td_wrapper_type
 
-#define sipType_QStandardPaths_LocateOption              sipModuleAPI_trikControl_QtCore->em_types[221]
-#define sipEnum_QStandardPaths_LocateOption              sipModuleAPI_trikControl_QtCore->em_types[221]->u.td_py_type
-#define sipType_QStandardPaths_StandardLocation              sipModuleAPI_trikControl_QtCore->em_types[223]
-#define sipEnum_QStandardPaths_StandardLocation              sipModuleAPI_trikControl_QtCore->em_types[223]->u.td_py_type
+#define sipType_QTranslator              sipModuleAPI_trikControl_QtCore->em_types[241]
+#define sipClass_QTranslator             sipModuleAPI_trikControl_QtCore->em_types[241]->u.td_wrapper_type
 
-#define sipType_QStandardPaths_LocateOptions              sipModuleAPI_trikControl_QtCore->em_types[222]
-#define sipClass_QStandardPaths_LocateOptions             sipModuleAPI_trikControl_QtCore->em_types[222]->u.td_wrapper_type
+#define sipType_QUrl              sipModuleAPI_trikControl_QtCore->em_types[242]
+#define sipClass_QUrl             sipModuleAPI_trikControl_QtCore->em_types[242]->u.td_wrapper_type
 
-#define sipType_QState              sipModuleAPI_trikControl_QtCore->em_types[224]
-#define sipClass_QState             sipModuleAPI_trikControl_QtCore->em_types[224]->u.td_wrapper_type
+#define sipType_QUrl_FormattingOption              sipModuleAPI_trikControl_QtCore->em_types[243]
+#define sipEnum_QUrl_FormattingOption              sipModuleAPI_trikControl_QtCore->em_types[243]->u.td_py_type
+#define sipType_QUrl_ParsingMode              sipModuleAPI_trikControl_QtCore->em_types[245]
+#define sipEnum_QUrl_ParsingMode              sipModuleAPI_trikControl_QtCore->em_types[245]->u.td_py_type
 
-#define sipType_QState_RestorePolicy              sipModuleAPI_trikControl_QtCore->em_types[226]
-#define sipEnum_QState_RestorePolicy              sipModuleAPI_trikControl_QtCore->em_types[226]->u.td_py_type
-#define sipType_QState_ChildMode              sipModuleAPI_trikControl_QtCore->em_types[225]
-#define sipEnum_QState_ChildMode              sipModuleAPI_trikControl_QtCore->em_types[225]->u.td_py_type
+#define sipType_QUrl_FormattingOptions              sipModuleAPI_trikControl_QtCore->em_types[244]
+#define sipClass_QUrl_FormattingOptions             sipModuleAPI_trikControl_QtCore->em_types[244]->u.td_wrapper_type
 
-#define sipType_QStateMachine              sipModuleAPI_trikControl_QtCore->em_types[227]
-#define sipClass_QStateMachine             sipModuleAPI_trikControl_QtCore->em_types[227]->u.td_wrapper_type
+#define sipType_QUuid              sipModuleAPI_trikControl_QtCore->em_types[246]
+#define sipClass_QUuid             sipModuleAPI_trikControl_QtCore->em_types[246]->u.td_wrapper_type
 
-#define sipType_QStateMachine_Error              sipModuleAPI_trikControl_QtCore->em_types[228]
-#define sipEnum_QStateMachine_Error              sipModuleAPI_trikControl_QtCore->em_types[228]->u.td_py_type
-#define sipType_QStateMachine_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[229]
-#define sipEnum_QStateMachine_EventPriority              sipModuleAPI_trikControl_QtCore->em_types[229]->u.td_py_type
+#define sipType_QUuid_Version              sipModuleAPI_trikControl_QtCore->em_types[248]
+#define sipEnum_QUuid_Version              sipModuleAPI_trikControl_QtCore->em_types[248]->u.td_py_type
+#define sipType_QUuid_Variant              sipModuleAPI_trikControl_QtCore->em_types[247]
+#define sipEnum_QUuid_Variant              sipModuleAPI_trikControl_QtCore->em_types[247]->u.td_py_type
 
-#define sipType_QStateMachine_SignalEvent              sipModuleAPI_trikControl_QtCore->em_types[230]
-#define sipClass_QStateMachine_SignalEvent             sipModuleAPI_trikControl_QtCore->em_types[230]->u.td_wrapper_type
+#define sipType_QVariant              sipModuleAPI_trikControl_QtCore->em_types[249]
+#define sipClass_QVariant             sipModuleAPI_trikControl_QtCore->em_types[249]->u.td_wrapper_type
 
-#define sipType_QStateMachine_WrappedEvent              sipModuleAPI_trikControl_QtCore->em_types[231]
-#define sipClass_QStateMachine_WrappedEvent             sipModuleAPI_trikControl_QtCore->em_types[231]->u.td_wrapper_type
+#define sipType_QVariant_Type              sipModuleAPI_trikControl_QtCore->em_types[250]
+#define sipEnum_QVariant_Type              sipModuleAPI_trikControl_QtCore->em_types[250]->u.td_py_type
 
-#define sipType_QStorageInfo              sipModuleAPI_trikControl_QtCore->em_types[232]
-#define sipClass_QStorageInfo             sipModuleAPI_trikControl_QtCore->em_types[232]->u.td_wrapper_type
+#define sipType_QWaitCondition              sipModuleAPI_trikControl_QtCore->em_types[259]
+#define sipClass_QWaitCondition             sipModuleAPI_trikControl_QtCore->em_types[259]->u.td_wrapper_type
 
-#define sipType_QStringListModel              sipModuleAPI_trikControl_QtCore->em_types[235]
-#define sipClass_QStringListModel             sipModuleAPI_trikControl_QtCore->em_types[235]->u.td_wrapper_type
+#define sipType_QXmlStreamAttribute              sipModuleAPI_trikControl_QtCore->em_types[262]
+#define sipClass_QXmlStreamAttribute             sipModuleAPI_trikControl_QtCore->em_types[262]->u.td_wrapper_type
 
-#define sipType_QSystemSemaphore              sipModuleAPI_trikControl_QtCore->em_types[240]
-#define sipClass_QSystemSemaphore             sipModuleAPI_trikControl_QtCore->em_types[240]->u.td_wrapper_type
+#define sipType_QXmlStreamAttributes              sipModuleAPI_trikControl_QtCore->em_types[263]
+#define sipClass_QXmlStreamAttributes             sipModuleAPI_trikControl_QtCore->em_types[263]->u.td_wrapper_type
 
-#define sipType_QSystemSemaphore_SystemSemaphoreError              sipModuleAPI_trikControl_QtCore->em_types[242]
-#define sipEnum_QSystemSemaphore_SystemSemaphoreError              sipModuleAPI_trikControl_QtCore->em_types[242]->u.td_py_type
-#define sipType_QSystemSemaphore_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[241]
-#define sipEnum_QSystemSemaphore_AccessMode              sipModuleAPI_trikControl_QtCore->em_types[241]->u.td_py_type
+#define sipType_QXmlStreamNamespaceDeclaration              sipModuleAPI_trikControl_QtCore->em_types[266]
+#define sipClass_QXmlStreamNamespaceDeclaration             sipModuleAPI_trikControl_QtCore->em_types[266]->u.td_wrapper_type
 
-#define sipType_QTemporaryDir              sipModuleAPI_trikControl_QtCore->em_types[243]
-#define sipClass_QTemporaryDir             sipModuleAPI_trikControl_QtCore->em_types[243]->u.td_wrapper_type
+#define sipType_QXmlStreamNotationDeclaration              sipModuleAPI_trikControl_QtCore->em_types[267]
+#define sipClass_QXmlStreamNotationDeclaration             sipModuleAPI_trikControl_QtCore->em_types[267]->u.td_wrapper_type
 
-#define sipType_QTemporaryFile              sipModuleAPI_trikControl_QtCore->em_types[244]
-#define sipClass_QTemporaryFile             sipModuleAPI_trikControl_QtCore->em_types[244]->u.td_wrapper_type
+#define sipType_QXmlStreamEntityDeclaration              sipModuleAPI_trikControl_QtCore->em_types[264]
+#define sipClass_QXmlStreamEntityDeclaration             sipModuleAPI_trikControl_QtCore->em_types[264]->u.td_wrapper_type
 
-#define sipType_QTextBoundaryFinder              sipModuleAPI_trikControl_QtCore->em_types[245]
-#define sipClass_QTextBoundaryFinder             sipModuleAPI_trikControl_QtCore->em_types[245]->u.td_wrapper_type
+#define sipType_QXmlStreamEntityResolver              sipModuleAPI_trikControl_QtCore->em_types[265]
+#define sipClass_QXmlStreamEntityResolver             sipModuleAPI_trikControl_QtCore->em_types[265]->u.td_wrapper_type
 
-#define sipType_QTextBoundaryFinder_BoundaryType              sipModuleAPI_trikControl_QtCore->em_types[248]
-#define sipEnum_QTextBoundaryFinder_BoundaryType              sipModuleAPI_trikControl_QtCore->em_types[248]->u.td_py_type
-#define sipType_QTextBoundaryFinder_BoundaryReason              sipModuleAPI_trikControl_QtCore->em_types[246]
-#define sipEnum_QTextBoundaryFinder_BoundaryReason              sipModuleAPI_trikControl_QtCore->em_types[246]->u.td_py_type
+#define sipType_QXmlStreamReader              sipModuleAPI_trikControl_QtCore->em_types[268]
+#define sipClass_QXmlStreamReader             sipModuleAPI_trikControl_QtCore->em_types[268]->u.td_wrapper_type
 
-#define sipType_QTextBoundaryFinder_BoundaryReasons              sipModuleAPI_trikControl_QtCore->em_types[247]
-#define sipClass_QTextBoundaryFinder_BoundaryReasons             sipModuleAPI_trikControl_QtCore->em_types[247]->u.td_wrapper_type
+#define sipType_QXmlStreamReader_Error              sipModuleAPI_trikControl_QtCore->em_types[269]
+#define sipEnum_QXmlStreamReader_Error              sipModuleAPI_trikControl_QtCore->em_types[269]->u.td_py_type
+#define sipType_QXmlStreamReader_ReadElementTextBehaviour              sipModuleAPI_trikControl_QtCore->em_types[270]
+#define sipEnum_QXmlStreamReader_ReadElementTextBehaviour              sipModuleAPI_trikControl_QtCore->em_types[270]->u.td_py_type
+#define sipType_QXmlStreamReader_TokenType              sipModuleAPI_trikControl_QtCore->em_types[271]
+#define sipEnum_QXmlStreamReader_TokenType              sipModuleAPI_trikControl_QtCore->em_types[271]->u.td_py_type
 
-#define sipType_QTextCodec              sipModuleAPI_trikControl_QtCore->em_types[249]
-#define sipClass_QTextCodec             sipModuleAPI_trikControl_QtCore->em_types[249]->u.td_wrapper_type
+#define sipType_QXmlStreamWriter              sipModuleAPI_trikControl_QtCore->em_types[272]
+#define sipClass_QXmlStreamWriter             sipModuleAPI_trikControl_QtCore->em_types[272]->u.td_wrapper_type
 
-#define sipType_QTextCodec_ConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[250]
-#define sipEnum_QTextCodec_ConversionFlag              sipModuleAPI_trikControl_QtCore->em_types[250]->u.td_py_type
+#define sipType_QPyNullVariant              sipModuleAPI_trikControl_QtCore->em_types[159]
+#define sipClass_QPyNullVariant             sipModuleAPI_trikControl_QtCore->em_types[159]->u.td_wrapper_type
 
-#define sipType_QTextCodec_ConversionFlags              sipModuleAPI_trikControl_QtCore->em_types[251]
-#define sipClass_QTextCodec_ConversionFlags             sipModuleAPI_trikControl_QtCore->em_types[251]->u.td_wrapper_type
+#define sipType_QList_0600QPair_0100QByteArray_0100QByteArray      sipModuleAPI_trikControl_QtCore->em_types[103]
 
-#define sipType_QTextCodec_ConverterState              sipModuleAPI_trikControl_QtCore->em_types[252]
-#define sipClass_QTextCodec_ConverterState             sipModuleAPI_trikControl_QtCore->em_types[252]->u.td_wrapper_type
+#define sipType_QList_0600QPair_0100QString_0100QString      sipModuleAPI_trikControl_QtCore->em_types[104]
 
-#define sipType_QTextEncoder              sipModuleAPI_trikControl_QtCore->em_types[254]
-#define sipClass_QTextEncoder             sipModuleAPI_trikControl_QtCore->em_types[254]->u.td_wrapper_type
+#define sipType_QSet_0101QAbstractState      sipModuleAPI_trikControl_QtCore->em_types[172]
 
-#define sipType_QTextDecoder              sipModuleAPI_trikControl_QtCore->em_types[253]
-#define sipClass_QTextDecoder             sipModuleAPI_trikControl_QtCore->em_types[253]->u.td_wrapper_type
+#define sipType_QList_0101QAbstractTransition      sipModuleAPI_trikControl_QtCore->em_types[96]
 
-#define sipType_QTextStream              sipModuleAPI_trikControl_QtCore->em_types[255]
-#define sipClass_QTextStream             sipModuleAPI_trikControl_QtCore->em_types[255]->u.td_wrapper_type
+#define sipType_QList_0100QUrl      sipModuleAPI_trikControl_QtCore->em_types[107]
 
-#define sipType_QTextStream_Status              sipModuleAPI_trikControl_QtCore->em_types[260]
-#define sipEnum_QTextStream_Status              sipModuleAPI_trikControl_QtCore->em_types[260]->u.td_py_type
-#define sipType_QTextStream_NumberFlag              sipModuleAPI_trikControl_QtCore->em_types[257]
-#define sipEnum_QTextStream_NumberFlag              sipModuleAPI_trikControl_QtCore->em_types[257]->u.td_py_type
-#define sipType_QTextStream_FieldAlignment              sipModuleAPI_trikControl_QtCore->em_types[256]
-#define sipEnum_QTextStream_FieldAlignment              sipModuleAPI_trikControl_QtCore->em_types[256]->u.td_py_type
-#define sipType_QTextStream_RealNumberNotation              sipModuleAPI_trikControl_QtCore->em_types[259]
-#define sipEnum_QTextStream_RealNumberNotation              sipModuleAPI_trikControl_QtCore->em_types[259]->u.td_py_type
+#define sipType_QList_0100QLocale      sipModuleAPI_trikControl_QtCore->em_types[100]
 
-#define sipType_QTextStream_NumberFlags              sipModuleAPI_trikControl_QtCore->em_types[258]
-#define sipClass_QTextStream_NumberFlags             sipModuleAPI_trikControl_QtCore->em_types[258]->u.td_wrapper_type
+#define sipType_QList_0100Qt_DayOfWeek      sipModuleAPI_trikControl_QtCore->em_types[110]
 
-#define sipType_QTextStreamManipulator              sipModuleAPI_trikControl_QtCore->em_types[261]
-#define sipClass_QTextStreamManipulator             sipModuleAPI_trikControl_QtCore->em_types[261]->u.td_wrapper_type
+#define sipType_QList_0101QAbstractAnimation      sipModuleAPI_trikControl_QtCore->em_types[94]
 
-#define sipType_QThread              sipModuleAPI_trikControl_QtCore->em_types[262]
-#define sipClass_QThread             sipModuleAPI_trikControl_QtCore->em_types[262]->u.td_wrapper_type
+#define sipType_QList_0101QAbstractState      sipModuleAPI_trikControl_QtCore->em_types[95]
 
-#define sipType_QThread_Priority              sipModuleAPI_trikControl_QtCore->em_types[263]
-#define sipEnum_QThread_Priority              sipModuleAPI_trikControl_QtCore->em_types[263]->u.td_py_type
+#define sipType_QHash_1800_0100QByteArray      sipModuleAPI_trikControl_QtCore->em_types[78]
 
-#define sipType_QThreadPool              sipModuleAPI_trikControl_QtCore->em_types[264]
-#define sipClass_QThreadPool             sipModuleAPI_trikControl_QtCore->em_types[264]->u.td_wrapper_type
+#define sipType_QMap_1800_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[125]
 
-#define sipType_QTimeLine              sipModuleAPI_trikControl_QtCore->em_types[266]
-#define sipClass_QTimeLine             sipModuleAPI_trikControl_QtCore->em_types[266]->u.td_wrapper_type
+#define sipType_QList_0100QByteArray      sipModuleAPI_trikControl_QtCore->em_types[97]
 
-#define sipType_QTimeLine_State              sipModuleAPI_trikControl_QtCore->em_types[269]
-#define sipEnum_QTimeLine_State              sipModuleAPI_trikControl_QtCore->em_types[269]->u.td_py_type
-#define sipType_QTimeLine_Direction              sipModuleAPI_trikControl_QtCore->em_types[268]
-#define sipEnum_QTimeLine_Direction              sipModuleAPI_trikControl_QtCore->em_types[268]->u.td_py_type
-#define sipType_QTimeLine_CurveShape              sipModuleAPI_trikControl_QtCore->em_types[267]
-#define sipEnum_QTimeLine_CurveShape              sipModuleAPI_trikControl_QtCore->em_types[267]->u.td_py_type
+#define sipType_QVector_0100QXmlStreamNotationDeclaration      sipModuleAPI_trikControl_QtCore->em_types[255]
 
-#define sipType_QTimer              sipModuleAPI_trikControl_QtCore->em_types[274]
-#define sipClass_QTimer             sipModuleAPI_trikControl_QtCore->em_types[274]->u.td_wrapper_type
+#define sipType_QVector_0100QXmlStreamNamespaceDeclaration      sipModuleAPI_trikControl_QtCore->em_types[254]
 
-#define sipType_QTimeZone              sipModuleAPI_trikControl_QtCore->em_types[270]
-#define sipClass_QTimeZone             sipModuleAPI_trikControl_QtCore->em_types[270]->u.td_wrapper_type
+#define sipType_QVector_0100QXmlStreamEntityDeclaration      sipModuleAPI_trikControl_QtCore->em_types[253]
 
-#define sipType_QTimeZone_NameType              sipModuleAPI_trikControl_QtCore->em_types[271]
-#define sipEnum_QTimeZone_NameType              sipModuleAPI_trikControl_QtCore->em_types[271]->u.td_py_type
-#define sipType_QTimeZone_TimeType              sipModuleAPI_trikControl_QtCore->em_types[273]
-#define sipEnum_QTimeZone_TimeType              sipModuleAPI_trikControl_QtCore->em_types[273]->u.td_py_type
+#define sipType_QMap_0100QString_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[124]
 
-#define sipType_QTimeZone_OffsetData              sipModuleAPI_trikControl_QtCore->em_types[272]
-#define sipClass_QTimeZone_OffsetData             sipModuleAPI_trikControl_QtCore->em_types[272]->u.td_wrapper_type
+#define sipType_QList_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[109]
 
-#define sipType_QTranslator              sipModuleAPI_trikControl_QtCore->em_types[276]
-#define sipClass_QTranslator             sipModuleAPI_trikControl_QtCore->em_types[276]->u.td_wrapper_type
+#define sipType_QHash_0100QString_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[77]
 
-#define sipType_QUrl              sipModuleAPI_trikControl_QtCore->em_types[277]
-#define sipClass_QUrl             sipModuleAPI_trikControl_QtCore->em_types[277]->u.td_wrapper_type
+#define sipType_QVector_0600QPair_2400_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[252]
 
-#define sipType_QUrl_UserInputResolutionOption              sipModuleAPI_trikControl_QtCore->em_types[283]
-#define sipEnum_QUrl_UserInputResolutionOption              sipModuleAPI_trikControl_QtCore->em_types[283]->u.td_py_type
-#define sipType_QUrl_ComponentFormattingOption              sipModuleAPI_trikControl_QtCore->em_types[278]
-#define sipEnum_QUrl_ComponentFormattingOption              sipModuleAPI_trikControl_QtCore->em_types[278]->u.td_py_type
-#define sipType_QUrl_UrlFormattingOption              sipModuleAPI_trikControl_QtCore->em_types[282]
-#define sipEnum_QUrl_UrlFormattingOption              sipModuleAPI_trikControl_QtCore->em_types[282]->u.td_py_type
-#define sipType_QUrl_ParsingMode              sipModuleAPI_trikControl_QtCore->em_types[281]
-#define sipEnum_QUrl_ParsingMode              sipModuleAPI_trikControl_QtCore->em_types[281]->u.td_py_type
+#define sipType_QList_0101QObject      sipModuleAPI_trikControl_QtCore->em_types[102]
 
-#define sipType_QUrl_FormattingOptions              sipModuleAPI_trikControl_QtCore->em_types[280]
-#define sipClass_QUrl_FormattingOptions             sipModuleAPI_trikControl_QtCore->em_types[280]->u.td_wrapper_type
+#define sipType_QList_0100QModelIndex      sipModuleAPI_trikControl_QtCore->em_types[101]
 
-#define sipType_QUrl_ComponentFormattingOptions              sipModuleAPI_trikControl_QtCore->em_types[279]
-#define sipClass_QUrl_ComponentFormattingOptions             sipModuleAPI_trikControl_QtCore->em_types[279]->u.td_wrapper_type
+#define sipType_QList_0100QFileInfo      sipModuleAPI_trikControl_QtCore->em_types[98]
 
-#define sipType_QUrl_UserInputResolutionOptions              sipModuleAPI_trikControl_QtCore->em_types[284]
-#define sipClass_QUrl_UserInputResolutionOptions             sipModuleAPI_trikControl_QtCore->em_types[284]->u.td_wrapper_type
+#define sipType_QVector_2400      sipModuleAPI_trikControl_QtCore->em_types[257]
 
-#define sipType_QUrlQuery              sipModuleAPI_trikControl_QtCore->em_types[285]
-#define sipClass_QUrlQuery             sipModuleAPI_trikControl_QtCore->em_types[285]->u.td_wrapper_type
+#define sipType_QVector_1900      sipModuleAPI_trikControl_QtCore->em_types[258]
 
-#define sipType_QUuid              sipModuleAPI_trikControl_QtCore->em_types[286]
-#define sipClass_QUuid             sipModuleAPI_trikControl_QtCore->em_types[286]->u.td_wrapper_type
+#define sipType_QVector_1800      sipModuleAPI_trikControl_QtCore->em_types[256]
 
-#define sipType_QUuid_Version              sipModuleAPI_trikControl_QtCore->em_types[288]
-#define sipEnum_QUuid_Version              sipModuleAPI_trikControl_QtCore->em_types[288]->u.td_py_type
-#define sipType_QUuid_Variant              sipModuleAPI_trikControl_QtCore->em_types[287]
-#define sipEnum_QUuid_Variant              sipModuleAPI_trikControl_QtCore->em_types[287]->u.td_py_type
+#define sipType_QList_0100QVariant_Type      sipModuleAPI_trikControl_QtCore->em_types[108]
 
-#define sipType_QVariant              sipModuleAPI_trikControl_QtCore->em_types[289]
-#define sipClass_QVariant             sipModuleAPI_trikControl_QtCore->em_types[289]->u.td_wrapper_type
+#define sipType_QStringList      sipModuleAPI_trikControl_QtCore->em_types[202]
 
-#define sipType_QVariant_Type              sipModuleAPI_trikControl_QtCore->em_types[290]
-#define sipEnum_QVariant_Type              sipModuleAPI_trikControl_QtCore->em_types[290]->u.td_py_type
+#define sipType_QStringRef      sipModuleAPI_trikControl_QtCore->em_types[204]
 
-#define sipType_QVersionNumber              sipModuleAPI_trikControl_QtCore->em_types[299]
-#define sipClass_QVersionNumber             sipModuleAPI_trikControl_QtCore->em_types[299]->u.td_wrapper_type
+#define sipType_QString      sipModuleAPI_trikControl_QtCore->em_types[197]
 
-#define sipType_QWaitCondition              sipModuleAPI_trikControl_QtCore->em_types[300]
-#define sipClass_QWaitCondition             sipModuleAPI_trikControl_QtCore->em_types[300]->u.td_wrapper_type
+#define sipType_QSet_1900      sipModuleAPI_trikControl_QtCore->em_types[175]
 
-#define sipType_QXmlStreamAttribute              sipModuleAPI_trikControl_QtCore->em_types[303]
-#define sipClass_QXmlStreamAttribute             sipModuleAPI_trikControl_QtCore->em_types[303]->u.td_wrapper_type
+#define sipType_QSet_1800      sipModuleAPI_trikControl_QtCore->em_types[174]
 
-#define sipType_QXmlStreamAttributes              sipModuleAPI_trikControl_QtCore->em_types[304]
-#define sipClass_QXmlStreamAttributes             sipModuleAPI_trikControl_QtCore->em_types[304]->u.td_wrapper_type
+#define sipType_QPair_1900_1900      sipModuleAPI_trikControl_QtCore->em_types[144]
 
-#define sipType_QXmlStreamNamespaceDeclaration              sipModuleAPI_trikControl_QtCore->em_types[307]
-#define sipClass_QXmlStreamNamespaceDeclaration             sipModuleAPI_trikControl_QtCore->em_types[307]->u.td_wrapper_type
+#define sipType_QPair_1800_1800      sipModuleAPI_trikControl_QtCore->em_types[143]
 
-#define sipType_QXmlStreamNotationDeclaration              sipModuleAPI_trikControl_QtCore->em_types[308]
-#define sipClass_QXmlStreamNotationDeclaration             sipModuleAPI_trikControl_QtCore->em_types[308]->u.td_wrapper_type
+#define sipType_QList_0100QLocale_Country      sipModuleAPI_trikControl_QtCore->em_types[99]
 
-#define sipType_QXmlStreamEntityDeclaration              sipModuleAPI_trikControl_QtCore->em_types[305]
-#define sipClass_QXmlStreamEntityDeclaration             sipModuleAPI_trikControl_QtCore->em_types[305]->u.td_wrapper_type
+#define sipType_QList_2400      sipModuleAPI_trikControl_QtCore->em_types[112]
 
-#define sipType_QXmlStreamEntityResolver              sipModuleAPI_trikControl_QtCore->em_types[306]
-#define sipClass_QXmlStreamEntityResolver             sipModuleAPI_trikControl_QtCore->em_types[306]->u.td_wrapper_type
+#define sipType_QList_1900      sipModuleAPI_trikControl_QtCore->em_types[113]
 
-#define sipType_QXmlStreamReader              sipModuleAPI_trikControl_QtCore->em_types[309]
-#define sipClass_QXmlStreamReader             sipModuleAPI_trikControl_QtCore->em_types[309]->u.td_wrapper_type
+#define sipType_QList_1800      sipModuleAPI_trikControl_QtCore->em_types[111]
 
-#define sipType_QXmlStreamReader_Error              sipModuleAPI_trikControl_QtCore->em_types[310]
-#define sipEnum_QXmlStreamReader_Error              sipModuleAPI_trikControl_QtCore->em_types[310]->u.td_py_type
-#define sipType_QXmlStreamReader_ReadElementTextBehaviour              sipModuleAPI_trikControl_QtCore->em_types[311]
-#define sipEnum_QXmlStreamReader_ReadElementTextBehaviour              sipModuleAPI_trikControl_QtCore->em_types[311]->u.td_py_type
-#define sipType_QXmlStreamReader_TokenType              sipModuleAPI_trikControl_QtCore->em_types[312]
-#define sipEnum_QXmlStreamReader_TokenType              sipModuleAPI_trikControl_QtCore->em_types[312]->u.td_py_type
+#define sipType_QList_0600QPair_2400_2400      sipModuleAPI_trikControl_QtCore->em_types[106]
 
-#define sipType_QXmlStreamWriter              sipModuleAPI_trikControl_QtCore->em_types[313]
-#define sipClass_QXmlStreamWriter             sipModuleAPI_trikControl_QtCore->em_types[313]->u.td_wrapper_type
+#define sipType_QList_0600QPair_1800_1800      sipModuleAPI_trikControl_QtCore->em_types[105]
 
-#define sipType_QSysInfo              sipModuleAPI_trikControl_QtCore->em_types[237]
-#define sipClass_QSysInfo             sipModuleAPI_trikControl_QtCore->em_types[237]->u.td_wrapper_type
+#define sipType_QChar      sipModuleAPI_trikControl_QtCore->em_types[24]
 
-#define sipType_QSysInfo_Endian              sipModuleAPI_trikControl_QtCore->em_types[238]
-#define sipEnum_QSysInfo_Endian              sipModuleAPI_trikControl_QtCore->em_types[238]->u.td_py_type
-#define sipType_QSysInfo_Sizes              sipModuleAPI_trikControl_QtCore->em_types[239]
-#define sipEnum_QSysInfo_Sizes              sipModuleAPI_trikControl_QtCore->em_types[239]->u.td_py_type
+#define sipType_QSet_0100Qt_DayOfWeek      sipModuleAPI_trikControl_QtCore->em_types[173]
 
-#define sipType_QList_0600QPair_0100QString_0100QString      sipModuleAPI_trikControl_QtCore->em_types[117]
-
-#define sipType_QList_0100QStorageInfo      sipModuleAPI_trikControl_QtCore->em_types[120]
-
-#define sipType_QSet_0101QAbstractState      sipModuleAPI_trikControl_QtCore->em_types[204]
-
-#define sipType_QList_0101QAbstractTransition      sipModuleAPI_trikControl_QtCore->em_types[109]
-
-#define sipType_QList_0100QMimeType      sipModuleAPI_trikControl_QtCore->em_types[114]
-
-#define sipType_QList_0100QUrl      sipModuleAPI_trikControl_QtCore->em_types[121]
-
-#define sipType_QList_0100QLocale      sipModuleAPI_trikControl_QtCore->em_types[113]
-
-#define sipType_QVector_0100QPointF      sipModuleAPI_trikControl_QtCore->em_types[293]
-
-#define sipType_QList_0100QCommandLineOption      sipModuleAPI_trikControl_QtCore->em_types[111]
-
-#define sipType_QList_0101QAbstractAnimation      sipModuleAPI_trikControl_QtCore->em_types[106]
-
-#define sipType_QList_0101QAbstractState      sipModuleAPI_trikControl_QtCore->em_types[108]
-
-#define sipType_QHash_1800_0100QByteArray      sipModuleAPI_trikControl_QtCore->em_types[77]
-
-#define sipType_QList_0100QPersistentModelIndex      sipModuleAPI_trikControl_QtCore->em_types[119]
-
-#define sipType_QMap_1800_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[140]
-
-#define sipType_QList_0100QAbstractEventDispatcher_TimerInfo      sipModuleAPI_trikControl_QtCore->em_types[107]
-
-#define sipType_QList_0100QByteArray      sipModuleAPI_trikControl_QtCore->em_types[110]
-
-#define sipType_QVector_0100QXmlStreamNotationDeclaration      sipModuleAPI_trikControl_QtCore->em_types[297]
-
-#define sipType_QVector_0100QXmlStreamNamespaceDeclaration      sipModuleAPI_trikControl_QtCore->em_types[296]
-
-#define sipType_QVector_0100QXmlStreamEntityDeclaration      sipModuleAPI_trikControl_QtCore->em_types[295]
-
-#define sipType_QMap_0100QString_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[139]
-
-#define sipType_QList_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[122]
-
-#define sipType_QHash_0100QString_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[76]
-
-#define sipType_QVector_0600QPair_2400_0100QVariant      sipModuleAPI_trikControl_QtCore->em_types[292]
-
-#define sipType_QVector_0100QTimeZone_OffsetData      sipModuleAPI_trikControl_QtCore->em_types[294]
-
-#define sipType_QList_0101QObject      sipModuleAPI_trikControl_QtCore->em_types[116]
-
-#define sipType_QList_0100QModelIndex      sipModuleAPI_trikControl_QtCore->em_types[115]
-
-#define sipType_QList_0100QFileInfo      sipModuleAPI_trikControl_QtCore->em_types[112]
-
-#define sipType_QStringList      sipModuleAPI_trikControl_QtCore->em_types[234]
-
-#define sipType_QVector_1800      sipModuleAPI_trikControl_QtCore->em_types[298]
-
-#define sipType_QPair_1800_1800      sipModuleAPI_trikControl_QtCore->em_types[167]
-
-#define sipType_QList_0100Qt_DayOfWeek      sipModuleAPI_trikControl_QtCore->em_types[123]
-
-#define sipType_QList_2400      sipModuleAPI_trikControl_QtCore->em_types[125]
-
-#define sipType_QList_1800      sipModuleAPI_trikControl_QtCore->em_types[124]
-
-#define sipType_QList_0600QPair_1800_1800      sipModuleAPI_trikControl_QtCore->em_types[118]
-
-#define sipType_QJsonObject      sipModuleAPI_trikControl_QtCore->em_types[93]
-
-#define sipType_QJsonArray      sipModuleAPI_trikControl_QtCore->em_types[89]
-
-#define sipType_QStringRef      sipModuleAPI_trikControl_QtCore->em_types[236]
-
-#define sipType_QString      sipModuleAPI_trikControl_QtCore->em_types[233]
-
-#define sipType_QChar      sipModuleAPI_trikControl_QtCore->em_types[23]
-
-#define sipType_quintptr      sipModuleAPI_trikControl_QtCore->em_types[421]
-
-#define sipType_qintptr      sipModuleAPI_trikControl_QtCore->em_types[420]
+#define sipType_quintptr      sipModuleAPI_trikControl_QtCore->em_types[360]
 extern const sipExportedModuleDef *sipModuleAPI_trikControl_QtCore;
 
-#define sipType_QAbstractTextDocumentLayout              sipModuleAPI_trikControl_QtGui->em_types[1]
-#define sipClass_QAbstractTextDocumentLayout             sipModuleAPI_trikControl_QtGui->em_types[1]->u.td_wrapper_type
+#define sipType_QPaintDevice              sipModuleAPI_trikControl_QtGui->em_types[362]
+#define sipClass_QPaintDevice             sipModuleAPI_trikControl_QtGui->em_types[362]->u.td_wrapper_type
+
+#define sipType_QPaintDevice_PaintDeviceMetric              sipModuleAPI_trikControl_QtGui->em_types[363]
+#define sipEnum_QPaintDevice_PaintDeviceMetric              sipModuleAPI_trikControl_QtGui->em_types[363]->u.td_py_type
+
+#define sipType_QWidget              sipModuleAPI_trikControl_QtGui->em_types[755]
+#define sipClass_QWidget             sipModuleAPI_trikControl_QtGui->em_types[755]->u.td_wrapper_type
+
+#define sipType_QWidget_RenderFlag              sipModuleAPI_trikControl_QtGui->em_types[756]
+#define sipEnum_QWidget_RenderFlag              sipModuleAPI_trikControl_QtGui->em_types[756]->u.td_py_type
+
+#define sipType_QAbstractButton              sipModuleAPI_trikControl_QtGui->em_types[1]
+#define sipClass_QAbstractButton             sipModuleAPI_trikControl_QtGui->em_types[1]->u.td_wrapper_type
+
+#define sipType_QAbstractItemDelegate              sipModuleAPI_trikControl_QtGui->em_types[3]
+#define sipClass_QAbstractItemDelegate             sipModuleAPI_trikControl_QtGui->em_types[3]->u.td_wrapper_type
+
+#define sipType_QAbstractItemDelegate_EndEditHint              sipModuleAPI_trikControl_QtGui->em_types[4]
+#define sipEnum_QAbstractItemDelegate_EndEditHint              sipModuleAPI_trikControl_QtGui->em_types[4]->u.td_py_type
+
+#define sipType_QFrame              sipModuleAPI_trikControl_QtGui->em_types[143]
+#define sipClass_QFrame             sipModuleAPI_trikControl_QtGui->em_types[143]->u.td_wrapper_type
+
+#define sipType_QFrame_StyleMask              sipModuleAPI_trikControl_QtGui->em_types[146]
+#define sipEnum_QFrame_StyleMask              sipModuleAPI_trikControl_QtGui->em_types[146]->u.td_py_type
+#define sipType_QFrame_Shape              sipModuleAPI_trikControl_QtGui->em_types[145]
+#define sipEnum_QFrame_Shape              sipModuleAPI_trikControl_QtGui->em_types[145]->u.td_py_type
+#define sipType_QFrame_Shadow              sipModuleAPI_trikControl_QtGui->em_types[144]
+#define sipEnum_QFrame_Shadow              sipModuleAPI_trikControl_QtGui->em_types[144]->u.td_py_type
+
+#define sipType_QAbstractScrollArea              sipModuleAPI_trikControl_QtGui->em_types[21]
+#define sipClass_QAbstractScrollArea             sipModuleAPI_trikControl_QtGui->em_types[21]->u.td_wrapper_type
+
+#define sipType_QAbstractItemView              sipModuleAPI_trikControl_QtGui->em_types[5]
+#define sipClass_QAbstractItemView             sipModuleAPI_trikControl_QtGui->em_types[5]->u.td_wrapper_type
+
+#define sipType_QAbstractItemView_DropIndicatorPosition              sipModuleAPI_trikControl_QtGui->em_types[8]
+#define sipEnum_QAbstractItemView_DropIndicatorPosition              sipModuleAPI_trikControl_QtGui->em_types[8]->u.td_py_type
+#define sipType_QAbstractItemView_State              sipModuleAPI_trikControl_QtGui->em_types[15]
+#define sipEnum_QAbstractItemView_State              sipModuleAPI_trikControl_QtGui->em_types[15]->u.td_py_type
+#define sipType_QAbstractItemView_CursorAction              sipModuleAPI_trikControl_QtGui->em_types[6]
+#define sipEnum_QAbstractItemView_CursorAction              sipModuleAPI_trikControl_QtGui->em_types[6]->u.td_py_type
+#define sipType_QAbstractItemView_SelectionMode              sipModuleAPI_trikControl_QtGui->em_types[14]
+#define sipEnum_QAbstractItemView_SelectionMode              sipModuleAPI_trikControl_QtGui->em_types[14]->u.td_py_type
+#define sipType_QAbstractItemView_SelectionBehavior              sipModuleAPI_trikControl_QtGui->em_types[13]
+#define sipEnum_QAbstractItemView_SelectionBehavior              sipModuleAPI_trikControl_QtGui->em_types[13]->u.td_py_type
+#define sipType_QAbstractItemView_ScrollMode              sipModuleAPI_trikControl_QtGui->em_types[12]
+#define sipEnum_QAbstractItemView_ScrollMode              sipModuleAPI_trikControl_QtGui->em_types[12]->u.td_py_type
+#define sipType_QAbstractItemView_ScrollHint              sipModuleAPI_trikControl_QtGui->em_types[11]
+#define sipEnum_QAbstractItemView_ScrollHint              sipModuleAPI_trikControl_QtGui->em_types[11]->u.td_py_type
+#define sipType_QAbstractItemView_EditTrigger              sipModuleAPI_trikControl_QtGui->em_types[9]
+#define sipEnum_QAbstractItemView_EditTrigger              sipModuleAPI_trikControl_QtGui->em_types[9]->u.td_py_type
+#define sipType_QAbstractItemView_DragDropMode              sipModuleAPI_trikControl_QtGui->em_types[7]
+#define sipEnum_QAbstractItemView_DragDropMode              sipModuleAPI_trikControl_QtGui->em_types[7]->u.td_py_type
 
-#define sipType_QAbstractTextDocumentLayout_Selection              sipModuleAPI_trikControl_QtGui->em_types[3]
-#define sipClass_QAbstractTextDocumentLayout_Selection             sipModuleAPI_trikControl_QtGui->em_types[3]->u.td_wrapper_type
+#define sipType_QAbstractItemView_EditTriggers              sipModuleAPI_trikControl_QtGui->em_types[10]
+#define sipClass_QAbstractItemView_EditTriggers             sipModuleAPI_trikControl_QtGui->em_types[10]->u.td_wrapper_type
 
-#define sipType_QAbstractTextDocumentLayout_PaintContext              sipModuleAPI_trikControl_QtGui->em_types[2]
-#define sipClass_QAbstractTextDocumentLayout_PaintContext             sipModuleAPI_trikControl_QtGui->em_types[2]->u.td_wrapper_type
+#define sipType_QDialog              sipModuleAPI_trikControl_QtGui->em_types[84]
+#define sipClass_QDialog             sipModuleAPI_trikControl_QtGui->em_types[84]->u.td_wrapper_type
 
-#define sipType_QTextObjectInterface              sipModuleAPI_trikControl_QtGui->em_types[328]
-#define sipClass_QTextObjectInterface             sipModuleAPI_trikControl_QtGui->em_types[328]->u.td_wrapper_type
+#define sipType_QDialog_DialogCode              sipModuleAPI_trikControl_QtGui->em_types[85]
+#define sipEnum_QDialog_DialogCode              sipModuleAPI_trikControl_QtGui->em_types[85]->u.td_py_type
 
-#define sipType_QBackingStore              sipModuleAPI_trikControl_QtGui->em_types[6]
-#define sipClass_QBackingStore             sipModuleAPI_trikControl_QtGui->em_types[6]->u.td_wrapper_type
+#define sipType_QAbstractPrintDialog              sipModuleAPI_trikControl_QtGui->em_types[16]
+#define sipClass_QAbstractPrintDialog             sipModuleAPI_trikControl_QtGui->em_types[16]->u.td_wrapper_type
 
-#define sipType_QPaintDevice              sipModuleAPI_trikControl_QtGui->em_types[188]
-#define sipClass_QPaintDevice             sipModuleAPI_trikControl_QtGui->em_types[188]->u.td_wrapper_type
+#define sipType_QAbstractPrintDialog_PrintDialogOption              sipModuleAPI_trikControl_QtGui->em_types[17]
+#define sipEnum_QAbstractPrintDialog_PrintDialogOption              sipModuleAPI_trikControl_QtGui->em_types[17]->u.td_py_type
+#define sipType_QAbstractPrintDialog_PrintRange              sipModuleAPI_trikControl_QtGui->em_types[19]
+#define sipEnum_QAbstractPrintDialog_PrintRange              sipModuleAPI_trikControl_QtGui->em_types[19]->u.td_py_type
 
-#define sipType_QPaintDevice_PaintDeviceMetric              sipModuleAPI_trikControl_QtGui->em_types[189]
-#define sipEnum_QPaintDevice_PaintDeviceMetric              sipModuleAPI_trikControl_QtGui->em_types[189]->u.td_py_type
+#define sipType_QAbstractPrintDialog_PrintDialogOptions              sipModuleAPI_trikControl_QtGui->em_types[18]
+#define sipClass_QAbstractPrintDialog_PrintDialogOptions             sipModuleAPI_trikControl_QtGui->em_types[18]->u.td_wrapper_type
 
-#define sipType_QPixmap              sipModuleAPI_trikControl_QtGui->em_types[228]
-#define sipClass_QPixmap             sipModuleAPI_trikControl_QtGui->em_types[228]->u.td_wrapper_type
+#define sipType_QAbstractProxyModel              sipModuleAPI_trikControl_QtGui->em_types[20]
+#define sipClass_QAbstractProxyModel             sipModuleAPI_trikControl_QtGui->em_types[20]->u.td_wrapper_type
 
-#define sipType_QBitmap              sipModuleAPI_trikControl_QtGui->em_types[7]
-#define sipClass_QBitmap             sipModuleAPI_trikControl_QtGui->em_types[7]->u.td_wrapper_type
+#define sipType_QAbstractSlider              sipModuleAPI_trikControl_QtGui->em_types[22]
+#define sipClass_QAbstractSlider             sipModuleAPI_trikControl_QtGui->em_types[22]->u.td_wrapper_type
 
-#define sipType_QColor              sipModuleAPI_trikControl_QtGui->em_types[12]
-#define sipClass_QColor             sipModuleAPI_trikControl_QtGui->em_types[12]->u.td_wrapper_type
+#define sipType_QAbstractSlider_SliderChange              sipModuleAPI_trikControl_QtGui->em_types[24]
+#define sipEnum_QAbstractSlider_SliderChange              sipModuleAPI_trikControl_QtGui->em_types[24]->u.td_py_type
+#define sipType_QAbstractSlider_SliderAction              sipModuleAPI_trikControl_QtGui->em_types[23]
+#define sipEnum_QAbstractSlider_SliderAction              sipModuleAPI_trikControl_QtGui->em_types[23]->u.td_py_type
 
-#define sipType_QColor_NameFormat              sipModuleAPI_trikControl_QtGui->em_types[13]
-#define sipEnum_QColor_NameFormat              sipModuleAPI_trikControl_QtGui->em_types[13]->u.td_py_type
-#define sipType_QColor_Spec              sipModuleAPI_trikControl_QtGui->em_types[14]
-#define sipEnum_QColor_Spec              sipModuleAPI_trikControl_QtGui->em_types[14]->u.td_py_type
+#define sipType_QAbstractSpinBox              sipModuleAPI_trikControl_QtGui->em_types[25]
+#define sipClass_QAbstractSpinBox             sipModuleAPI_trikControl_QtGui->em_types[25]->u.td_wrapper_type
 
-#define sipType_QBrush              sipModuleAPI_trikControl_QtGui->em_types[8]
-#define sipClass_QBrush             sipModuleAPI_trikControl_QtGui->em_types[8]->u.td_wrapper_type
+#define sipType_QAbstractSpinBox_CorrectionMode              sipModuleAPI_trikControl_QtGui->em_types[27]
+#define sipEnum_QAbstractSpinBox_CorrectionMode              sipModuleAPI_trikControl_QtGui->em_types[27]->u.td_py_type
+#define sipType_QAbstractSpinBox_ButtonSymbols              sipModuleAPI_trikControl_QtGui->em_types[26]
+#define sipEnum_QAbstractSpinBox_ButtonSymbols              sipModuleAPI_trikControl_QtGui->em_types[26]->u.td_py_type
+#define sipType_QAbstractSpinBox_StepEnabledFlag              sipModuleAPI_trikControl_QtGui->em_types[29]
+#define sipEnum_QAbstractSpinBox_StepEnabledFlag              sipModuleAPI_trikControl_QtGui->em_types[29]->u.td_py_type
 
-#define sipType_QGradient              sipModuleAPI_trikControl_QtGui->em_types[49]
-#define sipClass_QGradient             sipModuleAPI_trikControl_QtGui->em_types[49]->u.td_wrapper_type
+#define sipType_QAbstractSpinBox_StepEnabled              sipModuleAPI_trikControl_QtGui->em_types[28]
+#define sipClass_QAbstractSpinBox_StepEnabled             sipModuleAPI_trikControl_QtGui->em_types[28]->u.td_wrapper_type
 
-#define sipType_QGradient_Spread              sipModuleAPI_trikControl_QtGui->em_types[51]
-#define sipEnum_QGradient_Spread              sipModuleAPI_trikControl_QtGui->em_types[51]->u.td_py_type
-#define sipType_QGradient_Type              sipModuleAPI_trikControl_QtGui->em_types[52]
-#define sipEnum_QGradient_Type              sipModuleAPI_trikControl_QtGui->em_types[52]->u.td_py_type
-#define sipType_QGradient_CoordinateMode              sipModuleAPI_trikControl_QtGui->em_types[50]
-#define sipEnum_QGradient_CoordinateMode              sipModuleAPI_trikControl_QtGui->em_types[50]->u.td_py_type
+#define sipType_QAbstractTextDocumentLayout              sipModuleAPI_trikControl_QtGui->em_types[30]
+#define sipClass_QAbstractTextDocumentLayout             sipModuleAPI_trikControl_QtGui->em_types[30]->u.td_wrapper_type
 
-#define sipType_QLinearGradient              sipModuleAPI_trikControl_QtGui->em_types[88]
-#define sipClass_QLinearGradient             sipModuleAPI_trikControl_QtGui->em_types[88]->u.td_wrapper_type
+#define sipType_QAbstractTextDocumentLayout_Selection              sipModuleAPI_trikControl_QtGui->em_types[32]
+#define sipClass_QAbstractTextDocumentLayout_Selection             sipModuleAPI_trikControl_QtGui->em_types[32]->u.td_wrapper_type
 
-#define sipType_QRadialGradient              sipModuleAPI_trikControl_QtGui->em_types[236]
-#define sipClass_QRadialGradient             sipModuleAPI_trikControl_QtGui->em_types[236]->u.td_wrapper_type
+#define sipType_QAbstractTextDocumentLayout_PaintContext              sipModuleAPI_trikControl_QtGui->em_types[31]
+#define sipClass_QAbstractTextDocumentLayout_PaintContext             sipModuleAPI_trikControl_QtGui->em_types[31]->u.td_wrapper_type
 
-#define sipType_QConicalGradient              sipModuleAPI_trikControl_QtGui->em_types[15]
-#define sipClass_QConicalGradient             sipModuleAPI_trikControl_QtGui->em_types[15]->u.td_wrapper_type
+#define sipType_QTextObjectInterface              sipModuleAPI_trikControl_QtGui->em_types[701]
+#define sipClass_QTextObjectInterface             sipModuleAPI_trikControl_QtGui->em_types[701]->u.td_wrapper_type
 
-#define sipType_QClipboard              sipModuleAPI_trikControl_QtGui->em_types[9]
-#define sipClass_QClipboard             sipModuleAPI_trikControl_QtGui->em_types[9]->u.td_wrapper_type
+#define sipType_QAction              sipModuleAPI_trikControl_QtGui->em_types[33]
+#define sipClass_QAction             sipModuleAPI_trikControl_QtGui->em_types[33]->u.td_wrapper_type
 
-#define sipType_QClipboard_Mode              sipModuleAPI_trikControl_QtGui->em_types[10]
-#define sipEnum_QClipboard_Mode              sipModuleAPI_trikControl_QtGui->em_types[10]->u.td_py_type
+#define sipType_QAction_Priority              sipModuleAPI_trikControl_QtGui->em_types[36]
+#define sipEnum_QAction_Priority              sipModuleAPI_trikControl_QtGui->em_types[36]->u.td_py_type
+#define sipType_QAction_SoftKeyRole              sipModuleAPI_trikControl_QtGui->em_types[37]
+#define sipEnum_QAction_SoftKeyRole              sipModuleAPI_trikControl_QtGui->em_types[37]->u.td_py_type
+#define sipType_QAction_MenuRole              sipModuleAPI_trikControl_QtGui->em_types[35]
+#define sipEnum_QAction_MenuRole              sipModuleAPI_trikControl_QtGui->em_types[35]->u.td_py_type
+#define sipType_QAction_ActionEvent              sipModuleAPI_trikControl_QtGui->em_types[34]
+#define sipEnum_QAction_ActionEvent              sipModuleAPI_trikControl_QtGui->em_types[34]->u.td_py_type
 
-#define sipType_QCursor              sipModuleAPI_trikControl_QtGui->em_types[18]
-#define sipClass_QCursor             sipModuleAPI_trikControl_QtGui->em_types[18]->u.td_wrapper_type
+#define sipType_QActionGroup              sipModuleAPI_trikControl_QtGui->em_types[39]
+#define sipClass_QActionGroup             sipModuleAPI_trikControl_QtGui->em_types[39]->u.td_wrapper_type
 
-#define sipType_QDesktopServices              sipModuleAPI_trikControl_QtGui->em_types[19]
-#define sipClass_QDesktopServices             sipModuleAPI_trikControl_QtGui->em_types[19]->u.td_wrapper_type
+#define sipType_QApplication              sipModuleAPI_trikControl_QtGui->em_types[40]
+#define sipClass_QApplication             sipModuleAPI_trikControl_QtGui->em_types[40]->u.td_wrapper_type
 
-#define sipType_QDrag              sipModuleAPI_trikControl_QtGui->em_types[22]
-#define sipClass_QDrag             sipModuleAPI_trikControl_QtGui->em_types[22]->u.td_wrapper_type
+#define sipType_QApplication_ColorSpec              sipModuleAPI_trikControl_QtGui->em_types[41]
+#define sipEnum_QApplication_ColorSpec              sipModuleAPI_trikControl_QtGui->em_types[41]->u.td_py_type
+#define sipType_QApplication_Type              sipModuleAPI_trikControl_QtGui->em_types[42]
+#define sipEnum_QApplication_Type              sipModuleAPI_trikControl_QtGui->em_types[42]->u.td_py_type
 
-#define sipType_QInputEvent              sipModuleAPI_trikControl_QtGui->em_types[75]
-#define sipClass_QInputEvent             sipModuleAPI_trikControl_QtGui->em_types[75]->u.td_wrapper_type
+#define sipType_QPixmap              sipModuleAPI_trikControl_QtGui->em_types[394]
+#define sipClass_QPixmap             sipModuleAPI_trikControl_QtGui->em_types[394]->u.td_wrapper_type
 
-#define sipType_QMouseEvent              sipModuleAPI_trikControl_QtGui->em_types[116]
-#define sipClass_QMouseEvent             sipModuleAPI_trikControl_QtGui->em_types[116]->u.td_wrapper_type
+#define sipType_QPixmap_ShareMode              sipModuleAPI_trikControl_QtGui->em_types[395]
+#define sipEnum_QPixmap_ShareMode              sipModuleAPI_trikControl_QtGui->em_types[395]->u.td_py_type
 
-#define sipType_QHoverEvent              sipModuleAPI_trikControl_QtGui->em_types[56]
-#define sipClass_QHoverEvent             sipModuleAPI_trikControl_QtGui->em_types[56]->u.td_wrapper_type
+#define sipType_QBitmap              sipModuleAPI_trikControl_QtGui->em_types[43]
+#define sipClass_QBitmap             sipModuleAPI_trikControl_QtGui->em_types[43]->u.td_wrapper_type
 
-#define sipType_QWheelEvent              sipModuleAPI_trikControl_QtGui->em_types[370]
-#define sipClass_QWheelEvent             sipModuleAPI_trikControl_QtGui->em_types[370]->u.td_wrapper_type
+#define sipType_QLayoutItem              sipModuleAPI_trikControl_QtGui->em_types[277]
+#define sipClass_QLayoutItem             sipModuleAPI_trikControl_QtGui->em_types[277]->u.td_wrapper_type
 
-#define sipType_QTabletEvent              sipModuleAPI_trikControl_QtGui->em_types[274]
-#define sipClass_QTabletEvent             sipModuleAPI_trikControl_QtGui->em_types[274]->u.td_wrapper_type
+#define sipType_QLayout              sipModuleAPI_trikControl_QtGui->em_types[275]
+#define sipClass_QLayout             sipModuleAPI_trikControl_QtGui->em_types[275]->u.td_wrapper_type
 
-#define sipType_QTabletEvent_PointerType              sipModuleAPI_trikControl_QtGui->em_types[275]
-#define sipEnum_QTabletEvent_PointerType              sipModuleAPI_trikControl_QtGui->em_types[275]->u.td_py_type
-#define sipType_QTabletEvent_TabletDevice              sipModuleAPI_trikControl_QtGui->em_types[276]
-#define sipEnum_QTabletEvent_TabletDevice              sipModuleAPI_trikControl_QtGui->em_types[276]->u.td_py_type
+#define sipType_QLayout_SizeConstraint              sipModuleAPI_trikControl_QtGui->em_types[276]
+#define sipEnum_QLayout_SizeConstraint              sipModuleAPI_trikControl_QtGui->em_types[276]->u.td_py_type
 
-#define sipType_QKeyEvent              sipModuleAPI_trikControl_QtGui->em_types[83]
-#define sipClass_QKeyEvent             sipModuleAPI_trikControl_QtGui->em_types[83]->u.td_wrapper_type
+#define sipType_QBoxLayout              sipModuleAPI_trikControl_QtGui->em_types[44]
+#define sipClass_QBoxLayout             sipModuleAPI_trikControl_QtGui->em_types[44]->u.td_wrapper_type
 
-#define sipType_QFocusEvent              sipModuleAPI_trikControl_QtGui->em_types[30]
-#define sipClass_QFocusEvent             sipModuleAPI_trikControl_QtGui->em_types[30]->u.td_wrapper_type
+#define sipType_QBoxLayout_Direction              sipModuleAPI_trikControl_QtGui->em_types[45]
+#define sipEnum_QBoxLayout_Direction              sipModuleAPI_trikControl_QtGui->em_types[45]->u.td_py_type
 
-#define sipType_QPaintEvent              sipModuleAPI_trikControl_QtGui->em_types[199]
-#define sipClass_QPaintEvent             sipModuleAPI_trikControl_QtGui->em_types[199]->u.td_wrapper_type
+#define sipType_QHBoxLayout              sipModuleAPI_trikControl_QtGui->em_types[221]
+#define sipClass_QHBoxLayout             sipModuleAPI_trikControl_QtGui->em_types[221]->u.td_wrapper_type
 
-#define sipType_QMoveEvent              sipModuleAPI_trikControl_QtGui->em_types[117]
-#define sipClass_QMoveEvent             sipModuleAPI_trikControl_QtGui->em_types[117]->u.td_wrapper_type
+#define sipType_QVBoxLayout              sipModuleAPI_trikControl_QtGui->em_types[735]
+#define sipClass_QVBoxLayout             sipModuleAPI_trikControl_QtGui->em_types[735]->u.td_wrapper_type
 
-#define sipType_QResizeEvent              sipModuleAPI_trikControl_QtGui->em_types[246]
-#define sipClass_QResizeEvent             sipModuleAPI_trikControl_QtGui->em_types[246]->u.td_wrapper_type
+#define sipType_QColor              sipModuleAPI_trikControl_QtGui->em_types[56]
+#define sipClass_QColor             sipModuleAPI_trikControl_QtGui->em_types[56]->u.td_wrapper_type
 
-#define sipType_QCloseEvent              sipModuleAPI_trikControl_QtGui->em_types[11]
-#define sipClass_QCloseEvent             sipModuleAPI_trikControl_QtGui->em_types[11]->u.td_wrapper_type
+#define sipType_QColor_Spec              sipModuleAPI_trikControl_QtGui->em_types[57]
+#define sipEnum_QColor_Spec              sipModuleAPI_trikControl_QtGui->em_types[57]->u.td_py_type
 
-#define sipType_QIconDragEvent              sipModuleAPI_trikControl_QtGui->em_types[60]
-#define sipClass_QIconDragEvent             sipModuleAPI_trikControl_QtGui->em_types[60]->u.td_wrapper_type
+#define sipType_QPushButton              sipModuleAPI_trikControl_QtGui->em_types[427]
+#define sipClass_QPushButton             sipModuleAPI_trikControl_QtGui->em_types[427]->u.td_wrapper_type
 
-#define sipType_QShowEvent              sipModuleAPI_trikControl_QtGui->em_types[256]
-#define sipClass_QShowEvent             sipModuleAPI_trikControl_QtGui->em_types[256]->u.td_wrapper_type
+#define sipType_QCommandLinkButton              sipModuleAPI_trikControl_QtGui->em_types[65]
+#define sipClass_QCommandLinkButton             sipModuleAPI_trikControl_QtGui->em_types[65]->u.td_wrapper_type
 
-#define sipType_QHideEvent              sipModuleAPI_trikControl_QtGui->em_types[55]
-#define sipClass_QHideEvent             sipModuleAPI_trikControl_QtGui->em_types[55]->u.td_wrapper_type
+#define sipType_QBrush              sipModuleAPI_trikControl_QtGui->em_types[46]
+#define sipClass_QBrush             sipModuleAPI_trikControl_QtGui->em_types[46]->u.td_wrapper_type
 
-#define sipType_QContextMenuEvent              sipModuleAPI_trikControl_QtGui->em_types[16]
-#define sipClass_QContextMenuEvent             sipModuleAPI_trikControl_QtGui->em_types[16]->u.td_wrapper_type
+#define sipType_QGradient              sipModuleAPI_trikControl_QtGui->em_types[154]
+#define sipClass_QGradient             sipModuleAPI_trikControl_QtGui->em_types[154]->u.td_wrapper_type
 
-#define sipType_QContextMenuEvent_Reason              sipModuleAPI_trikControl_QtGui->em_types[17]
-#define sipEnum_QContextMenuEvent_Reason              sipModuleAPI_trikControl_QtGui->em_types[17]->u.td_py_type
+#define sipType_QGradient_Spread              sipModuleAPI_trikControl_QtGui->em_types[156]
+#define sipEnum_QGradient_Spread              sipModuleAPI_trikControl_QtGui->em_types[156]->u.td_py_type
+#define sipType_QGradient_Type              sipModuleAPI_trikControl_QtGui->em_types[157]
+#define sipEnum_QGradient_Type              sipModuleAPI_trikControl_QtGui->em_types[157]->u.td_py_type
+#define sipType_QGradient_CoordinateMode              sipModuleAPI_trikControl_QtGui->em_types[155]
+#define sipEnum_QGradient_CoordinateMode              sipModuleAPI_trikControl_QtGui->em_types[155]->u.td_py_type
 
-#define sipType_QInputMethodEvent              sipModuleAPI_trikControl_QtGui->em_types[78]
-#define sipClass_QInputMethodEvent             sipModuleAPI_trikControl_QtGui->em_types[78]->u.td_wrapper_type
+#define sipType_QLinearGradient              sipModuleAPI_trikControl_QtGui->em_types[280]
+#define sipClass_QLinearGradient             sipModuleAPI_trikControl_QtGui->em_types[280]->u.td_wrapper_type
 
-#define sipType_QInputMethodEvent_AttributeType              sipModuleAPI_trikControl_QtGui->em_types[80]
-#define sipEnum_QInputMethodEvent_AttributeType              sipModuleAPI_trikControl_QtGui->em_types[80]->u.td_py_type
+#define sipType_QRadialGradient              sipModuleAPI_trikControl_QtGui->em_types[430]
+#define sipClass_QRadialGradient             sipModuleAPI_trikControl_QtGui->em_types[430]->u.td_wrapper_type
 
-#define sipType_QInputMethodEvent_Attribute              sipModuleAPI_trikControl_QtGui->em_types[79]
-#define sipClass_QInputMethodEvent_Attribute             sipModuleAPI_trikControl_QtGui->em_types[79]->u.td_wrapper_type
+#define sipType_QConicalGradient              sipModuleAPI_trikControl_QtGui->em_types[70]
+#define sipClass_QConicalGradient             sipModuleAPI_trikControl_QtGui->em_types[70]->u.td_wrapper_type
 
-#define sipType_QInputMethodQueryEvent              sipModuleAPI_trikControl_QtGui->em_types[81]
-#define sipClass_QInputMethodQueryEvent             sipModuleAPI_trikControl_QtGui->em_types[81]->u.td_wrapper_type
+#define sipType_QButtonGroup              sipModuleAPI_trikControl_QtGui->em_types[47]
+#define sipClass_QButtonGroup             sipModuleAPI_trikControl_QtGui->em_types[47]->u.td_wrapper_type
 
-#define sipType_QDropEvent              sipModuleAPI_trikControl_QtGui->em_types[26]
-#define sipClass_QDropEvent             sipModuleAPI_trikControl_QtGui->em_types[26]->u.td_wrapper_type
+#define sipType_QCalendarWidget              sipModuleAPI_trikControl_QtGui->em_types[48]
+#define sipClass_QCalendarWidget             sipModuleAPI_trikControl_QtGui->em_types[48]->u.td_wrapper_type
 
-#define sipType_QDragMoveEvent              sipModuleAPI_trikControl_QtGui->em_types[25]
-#define sipClass_QDragMoveEvent             sipModuleAPI_trikControl_QtGui->em_types[25]->u.td_wrapper_type
+#define sipType_QCalendarWidget_SelectionMode              sipModuleAPI_trikControl_QtGui->em_types[50]
+#define sipEnum_QCalendarWidget_SelectionMode              sipModuleAPI_trikControl_QtGui->em_types[50]->u.td_py_type
+#define sipType_QCalendarWidget_VerticalHeaderFormat              sipModuleAPI_trikControl_QtGui->em_types[51]
+#define sipEnum_QCalendarWidget_VerticalHeaderFormat              sipModuleAPI_trikControl_QtGui->em_types[51]->u.td_py_type
+#define sipType_QCalendarWidget_HorizontalHeaderFormat              sipModuleAPI_trikControl_QtGui->em_types[49]
+#define sipEnum_QCalendarWidget_HorizontalHeaderFormat              sipModuleAPI_trikControl_QtGui->em_types[49]->u.td_py_type
 
-#define sipType_QDragEnterEvent              sipModuleAPI_trikControl_QtGui->em_types[23]
-#define sipClass_QDragEnterEvent             sipModuleAPI_trikControl_QtGui->em_types[23]->u.td_wrapper_type
+#define sipType_QCheckBox              sipModuleAPI_trikControl_QtGui->em_types[52]
+#define sipClass_QCheckBox             sipModuleAPI_trikControl_QtGui->em_types[52]->u.td_wrapper_type
 
-#define sipType_QDragLeaveEvent              sipModuleAPI_trikControl_QtGui->em_types[24]
-#define sipClass_QDragLeaveEvent             sipModuleAPI_trikControl_QtGui->em_types[24]->u.td_wrapper_type
+#define sipType_QClipboard              sipModuleAPI_trikControl_QtGui->em_types[53]
+#define sipClass_QClipboard             sipModuleAPI_trikControl_QtGui->em_types[53]->u.td_wrapper_type
 
-#define sipType_QHelpEvent              sipModuleAPI_trikControl_QtGui->em_types[54]
-#define sipClass_QHelpEvent             sipModuleAPI_trikControl_QtGui->em_types[54]->u.td_wrapper_type
+#define sipType_QClipboard_Mode              sipModuleAPI_trikControl_QtGui->em_types[54]
+#define sipEnum_QClipboard_Mode              sipModuleAPI_trikControl_QtGui->em_types[54]->u.td_py_type
 
-#define sipType_QStatusTipEvent              sipModuleAPI_trikControl_QtGui->em_types[262]
-#define sipClass_QStatusTipEvent             sipModuleAPI_trikControl_QtGui->em_types[262]->u.td_wrapper_type
+#define sipType_QColumnView              sipModuleAPI_trikControl_QtGui->em_types[61]
+#define sipClass_QColumnView             sipModuleAPI_trikControl_QtGui->em_types[61]->u.td_wrapper_type
 
-#define sipType_QWhatsThisClickedEvent              sipModuleAPI_trikControl_QtGui->em_types[369]
-#define sipClass_QWhatsThisClickedEvent             sipModuleAPI_trikControl_QtGui->em_types[369]->u.td_wrapper_type
+#define sipType_QColorDialog              sipModuleAPI_trikControl_QtGui->em_types[58]
+#define sipClass_QColorDialog             sipModuleAPI_trikControl_QtGui->em_types[58]->u.td_wrapper_type
 
-#define sipType_QActionEvent              sipModuleAPI_trikControl_QtGui->em_types[5]
-#define sipClass_QActionEvent             sipModuleAPI_trikControl_QtGui->em_types[5]->u.td_wrapper_type
+#define sipType_QColorDialog_ColorDialogOption              sipModuleAPI_trikControl_QtGui->em_types[59]
+#define sipEnum_QColorDialog_ColorDialogOption              sipModuleAPI_trikControl_QtGui->em_types[59]->u.td_py_type
 
-#define sipType_QFileOpenEvent              sipModuleAPI_trikControl_QtGui->em_types[29]
-#define sipClass_QFileOpenEvent             sipModuleAPI_trikControl_QtGui->em_types[29]->u.td_wrapper_type
+#define sipType_QColorDialog_ColorDialogOptions              sipModuleAPI_trikControl_QtGui->em_types[60]
+#define sipClass_QColorDialog_ColorDialogOptions             sipModuleAPI_trikControl_QtGui->em_types[60]->u.td_wrapper_type
 
-#define sipType_QShortcutEvent              sipModuleAPI_trikControl_QtGui->em_types[255]
-#define sipClass_QShortcutEvent             sipModuleAPI_trikControl_QtGui->em_types[255]->u.td_wrapper_type
+#define sipType_QComboBox              sipModuleAPI_trikControl_QtGui->em_types[62]
+#define sipClass_QComboBox             sipModuleAPI_trikControl_QtGui->em_types[62]->u.td_wrapper_type
 
-#define sipType_QWindowStateChangeEvent              sipModuleAPI_trikControl_QtGui->em_types[374]
-#define sipClass_QWindowStateChangeEvent             sipModuleAPI_trikControl_QtGui->em_types[374]->u.td_wrapper_type
+#define sipType_QComboBox_SizeAdjustPolicy              sipModuleAPI_trikControl_QtGui->em_types[64]
+#define sipEnum_QComboBox_SizeAdjustPolicy              sipModuleAPI_trikControl_QtGui->em_types[64]->u.td_py_type
+#define sipType_QComboBox_InsertPolicy              sipModuleAPI_trikControl_QtGui->em_types[63]
+#define sipEnum_QComboBox_InsertPolicy              sipModuleAPI_trikControl_QtGui->em_types[63]->u.td_py_type
 
-#define sipType_QTouchEvent              sipModuleAPI_trikControl_QtGui->em_types[343]
-#define sipClass_QTouchEvent             sipModuleAPI_trikControl_QtGui->em_types[343]->u.td_wrapper_type
+#define sipType_QStyle              sipModuleAPI_trikControl_QtGui->em_types[473]
+#define sipClass_QStyle             sipModuleAPI_trikControl_QtGui->em_types[473]->u.td_wrapper_type
 
-#define sipType_QTouchEvent_TouchPoint              sipModuleAPI_trikControl_QtGui->em_types[344]
-#define sipClass_QTouchEvent_TouchPoint             sipModuleAPI_trikControl_QtGui->em_types[344]->u.td_wrapper_type
+#define sipType_QStyle_RequestSoftwareInputPanel              sipModuleAPI_trikControl_QtGui->em_types[479]
+#define sipEnum_QStyle_RequestSoftwareInputPanel              sipModuleAPI_trikControl_QtGui->em_types[479]->u.td_py_type
+#define sipType_QStyle_StandardPixmap              sipModuleAPI_trikControl_QtGui->em_types[480]
+#define sipEnum_QStyle_StandardPixmap              sipModuleAPI_trikControl_QtGui->em_types[480]->u.td_py_type
+#define sipType_QStyle_StyleHint              sipModuleAPI_trikControl_QtGui->em_types[483]
+#define sipEnum_QStyle_StyleHint              sipModuleAPI_trikControl_QtGui->em_types[483]->u.td_py_type
+#define sipType_QStyle_ContentsType              sipModuleAPI_trikControl_QtGui->em_types[475]
+#define sipEnum_QStyle_ContentsType              sipModuleAPI_trikControl_QtGui->em_types[475]->u.td_py_type
+#define sipType_QStyle_PixelMetric              sipModuleAPI_trikControl_QtGui->em_types[477]
+#define sipEnum_QStyle_PixelMetric              sipModuleAPI_trikControl_QtGui->em_types[477]->u.td_py_type
+#define sipType_QStyle_SubControl              sipModuleAPI_trikControl_QtGui->em_types[484]
+#define sipEnum_QStyle_SubControl              sipModuleAPI_trikControl_QtGui->em_types[484]->u.td_py_type
+#define sipType_QStyle_ComplexControl              sipModuleAPI_trikControl_QtGui->em_types[474]
+#define sipEnum_QStyle_ComplexControl              sipModuleAPI_trikControl_QtGui->em_types[474]->u.td_py_type
+#define sipType_QStyle_SubElement              sipModuleAPI_trikControl_QtGui->em_types[486]
+#define sipEnum_QStyle_SubElement              sipModuleAPI_trikControl_QtGui->em_types[486]->u.td_py_type
+#define sipType_QStyle_ControlElement              sipModuleAPI_trikControl_QtGui->em_types[476]
+#define sipEnum_QStyle_ControlElement              sipModuleAPI_trikControl_QtGui->em_types[476]->u.td_py_type
+#define sipType_QStyle_PrimitiveElement              sipModuleAPI_trikControl_QtGui->em_types[478]
+#define sipEnum_QStyle_PrimitiveElement              sipModuleAPI_trikControl_QtGui->em_types[478]->u.td_py_type
+#define sipType_QStyle_StateFlag              sipModuleAPI_trikControl_QtGui->em_types[482]
+#define sipEnum_QStyle_StateFlag              sipModuleAPI_trikControl_QtGui->em_types[482]->u.td_py_type
 
-#define sipType_QTouchEvent_TouchPoint_InfoFlag              sipModuleAPI_trikControl_QtGui->em_types[345]
-#define sipEnum_QTouchEvent_TouchPoint_InfoFlag              sipModuleAPI_trikControl_QtGui->em_types[345]->u.td_py_type
+#define sipType_QCommonStyle              sipModuleAPI_trikControl_QtGui->em_types[66]
+#define sipClass_QCommonStyle             sipModuleAPI_trikControl_QtGui->em_types[66]->u.td_wrapper_type
 
-#define sipType_QTouchEvent_TouchPoint_InfoFlags              sipModuleAPI_trikControl_QtGui->em_types[346]
-#define sipClass_QTouchEvent_TouchPoint_InfoFlags             sipModuleAPI_trikControl_QtGui->em_types[346]->u.td_wrapper_type
+#define sipType_QCompleter              sipModuleAPI_trikControl_QtGui->em_types[67]
+#define sipClass_QCompleter             sipModuleAPI_trikControl_QtGui->em_types[67]->u.td_wrapper_type
 
-#define sipType_QExposeEvent              sipModuleAPI_trikControl_QtGui->em_types[28]
-#define sipClass_QExposeEvent             sipModuleAPI_trikControl_QtGui->em_types[28]->u.td_wrapper_type
+#define sipType_QCompleter_ModelSorting              sipModuleAPI_trikControl_QtGui->em_types[69]
+#define sipEnum_QCompleter_ModelSorting              sipModuleAPI_trikControl_QtGui->em_types[69]->u.td_py_type
+#define sipType_QCompleter_CompletionMode              sipModuleAPI_trikControl_QtGui->em_types[68]
+#define sipEnum_QCompleter_CompletionMode              sipModuleAPI_trikControl_QtGui->em_types[68]->u.td_py_type
 
-#define sipType_QScrollPrepareEvent              sipModuleAPI_trikControl_QtGui->em_types[251]
-#define sipClass_QScrollPrepareEvent             sipModuleAPI_trikControl_QtGui->em_types[251]->u.td_wrapper_type
+#define sipType_QCursor              sipModuleAPI_trikControl_QtGui->em_types[73]
+#define sipClass_QCursor             sipModuleAPI_trikControl_QtGui->em_types[73]->u.td_wrapper_type
 
-#define sipType_QScrollEvent              sipModuleAPI_trikControl_QtGui->em_types[249]
-#define sipClass_QScrollEvent             sipModuleAPI_trikControl_QtGui->em_types[249]->u.td_wrapper_type
+#define sipType_QDataWidgetMapper              sipModuleAPI_trikControl_QtGui->em_types[74]
+#define sipClass_QDataWidgetMapper             sipModuleAPI_trikControl_QtGui->em_types[74]->u.td_wrapper_type
 
-#define sipType_QScrollEvent_ScrollState              sipModuleAPI_trikControl_QtGui->em_types[250]
-#define sipEnum_QScrollEvent_ScrollState              sipModuleAPI_trikControl_QtGui->em_types[250]->u.td_py_type
+#define sipType_QDataWidgetMapper_SubmitPolicy              sipModuleAPI_trikControl_QtGui->em_types[75]
+#define sipEnum_QDataWidgetMapper_SubmitPolicy              sipModuleAPI_trikControl_QtGui->em_types[75]->u.td_py_type
 
-#define sipType_QEnterEvent              sipModuleAPI_trikControl_QtGui->em_types[27]
-#define sipClass_QEnterEvent             sipModuleAPI_trikControl_QtGui->em_types[27]->u.td_wrapper_type
+#define sipType_QDateTimeEdit              sipModuleAPI_trikControl_QtGui->em_types[77]
+#define sipClass_QDateTimeEdit             sipModuleAPI_trikControl_QtGui->em_types[77]->u.td_wrapper_type
 
-#define sipType_QNativeGestureEvent              sipModuleAPI_trikControl_QtGui->em_types[121]
-#define sipClass_QNativeGestureEvent             sipModuleAPI_trikControl_QtGui->em_types[121]->u.td_wrapper_type
+#define sipType_QDateTimeEdit_Section              sipModuleAPI_trikControl_QtGui->em_types[78]
+#define sipEnum_QDateTimeEdit_Section              sipModuleAPI_trikControl_QtGui->em_types[78]->u.td_py_type
 
-#define sipType_QPlatformSurfaceEvent              sipModuleAPI_trikControl_QtGui->em_types[231]
-#define sipClass_QPlatformSurfaceEvent             sipModuleAPI_trikControl_QtGui->em_types[231]->u.td_wrapper_type
+#define sipType_QDateTimeEdit_Sections              sipModuleAPI_trikControl_QtGui->em_types[79]
+#define sipClass_QDateTimeEdit_Sections             sipModuleAPI_trikControl_QtGui->em_types[79]->u.td_wrapper_type
 
-#define sipType_QPlatformSurfaceEvent_SurfaceEventType              sipModuleAPI_trikControl_QtGui->em_types[232]
-#define sipEnum_QPlatformSurfaceEvent_SurfaceEventType              sipModuleAPI_trikControl_QtGui->em_types[232]->u.td_py_type
+#define sipType_QTimeEdit              sipModuleAPI_trikControl_QtGui->em_types[712]
+#define sipClass_QTimeEdit             sipModuleAPI_trikControl_QtGui->em_types[712]->u.td_wrapper_type
 
-#define sipType_QFont              sipModuleAPI_trikControl_QtGui->em_types[31]
-#define sipClass_QFont             sipModuleAPI_trikControl_QtGui->em_types[31]->u.td_wrapper_type
+#define sipType_QDateEdit              sipModuleAPI_trikControl_QtGui->em_types[76]
+#define sipClass_QDateEdit             sipModuleAPI_trikControl_QtGui->em_types[76]->u.td_wrapper_type
 
-#define sipType_QFont_HintingPreference              sipModuleAPI_trikControl_QtGui->em_types[33]
-#define sipEnum_QFont_HintingPreference              sipModuleAPI_trikControl_QtGui->em_types[33]->u.td_py_type
-#define sipType_QFont_SpacingType              sipModuleAPI_trikControl_QtGui->em_types[34]
-#define sipEnum_QFont_SpacingType              sipModuleAPI_trikControl_QtGui->em_types[34]->u.td_py_type
-#define sipType_QFont_Capitalization              sipModuleAPI_trikControl_QtGui->em_types[32]
-#define sipEnum_QFont_Capitalization              sipModuleAPI_trikControl_QtGui->em_types[32]->u.td_py_type
-#define sipType_QFont_Stretch              sipModuleAPI_trikControl_QtGui->em_types[35]
-#define sipEnum_QFont_Stretch              sipModuleAPI_trikControl_QtGui->em_types[35]->u.td_py_type
-#define sipType_QFont_Style              sipModuleAPI_trikControl_QtGui->em_types[36]
-#define sipEnum_QFont_Style              sipModuleAPI_trikControl_QtGui->em_types[36]->u.td_py_type
-#define sipType_QFont_Weight              sipModuleAPI_trikControl_QtGui->em_types[39]
-#define sipEnum_QFont_Weight              sipModuleAPI_trikControl_QtGui->em_types[39]->u.td_py_type
-#define sipType_QFont_StyleStrategy              sipModuleAPI_trikControl_QtGui->em_types[38]
-#define sipEnum_QFont_StyleStrategy              sipModuleAPI_trikControl_QtGui->em_types[38]->u.td_py_type
-#define sipType_QFont_StyleHint              sipModuleAPI_trikControl_QtGui->em_types[37]
-#define sipEnum_QFont_StyleHint              sipModuleAPI_trikControl_QtGui->em_types[37]->u.td_py_type
+#define sipType_QDesktopServices              sipModuleAPI_trikControl_QtGui->em_types[80]
+#define sipClass_QDesktopServices             sipModuleAPI_trikControl_QtGui->em_types[80]->u.td_wrapper_type
 
-#define sipType_QFontDatabase              sipModuleAPI_trikControl_QtGui->em_types[40]
-#define sipClass_QFontDatabase             sipModuleAPI_trikControl_QtGui->em_types[40]->u.td_wrapper_type
+#define sipType_QDesktopServices_StandardLocation              sipModuleAPI_trikControl_QtGui->em_types[81]
+#define sipEnum_QDesktopServices_StandardLocation              sipModuleAPI_trikControl_QtGui->em_types[81]->u.td_py_type
 
-#define sipType_QFontDatabase_SystemFont              sipModuleAPI_trikControl_QtGui->em_types[41]
-#define sipEnum_QFontDatabase_SystemFont              sipModuleAPI_trikControl_QtGui->em_types[41]->u.td_py_type
-#define sipType_QFontDatabase_WritingSystem              sipModuleAPI_trikControl_QtGui->em_types[42]
-#define sipEnum_QFontDatabase_WritingSystem              sipModuleAPI_trikControl_QtGui->em_types[42]->u.td_py_type
+#define sipType_QDesktopWidget              sipModuleAPI_trikControl_QtGui->em_types[82]
+#define sipClass_QDesktopWidget             sipModuleAPI_trikControl_QtGui->em_types[82]->u.td_wrapper_type
 
-#define sipType_QFontInfo              sipModuleAPI_trikControl_QtGui->em_types[43]
-#define sipClass_QFontInfo             sipModuleAPI_trikControl_QtGui->em_types[43]->u.td_wrapper_type
+#define sipType_QDial              sipModuleAPI_trikControl_QtGui->em_types[83]
+#define sipClass_QDial             sipModuleAPI_trikControl_QtGui->em_types[83]->u.td_wrapper_type
 
-#define sipType_QFontMetrics              sipModuleAPI_trikControl_QtGui->em_types[44]
-#define sipClass_QFontMetrics             sipModuleAPI_trikControl_QtGui->em_types[44]->u.td_wrapper_type
+#define sipType_QDialogButtonBox              sipModuleAPI_trikControl_QtGui->em_types[86]
+#define sipClass_QDialogButtonBox             sipModuleAPI_trikControl_QtGui->em_types[86]->u.td_wrapper_type
 
-#define sipType_QFontMetricsF              sipModuleAPI_trikControl_QtGui->em_types[45]
-#define sipClass_QFontMetricsF             sipModuleAPI_trikControl_QtGui->em_types[45]->u.td_wrapper_type
+#define sipType_QDialogButtonBox_StandardButton              sipModuleAPI_trikControl_QtGui->em_types[89]
+#define sipEnum_QDialogButtonBox_StandardButton              sipModuleAPI_trikControl_QtGui->em_types[89]->u.td_py_type
+#define sipType_QDialogButtonBox_ButtonRole              sipModuleAPI_trikControl_QtGui->em_types[88]
+#define sipEnum_QDialogButtonBox_ButtonRole              sipModuleAPI_trikControl_QtGui->em_types[88]->u.td_py_type
+#define sipType_QDialogButtonBox_ButtonLayout              sipModuleAPI_trikControl_QtGui->em_types[87]
+#define sipEnum_QDialogButtonBox_ButtonLayout              sipModuleAPI_trikControl_QtGui->em_types[87]->u.td_py_type
 
-#define sipType_QMatrix4x3              sipModuleAPI_trikControl_QtGui->em_types[114]
-#define sipClass_QMatrix4x3             sipModuleAPI_trikControl_QtGui->em_types[114]->u.td_wrapper_type
+#define sipType_QDialogButtonBox_StandardButtons              sipModuleAPI_trikControl_QtGui->em_types[90]
+#define sipClass_QDialogButtonBox_StandardButtons             sipModuleAPI_trikControl_QtGui->em_types[90]->u.td_wrapper_type
 
-#define sipType_QMatrix4x2              sipModuleAPI_trikControl_QtGui->em_types[113]
-#define sipClass_QMatrix4x2             sipModuleAPI_trikControl_QtGui->em_types[113]->u.td_wrapper_type
+#define sipType_QDirModel              sipModuleAPI_trikControl_QtGui->em_types[91]
+#define sipClass_QDirModel             sipModuleAPI_trikControl_QtGui->em_types[91]->u.td_wrapper_type
 
-#define sipType_QMatrix3x4              sipModuleAPI_trikControl_QtGui->em_types[112]
-#define sipClass_QMatrix3x4             sipModuleAPI_trikControl_QtGui->em_types[112]->u.td_wrapper_type
+#define sipType_QDirModel_Roles              sipModuleAPI_trikControl_QtGui->em_types[92]
+#define sipEnum_QDirModel_Roles              sipModuleAPI_trikControl_QtGui->em_types[92]->u.td_py_type
 
-#define sipType_QMatrix3x3              sipModuleAPI_trikControl_QtGui->em_types[111]
-#define sipClass_QMatrix3x3             sipModuleAPI_trikControl_QtGui->em_types[111]->u.td_wrapper_type
+#define sipType_QDockWidget              sipModuleAPI_trikControl_QtGui->em_types[93]
+#define sipClass_QDockWidget             sipModuleAPI_trikControl_QtGui->em_types[93]->u.td_wrapper_type
 
-#define sipType_QMatrix3x2              sipModuleAPI_trikControl_QtGui->em_types[110]
-#define sipClass_QMatrix3x2             sipModuleAPI_trikControl_QtGui->em_types[110]->u.td_wrapper_type
+#define sipType_QDockWidget_DockWidgetFeature              sipModuleAPI_trikControl_QtGui->em_types[94]
+#define sipEnum_QDockWidget_DockWidgetFeature              sipModuleAPI_trikControl_QtGui->em_types[94]->u.td_py_type
 
-#define sipType_QMatrix2x4              sipModuleAPI_trikControl_QtGui->em_types[109]
-#define sipClass_QMatrix2x4             sipModuleAPI_trikControl_QtGui->em_types[109]->u.td_wrapper_type
+#define sipType_QDockWidget_DockWidgetFeatures              sipModuleAPI_trikControl_QtGui->em_types[95]
+#define sipClass_QDockWidget_DockWidgetFeatures             sipModuleAPI_trikControl_QtGui->em_types[95]->u.td_wrapper_type
 
-#define sipType_QMatrix2x3              sipModuleAPI_trikControl_QtGui->em_types[108]
-#define sipClass_QMatrix2x3             sipModuleAPI_trikControl_QtGui->em_types[108]->u.td_wrapper_type
+#define sipType_QDrag              sipModuleAPI_trikControl_QtGui->em_types[99]
+#define sipClass_QDrag             sipModuleAPI_trikControl_QtGui->em_types[99]->u.td_wrapper_type
 
-#define sipType_QMatrix2x2              sipModuleAPI_trikControl_QtGui->em_types[107]
-#define sipClass_QMatrix2x2             sipModuleAPI_trikControl_QtGui->em_types[107]->u.td_wrapper_type
+#define sipType_QErrorMessage              sipModuleAPI_trikControl_QtGui->em_types[104]
+#define sipClass_QErrorMessage             sipModuleAPI_trikControl_QtGui->em_types[104]->u.td_wrapper_type
 
-#define sipType_QGlyphRun              sipModuleAPI_trikControl_QtGui->em_types[46]
-#define sipClass_QGlyphRun             sipModuleAPI_trikControl_QtGui->em_types[46]->u.td_wrapper_type
+#define sipType_QInputEvent              sipModuleAPI_trikControl_QtGui->em_types[252]
+#define sipClass_QInputEvent             sipModuleAPI_trikControl_QtGui->em_types[252]->u.td_wrapper_type
 
-#define sipType_QGlyphRun_GlyphRunFlag              sipModuleAPI_trikControl_QtGui->em_types[47]
-#define sipEnum_QGlyphRun_GlyphRunFlag              sipModuleAPI_trikControl_QtGui->em_types[47]->u.td_py_type
+#define sipType_QMouseEvent              sipModuleAPI_trikControl_QtGui->em_types[353]
+#define sipClass_QMouseEvent             sipModuleAPI_trikControl_QtGui->em_types[353]->u.td_wrapper_type
 
-#define sipType_QGlyphRun_GlyphRunFlags              sipModuleAPI_trikControl_QtGui->em_types[48]
-#define sipClass_QGlyphRun_GlyphRunFlags             sipModuleAPI_trikControl_QtGui->em_types[48]->u.td_wrapper_type
+#define sipType_QHoverEvent              sipModuleAPI_trikControl_QtGui->em_types[226]
+#define sipClass_QHoverEvent             sipModuleAPI_trikControl_QtGui->em_types[226]->u.td_wrapper_type
 
-#define sipType_QGuiApplication              sipModuleAPI_trikControl_QtGui->em_types[53]
-#define sipClass_QGuiApplication             sipModuleAPI_trikControl_QtGui->em_types[53]->u.td_wrapper_type
+#define sipType_QWheelEvent              sipModuleAPI_trikControl_QtGui->em_types[754]
+#define sipClass_QWheelEvent             sipModuleAPI_trikControl_QtGui->em_types[754]->u.td_wrapper_type
 
-#define sipType_QIcon              sipModuleAPI_trikControl_QtGui->em_types[57]
-#define sipClass_QIcon             sipModuleAPI_trikControl_QtGui->em_types[57]->u.td_wrapper_type
+#define sipType_QTabletEvent              sipModuleAPI_trikControl_QtGui->em_types[640]
+#define sipClass_QTabletEvent             sipModuleAPI_trikControl_QtGui->em_types[640]->u.td_wrapper_type
 
-#define sipType_QIcon_State              sipModuleAPI_trikControl_QtGui->em_types[59]
-#define sipEnum_QIcon_State              sipModuleAPI_trikControl_QtGui->em_types[59]->u.td_py_type
-#define sipType_QIcon_Mode              sipModuleAPI_trikControl_QtGui->em_types[58]
-#define sipEnum_QIcon_Mode              sipModuleAPI_trikControl_QtGui->em_types[58]->u.td_py_type
+#define sipType_QTabletEvent_PointerType              sipModuleAPI_trikControl_QtGui->em_types[641]
+#define sipEnum_QTabletEvent_PointerType              sipModuleAPI_trikControl_QtGui->em_types[641]->u.td_py_type
+#define sipType_QTabletEvent_TabletDevice              sipModuleAPI_trikControl_QtGui->em_types[642]
+#define sipEnum_QTabletEvent_TabletDevice              sipModuleAPI_trikControl_QtGui->em_types[642]->u.td_py_type
 
-#define sipType_QIconEngine              sipModuleAPI_trikControl_QtGui->em_types[61]
-#define sipClass_QIconEngine             sipModuleAPI_trikControl_QtGui->em_types[61]->u.td_wrapper_type
+#define sipType_QKeyEvent              sipModuleAPI_trikControl_QtGui->em_types[265]
+#define sipClass_QKeyEvent             sipModuleAPI_trikControl_QtGui->em_types[265]->u.td_wrapper_type
 
-#define sipType_QIconEngine_IconEngineHook              sipModuleAPI_trikControl_QtGui->em_types[63]
-#define sipEnum_QIconEngine_IconEngineHook              sipModuleAPI_trikControl_QtGui->em_types[63]->u.td_py_type
+#define sipType_QFocusEvent              sipModuleAPI_trikControl_QtGui->em_types[117]
+#define sipClass_QFocusEvent             sipModuleAPI_trikControl_QtGui->em_types[117]->u.td_wrapper_type
 
-#define sipType_QIconEngine_AvailableSizesArgument              sipModuleAPI_trikControl_QtGui->em_types[62]
-#define sipClass_QIconEngine_AvailableSizesArgument             sipModuleAPI_trikControl_QtGui->em_types[62]->u.td_wrapper_type
+#define sipType_QPaintEvent              sipModuleAPI_trikControl_QtGui->em_types[372]
+#define sipClass_QPaintEvent             sipModuleAPI_trikControl_QtGui->em_types[372]->u.td_wrapper_type
 
-#define sipType_QImage              sipModuleAPI_trikControl_QtGui->em_types[64]
-#define sipClass_QImage             sipModuleAPI_trikControl_QtGui->em_types[64]->u.td_wrapper_type
+#define sipType_QMoveEvent              sipModuleAPI_trikControl_QtGui->em_types[355]
+#define sipClass_QMoveEvent             sipModuleAPI_trikControl_QtGui->em_types[355]->u.td_wrapper_type
 
-#define sipType_QImage_Format              sipModuleAPI_trikControl_QtGui->em_types[65]
-#define sipEnum_QImage_Format              sipModuleAPI_trikControl_QtGui->em_types[65]->u.td_py_type
-#define sipType_QImage_InvertMode              sipModuleAPI_trikControl_QtGui->em_types[66]
-#define sipEnum_QImage_InvertMode              sipModuleAPI_trikControl_QtGui->em_types[66]->u.td_py_type
+#define sipType_QResizeEvent              sipModuleAPI_trikControl_QtGui->em_types[437]
+#define sipClass_QResizeEvent             sipModuleAPI_trikControl_QtGui->em_types[437]->u.td_wrapper_type
 
-#define sipType_QImageIOHandler              sipModuleAPI_trikControl_QtGui->em_types[67]
-#define sipClass_QImageIOHandler             sipModuleAPI_trikControl_QtGui->em_types[67]->u.td_wrapper_type
+#define sipType_QCloseEvent              sipModuleAPI_trikControl_QtGui->em_types[55]
+#define sipClass_QCloseEvent             sipModuleAPI_trikControl_QtGui->em_types[55]->u.td_wrapper_type
 
-#define sipType_QImageIOHandler_Transformation              sipModuleAPI_trikControl_QtGui->em_types[69]
-#define sipEnum_QImageIOHandler_Transformation              sipModuleAPI_trikControl_QtGui->em_types[69]->u.td_py_type
-#define sipType_QImageIOHandler_ImageOption              sipModuleAPI_trikControl_QtGui->em_types[68]
-#define sipEnum_QImageIOHandler_ImageOption              sipModuleAPI_trikControl_QtGui->em_types[68]->u.td_py_type
+#define sipType_QIconDragEvent              sipModuleAPI_trikControl_QtGui->em_types[230]
+#define sipClass_QIconDragEvent             sipModuleAPI_trikControl_QtGui->em_types[230]->u.td_wrapper_type
 
-#define sipType_QImageIOHandler_Transformations              sipModuleAPI_trikControl_QtGui->em_types[70]
-#define sipClass_QImageIOHandler_Transformations             sipModuleAPI_trikControl_QtGui->em_types[70]->u.td_wrapper_type
+#define sipType_QShowEvent              sipModuleAPI_trikControl_QtGui->em_types[446]
+#define sipClass_QShowEvent             sipModuleAPI_trikControl_QtGui->em_types[446]->u.td_wrapper_type
 
-#define sipType_QImageReader              sipModuleAPI_trikControl_QtGui->em_types[71]
-#define sipClass_QImageReader             sipModuleAPI_trikControl_QtGui->em_types[71]->u.td_wrapper_type
+#define sipType_QHideEvent              sipModuleAPI_trikControl_QtGui->em_types[225]
+#define sipClass_QHideEvent             sipModuleAPI_trikControl_QtGui->em_types[225]->u.td_wrapper_type
 
-#define sipType_QImageReader_ImageReaderError              sipModuleAPI_trikControl_QtGui->em_types[72]
-#define sipEnum_QImageReader_ImageReaderError              sipModuleAPI_trikControl_QtGui->em_types[72]->u.td_py_type
+#define sipType_QContextMenuEvent              sipModuleAPI_trikControl_QtGui->em_types[71]
+#define sipClass_QContextMenuEvent             sipModuleAPI_trikControl_QtGui->em_types[71]->u.td_wrapper_type
 
-#define sipType_QImageWriter              sipModuleAPI_trikControl_QtGui->em_types[73]
-#define sipClass_QImageWriter             sipModuleAPI_trikControl_QtGui->em_types[73]->u.td_wrapper_type
+#define sipType_QContextMenuEvent_Reason              sipModuleAPI_trikControl_QtGui->em_types[72]
+#define sipEnum_QContextMenuEvent_Reason              sipModuleAPI_trikControl_QtGui->em_types[72]->u.td_py_type
 
-#define sipType_QImageWriter_ImageWriterError              sipModuleAPI_trikControl_QtGui->em_types[74]
-#define sipEnum_QImageWriter_ImageWriterError              sipModuleAPI_trikControl_QtGui->em_types[74]->u.td_py_type
+#define sipType_QInputMethodEvent              sipModuleAPI_trikControl_QtGui->em_types[253]
+#define sipClass_QInputMethodEvent             sipModuleAPI_trikControl_QtGui->em_types[253]->u.td_wrapper_type
 
-#define sipType_QInputMethod              sipModuleAPI_trikControl_QtGui->em_types[76]
-#define sipClass_QInputMethod             sipModuleAPI_trikControl_QtGui->em_types[76]->u.td_wrapper_type
+#define sipType_QInputMethodEvent_AttributeType              sipModuleAPI_trikControl_QtGui->em_types[255]
+#define sipEnum_QInputMethodEvent_AttributeType              sipModuleAPI_trikControl_QtGui->em_types[255]->u.td_py_type
 
-#define sipType_QInputMethod_Action              sipModuleAPI_trikControl_QtGui->em_types[77]
-#define sipEnum_QInputMethod_Action              sipModuleAPI_trikControl_QtGui->em_types[77]->u.td_py_type
+#define sipType_QInputMethodEvent_Attribute              sipModuleAPI_trikControl_QtGui->em_types[254]
+#define sipClass_QInputMethodEvent_Attribute             sipModuleAPI_trikControl_QtGui->em_types[254]->u.td_wrapper_type
 
-#define sipType_QKeySequence              sipModuleAPI_trikControl_QtGui->em_types[84]
-#define sipClass_QKeySequence             sipModuleAPI_trikControl_QtGui->em_types[84]->u.td_wrapper_type
+#define sipType_QMimeSource              sipModuleAPI_trikControl_QtGui->em_types[352]
+#define sipClass_QMimeSource             sipModuleAPI_trikControl_QtGui->em_types[352]->u.td_wrapper_type
 
-#define sipType_QKeySequence_StandardKey              sipModuleAPI_trikControl_QtGui->em_types[87]
-#define sipEnum_QKeySequence_StandardKey              sipModuleAPI_trikControl_QtGui->em_types[87]->u.td_py_type
-#define sipType_QKeySequence_SequenceMatch              sipModuleAPI_trikControl_QtGui->em_types[86]
-#define sipEnum_QKeySequence_SequenceMatch              sipModuleAPI_trikControl_QtGui->em_types[86]->u.td_py_type
-#define sipType_QKeySequence_SequenceFormat              sipModuleAPI_trikControl_QtGui->em_types[85]
-#define sipEnum_QKeySequence_SequenceFormat              sipModuleAPI_trikControl_QtGui->em_types[85]->u.td_py_type
+#define sipType_QDropEvent              sipModuleAPI_trikControl_QtGui->em_types[103]
+#define sipClass_QDropEvent             sipModuleAPI_trikControl_QtGui->em_types[103]->u.td_wrapper_type
 
-#define sipType_QMatrix4x4              sipModuleAPI_trikControl_QtGui->em_types[115]
-#define sipClass_QMatrix4x4             sipModuleAPI_trikControl_QtGui->em_types[115]->u.td_wrapper_type
+#define sipType_QDragMoveEvent              sipModuleAPI_trikControl_QtGui->em_types[102]
+#define sipClass_QDragMoveEvent             sipModuleAPI_trikControl_QtGui->em_types[102]->u.td_wrapper_type
 
-#define sipType_QMovie              sipModuleAPI_trikControl_QtGui->em_types[118]
-#define sipClass_QMovie             sipModuleAPI_trikControl_QtGui->em_types[118]->u.td_wrapper_type
+#define sipType_QDragEnterEvent              sipModuleAPI_trikControl_QtGui->em_types[100]
+#define sipClass_QDragEnterEvent             sipModuleAPI_trikControl_QtGui->em_types[100]->u.td_wrapper_type
 
-#define sipType_QMovie_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[119]
-#define sipEnum_QMovie_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[119]->u.td_py_type
-#define sipType_QMovie_MovieState              sipModuleAPI_trikControl_QtGui->em_types[120]
-#define sipEnum_QMovie_MovieState              sipModuleAPI_trikControl_QtGui->em_types[120]->u.td_py_type
+#define sipType_QDragLeaveEvent              sipModuleAPI_trikControl_QtGui->em_types[101]
+#define sipClass_QDragLeaveEvent             sipModuleAPI_trikControl_QtGui->em_types[101]->u.td_wrapper_type
 
-#define sipType_QSurface              sipModuleAPI_trikControl_QtGui->em_types[264]
-#define sipClass_QSurface             sipModuleAPI_trikControl_QtGui->em_types[264]->u.td_wrapper_type
+#define sipType_QHelpEvent              sipModuleAPI_trikControl_QtGui->em_types[224]
+#define sipClass_QHelpEvent             sipModuleAPI_trikControl_QtGui->em_types[224]->u.td_wrapper_type
 
-#define sipType_QSurface_SurfaceType              sipModuleAPI_trikControl_QtGui->em_types[266]
-#define sipEnum_QSurface_SurfaceType              sipModuleAPI_trikControl_QtGui->em_types[266]->u.td_py_type
-#define sipType_QSurface_SurfaceClass              sipModuleAPI_trikControl_QtGui->em_types[265]
-#define sipEnum_QSurface_SurfaceClass              sipModuleAPI_trikControl_QtGui->em_types[265]->u.td_py_type
+#define sipType_QStatusTipEvent              sipModuleAPI_trikControl_QtGui->em_types[471]
+#define sipClass_QStatusTipEvent             sipModuleAPI_trikControl_QtGui->em_types[471]->u.td_wrapper_type
 
-#define sipType_QOffscreenSurface              sipModuleAPI_trikControl_QtGui->em_types[122]
-#define sipClass_QOffscreenSurface             sipModuleAPI_trikControl_QtGui->em_types[122]->u.td_wrapper_type
+#define sipType_QWhatsThisClickedEvent              sipModuleAPI_trikControl_QtGui->em_types[753]
+#define sipClass_QWhatsThisClickedEvent             sipModuleAPI_trikControl_QtGui->em_types[753]->u.td_wrapper_type
 
-#define sipType_QOpenGLBuffer              sipModuleAPI_trikControl_QtGui->em_types[123]
-#define sipClass_QOpenGLBuffer             sipModuleAPI_trikControl_QtGui->em_types[123]->u.td_wrapper_type
+#define sipType_QActionEvent              sipModuleAPI_trikControl_QtGui->em_types[38]
+#define sipClass_QActionEvent             sipModuleAPI_trikControl_QtGui->em_types[38]->u.td_wrapper_type
 
-#define sipType_QOpenGLBuffer_RangeAccessFlag              sipModuleAPI_trikControl_QtGui->em_types[125]
-#define sipEnum_QOpenGLBuffer_RangeAccessFlag              sipModuleAPI_trikControl_QtGui->em_types[125]->u.td_py_type
-#define sipType_QOpenGLBuffer_Access              sipModuleAPI_trikControl_QtGui->em_types[124]
-#define sipEnum_QOpenGLBuffer_Access              sipModuleAPI_trikControl_QtGui->em_types[124]->u.td_py_type
-#define sipType_QOpenGLBuffer_UsagePattern              sipModuleAPI_trikControl_QtGui->em_types[128]
-#define sipEnum_QOpenGLBuffer_UsagePattern              sipModuleAPI_trikControl_QtGui->em_types[128]->u.td_py_type
-#define sipType_QOpenGLBuffer_Type              sipModuleAPI_trikControl_QtGui->em_types[127]
-#define sipEnum_QOpenGLBuffer_Type              sipModuleAPI_trikControl_QtGui->em_types[127]->u.td_py_type
+#define sipType_QFileOpenEvent              sipModuleAPI_trikControl_QtGui->em_types[114]
+#define sipClass_QFileOpenEvent             sipModuleAPI_trikControl_QtGui->em_types[114]->u.td_wrapper_type
 
-#define sipType_QOpenGLBuffer_RangeAccessFlags              sipModuleAPI_trikControl_QtGui->em_types[126]
-#define sipClass_QOpenGLBuffer_RangeAccessFlags             sipModuleAPI_trikControl_QtGui->em_types[126]->u.td_wrapper_type
+#define sipType_QShortcutEvent              sipModuleAPI_trikControl_QtGui->em_types[445]
+#define sipClass_QShortcutEvent             sipModuleAPI_trikControl_QtGui->em_types[445]->u.td_wrapper_type
 
-#define sipType_QOpenGLContextGroup              sipModuleAPI_trikControl_QtGui->em_types[131]
-#define sipClass_QOpenGLContextGroup             sipModuleAPI_trikControl_QtGui->em_types[131]->u.td_wrapper_type
+#define sipType_QWindowStateChangeEvent              sipModuleAPI_trikControl_QtGui->em_types[760]
+#define sipClass_QWindowStateChangeEvent             sipModuleAPI_trikControl_QtGui->em_types[760]->u.td_wrapper_type
 
-#define sipType_QOpenGLContext              sipModuleAPI_trikControl_QtGui->em_types[129]
-#define sipClass_QOpenGLContext             sipModuleAPI_trikControl_QtGui->em_types[129]->u.td_wrapper_type
+#define sipType_QTouchEvent              sipModuleAPI_trikControl_QtGui->em_types[718]
+#define sipClass_QTouchEvent             sipModuleAPI_trikControl_QtGui->em_types[718]->u.td_wrapper_type
 
-#define sipType_QOpenGLContext_OpenGLModuleType              sipModuleAPI_trikControl_QtGui->em_types[130]
-#define sipEnum_QOpenGLContext_OpenGLModuleType              sipModuleAPI_trikControl_QtGui->em_types[130]->u.td_py_type
+#define sipType_QTouchEvent_DeviceType              sipModuleAPI_trikControl_QtGui->em_types[719]
+#define sipEnum_QTouchEvent_DeviceType              sipModuleAPI_trikControl_QtGui->em_types[719]->u.td_py_type
 
-#define sipType_QOpenGLVersionProfile              sipModuleAPI_trikControl_QtGui->em_types[172]
-#define sipClass_QOpenGLVersionProfile             sipModuleAPI_trikControl_QtGui->em_types[172]->u.td_wrapper_type
+#define sipType_QTouchEvent_TouchPoint              sipModuleAPI_trikControl_QtGui->em_types[720]
+#define sipClass_QTouchEvent_TouchPoint             sipModuleAPI_trikControl_QtGui->em_types[720]->u.td_wrapper_type
 
-#define sipType_QOpenGLDebugMessage              sipModuleAPI_trikControl_QtGui->em_types[134]
-#define sipClass_QOpenGLDebugMessage             sipModuleAPI_trikControl_QtGui->em_types[134]->u.td_wrapper_type
+#define sipType_QGestureEvent              sipModuleAPI_trikControl_QtGui->em_types[149]
+#define sipClass_QGestureEvent             sipModuleAPI_trikControl_QtGui->em_types[149]->u.td_wrapper_type
 
-#define sipType_QOpenGLDebugMessage_Severity              sipModuleAPI_trikControl_QtGui->em_types[136]
-#define sipEnum_QOpenGLDebugMessage_Severity              sipModuleAPI_trikControl_QtGui->em_types[136]->u.td_py_type
-#define sipType_QOpenGLDebugMessage_Type              sipModuleAPI_trikControl_QtGui->em_types[139]
-#define sipEnum_QOpenGLDebugMessage_Type              sipModuleAPI_trikControl_QtGui->em_types[139]->u.td_py_type
-#define sipType_QOpenGLDebugMessage_Source              sipModuleAPI_trikControl_QtGui->em_types[137]
-#define sipEnum_QOpenGLDebugMessage_Source              sipModuleAPI_trikControl_QtGui->em_types[137]->u.td_py_type
+#define sipType_QFileDialog              sipModuleAPI_trikControl_QtGui->em_types[105]
+#define sipClass_QFileDialog             sipModuleAPI_trikControl_QtGui->em_types[105]->u.td_wrapper_type
 
-#define sipType_QOpenGLDebugMessage_Sources              sipModuleAPI_trikControl_QtGui->em_types[138]
-#define sipClass_QOpenGLDebugMessage_Sources             sipModuleAPI_trikControl_QtGui->em_types[138]->u.td_wrapper_type
+#define sipType_QFileDialog_Option              sipModuleAPI_trikControl_QtGui->em_types[109]
+#define sipEnum_QFileDialog_Option              sipModuleAPI_trikControl_QtGui->em_types[109]->u.td_py_type
+#define sipType_QFileDialog_DialogLabel              sipModuleAPI_trikControl_QtGui->em_types[107]
+#define sipEnum_QFileDialog_DialogLabel              sipModuleAPI_trikControl_QtGui->em_types[107]->u.td_py_type
+#define sipType_QFileDialog_AcceptMode              sipModuleAPI_trikControl_QtGui->em_types[106]
+#define sipEnum_QFileDialog_AcceptMode              sipModuleAPI_trikControl_QtGui->em_types[106]->u.td_py_type
+#define sipType_QFileDialog_FileMode              sipModuleAPI_trikControl_QtGui->em_types[108]
+#define sipEnum_QFileDialog_FileMode              sipModuleAPI_trikControl_QtGui->em_types[108]->u.td_py_type
+#define sipType_QFileDialog_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[111]
+#define sipEnum_QFileDialog_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[111]->u.td_py_type
 
-#define sipType_QOpenGLDebugMessage_Types              sipModuleAPI_trikControl_QtGui->em_types[140]
-#define sipClass_QOpenGLDebugMessage_Types             sipModuleAPI_trikControl_QtGui->em_types[140]->u.td_wrapper_type
+#define sipType_QFileDialog_Options              sipModuleAPI_trikControl_QtGui->em_types[110]
+#define sipClass_QFileDialog_Options             sipModuleAPI_trikControl_QtGui->em_types[110]->u.td_wrapper_type
 
-#define sipType_QOpenGLDebugMessage_Severities              sipModuleAPI_trikControl_QtGui->em_types[135]
-#define sipClass_QOpenGLDebugMessage_Severities             sipModuleAPI_trikControl_QtGui->em_types[135]->u.td_wrapper_type
+#define sipType_QFileIconProvider              sipModuleAPI_trikControl_QtGui->em_types[112]
+#define sipClass_QFileIconProvider             sipModuleAPI_trikControl_QtGui->em_types[112]->u.td_wrapper_type
 
-#define sipType_QOpenGLDebugLogger              sipModuleAPI_trikControl_QtGui->em_types[132]
-#define sipClass_QOpenGLDebugLogger             sipModuleAPI_trikControl_QtGui->em_types[132]->u.td_wrapper_type
+#define sipType_QFileIconProvider_IconType              sipModuleAPI_trikControl_QtGui->em_types[113]
+#define sipEnum_QFileIconProvider_IconType              sipModuleAPI_trikControl_QtGui->em_types[113]->u.td_py_type
 
-#define sipType_QOpenGLDebugLogger_LoggingMode              sipModuleAPI_trikControl_QtGui->em_types[133]
-#define sipEnum_QOpenGLDebugLogger_LoggingMode              sipModuleAPI_trikControl_QtGui->em_types[133]->u.td_py_type
+#define sipType_QFileSystemModel              sipModuleAPI_trikControl_QtGui->em_types[115]
+#define sipClass_QFileSystemModel             sipModuleAPI_trikControl_QtGui->em_types[115]->u.td_wrapper_type
 
-#define sipType_QOpenGLFramebufferObject              sipModuleAPI_trikControl_QtGui->em_types[141]
-#define sipClass_QOpenGLFramebufferObject             sipModuleAPI_trikControl_QtGui->em_types[141]->u.td_wrapper_type
+#define sipType_QFileSystemModel_Roles              sipModuleAPI_trikControl_QtGui->em_types[116]
+#define sipEnum_QFileSystemModel_Roles              sipModuleAPI_trikControl_QtGui->em_types[116]->u.td_py_type
 
-#define sipType_QOpenGLFramebufferObject_FramebufferRestorePolicy              sipModuleAPI_trikControl_QtGui->em_types[143]
-#define sipEnum_QOpenGLFramebufferObject_FramebufferRestorePolicy              sipModuleAPI_trikControl_QtGui->em_types[143]->u.td_py_type
-#define sipType_QOpenGLFramebufferObject_Attachment              sipModuleAPI_trikControl_QtGui->em_types[142]
-#define sipEnum_QOpenGLFramebufferObject_Attachment              sipModuleAPI_trikControl_QtGui->em_types[142]->u.td_py_type
+#define sipType_QFocusFrame              sipModuleAPI_trikControl_QtGui->em_types[118]
+#define sipClass_QFocusFrame             sipModuleAPI_trikControl_QtGui->em_types[118]->u.td_wrapper_type
 
-#define sipType_QOpenGLFramebufferObjectFormat              sipModuleAPI_trikControl_QtGui->em_types[144]
-#define sipClass_QOpenGLFramebufferObjectFormat             sipModuleAPI_trikControl_QtGui->em_types[144]->u.td_wrapper_type
+#define sipType_QFont              sipModuleAPI_trikControl_QtGui->em_types[119]
+#define sipClass_QFont             sipModuleAPI_trikControl_QtGui->em_types[119]->u.td_wrapper_type
 
-#define sipType_QOpenGLPaintDevice              sipModuleAPI_trikControl_QtGui->em_types[145]
-#define sipClass_QOpenGLPaintDevice             sipModuleAPI_trikControl_QtGui->em_types[145]->u.td_wrapper_type
+#define sipType_QFont_HintingPreference              sipModuleAPI_trikControl_QtGui->em_types[121]
+#define sipEnum_QFont_HintingPreference              sipModuleAPI_trikControl_QtGui->em_types[121]->u.td_py_type
+#define sipType_QFont_SpacingType              sipModuleAPI_trikControl_QtGui->em_types[122]
+#define sipEnum_QFont_SpacingType              sipModuleAPI_trikControl_QtGui->em_types[122]->u.td_py_type
+#define sipType_QFont_Capitalization              sipModuleAPI_trikControl_QtGui->em_types[120]
+#define sipEnum_QFont_Capitalization              sipModuleAPI_trikControl_QtGui->em_types[120]->u.td_py_type
+#define sipType_QFont_Stretch              sipModuleAPI_trikControl_QtGui->em_types[123]
+#define sipEnum_QFont_Stretch              sipModuleAPI_trikControl_QtGui->em_types[123]->u.td_py_type
+#define sipType_QFont_Style              sipModuleAPI_trikControl_QtGui->em_types[124]
+#define sipEnum_QFont_Style              sipModuleAPI_trikControl_QtGui->em_types[124]->u.td_py_type
+#define sipType_QFont_Weight              sipModuleAPI_trikControl_QtGui->em_types[127]
+#define sipEnum_QFont_Weight              sipModuleAPI_trikControl_QtGui->em_types[127]->u.td_py_type
+#define sipType_QFont_StyleStrategy              sipModuleAPI_trikControl_QtGui->em_types[126]
+#define sipEnum_QFont_StyleStrategy              sipModuleAPI_trikControl_QtGui->em_types[126]->u.td_py_type
+#define sipType_QFont_StyleHint              sipModuleAPI_trikControl_QtGui->em_types[125]
+#define sipEnum_QFont_StyleHint              sipModuleAPI_trikControl_QtGui->em_types[125]->u.td_py_type
 
-#define sipType_QOpenGLPixelTransferOptions              sipModuleAPI_trikControl_QtGui->em_types[146]
-#define sipClass_QOpenGLPixelTransferOptions             sipModuleAPI_trikControl_QtGui->em_types[146]->u.td_wrapper_type
+#define sipType_QFontComboBox              sipModuleAPI_trikControl_QtGui->em_types[128]
+#define sipClass_QFontComboBox             sipModuleAPI_trikControl_QtGui->em_types[128]->u.td_wrapper_type
 
-#define sipType_QOpenGLShader              sipModuleAPI_trikControl_QtGui->em_types[147]
-#define sipClass_QOpenGLShader             sipModuleAPI_trikControl_QtGui->em_types[147]->u.td_wrapper_type
+#define sipType_QFontComboBox_FontFilter              sipModuleAPI_trikControl_QtGui->em_types[129]
+#define sipEnum_QFontComboBox_FontFilter              sipModuleAPI_trikControl_QtGui->em_types[129]->u.td_py_type
 
-#define sipType_QOpenGLShader_ShaderTypeBit              sipModuleAPI_trikControl_QtGui->em_types[149]
-#define sipEnum_QOpenGLShader_ShaderTypeBit              sipModuleAPI_trikControl_QtGui->em_types[149]->u.td_py_type
+#define sipType_QFontComboBox_FontFilters              sipModuleAPI_trikControl_QtGui->em_types[130]
+#define sipClass_QFontComboBox_FontFilters             sipModuleAPI_trikControl_QtGui->em_types[130]->u.td_wrapper_type
 
-#define sipType_QOpenGLShader_ShaderType              sipModuleAPI_trikControl_QtGui->em_types[148]
-#define sipClass_QOpenGLShader_ShaderType             sipModuleAPI_trikControl_QtGui->em_types[148]->u.td_wrapper_type
+#define sipType_QFontDatabase              sipModuleAPI_trikControl_QtGui->em_types[131]
+#define sipClass_QFontDatabase             sipModuleAPI_trikControl_QtGui->em_types[131]->u.td_wrapper_type
 
-#define sipType_QOpenGLShaderProgram              sipModuleAPI_trikControl_QtGui->em_types[150]
-#define sipClass_QOpenGLShaderProgram             sipModuleAPI_trikControl_QtGui->em_types[150]->u.td_wrapper_type
+#define sipType_QFontDatabase_WritingSystem              sipModuleAPI_trikControl_QtGui->em_types[132]
+#define sipEnum_QFontDatabase_WritingSystem              sipModuleAPI_trikControl_QtGui->em_types[132]->u.td_py_type
 
-#define sipType_QOpenGLTexture              sipModuleAPI_trikControl_QtGui->em_types[151]
-#define sipClass_QOpenGLTexture             sipModuleAPI_trikControl_QtGui->em_types[151]->u.td_wrapper_type
+#define sipType_QFontDialog              sipModuleAPI_trikControl_QtGui->em_types[133]
+#define sipClass_QFontDialog             sipModuleAPI_trikControl_QtGui->em_types[133]->u.td_wrapper_type
 
-#define sipType_QOpenGLTexture_ComparisonMode              sipModuleAPI_trikControl_QtGui->em_types[154]
-#define sipEnum_QOpenGLTexture_ComparisonMode              sipModuleAPI_trikControl_QtGui->em_types[154]->u.td_py_type
-#define sipType_QOpenGLTexture_ComparisonFunction              sipModuleAPI_trikControl_QtGui->em_types[153]
-#define sipEnum_QOpenGLTexture_ComparisonFunction              sipModuleAPI_trikControl_QtGui->em_types[153]->u.td_py_type
-#define sipType_QOpenGLTexture_CoordinateDirection              sipModuleAPI_trikControl_QtGui->em_types[155]
-#define sipEnum_QOpenGLTexture_CoordinateDirection              sipModuleAPI_trikControl_QtGui->em_types[155]->u.td_py_type
-#define sipType_QOpenGLTexture_WrapMode              sipModuleAPI_trikControl_QtGui->em_types[169]
-#define sipEnum_QOpenGLTexture_WrapMode              sipModuleAPI_trikControl_QtGui->em_types[169]->u.td_py_type
-#define sipType_QOpenGLTexture_Filter              sipModuleAPI_trikControl_QtGui->em_types[160]
-#define sipEnum_QOpenGLTexture_Filter              sipModuleAPI_trikControl_QtGui->em_types[160]->u.td_py_type
-#define sipType_QOpenGLTexture_DepthStencilMode              sipModuleAPI_trikControl_QtGui->em_types[157]
-#define sipEnum_QOpenGLTexture_DepthStencilMode              sipModuleAPI_trikControl_QtGui->em_types[157]->u.td_py_type
-#define sipType_QOpenGLTexture_SwizzleValue              sipModuleAPI_trikControl_QtGui->em_types[165]
-#define sipEnum_QOpenGLTexture_SwizzleValue              sipModuleAPI_trikControl_QtGui->em_types[165]->u.td_py_type
-#define sipType_QOpenGLTexture_SwizzleComponent              sipModuleAPI_trikControl_QtGui->em_types[164]
-#define sipEnum_QOpenGLTexture_SwizzleComponent              sipModuleAPI_trikControl_QtGui->em_types[164]->u.td_py_type
-#define sipType_QOpenGLTexture_Feature              sipModuleAPI_trikControl_QtGui->em_types[158]
-#define sipEnum_QOpenGLTexture_Feature              sipModuleAPI_trikControl_QtGui->em_types[158]->u.td_py_type
-#define sipType_QOpenGLTexture_PixelType              sipModuleAPI_trikControl_QtGui->em_types[163]
-#define sipEnum_QOpenGLTexture_PixelType              sipModuleAPI_trikControl_QtGui->em_types[163]->u.td_py_type
-#define sipType_QOpenGLTexture_PixelFormat              sipModuleAPI_trikControl_QtGui->em_types[162]
-#define sipEnum_QOpenGLTexture_PixelFormat              sipModuleAPI_trikControl_QtGui->em_types[162]->u.td_py_type
-#define sipType_QOpenGLTexture_CubeMapFace              sipModuleAPI_trikControl_QtGui->em_types[156]
-#define sipEnum_QOpenGLTexture_CubeMapFace              sipModuleAPI_trikControl_QtGui->em_types[156]->u.td_py_type
-#define sipType_QOpenGLTexture_TextureFormat              sipModuleAPI_trikControl_QtGui->em_types[167]
-#define sipEnum_QOpenGLTexture_TextureFormat              sipModuleAPI_trikControl_QtGui->em_types[167]->u.td_py_type
-#define sipType_QOpenGLTexture_TextureUnitReset              sipModuleAPI_trikControl_QtGui->em_types[168]
-#define sipEnum_QOpenGLTexture_TextureUnitReset              sipModuleAPI_trikControl_QtGui->em_types[168]->u.td_py_type
-#define sipType_QOpenGLTexture_MipMapGeneration              sipModuleAPI_trikControl_QtGui->em_types[161]
-#define sipEnum_QOpenGLTexture_MipMapGeneration              sipModuleAPI_trikControl_QtGui->em_types[161]->u.td_py_type
-#define sipType_QOpenGLTexture_BindingTarget              sipModuleAPI_trikControl_QtGui->em_types[152]
-#define sipEnum_QOpenGLTexture_BindingTarget              sipModuleAPI_trikControl_QtGui->em_types[152]->u.td_py_type
-#define sipType_QOpenGLTexture_Target              sipModuleAPI_trikControl_QtGui->em_types[166]
-#define sipEnum_QOpenGLTexture_Target              sipModuleAPI_trikControl_QtGui->em_types[166]->u.td_py_type
+#define sipType_QFontDialog_FontDialogOption              sipModuleAPI_trikControl_QtGui->em_types[134]
+#define sipEnum_QFontDialog_FontDialogOption              sipModuleAPI_trikControl_QtGui->em_types[134]->u.td_py_type
 
-#define sipType_QOpenGLTexture_Features              sipModuleAPI_trikControl_QtGui->em_types[159]
-#define sipClass_QOpenGLTexture_Features             sipModuleAPI_trikControl_QtGui->em_types[159]->u.td_wrapper_type
+#define sipType_QFontDialog_FontDialogOptions              sipModuleAPI_trikControl_QtGui->em_types[135]
+#define sipClass_QFontDialog_FontDialogOptions             sipModuleAPI_trikControl_QtGui->em_types[135]->u.td_wrapper_type
 
-#define sipType_QOpenGLTimerQuery              sipModuleAPI_trikControl_QtGui->em_types[171]
-#define sipClass_QOpenGLTimerQuery             sipModuleAPI_trikControl_QtGui->em_types[171]->u.td_wrapper_type
+#define sipType_QFontInfo              sipModuleAPI_trikControl_QtGui->em_types[136]
+#define sipClass_QFontInfo             sipModuleAPI_trikControl_QtGui->em_types[136]->u.td_wrapper_type
 
-#define sipType_QOpenGLTimeMonitor              sipModuleAPI_trikControl_QtGui->em_types[170]
-#define sipClass_QOpenGLTimeMonitor             sipModuleAPI_trikControl_QtGui->em_types[170]->u.td_wrapper_type
+#define sipType_QFontMetrics              sipModuleAPI_trikControl_QtGui->em_types[137]
+#define sipClass_QFontMetrics             sipModuleAPI_trikControl_QtGui->em_types[137]->u.td_wrapper_type
 
-#define sipType_QAbstractOpenGLFunctions              sipModuleAPI_trikControl_QtGui->em_types[0]
-#define sipClass_QAbstractOpenGLFunctions             sipModuleAPI_trikControl_QtGui->em_types[0]->u.td_wrapper_type
+#define sipType_QFontMetricsF              sipModuleAPI_trikControl_QtGui->em_types[138]
+#define sipClass_QFontMetricsF             sipModuleAPI_trikControl_QtGui->em_types[138]->u.td_wrapper_type
 
-#define sipType_QOpenGLVertexArrayObject              sipModuleAPI_trikControl_QtGui->em_types[173]
-#define sipClass_QOpenGLVertexArrayObject             sipModuleAPI_trikControl_QtGui->em_types[173]->u.td_wrapper_type
+#define sipType_QFormLayout              sipModuleAPI_trikControl_QtGui->em_types[139]
+#define sipClass_QFormLayout             sipModuleAPI_trikControl_QtGui->em_types[139]->u.td_wrapper_type
 
-#define sipType_QOpenGLVertexArrayObject_Binder              sipModuleAPI_trikControl_QtGui->em_types[174]
-#define sipClass_QOpenGLVertexArrayObject_Binder             sipModuleAPI_trikControl_QtGui->em_types[174]->u.td_wrapper_type
+#define sipType_QFormLayout_ItemRole              sipModuleAPI_trikControl_QtGui->em_types[141]
+#define sipEnum_QFormLayout_ItemRole              sipModuleAPI_trikControl_QtGui->em_types[141]->u.td_py_type
+#define sipType_QFormLayout_RowWrapPolicy              sipModuleAPI_trikControl_QtGui->em_types[142]
+#define sipEnum_QFormLayout_RowWrapPolicy              sipModuleAPI_trikControl_QtGui->em_types[142]->u.td_py_type
+#define sipType_QFormLayout_FieldGrowthPolicy              sipModuleAPI_trikControl_QtGui->em_types[140]
+#define sipEnum_QFormLayout_FieldGrowthPolicy              sipModuleAPI_trikControl_QtGui->em_types[140]->u.td_py_type
 
-#define sipType_QWindow              sipModuleAPI_trikControl_QtGui->em_types[371]
-#define sipClass_QWindow             sipModuleAPI_trikControl_QtGui->em_types[371]->u.td_wrapper_type
+#define sipType_QMatrix4x3              sipModuleAPI_trikControl_QtGui->em_types[335]
+#define sipClass_QMatrix4x3             sipModuleAPI_trikControl_QtGui->em_types[335]->u.td_wrapper_type
 
-#define sipType_QWindow_Visibility              sipModuleAPI_trikControl_QtGui->em_types[373]
-#define sipEnum_QWindow_Visibility              sipModuleAPI_trikControl_QtGui->em_types[373]->u.td_py_type
-#define sipType_QWindow_AncestorMode              sipModuleAPI_trikControl_QtGui->em_types[372]
-#define sipEnum_QWindow_AncestorMode              sipModuleAPI_trikControl_QtGui->em_types[372]->u.td_py_type
+#define sipType_QMatrix4x2              sipModuleAPI_trikControl_QtGui->em_types[334]
+#define sipClass_QMatrix4x2             sipModuleAPI_trikControl_QtGui->em_types[334]->u.td_wrapper_type
 
-#define sipType_QPaintDeviceWindow              sipModuleAPI_trikControl_QtGui->em_types[190]
-#define sipClass_QPaintDeviceWindow             sipModuleAPI_trikControl_QtGui->em_types[190]->u.td_wrapper_type
+#define sipType_QMatrix3x4              sipModuleAPI_trikControl_QtGui->em_types[333]
+#define sipClass_QMatrix3x4             sipModuleAPI_trikControl_QtGui->em_types[333]->u.td_wrapper_type
 
-#define sipType_QOpenGLWindow              sipModuleAPI_trikControl_QtGui->em_types[175]
-#define sipClass_QOpenGLWindow             sipModuleAPI_trikControl_QtGui->em_types[175]->u.td_wrapper_type
+#define sipType_QMatrix3x3              sipModuleAPI_trikControl_QtGui->em_types[332]
+#define sipClass_QMatrix3x3             sipModuleAPI_trikControl_QtGui->em_types[332]->u.td_wrapper_type
 
-#define sipType_QOpenGLWindow_UpdateBehavior              sipModuleAPI_trikControl_QtGui->em_types[176]
-#define sipEnum_QOpenGLWindow_UpdateBehavior              sipModuleAPI_trikControl_QtGui->em_types[176]->u.td_py_type
+#define sipType_QMatrix3x2              sipModuleAPI_trikControl_QtGui->em_types[331]
+#define sipClass_QMatrix3x2             sipModuleAPI_trikControl_QtGui->em_types[331]->u.td_wrapper_type
 
-#define sipType_QPagedPaintDevice              sipModuleAPI_trikControl_QtGui->em_types[185]
-#define sipClass_QPagedPaintDevice             sipModuleAPI_trikControl_QtGui->em_types[185]->u.td_wrapper_type
+#define sipType_QMatrix2x4              sipModuleAPI_trikControl_QtGui->em_types[330]
+#define sipClass_QMatrix2x4             sipModuleAPI_trikControl_QtGui->em_types[330]->u.td_wrapper_type
 
-#define sipType_QPagedPaintDevice_PageSize              sipModuleAPI_trikControl_QtGui->em_types[187]
-#define sipEnum_QPagedPaintDevice_PageSize              sipModuleAPI_trikControl_QtGui->em_types[187]->u.td_py_type
+#define sipType_QMatrix2x3              sipModuleAPI_trikControl_QtGui->em_types[329]
+#define sipClass_QMatrix2x3             sipModuleAPI_trikControl_QtGui->em_types[329]->u.td_wrapper_type
 
-#define sipType_QPagedPaintDevice_Margins              sipModuleAPI_trikControl_QtGui->em_types[186]
-#define sipClass_QPagedPaintDevice_Margins             sipModuleAPI_trikControl_QtGui->em_types[186]->u.td_wrapper_type
+#define sipType_QMatrix2x2              sipModuleAPI_trikControl_QtGui->em_types[328]
+#define sipClass_QMatrix2x2             sipModuleAPI_trikControl_QtGui->em_types[328]->u.td_wrapper_type
 
-#define sipType_QPageLayout              sipModuleAPI_trikControl_QtGui->em_types[177]
-#define sipClass_QPageLayout             sipModuleAPI_trikControl_QtGui->em_types[177]->u.td_wrapper_type
+#define sipType_QGesture              sipModuleAPI_trikControl_QtGui->em_types[147]
+#define sipClass_QGesture             sipModuleAPI_trikControl_QtGui->em_types[147]->u.td_wrapper_type
 
-#define sipType_QPageLayout_Mode              sipModuleAPI_trikControl_QtGui->em_types[178]
-#define sipEnum_QPageLayout_Mode              sipModuleAPI_trikControl_QtGui->em_types[178]->u.td_py_type
-#define sipType_QPageLayout_Orientation              sipModuleAPI_trikControl_QtGui->em_types[179]
-#define sipEnum_QPageLayout_Orientation              sipModuleAPI_trikControl_QtGui->em_types[179]->u.td_py_type
-#define sipType_QPageLayout_Unit              sipModuleAPI_trikControl_QtGui->em_types[180]
-#define sipEnum_QPageLayout_Unit              sipModuleAPI_trikControl_QtGui->em_types[180]->u.td_py_type
+#define sipType_QGesture_GestureCancelPolicy              sipModuleAPI_trikControl_QtGui->em_types[148]
+#define sipEnum_QGesture_GestureCancelPolicy              sipModuleAPI_trikControl_QtGui->em_types[148]->u.td_py_type
 
-#define sipType_QPageSize              sipModuleAPI_trikControl_QtGui->em_types[181]
-#define sipClass_QPageSize             sipModuleAPI_trikControl_QtGui->em_types[181]->u.td_wrapper_type
+#define sipType_QPanGesture              sipModuleAPI_trikControl_QtGui->em_types[387]
+#define sipClass_QPanGesture             sipModuleAPI_trikControl_QtGui->em_types[387]->u.td_wrapper_type
 
-#define sipType_QPageSize_SizeMatchPolicy              sipModuleAPI_trikControl_QtGui->em_types[183]
-#define sipEnum_QPageSize_SizeMatchPolicy              sipModuleAPI_trikControl_QtGui->em_types[183]->u.td_py_type
-#define sipType_QPageSize_Unit              sipModuleAPI_trikControl_QtGui->em_types[184]
-#define sipEnum_QPageSize_Unit              sipModuleAPI_trikControl_QtGui->em_types[184]->u.td_py_type
-#define sipType_QPageSize_PageSizeId              sipModuleAPI_trikControl_QtGui->em_types[182]
-#define sipEnum_QPageSize_PageSizeId              sipModuleAPI_trikControl_QtGui->em_types[182]->u.td_py_type
+#define sipType_QPinchGesture              sipModuleAPI_trikControl_QtGui->em_types[391]
+#define sipClass_QPinchGesture             sipModuleAPI_trikControl_QtGui->em_types[391]->u.td_wrapper_type
 
-#define sipType_QPainter              sipModuleAPI_trikControl_QtGui->em_types[200]
-#define sipClass_QPainter             sipModuleAPI_trikControl_QtGui->em_types[200]->u.td_wrapper_type
+#define sipType_QPinchGesture_ChangeFlag              sipModuleAPI_trikControl_QtGui->em_types[392]
+#define sipEnum_QPinchGesture_ChangeFlag              sipModuleAPI_trikControl_QtGui->em_types[392]->u.td_py_type
 
-#define sipType_QPainter_PixmapFragmentHint              sipModuleAPI_trikControl_QtGui->em_types[203]
-#define sipEnum_QPainter_PixmapFragmentHint              sipModuleAPI_trikControl_QtGui->em_types[203]->u.td_py_type
-#define sipType_QPainter_CompositionMode              sipModuleAPI_trikControl_QtGui->em_types[201]
-#define sipEnum_QPainter_CompositionMode              sipModuleAPI_trikControl_QtGui->em_types[201]->u.td_py_type
-#define sipType_QPainter_RenderHint              sipModuleAPI_trikControl_QtGui->em_types[205]
-#define sipEnum_QPainter_RenderHint              sipModuleAPI_trikControl_QtGui->em_types[205]->u.td_py_type
+#define sipType_QPinchGesture_ChangeFlags              sipModuleAPI_trikControl_QtGui->em_types[393]
+#define sipClass_QPinchGesture_ChangeFlags             sipModuleAPI_trikControl_QtGui->em_types[393]->u.td_wrapper_type
 
-#define sipType_QPainter_RenderHints              sipModuleAPI_trikControl_QtGui->em_types[206]
-#define sipClass_QPainter_RenderHints             sipModuleAPI_trikControl_QtGui->em_types[206]->u.td_wrapper_type
+#define sipType_QSwipeGesture              sipModuleAPI_trikControl_QtGui->em_types[622]
+#define sipClass_QSwipeGesture             sipModuleAPI_trikControl_QtGui->em_types[622]->u.td_wrapper_type
 
-#define sipType_QPainter_PixmapFragment              sipModuleAPI_trikControl_QtGui->em_types[202]
-#define sipClass_QPainter_PixmapFragment             sipModuleAPI_trikControl_QtGui->em_types[202]->u.td_wrapper_type
+#define sipType_QSwipeGesture_SwipeDirection              sipModuleAPI_trikControl_QtGui->em_types[623]
+#define sipEnum_QSwipeGesture_SwipeDirection              sipModuleAPI_trikControl_QtGui->em_types[623]->u.td_py_type
 
-#define sipType_QPainter_PixmapFragmentHints              sipModuleAPI_trikControl_QtGui->em_types[204]
-#define sipClass_QPainter_PixmapFragmentHints             sipModuleAPI_trikControl_QtGui->em_types[204]->u.td_wrapper_type
+#define sipType_QTapGesture              sipModuleAPI_trikControl_QtGui->em_types[644]
+#define sipClass_QTapGesture             sipModuleAPI_trikControl_QtGui->em_types[644]->u.td_wrapper_type
 
-#define sipType_QTextItem              sipModuleAPI_trikControl_QtGui->em_types[313]
-#define sipClass_QTextItem             sipModuleAPI_trikControl_QtGui->em_types[313]->u.td_wrapper_type
+#define sipType_QTapAndHoldGesture              sipModuleAPI_trikControl_QtGui->em_types[643]
+#define sipClass_QTapAndHoldGesture             sipModuleAPI_trikControl_QtGui->em_types[643]->u.td_wrapper_type
 
-#define sipType_QTextItem_RenderFlag              sipModuleAPI_trikControl_QtGui->em_types[314]
-#define sipEnum_QTextItem_RenderFlag              sipModuleAPI_trikControl_QtGui->em_types[314]->u.td_py_type
+#define sipType_QGestureRecognizer              sipModuleAPI_trikControl_QtGui->em_types[150]
+#define sipClass_QGestureRecognizer             sipModuleAPI_trikControl_QtGui->em_types[150]->u.td_wrapper_type
 
-#define sipType_QTextItem_RenderFlags              sipModuleAPI_trikControl_QtGui->em_types[315]
-#define sipClass_QTextItem_RenderFlags             sipModuleAPI_trikControl_QtGui->em_types[315]->u.td_wrapper_type
+#define sipType_QGestureRecognizer_ResultFlag              sipModuleAPI_trikControl_QtGui->em_types[152]
+#define sipEnum_QGestureRecognizer_ResultFlag              sipModuleAPI_trikControl_QtGui->em_types[152]->u.td_py_type
 
-#define sipType_QPaintEngine              sipModuleAPI_trikControl_QtGui->em_types[191]
-#define sipClass_QPaintEngine             sipModuleAPI_trikControl_QtGui->em_types[191]->u.td_wrapper_type
+#define sipType_QGestureRecognizer_Result              sipModuleAPI_trikControl_QtGui->em_types[151]
+#define sipClass_QGestureRecognizer_Result             sipModuleAPI_trikControl_QtGui->em_types[151]->u.td_wrapper_type
 
-#define sipType_QPaintEngine_Type              sipModuleAPI_trikControl_QtGui->em_types[197]
-#define sipEnum_QPaintEngine_Type              sipModuleAPI_trikControl_QtGui->em_types[197]->u.td_py_type
-#define sipType_QPaintEngine_PolygonDrawMode              sipModuleAPI_trikControl_QtGui->em_types[196]
-#define sipEnum_QPaintEngine_PolygonDrawMode              sipModuleAPI_trikControl_QtGui->em_types[196]->u.td_py_type
-#define sipType_QPaintEngine_DirtyFlag              sipModuleAPI_trikControl_QtGui->em_types[192]
-#define sipEnum_QPaintEngine_DirtyFlag              sipModuleAPI_trikControl_QtGui->em_types[192]->u.td_py_type
-#define sipType_QPaintEngine_PaintEngineFeature              sipModuleAPI_trikControl_QtGui->em_types[194]
-#define sipEnum_QPaintEngine_PaintEngineFeature              sipModuleAPI_trikControl_QtGui->em_types[194]->u.td_py_type
+#define sipType_QGlyphRun              sipModuleAPI_trikControl_QtGui->em_types[153]
+#define sipClass_QGlyphRun             sipModuleAPI_trikControl_QtGui->em_types[153]->u.td_wrapper_type
 
-#define sipType_QPaintEngine_PaintEngineFeatures              sipModuleAPI_trikControl_QtGui->em_types[195]
-#define sipClass_QPaintEngine_PaintEngineFeatures             sipModuleAPI_trikControl_QtGui->em_types[195]->u.td_wrapper_type
+#define sipType_QGraphicsAnchor              sipModuleAPI_trikControl_QtGui->em_types[158]
+#define sipClass_QGraphicsAnchor             sipModuleAPI_trikControl_QtGui->em_types[158]->u.td_wrapper_type
 
-#define sipType_QPaintEngine_DirtyFlags              sipModuleAPI_trikControl_QtGui->em_types[193]
-#define sipClass_QPaintEngine_DirtyFlags             sipModuleAPI_trikControl_QtGui->em_types[193]->u.td_wrapper_type
+#define sipType_QGraphicsLayoutItem              sipModuleAPI_trikControl_QtGui->em_types[180]
+#define sipClass_QGraphicsLayoutItem             sipModuleAPI_trikControl_QtGui->em_types[180]->u.td_wrapper_type
 
-#define sipType_QPaintEngineState              sipModuleAPI_trikControl_QtGui->em_types[198]
-#define sipClass_QPaintEngineState             sipModuleAPI_trikControl_QtGui->em_types[198]->u.td_wrapper_type
+#define sipType_QGraphicsLayout              sipModuleAPI_trikControl_QtGui->em_types[179]
+#define sipClass_QGraphicsLayout             sipModuleAPI_trikControl_QtGui->em_types[179]->u.td_wrapper_type
 
-#define sipType_QPainterPath              sipModuleAPI_trikControl_QtGui->em_types[207]
-#define sipClass_QPainterPath             sipModuleAPI_trikControl_QtGui->em_types[207]->u.td_wrapper_type
+#define sipType_QGraphicsAnchorLayout              sipModuleAPI_trikControl_QtGui->em_types[159]
+#define sipClass_QGraphicsAnchorLayout             sipModuleAPI_trikControl_QtGui->em_types[159]->u.td_wrapper_type
 
-#define sipType_QPainterPath_ElementType              sipModuleAPI_trikControl_QtGui->em_types[209]
-#define sipEnum_QPainterPath_ElementType              sipModuleAPI_trikControl_QtGui->em_types[209]->u.td_py_type
+#define sipType_QGraphicsEffect              sipModuleAPI_trikControl_QtGui->em_types[165]
+#define sipClass_QGraphicsEffect             sipModuleAPI_trikControl_QtGui->em_types[165]->u.td_wrapper_type
 
-#define sipType_QPainterPath_Element              sipModuleAPI_trikControl_QtGui->em_types[208]
-#define sipClass_QPainterPath_Element             sipModuleAPI_trikControl_QtGui->em_types[208]->u.td_wrapper_type
+#define sipType_QGraphicsEffect_PixmapPadMode              sipModuleAPI_trikControl_QtGui->em_types[168]
+#define sipEnum_QGraphicsEffect_PixmapPadMode              sipModuleAPI_trikControl_QtGui->em_types[168]->u.td_py_type
+#define sipType_QGraphicsEffect_ChangeFlag              sipModuleAPI_trikControl_QtGui->em_types[166]
+#define sipEnum_QGraphicsEffect_ChangeFlag              sipModuleAPI_trikControl_QtGui->em_types[166]->u.td_py_type
 
-#define sipType_QPainterPathStroker              sipModuleAPI_trikControl_QtGui->em_types[210]
-#define sipClass_QPainterPathStroker             sipModuleAPI_trikControl_QtGui->em_types[210]->u.td_wrapper_type
+#define sipType_QGraphicsEffect_ChangeFlags              sipModuleAPI_trikControl_QtGui->em_types[167]
+#define sipClass_QGraphicsEffect_ChangeFlags             sipModuleAPI_trikControl_QtGui->em_types[167]->u.td_wrapper_type
 
-#define sipType_QPalette              sipModuleAPI_trikControl_QtGui->em_types[213]
-#define sipClass_QPalette             sipModuleAPI_trikControl_QtGui->em_types[213]->u.td_wrapper_type
+#define sipType_QGraphicsColorizeEffect              sipModuleAPI_trikControl_QtGui->em_types[163]
+#define sipClass_QGraphicsColorizeEffect             sipModuleAPI_trikControl_QtGui->em_types[163]->u.td_wrapper_type
 
-#define sipType_QPalette_ColorRole              sipModuleAPI_trikControl_QtGui->em_types[215]
-#define sipEnum_QPalette_ColorRole              sipModuleAPI_trikControl_QtGui->em_types[215]->u.td_py_type
-#define sipType_QPalette_ColorGroup              sipModuleAPI_trikControl_QtGui->em_types[214]
-#define sipEnum_QPalette_ColorGroup              sipModuleAPI_trikControl_QtGui->em_types[214]->u.td_py_type
+#define sipType_QGraphicsBlurEffect              sipModuleAPI_trikControl_QtGui->em_types[160]
+#define sipClass_QGraphicsBlurEffect             sipModuleAPI_trikControl_QtGui->em_types[160]->u.td_wrapper_type
 
-#define sipType_QPdfWriter              sipModuleAPI_trikControl_QtGui->em_types[216]
-#define sipClass_QPdfWriter             sipModuleAPI_trikControl_QtGui->em_types[216]->u.td_wrapper_type
+#define sipType_QGraphicsBlurEffect_BlurHint              sipModuleAPI_trikControl_QtGui->em_types[161]
+#define sipEnum_QGraphicsBlurEffect_BlurHint              sipModuleAPI_trikControl_QtGui->em_types[161]->u.td_py_type
 
-#define sipType_QPen              sipModuleAPI_trikControl_QtGui->em_types[217]
-#define sipClass_QPen             sipModuleAPI_trikControl_QtGui->em_types[217]->u.td_wrapper_type
+#define sipType_QGraphicsBlurEffect_BlurHints              sipModuleAPI_trikControl_QtGui->em_types[162]
+#define sipClass_QGraphicsBlurEffect_BlurHints             sipModuleAPI_trikControl_QtGui->em_types[162]->u.td_wrapper_type
 
-#define sipType_QPicture              sipModuleAPI_trikControl_QtGui->em_types[218]
-#define sipClass_QPicture             sipModuleAPI_trikControl_QtGui->em_types[218]->u.td_wrapper_type
+#define sipType_QGraphicsDropShadowEffect              sipModuleAPI_trikControl_QtGui->em_types[164]
+#define sipClass_QGraphicsDropShadowEffect             sipModuleAPI_trikControl_QtGui->em_types[164]->u.td_wrapper_type
 
-#define sipType_QPictureIO              sipModuleAPI_trikControl_QtGui->em_types[219]
-#define sipClass_QPictureIO             sipModuleAPI_trikControl_QtGui->em_types[219]->u.td_wrapper_type
+#define sipType_QGraphicsOpacityEffect              sipModuleAPI_trikControl_QtGui->em_types[184]
+#define sipClass_QGraphicsOpacityEffect             sipModuleAPI_trikControl_QtGui->em_types[184]->u.td_wrapper_type
 
-#define sipType_QPixelFormat              sipModuleAPI_trikControl_QtGui->em_types[220]
-#define sipClass_QPixelFormat             sipModuleAPI_trikControl_QtGui->em_types[220]->u.td_wrapper_type
+#define sipType_QGraphicsGridLayout              sipModuleAPI_trikControl_QtGui->em_types[170]
+#define sipClass_QGraphicsGridLayout             sipModuleAPI_trikControl_QtGui->em_types[170]->u.td_wrapper_type
 
-#define sipType_QPixelFormat_ByteOrder              sipModuleAPI_trikControl_QtGui->em_types[224]
-#define sipEnum_QPixelFormat_ByteOrder              sipModuleAPI_trikControl_QtGui->em_types[224]->u.td_py_type
-#define sipType_QPixelFormat_YUVLayout              sipModuleAPI_trikControl_QtGui->em_types[227]
-#define sipEnum_QPixelFormat_YUVLayout              sipModuleAPI_trikControl_QtGui->em_types[227]->u.td_py_type
-#define sipType_QPixelFormat_TypeInterpretation              sipModuleAPI_trikControl_QtGui->em_types[226]
-#define sipEnum_QPixelFormat_TypeInterpretation              sipModuleAPI_trikControl_QtGui->em_types[226]->u.td_py_type
-#define sipType_QPixelFormat_AlphaPremultiplied              sipModuleAPI_trikControl_QtGui->em_types[222]
-#define sipEnum_QPixelFormat_AlphaPremultiplied              sipModuleAPI_trikControl_QtGui->em_types[222]->u.td_py_type
-#define sipType_QPixelFormat_AlphaPosition              sipModuleAPI_trikControl_QtGui->em_types[221]
-#define sipEnum_QPixelFormat_AlphaPosition              sipModuleAPI_trikControl_QtGui->em_types[221]->u.td_py_type
-#define sipType_QPixelFormat_AlphaUsage              sipModuleAPI_trikControl_QtGui->em_types[223]
-#define sipEnum_QPixelFormat_AlphaUsage              sipModuleAPI_trikControl_QtGui->em_types[223]->u.td_py_type
-#define sipType_QPixelFormat_ColorModel              sipModuleAPI_trikControl_QtGui->em_types[225]
-#define sipEnum_QPixelFormat_ColorModel              sipModuleAPI_trikControl_QtGui->em_types[225]->u.td_py_type
+#define sipType_QGraphicsItem              sipModuleAPI_trikControl_QtGui->em_types[171]
+#define sipClass_QGraphicsItem             sipModuleAPI_trikControl_QtGui->em_types[171]->u.td_wrapper_type
 
-#define sipType_QPixmapCache              sipModuleAPI_trikControl_QtGui->em_types[229]
-#define sipClass_QPixmapCache             sipModuleAPI_trikControl_QtGui->em_types[229]->u.td_wrapper_type
+#define sipType_QGraphicsItem_PanelModality              sipModuleAPI_trikControl_QtGui->em_types[176]
+#define sipEnum_QGraphicsItem_PanelModality              sipModuleAPI_trikControl_QtGui->em_types[176]->u.td_py_type
+#define sipType_QGraphicsItem_GraphicsItemFlag              sipModuleAPI_trikControl_QtGui->em_types[174]
+#define sipEnum_QGraphicsItem_GraphicsItemFlag              sipModuleAPI_trikControl_QtGui->em_types[174]->u.td_py_type
+#define sipType_QGraphicsItem_GraphicsItemChange              sipModuleAPI_trikControl_QtGui->em_types[173]
+#define sipEnum_QGraphicsItem_GraphicsItemChange              sipModuleAPI_trikControl_QtGui->em_types[173]->u.td_py_type
+#define sipType_QGraphicsItem_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[172]
+#define sipEnum_QGraphicsItem_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[172]->u.td_py_type
 
-#define sipType_QPixmapCache_Key              sipModuleAPI_trikControl_QtGui->em_types[230]
-#define sipClass_QPixmapCache_Key             sipModuleAPI_trikControl_QtGui->em_types[230]->u.td_wrapper_type
+#define sipType_QGraphicsItem_GraphicsItemFlags              sipModuleAPI_trikControl_QtGui->em_types[175]
+#define sipClass_QGraphicsItem_GraphicsItemFlags             sipModuleAPI_trikControl_QtGui->em_types[175]->u.td_wrapper_type
 
-#define sipType_QPolygon              sipModuleAPI_trikControl_QtGui->em_types[233]
-#define sipClass_QPolygon             sipModuleAPI_trikControl_QtGui->em_types[233]->u.td_wrapper_type
+#define sipType_QAbstractGraphicsShapeItem              sipModuleAPI_trikControl_QtGui->em_types[2]
+#define sipClass_QAbstractGraphicsShapeItem             sipModuleAPI_trikControl_QtGui->em_types[2]->u.td_wrapper_type
 
-#define sipType_QPolygonF              sipModuleAPI_trikControl_QtGui->em_types[234]
-#define sipClass_QPolygonF             sipModuleAPI_trikControl_QtGui->em_types[234]->u.td_wrapper_type
+#define sipType_QGraphicsPathItem              sipModuleAPI_trikControl_QtGui->em_types[185]
+#define sipClass_QGraphicsPathItem             sipModuleAPI_trikControl_QtGui->em_types[185]->u.td_wrapper_type
 
-#define sipType_QQuaternion              sipModuleAPI_trikControl_QtGui->em_types[235]
-#define sipClass_QQuaternion             sipModuleAPI_trikControl_QtGui->em_types[235]->u.td_wrapper_type
+#define sipType_QGraphicsRectItem              sipModuleAPI_trikControl_QtGui->em_types[190]
+#define sipClass_QGraphicsRectItem             sipModuleAPI_trikControl_QtGui->em_types[190]->u.td_wrapper_type
 
-#define sipType_QRasterWindow              sipModuleAPI_trikControl_QtGui->em_types[237]
-#define sipClass_QRasterWindow             sipModuleAPI_trikControl_QtGui->em_types[237]->u.td_wrapper_type
+#define sipType_QGraphicsEllipseItem              sipModuleAPI_trikControl_QtGui->em_types[169]
+#define sipClass_QGraphicsEllipseItem             sipModuleAPI_trikControl_QtGui->em_types[169]->u.td_wrapper_type
 
-#define sipType_QRawFont              sipModuleAPI_trikControl_QtGui->em_types[238]
-#define sipClass_QRawFont             sipModuleAPI_trikControl_QtGui->em_types[238]->u.td_wrapper_type
+#define sipType_QGraphicsPolygonItem              sipModuleAPI_trikControl_QtGui->em_types[188]
+#define sipClass_QGraphicsPolygonItem             sipModuleAPI_trikControl_QtGui->em_types[188]->u.td_wrapper_type
 
-#define sipType_QRawFont_LayoutFlag              sipModuleAPI_trikControl_QtGui->em_types[240]
-#define sipEnum_QRawFont_LayoutFlag              sipModuleAPI_trikControl_QtGui->em_types[240]->u.td_py_type
-#define sipType_QRawFont_AntialiasingType              sipModuleAPI_trikControl_QtGui->em_types[239]
-#define sipEnum_QRawFont_AntialiasingType              sipModuleAPI_trikControl_QtGui->em_types[239]->u.td_py_type
+#define sipType_QGraphicsLineItem              sipModuleAPI_trikControl_QtGui->em_types[181]
+#define sipClass_QGraphicsLineItem             sipModuleAPI_trikControl_QtGui->em_types[181]->u.td_wrapper_type
 
-#define sipType_QRawFont_LayoutFlags              sipModuleAPI_trikControl_QtGui->em_types[241]
-#define sipClass_QRawFont_LayoutFlags             sipModuleAPI_trikControl_QtGui->em_types[241]->u.td_wrapper_type
+#define sipType_QGraphicsPixmapItem              sipModuleAPI_trikControl_QtGui->em_types[186]
+#define sipClass_QGraphicsPixmapItem             sipModuleAPI_trikControl_QtGui->em_types[186]->u.td_wrapper_type
 
-#define sipType_QRegion              sipModuleAPI_trikControl_QtGui->em_types[243]
-#define sipClass_QRegion             sipModuleAPI_trikControl_QtGui->em_types[243]->u.td_wrapper_type
+#define sipType_QGraphicsPixmapItem_ShapeMode              sipModuleAPI_trikControl_QtGui->em_types[187]
+#define sipEnum_QGraphicsPixmapItem_ShapeMode              sipModuleAPI_trikControl_QtGui->em_types[187]->u.td_py_type
 
-#define sipType_QRegion_RegionType              sipModuleAPI_trikControl_QtGui->em_types[244]
-#define sipEnum_QRegion_RegionType              sipModuleAPI_trikControl_QtGui->em_types[244]->u.td_py_type
+#define sipType_QGraphicsSimpleTextItem              sipModuleAPI_trikControl_QtGui->em_types[207]
+#define sipClass_QGraphicsSimpleTextItem             sipModuleAPI_trikControl_QtGui->em_types[207]->u.td_wrapper_type
 
-#define sipType_QRgba64              sipModuleAPI_trikControl_QtGui->em_types[247]
-#define sipClass_QRgba64             sipModuleAPI_trikControl_QtGui->em_types[247]->u.td_wrapper_type
+#define sipType_QGraphicsItemGroup              sipModuleAPI_trikControl_QtGui->em_types[178]
+#define sipClass_QGraphicsItemGroup             sipModuleAPI_trikControl_QtGui->em_types[178]->u.td_wrapper_type
 
-#define sipType_QScreen              sipModuleAPI_trikControl_QtGui->em_types[248]
-#define sipClass_QScreen             sipModuleAPI_trikControl_QtGui->em_types[248]->u.td_wrapper_type
+#define sipType_QGraphicsObject              sipModuleAPI_trikControl_QtGui->em_types[183]
+#define sipClass_QGraphicsObject             sipModuleAPI_trikControl_QtGui->em_types[183]->u.td_wrapper_type
 
-#define sipType_QSessionManager              sipModuleAPI_trikControl_QtGui->em_types[252]
-#define sipClass_QSessionManager             sipModuleAPI_trikControl_QtGui->em_types[252]->u.td_wrapper_type
+#define sipType_QGraphicsTextItem              sipModuleAPI_trikControl_QtGui->em_types[208]
+#define sipClass_QGraphicsTextItem             sipModuleAPI_trikControl_QtGui->em_types[208]->u.td_wrapper_type
 
-#define sipType_QSessionManager_RestartHint              sipModuleAPI_trikControl_QtGui->em_types[253]
-#define sipEnum_QSessionManager_RestartHint              sipModuleAPI_trikControl_QtGui->em_types[253]->u.td_py_type
+#define sipType_QGraphicsItemAnimation              sipModuleAPI_trikControl_QtGui->em_types[177]
+#define sipClass_QGraphicsItemAnimation             sipModuleAPI_trikControl_QtGui->em_types[177]->u.td_wrapper_type
 
-#define sipType_QStandardItemModel              sipModuleAPI_trikControl_QtGui->em_types[259]
-#define sipClass_QStandardItemModel             sipModuleAPI_trikControl_QtGui->em_types[259]->u.td_wrapper_type
+#define sipType_QGraphicsLinearLayout              sipModuleAPI_trikControl_QtGui->em_types[182]
+#define sipClass_QGraphicsLinearLayout             sipModuleAPI_trikControl_QtGui->em_types[182]->u.td_wrapper_type
 
-#define sipType_QStandardItem              sipModuleAPI_trikControl_QtGui->em_types[257]
-#define sipClass_QStandardItem             sipModuleAPI_trikControl_QtGui->em_types[257]->u.td_wrapper_type
+#define sipType_QGraphicsWidget              sipModuleAPI_trikControl_QtGui->em_types[218]
+#define sipClass_QGraphicsWidget             sipModuleAPI_trikControl_QtGui->em_types[218]->u.td_wrapper_type
 
-#define sipType_QStandardItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[258]
-#define sipEnum_QStandardItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[258]->u.td_py_type
+#define sipType_QGraphicsProxyWidget              sipModuleAPI_trikControl_QtGui->em_types[189]
+#define sipClass_QGraphicsProxyWidget             sipModuleAPI_trikControl_QtGui->em_types[189]->u.td_wrapper_type
 
-#define sipType_QStaticText              sipModuleAPI_trikControl_QtGui->em_types[260]
-#define sipClass_QStaticText             sipModuleAPI_trikControl_QtGui->em_types[260]->u.td_wrapper_type
+#define sipType_QGraphicsScene              sipModuleAPI_trikControl_QtGui->em_types[193]
+#define sipClass_QGraphicsScene             sipModuleAPI_trikControl_QtGui->em_types[193]->u.td_wrapper_type
 
-#define sipType_QStaticText_PerformanceHint              sipModuleAPI_trikControl_QtGui->em_types[261]
-#define sipEnum_QStaticText_PerformanceHint              sipModuleAPI_trikControl_QtGui->em_types[261]->u.td_py_type
+#define sipType_QGraphicsScene_SceneLayer              sipModuleAPI_trikControl_QtGui->em_types[195]
+#define sipEnum_QGraphicsScene_SceneLayer              sipModuleAPI_trikControl_QtGui->em_types[195]->u.td_py_type
+#define sipType_QGraphicsScene_ItemIndexMethod              sipModuleAPI_trikControl_QtGui->em_types[194]
+#define sipEnum_QGraphicsScene_ItemIndexMethod              sipModuleAPI_trikControl_QtGui->em_types[194]->u.td_py_type
 
-#define sipType_QStyleHints              sipModuleAPI_trikControl_QtGui->em_types[263]
-#define sipClass_QStyleHints             sipModuleAPI_trikControl_QtGui->em_types[263]->u.td_wrapper_type
+#define sipType_QGraphicsScene_SceneLayers              sipModuleAPI_trikControl_QtGui->em_types[196]
+#define sipClass_QGraphicsScene_SceneLayers             sipModuleAPI_trikControl_QtGui->em_types[196]->u.td_wrapper_type
 
-#define sipType_QSurfaceFormat              sipModuleAPI_trikControl_QtGui->em_types[267]
-#define sipClass_QSurfaceFormat             sipModuleAPI_trikControl_QtGui->em_types[267]->u.td_wrapper_type
+#define sipType_QGraphicsSceneEvent              sipModuleAPI_trikControl_QtGui->em_types[200]
+#define sipClass_QGraphicsSceneEvent             sipModuleAPI_trikControl_QtGui->em_types[200]->u.td_wrapper_type
 
-#define sipType_QSurfaceFormat_OpenGLContextProfile              sipModuleAPI_trikControl_QtGui->em_types[270]
-#define sipEnum_QSurfaceFormat_OpenGLContextProfile              sipModuleAPI_trikControl_QtGui->em_types[270]->u.td_py_type
-#define sipType_QSurfaceFormat_RenderableType              sipModuleAPI_trikControl_QtGui->em_types[271]
-#define sipEnum_QSurfaceFormat_RenderableType              sipModuleAPI_trikControl_QtGui->em_types[271]->u.td_py_type
-#define sipType_QSurfaceFormat_SwapBehavior              sipModuleAPI_trikControl_QtGui->em_types[272]
-#define sipEnum_QSurfaceFormat_SwapBehavior              sipModuleAPI_trikControl_QtGui->em_types[272]->u.td_py_type
-#define sipType_QSurfaceFormat_FormatOption              sipModuleAPI_trikControl_QtGui->em_types[268]
-#define sipEnum_QSurfaceFormat_FormatOption              sipModuleAPI_trikControl_QtGui->em_types[268]->u.td_py_type
+#define sipType_QGraphicsSceneMouseEvent              sipModuleAPI_trikControl_QtGui->em_types[203]
+#define sipClass_QGraphicsSceneMouseEvent             sipModuleAPI_trikControl_QtGui->em_types[203]->u.td_wrapper_type
 
-#define sipType_QSurfaceFormat_FormatOptions              sipModuleAPI_trikControl_QtGui->em_types[269]
-#define sipClass_QSurfaceFormat_FormatOptions             sipModuleAPI_trikControl_QtGui->em_types[269]->u.td_wrapper_type
+#define sipType_QGraphicsSceneWheelEvent              sipModuleAPI_trikControl_QtGui->em_types[206]
+#define sipClass_QGraphicsSceneWheelEvent             sipModuleAPI_trikControl_QtGui->em_types[206]->u.td_wrapper_type
 
-#define sipType_QSyntaxHighlighter              sipModuleAPI_trikControl_QtGui->em_types[273]
-#define sipClass_QSyntaxHighlighter             sipModuleAPI_trikControl_QtGui->em_types[273]->u.td_wrapper_type
+#define sipType_QGraphicsSceneContextMenuEvent              sipModuleAPI_trikControl_QtGui->em_types[197]
+#define sipClass_QGraphicsSceneContextMenuEvent             sipModuleAPI_trikControl_QtGui->em_types[197]->u.td_wrapper_type
 
-#define sipType_QTextCursor              sipModuleAPI_trikControl_QtGui->em_types[287]
-#define sipClass_QTextCursor             sipModuleAPI_trikControl_QtGui->em_types[287]->u.td_wrapper_type
+#define sipType_QGraphicsSceneContextMenuEvent_Reason              sipModuleAPI_trikControl_QtGui->em_types[198]
+#define sipEnum_QGraphicsSceneContextMenuEvent_Reason              sipModuleAPI_trikControl_QtGui->em_types[198]->u.td_py_type
 
-#define sipType_QTextCursor_SelectionType              sipModuleAPI_trikControl_QtGui->em_types[290]
-#define sipEnum_QTextCursor_SelectionType              sipModuleAPI_trikControl_QtGui->em_types[290]->u.td_py_type
-#define sipType_QTextCursor_MoveOperation              sipModuleAPI_trikControl_QtGui->em_types[289]
-#define sipEnum_QTextCursor_MoveOperation              sipModuleAPI_trikControl_QtGui->em_types[289]->u.td_py_type
-#define sipType_QTextCursor_MoveMode              sipModuleAPI_trikControl_QtGui->em_types[288]
-#define sipEnum_QTextCursor_MoveMode              sipModuleAPI_trikControl_QtGui->em_types[288]->u.td_py_type
+#define sipType_QGraphicsSceneHoverEvent              sipModuleAPI_trikControl_QtGui->em_types[202]
+#define sipClass_QGraphicsSceneHoverEvent             sipModuleAPI_trikControl_QtGui->em_types[202]->u.td_wrapper_type
+
+#define sipType_QGraphicsSceneHelpEvent              sipModuleAPI_trikControl_QtGui->em_types[201]
+#define sipClass_QGraphicsSceneHelpEvent             sipModuleAPI_trikControl_QtGui->em_types[201]->u.td_wrapper_type
+
+#define sipType_QGraphicsSceneDragDropEvent              sipModuleAPI_trikControl_QtGui->em_types[199]
+#define sipClass_QGraphicsSceneDragDropEvent             sipModuleAPI_trikControl_QtGui->em_types[199]->u.td_wrapper_type
+
+#define sipType_QGraphicsSceneResizeEvent              sipModuleAPI_trikControl_QtGui->em_types[205]
+#define sipClass_QGraphicsSceneResizeEvent             sipModuleAPI_trikControl_QtGui->em_types[205]->u.td_wrapper_type
+
+#define sipType_QGraphicsSceneMoveEvent              sipModuleAPI_trikControl_QtGui->em_types[204]
+#define sipClass_QGraphicsSceneMoveEvent             sipModuleAPI_trikControl_QtGui->em_types[204]->u.td_wrapper_type
+
+#define sipType_QGraphicsTransform              sipModuleAPI_trikControl_QtGui->em_types[209]
+#define sipClass_QGraphicsTransform             sipModuleAPI_trikControl_QtGui->em_types[209]->u.td_wrapper_type
+
+#define sipType_QGraphicsScale              sipModuleAPI_trikControl_QtGui->em_types[192]
+#define sipClass_QGraphicsScale             sipModuleAPI_trikControl_QtGui->em_types[192]->u.td_wrapper_type
+
+#define sipType_QGraphicsRotation              sipModuleAPI_trikControl_QtGui->em_types[191]
+#define sipClass_QGraphicsRotation             sipModuleAPI_trikControl_QtGui->em_types[191]->u.td_wrapper_type
+
+#define sipType_QGraphicsView              sipModuleAPI_trikControl_QtGui->em_types[210]
+#define sipClass_QGraphicsView             sipModuleAPI_trikControl_QtGui->em_types[210]->u.td_wrapper_type
+
+#define sipType_QGraphicsView_OptimizationFlag              sipModuleAPI_trikControl_QtGui->em_types[214]
+#define sipEnum_QGraphicsView_OptimizationFlag              sipModuleAPI_trikControl_QtGui->em_types[214]->u.td_py_type
+#define sipType_QGraphicsView_ViewportUpdateMode              sipModuleAPI_trikControl_QtGui->em_types[217]
+#define sipEnum_QGraphicsView_ViewportUpdateMode              sipModuleAPI_trikControl_QtGui->em_types[217]->u.td_py_type
+#define sipType_QGraphicsView_ViewportAnchor              sipModuleAPI_trikControl_QtGui->em_types[216]
+#define sipEnum_QGraphicsView_ViewportAnchor              sipModuleAPI_trikControl_QtGui->em_types[216]->u.td_py_type
+#define sipType_QGraphicsView_DragMode              sipModuleAPI_trikControl_QtGui->em_types[213]
+#define sipEnum_QGraphicsView_DragMode              sipModuleAPI_trikControl_QtGui->em_types[213]->u.td_py_type
+#define sipType_QGraphicsView_CacheModeFlag              sipModuleAPI_trikControl_QtGui->em_types[212]
+#define sipEnum_QGraphicsView_CacheModeFlag              sipModuleAPI_trikControl_QtGui->em_types[212]->u.td_py_type
+
+#define sipType_QGraphicsView_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[211]
+#define sipClass_QGraphicsView_CacheMode             sipModuleAPI_trikControl_QtGui->em_types[211]->u.td_wrapper_type
+
+#define sipType_QGraphicsView_OptimizationFlags              sipModuleAPI_trikControl_QtGui->em_types[215]
+#define sipClass_QGraphicsView_OptimizationFlags             sipModuleAPI_trikControl_QtGui->em_types[215]->u.td_wrapper_type
+
+#define sipType_QGridLayout              sipModuleAPI_trikControl_QtGui->em_types[219]
+#define sipClass_QGridLayout             sipModuleAPI_trikControl_QtGui->em_types[219]->u.td_wrapper_type
+
+#define sipType_QGroupBox              sipModuleAPI_trikControl_QtGui->em_types[220]
+#define sipClass_QGroupBox             sipModuleAPI_trikControl_QtGui->em_types[220]->u.td_wrapper_type
+
+#define sipType_QHeaderView              sipModuleAPI_trikControl_QtGui->em_types[222]
+#define sipClass_QHeaderView             sipModuleAPI_trikControl_QtGui->em_types[222]->u.td_wrapper_type
+
+#define sipType_QHeaderView_ResizeMode              sipModuleAPI_trikControl_QtGui->em_types[223]
+#define sipEnum_QHeaderView_ResizeMode              sipModuleAPI_trikControl_QtGui->em_types[223]->u.td_py_type
+
+#define sipType_QIcon              sipModuleAPI_trikControl_QtGui->em_types[227]
+#define sipClass_QIcon             sipModuleAPI_trikControl_QtGui->em_types[227]->u.td_wrapper_type
+
+#define sipType_QIcon_State              sipModuleAPI_trikControl_QtGui->em_types[229]
+#define sipEnum_QIcon_State              sipModuleAPI_trikControl_QtGui->em_types[229]->u.td_py_type
+#define sipType_QIcon_Mode              sipModuleAPI_trikControl_QtGui->em_types[228]
+#define sipEnum_QIcon_Mode              sipModuleAPI_trikControl_QtGui->em_types[228]->u.td_py_type
+
+#define sipType_QIconEngine              sipModuleAPI_trikControl_QtGui->em_types[231]
+#define sipClass_QIconEngine             sipModuleAPI_trikControl_QtGui->em_types[231]->u.td_wrapper_type
+
+#define sipType_QIconEngineV2              sipModuleAPI_trikControl_QtGui->em_types[232]
+#define sipClass_QIconEngineV2             sipModuleAPI_trikControl_QtGui->em_types[232]->u.td_wrapper_type
+
+#define sipType_QIconEngineV2_IconEngineHook              sipModuleAPI_trikControl_QtGui->em_types[234]
+#define sipEnum_QIconEngineV2_IconEngineHook              sipModuleAPI_trikControl_QtGui->em_types[234]->u.td_py_type
+
+#define sipType_QIconEngineV2_AvailableSizesArgument              sipModuleAPI_trikControl_QtGui->em_types[233]
+#define sipClass_QIconEngineV2_AvailableSizesArgument             sipModuleAPI_trikControl_QtGui->em_types[233]->u.td_wrapper_type
+
+#define sipType_QIdentityProxyModel              sipModuleAPI_trikControl_QtGui->em_types[235]
+#define sipClass_QIdentityProxyModel             sipModuleAPI_trikControl_QtGui->em_types[235]->u.td_wrapper_type
+
+#define sipType_QImage              sipModuleAPI_trikControl_QtGui->em_types[236]
+#define sipClass_QImage             sipModuleAPI_trikControl_QtGui->em_types[236]->u.td_wrapper_type
+
+#define sipType_QImage_Format              sipModuleAPI_trikControl_QtGui->em_types[237]
+#define sipEnum_QImage_Format              sipModuleAPI_trikControl_QtGui->em_types[237]->u.td_py_type
+#define sipType_QImage_InvertMode              sipModuleAPI_trikControl_QtGui->em_types[238]
+#define sipEnum_QImage_InvertMode              sipModuleAPI_trikControl_QtGui->em_types[238]->u.td_py_type
+
+#define sipType_QImageIOHandler              sipModuleAPI_trikControl_QtGui->em_types[239]
+#define sipClass_QImageIOHandler             sipModuleAPI_trikControl_QtGui->em_types[239]->u.td_wrapper_type
+
+#define sipType_QImageIOHandler_ImageOption              sipModuleAPI_trikControl_QtGui->em_types[240]
+#define sipEnum_QImageIOHandler_ImageOption              sipModuleAPI_trikControl_QtGui->em_types[240]->u.td_py_type
+
+#define sipType_QImageReader              sipModuleAPI_trikControl_QtGui->em_types[241]
+#define sipClass_QImageReader             sipModuleAPI_trikControl_QtGui->em_types[241]->u.td_wrapper_type
+
+#define sipType_QImageReader_ImageReaderError              sipModuleAPI_trikControl_QtGui->em_types[242]
+#define sipEnum_QImageReader_ImageReaderError              sipModuleAPI_trikControl_QtGui->em_types[242]->u.td_py_type
+
+#define sipType_QImageWriter              sipModuleAPI_trikControl_QtGui->em_types[243]
+#define sipClass_QImageWriter             sipModuleAPI_trikControl_QtGui->em_types[243]->u.td_wrapper_type
+
+#define sipType_QImageWriter_ImageWriterError              sipModuleAPI_trikControl_QtGui->em_types[244]
+#define sipEnum_QImageWriter_ImageWriterError              sipModuleAPI_trikControl_QtGui->em_types[244]->u.td_py_type
+
+#define sipType_QInputContext              sipModuleAPI_trikControl_QtGui->em_types[245]
+#define sipClass_QInputContext             sipModuleAPI_trikControl_QtGui->em_types[245]->u.td_wrapper_type
+
+#define sipType_QInputContext_StandardFormat              sipModuleAPI_trikControl_QtGui->em_types[246]
+#define sipEnum_QInputContext_StandardFormat              sipModuleAPI_trikControl_QtGui->em_types[246]->u.td_py_type
+
+#define sipType_QInputContextFactory              sipModuleAPI_trikControl_QtGui->em_types[247]
+#define sipClass_QInputContextFactory             sipModuleAPI_trikControl_QtGui->em_types[247]->u.td_wrapper_type
+
+#define sipType_QInputDialog              sipModuleAPI_trikControl_QtGui->em_types[248]
+#define sipClass_QInputDialog             sipModuleAPI_trikControl_QtGui->em_types[248]->u.td_wrapper_type
+
+#define sipType_QInputDialog_InputMode              sipModuleAPI_trikControl_QtGui->em_types[251]
+#define sipEnum_QInputDialog_InputMode              sipModuleAPI_trikControl_QtGui->em_types[251]->u.td_py_type
+#define sipType_QInputDialog_InputDialogOption              sipModuleAPI_trikControl_QtGui->em_types[249]
+#define sipEnum_QInputDialog_InputDialogOption              sipModuleAPI_trikControl_QtGui->em_types[249]->u.td_py_type
+
+#define sipType_QInputDialog_InputDialogOptions              sipModuleAPI_trikControl_QtGui->em_types[250]
+#define sipClass_QInputDialog_InputDialogOptions             sipModuleAPI_trikControl_QtGui->em_types[250]->u.td_wrapper_type
+
+#define sipType_QItemDelegate              sipModuleAPI_trikControl_QtGui->em_types[257]
+#define sipClass_QItemDelegate             sipModuleAPI_trikControl_QtGui->em_types[257]->u.td_wrapper_type
+
+#define sipType_QItemEditorCreatorBase              sipModuleAPI_trikControl_QtGui->em_types[258]
+#define sipClass_QItemEditorCreatorBase             sipModuleAPI_trikControl_QtGui->em_types[258]->u.td_wrapper_type
+
+#define sipType_QItemEditorFactory              sipModuleAPI_trikControl_QtGui->em_types[259]
+#define sipClass_QItemEditorFactory             sipModuleAPI_trikControl_QtGui->em_types[259]->u.td_wrapper_type
+
+#define sipType_QItemSelectionRange              sipModuleAPI_trikControl_QtGui->em_types[264]
+#define sipClass_QItemSelectionRange             sipModuleAPI_trikControl_QtGui->em_types[264]->u.td_wrapper_type
+
+#define sipType_QItemSelectionModel              sipModuleAPI_trikControl_QtGui->em_types[261]
+#define sipClass_QItemSelectionModel             sipModuleAPI_trikControl_QtGui->em_types[261]->u.td_wrapper_type
+
+#define sipType_QItemSelectionModel_SelectionFlag              sipModuleAPI_trikControl_QtGui->em_types[262]
+#define sipEnum_QItemSelectionModel_SelectionFlag              sipModuleAPI_trikControl_QtGui->em_types[262]->u.td_py_type
+
+#define sipType_QItemSelectionModel_SelectionFlags              sipModuleAPI_trikControl_QtGui->em_types[263]
+#define sipClass_QItemSelectionModel_SelectionFlags             sipModuleAPI_trikControl_QtGui->em_types[263]->u.td_wrapper_type
+
+#define sipType_QItemSelection              sipModuleAPI_trikControl_QtGui->em_types[260]
+#define sipClass_QItemSelection             sipModuleAPI_trikControl_QtGui->em_types[260]->u.td_wrapper_type
+
+#define sipType_QKeyEventTransition              sipModuleAPI_trikControl_QtGui->em_types[266]
+#define sipClass_QKeyEventTransition             sipModuleAPI_trikControl_QtGui->em_types[266]->u.td_wrapper_type
+
+#define sipType_QKeySequence              sipModuleAPI_trikControl_QtGui->em_types[267]
+#define sipClass_QKeySequence             sipModuleAPI_trikControl_QtGui->em_types[267]->u.td_wrapper_type
+
+#define sipType_QKeySequence_StandardKey              sipModuleAPI_trikControl_QtGui->em_types[270]
+#define sipEnum_QKeySequence_StandardKey              sipModuleAPI_trikControl_QtGui->em_types[270]->u.td_py_type
+#define sipType_QKeySequence_SequenceMatch              sipModuleAPI_trikControl_QtGui->em_types[269]
+#define sipEnum_QKeySequence_SequenceMatch              sipModuleAPI_trikControl_QtGui->em_types[269]->u.td_py_type
+#define sipType_QKeySequence_SequenceFormat              sipModuleAPI_trikControl_QtGui->em_types[268]
+#define sipEnum_QKeySequence_SequenceFormat              sipModuleAPI_trikControl_QtGui->em_types[268]->u.td_py_type
+
+#define sipType_QLabel              sipModuleAPI_trikControl_QtGui->em_types[274]
+#define sipClass_QLabel             sipModuleAPI_trikControl_QtGui->em_types[274]->u.td_wrapper_type
+
+#define sipType_QSpacerItem              sipModuleAPI_trikControl_QtGui->em_types[457]
+#define sipClass_QSpacerItem             sipModuleAPI_trikControl_QtGui->em_types[457]->u.td_wrapper_type
+
+#define sipType_QWidgetItem              sipModuleAPI_trikControl_QtGui->em_types[759]
+#define sipClass_QWidgetItem             sipModuleAPI_trikControl_QtGui->em_types[759]->u.td_wrapper_type
+
+#define sipType_QLCDNumber              sipModuleAPI_trikControl_QtGui->em_types[271]
+#define sipClass_QLCDNumber             sipModuleAPI_trikControl_QtGui->em_types[271]->u.td_wrapper_type
+
+#define sipType_QLCDNumber_SegmentStyle              sipModuleAPI_trikControl_QtGui->em_types[273]
+#define sipEnum_QLCDNumber_SegmentStyle              sipModuleAPI_trikControl_QtGui->em_types[273]->u.td_py_type
+#define sipType_QLCDNumber_Mode              sipModuleAPI_trikControl_QtGui->em_types[272]
+#define sipEnum_QLCDNumber_Mode              sipModuleAPI_trikControl_QtGui->em_types[272]->u.td_py_type
+
+#define sipType_QLineEdit              sipModuleAPI_trikControl_QtGui->em_types[278]
+#define sipClass_QLineEdit             sipModuleAPI_trikControl_QtGui->em_types[278]->u.td_wrapper_type
+
+#define sipType_QLineEdit_EchoMode              sipModuleAPI_trikControl_QtGui->em_types[279]
+#define sipEnum_QLineEdit_EchoMode              sipModuleAPI_trikControl_QtGui->em_types[279]->u.td_py_type
+
+#define sipType_QListView              sipModuleAPI_trikControl_QtGui->em_types[314]
+#define sipClass_QListView             sipModuleAPI_trikControl_QtGui->em_types[314]->u.td_wrapper_type
+
+#define sipType_QListView_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[319]
+#define sipEnum_QListView_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[319]->u.td_py_type
+#define sipType_QListView_LayoutMode              sipModuleAPI_trikControl_QtGui->em_types[316]
+#define sipEnum_QListView_LayoutMode              sipModuleAPI_trikControl_QtGui->em_types[316]->u.td_py_type
+#define sipType_QListView_ResizeMode              sipModuleAPI_trikControl_QtGui->em_types[318]
+#define sipEnum_QListView_ResizeMode              sipModuleAPI_trikControl_QtGui->em_types[318]->u.td_py_type
+#define sipType_QListView_Flow              sipModuleAPI_trikControl_QtGui->em_types[315]
+#define sipEnum_QListView_Flow              sipModuleAPI_trikControl_QtGui->em_types[315]->u.td_py_type
+#define sipType_QListView_Movement              sipModuleAPI_trikControl_QtGui->em_types[317]
+#define sipEnum_QListView_Movement              sipModuleAPI_trikControl_QtGui->em_types[317]->u.td_py_type
+
+#define sipType_QListWidgetItem              sipModuleAPI_trikControl_QtGui->em_types[321]
+#define sipClass_QListWidgetItem             sipModuleAPI_trikControl_QtGui->em_types[321]->u.td_wrapper_type
+
+#define sipType_QListWidgetItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[322]
+#define sipEnum_QListWidgetItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[322]->u.td_py_type
+
+#define sipType_QListWidget              sipModuleAPI_trikControl_QtGui->em_types[320]
+#define sipClass_QListWidget             sipModuleAPI_trikControl_QtGui->em_types[320]->u.td_wrapper_type
+
+#define sipType_QMainWindow              sipModuleAPI_trikControl_QtGui->em_types[323]
+#define sipClass_QMainWindow             sipModuleAPI_trikControl_QtGui->em_types[323]->u.td_wrapper_type
+
+#define sipType_QMainWindow_DockOption              sipModuleAPI_trikControl_QtGui->em_types[324]
+#define sipEnum_QMainWindow_DockOption              sipModuleAPI_trikControl_QtGui->em_types[324]->u.td_py_type
+
+#define sipType_QMainWindow_DockOptions              sipModuleAPI_trikControl_QtGui->em_types[325]
+#define sipClass_QMainWindow_DockOptions             sipModuleAPI_trikControl_QtGui->em_types[325]->u.td_wrapper_type
+
+#define sipType_QMatrix              sipModuleAPI_trikControl_QtGui->em_types[327]
+#define sipClass_QMatrix             sipModuleAPI_trikControl_QtGui->em_types[327]->u.td_wrapper_type
+
+#define sipType_QMatrix4x4              sipModuleAPI_trikControl_QtGui->em_types[336]
+#define sipClass_QMatrix4x4             sipModuleAPI_trikControl_QtGui->em_types[336]->u.td_wrapper_type
+
+#define sipType_QMdiArea              sipModuleAPI_trikControl_QtGui->em_types[337]
+#define sipClass_QMdiArea             sipModuleAPI_trikControl_QtGui->em_types[337]->u.td_wrapper_type
+
+#define sipType_QMdiArea_WindowOrder              sipModuleAPI_trikControl_QtGui->em_types[341]
+#define sipEnum_QMdiArea_WindowOrder              sipModuleAPI_trikControl_QtGui->em_types[341]->u.td_py_type
+#define sipType_QMdiArea_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[340]
+#define sipEnum_QMdiArea_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[340]->u.td_py_type
+#define sipType_QMdiArea_AreaOption              sipModuleAPI_trikControl_QtGui->em_types[338]
+#define sipEnum_QMdiArea_AreaOption              sipModuleAPI_trikControl_QtGui->em_types[338]->u.td_py_type
+
+#define sipType_QMdiArea_AreaOptions              sipModuleAPI_trikControl_QtGui->em_types[339]
+#define sipClass_QMdiArea_AreaOptions             sipModuleAPI_trikControl_QtGui->em_types[339]->u.td_wrapper_type
+
+#define sipType_QMdiSubWindow              sipModuleAPI_trikControl_QtGui->em_types[342]
+#define sipClass_QMdiSubWindow             sipModuleAPI_trikControl_QtGui->em_types[342]->u.td_wrapper_type
+
+#define sipType_QMdiSubWindow_SubWindowOption              sipModuleAPI_trikControl_QtGui->em_types[343]
+#define sipEnum_QMdiSubWindow_SubWindowOption              sipModuleAPI_trikControl_QtGui->em_types[343]->u.td_py_type
+
+#define sipType_QMdiSubWindow_SubWindowOptions              sipModuleAPI_trikControl_QtGui->em_types[344]
+#define sipClass_QMdiSubWindow_SubWindowOptions             sipModuleAPI_trikControl_QtGui->em_types[344]->u.td_wrapper_type
+
+#define sipType_QMenu              sipModuleAPI_trikControl_QtGui->em_types[345]
+#define sipClass_QMenu             sipModuleAPI_trikControl_QtGui->em_types[345]->u.td_wrapper_type
+
+#define sipType_QMenuBar              sipModuleAPI_trikControl_QtGui->em_types[346]
+#define sipClass_QMenuBar             sipModuleAPI_trikControl_QtGui->em_types[346]->u.td_wrapper_type
+
+#define sipType_QMessageBox              sipModuleAPI_trikControl_QtGui->em_types[347]
+#define sipClass_QMessageBox             sipModuleAPI_trikControl_QtGui->em_types[347]->u.td_wrapper_type
+
+#define sipType_QMessageBox_StandardButton              sipModuleAPI_trikControl_QtGui->em_types[350]
+#define sipEnum_QMessageBox_StandardButton              sipModuleAPI_trikControl_QtGui->em_types[350]->u.td_py_type
+#define sipType_QMessageBox_Icon              sipModuleAPI_trikControl_QtGui->em_types[349]
+#define sipEnum_QMessageBox_Icon              sipModuleAPI_trikControl_QtGui->em_types[349]->u.td_py_type
+#define sipType_QMessageBox_ButtonRole              sipModuleAPI_trikControl_QtGui->em_types[348]
+#define sipEnum_QMessageBox_ButtonRole              sipModuleAPI_trikControl_QtGui->em_types[348]->u.td_py_type
+
+#define sipType_QMessageBox_StandardButtons              sipModuleAPI_trikControl_QtGui->em_types[351]
+#define sipClass_QMessageBox_StandardButtons             sipModuleAPI_trikControl_QtGui->em_types[351]->u.td_wrapper_type
+
+#define sipType_QMouseEventTransition              sipModuleAPI_trikControl_QtGui->em_types[354]
+#define sipClass_QMouseEventTransition             sipModuleAPI_trikControl_QtGui->em_types[354]->u.td_wrapper_type
+
+#define sipType_QMovie              sipModuleAPI_trikControl_QtGui->em_types[356]
+#define sipClass_QMovie             sipModuleAPI_trikControl_QtGui->em_types[356]->u.td_wrapper_type
+
+#define sipType_QMovie_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[357]
+#define sipEnum_QMovie_CacheMode              sipModuleAPI_trikControl_QtGui->em_types[357]->u.td_py_type
+#define sipType_QMovie_MovieState              sipModuleAPI_trikControl_QtGui->em_types[358]
+#define sipEnum_QMovie_MovieState              sipModuleAPI_trikControl_QtGui->em_types[358]->u.td_py_type
+
+#define sipType_QPageSetupDialog              sipModuleAPI_trikControl_QtGui->em_types[359]
+#define sipClass_QPageSetupDialog             sipModuleAPI_trikControl_QtGui->em_types[359]->u.td_wrapper_type
+
+#define sipType_QPageSetupDialog_PageSetupDialogOption              sipModuleAPI_trikControl_QtGui->em_types[360]
+#define sipEnum_QPageSetupDialog_PageSetupDialogOption              sipModuleAPI_trikControl_QtGui->em_types[360]->u.td_py_type
+
+#define sipType_QPageSetupDialog_PageSetupDialogOptions              sipModuleAPI_trikControl_QtGui->em_types[361]
+#define sipClass_QPageSetupDialog_PageSetupDialogOptions             sipModuleAPI_trikControl_QtGui->em_types[361]->u.td_wrapper_type
+
+#define sipType_QPainter              sipModuleAPI_trikControl_QtGui->em_types[373]
+#define sipClass_QPainter             sipModuleAPI_trikControl_QtGui->em_types[373]->u.td_wrapper_type
+
+#define sipType_QPainter_PixmapFragmentHint              sipModuleAPI_trikControl_QtGui->em_types[376]
+#define sipEnum_QPainter_PixmapFragmentHint              sipModuleAPI_trikControl_QtGui->em_types[376]->u.td_py_type
+#define sipType_QPainter_CompositionMode              sipModuleAPI_trikControl_QtGui->em_types[374]
+#define sipEnum_QPainter_CompositionMode              sipModuleAPI_trikControl_QtGui->em_types[374]->u.td_py_type
+#define sipType_QPainter_RenderHint              sipModuleAPI_trikControl_QtGui->em_types[378]
+#define sipEnum_QPainter_RenderHint              sipModuleAPI_trikControl_QtGui->em_types[378]->u.td_py_type
+
+#define sipType_QPainter_RenderHints              sipModuleAPI_trikControl_QtGui->em_types[379]
+#define sipClass_QPainter_RenderHints             sipModuleAPI_trikControl_QtGui->em_types[379]->u.td_wrapper_type
+
+#define sipType_QPainter_PixmapFragment              sipModuleAPI_trikControl_QtGui->em_types[375]
+#define sipClass_QPainter_PixmapFragment             sipModuleAPI_trikControl_QtGui->em_types[375]->u.td_wrapper_type
+
+#define sipType_QPainter_PixmapFragmentHints              sipModuleAPI_trikControl_QtGui->em_types[377]
+#define sipClass_QPainter_PixmapFragmentHints             sipModuleAPI_trikControl_QtGui->em_types[377]->u.td_wrapper_type
+
+#define sipType_QTextItem              sipModuleAPI_trikControl_QtGui->em_types[686]
+#define sipClass_QTextItem             sipModuleAPI_trikControl_QtGui->em_types[686]->u.td_wrapper_type
+
+#define sipType_QTextItem_RenderFlag              sipModuleAPI_trikControl_QtGui->em_types[687]
+#define sipEnum_QTextItem_RenderFlag              sipModuleAPI_trikControl_QtGui->em_types[687]->u.td_py_type
+
+#define sipType_QTextItem_RenderFlags              sipModuleAPI_trikControl_QtGui->em_types[688]
+#define sipClass_QTextItem_RenderFlags             sipModuleAPI_trikControl_QtGui->em_types[688]->u.td_wrapper_type
+
+#define sipType_QPaintEngine              sipModuleAPI_trikControl_QtGui->em_types[364]
+#define sipClass_QPaintEngine             sipModuleAPI_trikControl_QtGui->em_types[364]->u.td_wrapper_type
+
+#define sipType_QPaintEngine_Type              sipModuleAPI_trikControl_QtGui->em_types[370]
+#define sipEnum_QPaintEngine_Type              sipModuleAPI_trikControl_QtGui->em_types[370]->u.td_py_type
+#define sipType_QPaintEngine_PolygonDrawMode              sipModuleAPI_trikControl_QtGui->em_types[369]
+#define sipEnum_QPaintEngine_PolygonDrawMode              sipModuleAPI_trikControl_QtGui->em_types[369]->u.td_py_type
+#define sipType_QPaintEngine_DirtyFlag              sipModuleAPI_trikControl_QtGui->em_types[365]
+#define sipEnum_QPaintEngine_DirtyFlag              sipModuleAPI_trikControl_QtGui->em_types[365]->u.td_py_type
+#define sipType_QPaintEngine_PaintEngineFeature              sipModuleAPI_trikControl_QtGui->em_types[367]
+#define sipEnum_QPaintEngine_PaintEngineFeature              sipModuleAPI_trikControl_QtGui->em_types[367]->u.td_py_type
+
+#define sipType_QPaintEngine_PaintEngineFeatures              sipModuleAPI_trikControl_QtGui->em_types[368]
+#define sipClass_QPaintEngine_PaintEngineFeatures             sipModuleAPI_trikControl_QtGui->em_types[368]->u.td_wrapper_type
+
+#define sipType_QPaintEngine_DirtyFlags              sipModuleAPI_trikControl_QtGui->em_types[366]
+#define sipClass_QPaintEngine_DirtyFlags             sipModuleAPI_trikControl_QtGui->em_types[366]->u.td_wrapper_type
+
+#define sipType_QPaintEngineState              sipModuleAPI_trikControl_QtGui->em_types[371]
+#define sipClass_QPaintEngineState             sipModuleAPI_trikControl_QtGui->em_types[371]->u.td_wrapper_type
+
+#define sipType_QPainterPath              sipModuleAPI_trikControl_QtGui->em_types[380]
+#define sipClass_QPainterPath             sipModuleAPI_trikControl_QtGui->em_types[380]->u.td_wrapper_type
+
+#define sipType_QPainterPath_ElementType              sipModuleAPI_trikControl_QtGui->em_types[382]
+#define sipEnum_QPainterPath_ElementType              sipModuleAPI_trikControl_QtGui->em_types[382]->u.td_py_type
+
+#define sipType_QPainterPath_Element              sipModuleAPI_trikControl_QtGui->em_types[381]
+#define sipClass_QPainterPath_Element             sipModuleAPI_trikControl_QtGui->em_types[381]->u.td_wrapper_type
+
+#define sipType_QPainterPathStroker              sipModuleAPI_trikControl_QtGui->em_types[383]
+#define sipClass_QPainterPathStroker             sipModuleAPI_trikControl_QtGui->em_types[383]->u.td_wrapper_type
+
+#define sipType_QPalette              sipModuleAPI_trikControl_QtGui->em_types[384]
+#define sipClass_QPalette             sipModuleAPI_trikControl_QtGui->em_types[384]->u.td_wrapper_type
+
+#define sipType_QPalette_ColorRole              sipModuleAPI_trikControl_QtGui->em_types[386]
+#define sipEnum_QPalette_ColorRole              sipModuleAPI_trikControl_QtGui->em_types[386]->u.td_py_type
+#define sipType_QPalette_ColorGroup              sipModuleAPI_trikControl_QtGui->em_types[385]
+#define sipEnum_QPalette_ColorGroup              sipModuleAPI_trikControl_QtGui->em_types[385]->u.td_py_type
+
+#define sipType_QPen              sipModuleAPI_trikControl_QtGui->em_types[388]
+#define sipClass_QPen             sipModuleAPI_trikControl_QtGui->em_types[388]->u.td_wrapper_type
+
+#define sipType_QPicture              sipModuleAPI_trikControl_QtGui->em_types[389]
+#define sipClass_QPicture             sipModuleAPI_trikControl_QtGui->em_types[389]->u.td_wrapper_type
+
+#define sipType_QPictureIO              sipModuleAPI_trikControl_QtGui->em_types[390]
+#define sipClass_QPictureIO             sipModuleAPI_trikControl_QtGui->em_types[390]->u.td_wrapper_type
+
+#define sipType_QPixmapCache              sipModuleAPI_trikControl_QtGui->em_types[396]
+#define sipClass_QPixmapCache             sipModuleAPI_trikControl_QtGui->em_types[396]->u.td_wrapper_type
+
+#define sipType_QPixmapCache_Key              sipModuleAPI_trikControl_QtGui->em_types[397]
+#define sipClass_QPixmapCache_Key             sipModuleAPI_trikControl_QtGui->em_types[397]->u.td_wrapper_type
+
+#define sipType_QPlainTextEdit              sipModuleAPI_trikControl_QtGui->em_types[399]
+#define sipClass_QPlainTextEdit             sipModuleAPI_trikControl_QtGui->em_types[399]->u.td_wrapper_type
+
+#define sipType_QPlainTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtGui->em_types[400]
+#define sipEnum_QPlainTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtGui->em_types[400]->u.td_py_type
+
+#define sipType_QPlainTextDocumentLayout              sipModuleAPI_trikControl_QtGui->em_types[398]
+#define sipClass_QPlainTextDocumentLayout             sipModuleAPI_trikControl_QtGui->em_types[398]->u.td_wrapper_type
+
+#define sipType_QPolygon              sipModuleAPI_trikControl_QtGui->em_types[401]
+#define sipClass_QPolygon             sipModuleAPI_trikControl_QtGui->em_types[401]->u.td_wrapper_type
+
+#define sipType_QPolygonF              sipModuleAPI_trikControl_QtGui->em_types[402]
+#define sipClass_QPolygonF             sipModuleAPI_trikControl_QtGui->em_types[402]->u.td_wrapper_type
+
+#define sipType_QPrinter              sipModuleAPI_trikControl_QtGui->em_types[410]
+#define sipClass_QPrinter             sipModuleAPI_trikControl_QtGui->em_types[410]->u.td_wrapper_type
+
+#define sipType_QPrinter_Unit              sipModuleAPI_trikControl_QtGui->em_types[421]
+#define sipEnum_QPrinter_Unit              sipModuleAPI_trikControl_QtGui->em_types[421]->u.td_py_type
+#define sipType_QPrinter_DuplexMode              sipModuleAPI_trikControl_QtGui->em_types[412]
+#define sipEnum_QPrinter_DuplexMode              sipModuleAPI_trikControl_QtGui->em_types[412]->u.td_py_type
+#define sipType_QPrinter_PrintRange              sipModuleAPI_trikControl_QtGui->em_types[418]
+#define sipEnum_QPrinter_PrintRange              sipModuleAPI_trikControl_QtGui->em_types[418]->u.td_py_type
+#define sipType_QPrinter_OutputFormat              sipModuleAPI_trikControl_QtGui->em_types[414]
+#define sipEnum_QPrinter_OutputFormat              sipModuleAPI_trikControl_QtGui->em_types[414]->u.td_py_type
+#define sipType_QPrinter_PrinterState              sipModuleAPI_trikControl_QtGui->em_types[420]
+#define sipEnum_QPrinter_PrinterState              sipModuleAPI_trikControl_QtGui->em_types[420]->u.td_py_type
+#define sipType_QPrinter_PaperSource              sipModuleAPI_trikControl_QtGui->em_types[417]
+#define sipEnum_QPrinter_PaperSource              sipModuleAPI_trikControl_QtGui->em_types[417]->u.td_py_type
+#define sipType_QPrinter_ColorMode              sipModuleAPI_trikControl_QtGui->em_types[411]
+#define sipEnum_QPrinter_ColorMode              sipModuleAPI_trikControl_QtGui->em_types[411]->u.td_py_type
+#define sipType_QPrinter_PageOrder              sipModuleAPI_trikControl_QtGui->em_types[415]
+#define sipEnum_QPrinter_PageOrder              sipModuleAPI_trikControl_QtGui->em_types[415]->u.td_py_type
+#define sipType_QPrinter_PageSize              sipModuleAPI_trikControl_QtGui->em_types[416]
+#define sipEnum_QPrinter_PageSize              sipModuleAPI_trikControl_QtGui->em_types[416]->u.td_py_type
+#define sipType_QPrinter_Orientation              sipModuleAPI_trikControl_QtGui->em_types[413]
+#define sipEnum_QPrinter_Orientation              sipModuleAPI_trikControl_QtGui->em_types[413]->u.td_py_type
+#define sipType_QPrinter_PrinterMode              sipModuleAPI_trikControl_QtGui->em_types[419]
+#define sipEnum_QPrinter_PrinterMode              sipModuleAPI_trikControl_QtGui->em_types[419]->u.td_py_type
+
+#define sipType_QPrintDialog              sipModuleAPI_trikControl_QtGui->em_types[403]
+#define sipClass_QPrintDialog             sipModuleAPI_trikControl_QtGui->em_types[403]->u.td_wrapper_type
+
+#define sipType_QPrintEngine              sipModuleAPI_trikControl_QtGui->em_types[404]
+#define sipClass_QPrintEngine             sipModuleAPI_trikControl_QtGui->em_types[404]->u.td_wrapper_type
+
+#define sipType_QPrintEngine_PrintEnginePropertyKey              sipModuleAPI_trikControl_QtGui->em_types[405]
+#define sipEnum_QPrintEngine_PrintEnginePropertyKey              sipModuleAPI_trikControl_QtGui->em_types[405]->u.td_py_type
+
+#define sipType_QPrinterInfo              sipModuleAPI_trikControl_QtGui->em_types[422]
+#define sipClass_QPrinterInfo             sipModuleAPI_trikControl_QtGui->em_types[422]->u.td_wrapper_type
+
+#define sipType_QPrintPreviewDialog              sipModuleAPI_trikControl_QtGui->em_types[406]
+#define sipClass_QPrintPreviewDialog             sipModuleAPI_trikControl_QtGui->em_types[406]->u.td_wrapper_type
+
+#define sipType_QPrintPreviewWidget              sipModuleAPI_trikControl_QtGui->em_types[407]
+#define sipClass_QPrintPreviewWidget             sipModuleAPI_trikControl_QtGui->em_types[407]->u.td_wrapper_type
+
+#define sipType_QPrintPreviewWidget_ZoomMode              sipModuleAPI_trikControl_QtGui->em_types[409]
+#define sipEnum_QPrintPreviewWidget_ZoomMode              sipModuleAPI_trikControl_QtGui->em_types[409]->u.td_py_type
+#define sipType_QPrintPreviewWidget_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[408]
+#define sipEnum_QPrintPreviewWidget_ViewMode              sipModuleAPI_trikControl_QtGui->em_types[408]->u.td_py_type
+
+#define sipType_QProgressBar              sipModuleAPI_trikControl_QtGui->em_types[423]
+#define sipClass_QProgressBar             sipModuleAPI_trikControl_QtGui->em_types[423]->u.td_wrapper_type
+
+#define sipType_QProgressBar_Direction              sipModuleAPI_trikControl_QtGui->em_types[424]
+#define sipEnum_QProgressBar_Direction              sipModuleAPI_trikControl_QtGui->em_types[424]->u.td_py_type
+
+#define sipType_QProgressDialog              sipModuleAPI_trikControl_QtGui->em_types[425]
+#define sipClass_QProgressDialog             sipModuleAPI_trikControl_QtGui->em_types[425]->u.td_wrapper_type
+
+#define sipType_QProxyModel              sipModuleAPI_trikControl_QtGui->em_types[426]
+#define sipClass_QProxyModel             sipModuleAPI_trikControl_QtGui->em_types[426]->u.td_wrapper_type
+
+#define sipType_QQuaternion              sipModuleAPI_trikControl_QtGui->em_types[429]
+#define sipClass_QQuaternion             sipModuleAPI_trikControl_QtGui->em_types[429]->u.td_wrapper_type
+
+#define sipType_QRadioButton              sipModuleAPI_trikControl_QtGui->em_types[431]
+#define sipClass_QRadioButton             sipModuleAPI_trikControl_QtGui->em_types[431]->u.td_wrapper_type
+
+#define sipType_QRawFont              sipModuleAPI_trikControl_QtGui->em_types[432]
+#define sipClass_QRawFont             sipModuleAPI_trikControl_QtGui->em_types[432]->u.td_wrapper_type
+
+#define sipType_QRawFont_AntialiasingType              sipModuleAPI_trikControl_QtGui->em_types[433]
+#define sipEnum_QRawFont_AntialiasingType              sipModuleAPI_trikControl_QtGui->em_types[433]->u.td_py_type
+
+#define sipType_QRegion              sipModuleAPI_trikControl_QtGui->em_types[435]
+#define sipClass_QRegion             sipModuleAPI_trikControl_QtGui->em_types[435]->u.td_wrapper_type
+
+#define sipType_QRegion_RegionType              sipModuleAPI_trikControl_QtGui->em_types[436]
+#define sipEnum_QRegion_RegionType              sipModuleAPI_trikControl_QtGui->em_types[436]->u.td_py_type
+
+#define sipType_QRubberBand              sipModuleAPI_trikControl_QtGui->em_types[438]
+#define sipClass_QRubberBand             sipModuleAPI_trikControl_QtGui->em_types[438]->u.td_wrapper_type
+
+#define sipType_QRubberBand_Shape              sipModuleAPI_trikControl_QtGui->em_types[439]
+#define sipEnum_QRubberBand_Shape              sipModuleAPI_trikControl_QtGui->em_types[439]->u.td_py_type
+
+#define sipType_QScrollArea              sipModuleAPI_trikControl_QtGui->em_types[440]
+#define sipClass_QScrollArea             sipModuleAPI_trikControl_QtGui->em_types[440]->u.td_wrapper_type
+
+#define sipType_QScrollBar              sipModuleAPI_trikControl_QtGui->em_types[441]
+#define sipClass_QScrollBar             sipModuleAPI_trikControl_QtGui->em_types[441]->u.td_wrapper_type
+
+#define sipType_QSessionManager              sipModuleAPI_trikControl_QtGui->em_types[442]
+#define sipClass_QSessionManager             sipModuleAPI_trikControl_QtGui->em_types[442]->u.td_wrapper_type
+
+#define sipType_QSessionManager_RestartHint              sipModuleAPI_trikControl_QtGui->em_types[443]
+#define sipEnum_QSessionManager_RestartHint              sipModuleAPI_trikControl_QtGui->em_types[443]->u.td_py_type
+
+#define sipType_QShortcut              sipModuleAPI_trikControl_QtGui->em_types[444]
+#define sipClass_QShortcut             sipModuleAPI_trikControl_QtGui->em_types[444]->u.td_wrapper_type
+
+#define sipType_QSizeGrip              sipModuleAPI_trikControl_QtGui->em_types[447]
+#define sipClass_QSizeGrip             sipModuleAPI_trikControl_QtGui->em_types[447]->u.td_wrapper_type
+
+#define sipType_QSizePolicy              sipModuleAPI_trikControl_QtGui->em_types[448]
+#define sipClass_QSizePolicy             sipModuleAPI_trikControl_QtGui->em_types[448]->u.td_wrapper_type
+
+#define sipType_QSizePolicy_ControlType              sipModuleAPI_trikControl_QtGui->em_types[449]
+#define sipEnum_QSizePolicy_ControlType              sipModuleAPI_trikControl_QtGui->em_types[449]->u.td_py_type
+#define sipType_QSizePolicy_Policy              sipModuleAPI_trikControl_QtGui->em_types[451]
+#define sipEnum_QSizePolicy_Policy              sipModuleAPI_trikControl_QtGui->em_types[451]->u.td_py_type
+#define sipType_QSizePolicy_PolicyFlag              sipModuleAPI_trikControl_QtGui->em_types[452]
+#define sipEnum_QSizePolicy_PolicyFlag              sipModuleAPI_trikControl_QtGui->em_types[452]->u.td_py_type
+
+#define sipType_QSizePolicy_ControlTypes              sipModuleAPI_trikControl_QtGui->em_types[450]
+#define sipClass_QSizePolicy_ControlTypes             sipModuleAPI_trikControl_QtGui->em_types[450]->u.td_wrapper_type
+
+#define sipType_QSlider              sipModuleAPI_trikControl_QtGui->em_types[453]
+#define sipClass_QSlider             sipModuleAPI_trikControl_QtGui->em_types[453]->u.td_wrapper_type
+
+#define sipType_QSlider_TickPosition              sipModuleAPI_trikControl_QtGui->em_types[454]
+#define sipEnum_QSlider_TickPosition              sipModuleAPI_trikControl_QtGui->em_types[454]->u.td_py_type
+
+#define sipType_QSortFilterProxyModel              sipModuleAPI_trikControl_QtGui->em_types[455]
+#define sipClass_QSortFilterProxyModel             sipModuleAPI_trikControl_QtGui->em_types[455]->u.td_wrapper_type
+
+#define sipType_QSound              sipModuleAPI_trikControl_QtGui->em_types[456]
+#define sipClass_QSound             sipModuleAPI_trikControl_QtGui->em_types[456]->u.td_wrapper_type
+
+#define sipType_QSpinBox              sipModuleAPI_trikControl_QtGui->em_types[458]
+#define sipClass_QSpinBox             sipModuleAPI_trikControl_QtGui->em_types[458]->u.td_wrapper_type
+
+#define sipType_QDoubleSpinBox              sipModuleAPI_trikControl_QtGui->em_types[96]
+#define sipClass_QDoubleSpinBox             sipModuleAPI_trikControl_QtGui->em_types[96]->u.td_wrapper_type
+
+#define sipType_QSplashScreen              sipModuleAPI_trikControl_QtGui->em_types[459]
+#define sipClass_QSplashScreen             sipModuleAPI_trikControl_QtGui->em_types[459]->u.td_wrapper_type
+
+#define sipType_QSplitter              sipModuleAPI_trikControl_QtGui->em_types[460]
+#define sipClass_QSplitter             sipModuleAPI_trikControl_QtGui->em_types[460]->u.td_wrapper_type
+
+#define sipType_QSplitterHandle              sipModuleAPI_trikControl_QtGui->em_types[461]
+#define sipClass_QSplitterHandle             sipModuleAPI_trikControl_QtGui->em_types[461]->u.td_wrapper_type
+
+#define sipType_QStackedLayout              sipModuleAPI_trikControl_QtGui->em_types[462]
+#define sipClass_QStackedLayout             sipModuleAPI_trikControl_QtGui->em_types[462]->u.td_wrapper_type
+
+#define sipType_QStackedLayout_StackingMode              sipModuleAPI_trikControl_QtGui->em_types[463]
+#define sipEnum_QStackedLayout_StackingMode              sipModuleAPI_trikControl_QtGui->em_types[463]->u.td_py_type
+
+#define sipType_QStackedWidget              sipModuleAPI_trikControl_QtGui->em_types[464]
+#define sipClass_QStackedWidget             sipModuleAPI_trikControl_QtGui->em_types[464]->u.td_wrapper_type
+
+#define sipType_QStandardItemModel              sipModuleAPI_trikControl_QtGui->em_types[467]
+#define sipClass_QStandardItemModel             sipModuleAPI_trikControl_QtGui->em_types[467]->u.td_wrapper_type
+
+#define sipType_QStandardItem              sipModuleAPI_trikControl_QtGui->em_types[465]
+#define sipClass_QStandardItem             sipModuleAPI_trikControl_QtGui->em_types[465]->u.td_wrapper_type
+
+#define sipType_QStandardItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[466]
+#define sipEnum_QStandardItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[466]->u.td_py_type
+
+#define sipType_QStaticText              sipModuleAPI_trikControl_QtGui->em_types[468]
+#define sipClass_QStaticText             sipModuleAPI_trikControl_QtGui->em_types[468]->u.td_wrapper_type
+
+#define sipType_QStaticText_PerformanceHint              sipModuleAPI_trikControl_QtGui->em_types[469]
+#define sipEnum_QStaticText_PerformanceHint              sipModuleAPI_trikControl_QtGui->em_types[469]->u.td_py_type
+
+#define sipType_QStatusBar              sipModuleAPI_trikControl_QtGui->em_types[470]
+#define sipClass_QStatusBar             sipModuleAPI_trikControl_QtGui->em_types[470]->u.td_wrapper_type
+
+#define sipType_QStringListModel              sipModuleAPI_trikControl_QtGui->em_types[472]
+#define sipClass_QStringListModel             sipModuleAPI_trikControl_QtGui->em_types[472]->u.td_wrapper_type
+
+#define sipType_QStyle_State              sipModuleAPI_trikControl_QtGui->em_types[481]
+#define sipClass_QStyle_State             sipModuleAPI_trikControl_QtGui->em_types[481]->u.td_wrapper_type
+
+#define sipType_QStyle_SubControls              sipModuleAPI_trikControl_QtGui->em_types[485]
+#define sipClass_QStyle_SubControls             sipModuleAPI_trikControl_QtGui->em_types[485]->u.td_wrapper_type
+
+#define sipType_QStyledItemDelegate              sipModuleAPI_trikControl_QtGui->em_types[621]
+#define sipClass_QStyledItemDelegate             sipModuleAPI_trikControl_QtGui->em_types[621]->u.td_wrapper_type
+
+#define sipType_QStyleFactory              sipModuleAPI_trikControl_QtGui->em_types[487]
+#define sipClass_QStyleFactory             sipModuleAPI_trikControl_QtGui->em_types[487]->u.td_wrapper_type
+
+#define sipType_QStyleOption              sipModuleAPI_trikControl_QtGui->em_types[498]
+#define sipClass_QStyleOption             sipModuleAPI_trikControl_QtGui->em_types[498]->u.td_wrapper_type
+
+#define sipType_QStyleOption_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[501]
+#define sipEnum_QStyleOption_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[501]->u.td_py_type
+#define sipType_QStyleOption_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[500]
+#define sipEnum_QStyleOption_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[500]->u.td_py_type
+#define sipType_QStyleOption_OptionType              sipModuleAPI_trikControl_QtGui->em_types[499]
+#define sipEnum_QStyleOption_OptionType              sipModuleAPI_trikControl_QtGui->em_types[499]->u.td_py_type
+
+#define sipType_QStyleOptionFocusRect              sipModuleAPI_trikControl_QtGui->em_types[518]
+#define sipClass_QStyleOptionFocusRect             sipModuleAPI_trikControl_QtGui->em_types[518]->u.td_wrapper_type
+
+#define sipType_QStyleOptionFocusRect_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[520]
+#define sipEnum_QStyleOptionFocusRect_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[520]->u.td_py_type
+#define sipType_QStyleOptionFocusRect_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[519]
+#define sipEnum_QStyleOptionFocusRect_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[519]->u.td_py_type
+
+#define sipType_QStyleOptionFrame              sipModuleAPI_trikControl_QtGui->em_types[521]
+#define sipClass_QStyleOptionFrame             sipModuleAPI_trikControl_QtGui->em_types[521]->u.td_wrapper_type
+
+#define sipType_QStyleOptionFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[523]
+#define sipEnum_QStyleOptionFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[523]->u.td_py_type
+#define sipType_QStyleOptionFrame_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[522]
+#define sipEnum_QStyleOptionFrame_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[522]->u.td_py_type
+
+#define sipType_QStyleOptionFrameV2              sipModuleAPI_trikControl_QtGui->em_types[524]
+#define sipClass_QStyleOptionFrameV2             sipModuleAPI_trikControl_QtGui->em_types[524]->u.td_wrapper_type
+
+#define sipType_QStyleOptionFrameV2_FrameFeature              sipModuleAPI_trikControl_QtGui->em_types[525]
+#define sipEnum_QStyleOptionFrameV2_FrameFeature              sipModuleAPI_trikControl_QtGui->em_types[525]->u.td_py_type
+#define sipType_QStyleOptionFrameV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[527]
+#define sipEnum_QStyleOptionFrameV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[527]->u.td_py_type
+
+#define sipType_QStyleOptionFrameV2_FrameFeatures              sipModuleAPI_trikControl_QtGui->em_types[526]
+#define sipClass_QStyleOptionFrameV2_FrameFeatures             sipModuleAPI_trikControl_QtGui->em_types[526]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabWidgetFrame              sipModuleAPI_trikControl_QtGui->em_types[581]
+#define sipClass_QStyleOptionTabWidgetFrame             sipModuleAPI_trikControl_QtGui->em_types[581]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabWidgetFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[583]
+#define sipEnum_QStyleOptionTabWidgetFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[583]->u.td_py_type
+#define sipType_QStyleOptionTabWidgetFrame_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[582]
+#define sipEnum_QStyleOptionTabWidgetFrame_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[582]->u.td_py_type
+
+#define sipType_QStyleOptionTabBarBase              sipModuleAPI_trikControl_QtGui->em_types[572]
+#define sipClass_QStyleOptionTabBarBase             sipModuleAPI_trikControl_QtGui->em_types[572]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabBarBase_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[574]
+#define sipEnum_QStyleOptionTabBarBase_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[574]->u.td_py_type
+#define sipType_QStyleOptionTabBarBase_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[573]
+#define sipEnum_QStyleOptionTabBarBase_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[573]->u.td_py_type
+
+#define sipType_QStyleOptionHeader              sipModuleAPI_trikControl_QtGui->em_types[536]
+#define sipClass_QStyleOptionHeader             sipModuleAPI_trikControl_QtGui->em_types[536]->u.td_wrapper_type
+
+#define sipType_QStyleOptionHeader_SortIndicator              sipModuleAPI_trikControl_QtGui->em_types[539]
+#define sipEnum_QStyleOptionHeader_SortIndicator              sipModuleAPI_trikControl_QtGui->em_types[539]->u.td_py_type
+#define sipType_QStyleOptionHeader_SelectedPosition              sipModuleAPI_trikControl_QtGui->em_types[538]
+#define sipEnum_QStyleOptionHeader_SelectedPosition              sipModuleAPI_trikControl_QtGui->em_types[538]->u.td_py_type
+#define sipType_QStyleOptionHeader_SectionPosition              sipModuleAPI_trikControl_QtGui->em_types[537]
+#define sipEnum_QStyleOptionHeader_SectionPosition              sipModuleAPI_trikControl_QtGui->em_types[537]->u.td_py_type
+#define sipType_QStyleOptionHeader_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[541]
+#define sipEnum_QStyleOptionHeader_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[541]->u.td_py_type
+#define sipType_QStyleOptionHeader_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[540]
+#define sipEnum_QStyleOptionHeader_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[540]->u.td_py_type
+
+#define sipType_QStyleOptionButton              sipModuleAPI_trikControl_QtGui->em_types[502]
+#define sipClass_QStyleOptionButton             sipModuleAPI_trikControl_QtGui->em_types[502]->u.td_wrapper_type
+
+#define sipType_QStyleOptionButton_ButtonFeature              sipModuleAPI_trikControl_QtGui->em_types[503]
+#define sipEnum_QStyleOptionButton_ButtonFeature              sipModuleAPI_trikControl_QtGui->em_types[503]->u.td_py_type
+#define sipType_QStyleOptionButton_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[506]
+#define sipEnum_QStyleOptionButton_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[506]->u.td_py_type
+#define sipType_QStyleOptionButton_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[505]
+#define sipEnum_QStyleOptionButton_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[505]->u.td_py_type
+
+#define sipType_QStyleOptionButton_ButtonFeatures              sipModuleAPI_trikControl_QtGui->em_types[504]
+#define sipClass_QStyleOptionButton_ButtonFeatures             sipModuleAPI_trikControl_QtGui->em_types[504]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTab              sipModuleAPI_trikControl_QtGui->em_types[565]
+#define sipClass_QStyleOptionTab             sipModuleAPI_trikControl_QtGui->em_types[565]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTab_CornerWidget              sipModuleAPI_trikControl_QtGui->em_types[566]
+#define sipEnum_QStyleOptionTab_CornerWidget              sipModuleAPI_trikControl_QtGui->em_types[566]->u.td_py_type
+#define sipType_QStyleOptionTab_SelectedPosition              sipModuleAPI_trikControl_QtGui->em_types[568]
+#define sipEnum_QStyleOptionTab_SelectedPosition              sipModuleAPI_trikControl_QtGui->em_types[568]->u.td_py_type
+#define sipType_QStyleOptionTab_TabPosition              sipModuleAPI_trikControl_QtGui->em_types[571]
+#define sipEnum_QStyleOptionTab_TabPosition              sipModuleAPI_trikControl_QtGui->em_types[571]->u.td_py_type
+#define sipType_QStyleOptionTab_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[570]
+#define sipEnum_QStyleOptionTab_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[570]->u.td_py_type
+#define sipType_QStyleOptionTab_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[569]
+#define sipEnum_QStyleOptionTab_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[569]->u.td_py_type
+
+#define sipType_QStyleOptionTab_CornerWidgets              sipModuleAPI_trikControl_QtGui->em_types[567]
+#define sipClass_QStyleOptionTab_CornerWidgets             sipModuleAPI_trikControl_QtGui->em_types[567]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabV2              sipModuleAPI_trikControl_QtGui->em_types[577]
+#define sipClass_QStyleOptionTabV2             sipModuleAPI_trikControl_QtGui->em_types[577]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[578]
+#define sipEnum_QStyleOptionTabV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[578]->u.td_py_type
+
+#define sipType_QStyleOptionProgressBar              sipModuleAPI_trikControl_QtGui->em_types[547]
+#define sipClass_QStyleOptionProgressBar             sipModuleAPI_trikControl_QtGui->em_types[547]->u.td_wrapper_type
+
+#define sipType_QStyleOptionProgressBar_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[549]
+#define sipEnum_QStyleOptionProgressBar_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[549]->u.td_py_type
+#define sipType_QStyleOptionProgressBar_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[548]
+#define sipEnum_QStyleOptionProgressBar_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[548]->u.td_py_type
+
+#define sipType_QStyleOptionProgressBarV2              sipModuleAPI_trikControl_QtGui->em_types[550]
+#define sipClass_QStyleOptionProgressBarV2             sipModuleAPI_trikControl_QtGui->em_types[550]->u.td_wrapper_type
+
+#define sipType_QStyleOptionProgressBarV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[552]
+#define sipEnum_QStyleOptionProgressBarV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[552]->u.td_py_type
+#define sipType_QStyleOptionProgressBarV2_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[551]
+#define sipEnum_QStyleOptionProgressBarV2_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[551]->u.td_py_type
+
+#define sipType_QStyleOptionMenuItem              sipModuleAPI_trikControl_QtGui->em_types[542]
+#define sipClass_QStyleOptionMenuItem             sipModuleAPI_trikControl_QtGui->em_types[542]->u.td_wrapper_type
+
+#define sipType_QStyleOptionMenuItem_CheckType              sipModuleAPI_trikControl_QtGui->em_types[543]
+#define sipEnum_QStyleOptionMenuItem_CheckType              sipModuleAPI_trikControl_QtGui->em_types[543]->u.td_py_type
+#define sipType_QStyleOptionMenuItem_MenuItemType              sipModuleAPI_trikControl_QtGui->em_types[544]
+#define sipEnum_QStyleOptionMenuItem_MenuItemType              sipModuleAPI_trikControl_QtGui->em_types[544]->u.td_py_type
+#define sipType_QStyleOptionMenuItem_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[546]
+#define sipEnum_QStyleOptionMenuItem_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[546]->u.td_py_type
+#define sipType_QStyleOptionMenuItem_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[545]
+#define sipEnum_QStyleOptionMenuItem_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[545]->u.td_py_type
+
+#define sipType_QStyleOptionDockWidget              sipModuleAPI_trikControl_QtGui->em_types[513]
+#define sipClass_QStyleOptionDockWidget             sipModuleAPI_trikControl_QtGui->em_types[513]->u.td_wrapper_type
+
+#define sipType_QStyleOptionDockWidget_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[515]
+#define sipEnum_QStyleOptionDockWidget_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[515]->u.td_py_type
+#define sipType_QStyleOptionDockWidget_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[514]
+#define sipEnum_QStyleOptionDockWidget_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[514]->u.td_py_type
+
+#define sipType_QStyleOptionViewItem              sipModuleAPI_trikControl_QtGui->em_types[607]
+#define sipClass_QStyleOptionViewItem             sipModuleAPI_trikControl_QtGui->em_types[607]->u.td_wrapper_type
+
+#define sipType_QStyleOptionViewItem_Position              sipModuleAPI_trikControl_QtGui->em_types[608]
+#define sipEnum_QStyleOptionViewItem_Position              sipModuleAPI_trikControl_QtGui->em_types[608]->u.td_py_type
+#define sipType_QStyleOptionViewItem_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[610]
+#define sipEnum_QStyleOptionViewItem_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[610]->u.td_py_type
+#define sipType_QStyleOptionViewItem_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[609]
+#define sipEnum_QStyleOptionViewItem_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[609]->u.td_py_type
+
+#define sipType_QStyleOptionToolBox              sipModuleAPI_trikControl_QtGui->em_types[595]
+#define sipClass_QStyleOptionToolBox             sipModuleAPI_trikControl_QtGui->em_types[595]->u.td_wrapper_type
+
+#define sipType_QStyleOptionToolBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[597]
+#define sipEnum_QStyleOptionToolBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[597]->u.td_py_type
+#define sipType_QStyleOptionToolBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[596]
+#define sipEnum_QStyleOptionToolBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[596]->u.td_py_type
+
+#define sipType_QStyleOptionRubberBand              sipModuleAPI_trikControl_QtGui->em_types[553]
+#define sipClass_QStyleOptionRubberBand             sipModuleAPI_trikControl_QtGui->em_types[553]->u.td_wrapper_type
+
+#define sipType_QStyleOptionRubberBand_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[555]
+#define sipEnum_QStyleOptionRubberBand_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[555]->u.td_py_type
+#define sipType_QStyleOptionRubberBand_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[554]
+#define sipEnum_QStyleOptionRubberBand_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[554]->u.td_py_type
+
+#define sipType_QStyleOptionComplex              sipModuleAPI_trikControl_QtGui->em_types[510]
+#define sipClass_QStyleOptionComplex             sipModuleAPI_trikControl_QtGui->em_types[510]->u.td_wrapper_type
+
+#define sipType_QStyleOptionComplex_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[512]
+#define sipEnum_QStyleOptionComplex_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[512]->u.td_py_type
+#define sipType_QStyleOptionComplex_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[511]
+#define sipEnum_QStyleOptionComplex_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[511]->u.td_py_type
+
+#define sipType_QStyleOptionSlider              sipModuleAPI_trikControl_QtGui->em_types[559]
+#define sipClass_QStyleOptionSlider             sipModuleAPI_trikControl_QtGui->em_types[559]->u.td_wrapper_type
+
+#define sipType_QStyleOptionSlider_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[561]
+#define sipEnum_QStyleOptionSlider_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[561]->u.td_py_type
+#define sipType_QStyleOptionSlider_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[560]
+#define sipEnum_QStyleOptionSlider_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[560]->u.td_py_type
+
+#define sipType_QStyleOptionSpinBox              sipModuleAPI_trikControl_QtGui->em_types[562]
+#define sipClass_QStyleOptionSpinBox             sipModuleAPI_trikControl_QtGui->em_types[562]->u.td_wrapper_type
+
+#define sipType_QStyleOptionSpinBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[564]
+#define sipEnum_QStyleOptionSpinBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[564]->u.td_py_type
+#define sipType_QStyleOptionSpinBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[563]
+#define sipEnum_QStyleOptionSpinBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[563]->u.td_py_type
+
+#define sipType_QStyleOptionToolButton              sipModuleAPI_trikControl_QtGui->em_types[602]
+#define sipClass_QStyleOptionToolButton             sipModuleAPI_trikControl_QtGui->em_types[602]->u.td_wrapper_type
+
+#define sipType_QStyleOptionToolButton_ToolButtonFeature              sipModuleAPI_trikControl_QtGui->em_types[605]
+#define sipEnum_QStyleOptionToolButton_ToolButtonFeature              sipModuleAPI_trikControl_QtGui->em_types[605]->u.td_py_type
+#define sipType_QStyleOptionToolButton_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[604]
+#define sipEnum_QStyleOptionToolButton_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[604]->u.td_py_type
+#define sipType_QStyleOptionToolButton_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[603]
+#define sipEnum_QStyleOptionToolButton_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[603]->u.td_py_type
+
+#define sipType_QStyleOptionToolButton_ToolButtonFeatures              sipModuleAPI_trikControl_QtGui->em_types[606]
+#define sipClass_QStyleOptionToolButton_ToolButtonFeatures             sipModuleAPI_trikControl_QtGui->em_types[606]->u.td_wrapper_type
+
+#define sipType_QStyleOptionComboBox              sipModuleAPI_trikControl_QtGui->em_types[507]
+#define sipClass_QStyleOptionComboBox             sipModuleAPI_trikControl_QtGui->em_types[507]->u.td_wrapper_type
+
+#define sipType_QStyleOptionComboBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[509]
+#define sipEnum_QStyleOptionComboBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[509]->u.td_py_type
+#define sipType_QStyleOptionComboBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[508]
+#define sipEnum_QStyleOptionComboBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[508]->u.td_py_type
+
+#define sipType_QStyleOptionTitleBar              sipModuleAPI_trikControl_QtGui->em_types[586]
+#define sipClass_QStyleOptionTitleBar             sipModuleAPI_trikControl_QtGui->em_types[586]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTitleBar_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[588]
+#define sipEnum_QStyleOptionTitleBar_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[588]->u.td_py_type
+#define sipType_QStyleOptionTitleBar_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[587]
+#define sipEnum_QStyleOptionTitleBar_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[587]->u.td_py_type
+
+#define sipType_QStyleHintReturn              sipModuleAPI_trikControl_QtGui->em_types[488]
+#define sipClass_QStyleHintReturn             sipModuleAPI_trikControl_QtGui->em_types[488]->u.td_wrapper_type
+
+#define sipType_QStyleHintReturn_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[491]
+#define sipEnum_QStyleHintReturn_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[491]->u.td_py_type
+#define sipType_QStyleHintReturn_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[490]
+#define sipEnum_QStyleHintReturn_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[490]->u.td_py_type
+#define sipType_QStyleHintReturn_HintReturnType              sipModuleAPI_trikControl_QtGui->em_types[489]
+#define sipEnum_QStyleHintReturn_HintReturnType              sipModuleAPI_trikControl_QtGui->em_types[489]->u.td_py_type
+
+#define sipType_QStyleHintReturnMask              sipModuleAPI_trikControl_QtGui->em_types[492]
+#define sipClass_QStyleHintReturnMask             sipModuleAPI_trikControl_QtGui->em_types[492]->u.td_wrapper_type
+
+#define sipType_QStyleHintReturnMask_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[494]
+#define sipEnum_QStyleHintReturnMask_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[494]->u.td_py_type
+#define sipType_QStyleHintReturnMask_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[493]
+#define sipEnum_QStyleHintReturnMask_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[493]->u.td_py_type
+
+#define sipType_QStyleOptionToolBar              sipModuleAPI_trikControl_QtGui->em_types[589]
+#define sipClass_QStyleOptionToolBar             sipModuleAPI_trikControl_QtGui->em_types[589]->u.td_wrapper_type
+
+#define sipType_QStyleOptionToolBar_ToolBarFeature              sipModuleAPI_trikControl_QtGui->em_types[592]
+#define sipEnum_QStyleOptionToolBar_ToolBarFeature              sipModuleAPI_trikControl_QtGui->em_types[592]->u.td_py_type
+#define sipType_QStyleOptionToolBar_ToolBarPosition              sipModuleAPI_trikControl_QtGui->em_types[594]
+#define sipEnum_QStyleOptionToolBar_ToolBarPosition              sipModuleAPI_trikControl_QtGui->em_types[594]->u.td_py_type
+#define sipType_QStyleOptionToolBar_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[591]
+#define sipEnum_QStyleOptionToolBar_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[591]->u.td_py_type
+#define sipType_QStyleOptionToolBar_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[590]
+#define sipEnum_QStyleOptionToolBar_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[590]->u.td_py_type
+
+#define sipType_QStyleOptionToolBar_ToolBarFeatures              sipModuleAPI_trikControl_QtGui->em_types[593]
+#define sipClass_QStyleOptionToolBar_ToolBarFeatures             sipModuleAPI_trikControl_QtGui->em_types[593]->u.td_wrapper_type
+
+#define sipType_QStyleOptionGroupBox              sipModuleAPI_trikControl_QtGui->em_types[533]
+#define sipClass_QStyleOptionGroupBox             sipModuleAPI_trikControl_QtGui->em_types[533]->u.td_wrapper_type
+
+#define sipType_QStyleOptionGroupBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[535]
+#define sipEnum_QStyleOptionGroupBox_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[535]->u.td_py_type
+#define sipType_QStyleOptionGroupBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[534]
+#define sipEnum_QStyleOptionGroupBox_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[534]->u.td_py_type
+
+#define sipType_QStyleOptionViewItemV2              sipModuleAPI_trikControl_QtGui->em_types[611]
+#define sipClass_QStyleOptionViewItemV2             sipModuleAPI_trikControl_QtGui->em_types[611]->u.td_wrapper_type
+
+#define sipType_QStyleOptionViewItemV2_ViewItemFeature              sipModuleAPI_trikControl_QtGui->em_types[613]
+#define sipEnum_QStyleOptionViewItemV2_ViewItemFeature              sipModuleAPI_trikControl_QtGui->em_types[613]->u.td_py_type
+#define sipType_QStyleOptionViewItemV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[612]
+#define sipEnum_QStyleOptionViewItemV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[612]->u.td_py_type
+
+#define sipType_QStyleOptionViewItemV2_ViewItemFeatures              sipModuleAPI_trikControl_QtGui->em_types[614]
+#define sipClass_QStyleOptionViewItemV2_ViewItemFeatures             sipModuleAPI_trikControl_QtGui->em_types[614]->u.td_wrapper_type
+
+#define sipType_QStyleOptionSizeGrip              sipModuleAPI_trikControl_QtGui->em_types[556]
+#define sipClass_QStyleOptionSizeGrip             sipModuleAPI_trikControl_QtGui->em_types[556]->u.td_wrapper_type
+
+#define sipType_QStyleOptionSizeGrip_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[558]
+#define sipEnum_QStyleOptionSizeGrip_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[558]->u.td_py_type
+#define sipType_QStyleOptionSizeGrip_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[557]
+#define sipEnum_QStyleOptionSizeGrip_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[557]->u.td_py_type
+
+#define sipType_QStyleOptionGraphicsItem              sipModuleAPI_trikControl_QtGui->em_types[530]
+#define sipClass_QStyleOptionGraphicsItem             sipModuleAPI_trikControl_QtGui->em_types[530]->u.td_wrapper_type
+
+#define sipType_QStyleOptionGraphicsItem_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[532]
+#define sipEnum_QStyleOptionGraphicsItem_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[532]->u.td_py_type
+#define sipType_QStyleOptionGraphicsItem_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[531]
+#define sipEnum_QStyleOptionGraphicsItem_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[531]->u.td_py_type
+
+#define sipType_QStyleOptionDockWidgetV2              sipModuleAPI_trikControl_QtGui->em_types[516]
+#define sipClass_QStyleOptionDockWidgetV2             sipModuleAPI_trikControl_QtGui->em_types[516]->u.td_wrapper_type
+
+#define sipType_QStyleOptionDockWidgetV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[517]
+#define sipEnum_QStyleOptionDockWidgetV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[517]->u.td_py_type
+
+#define sipType_QStyleOptionViewItemV3              sipModuleAPI_trikControl_QtGui->em_types[615]
+#define sipClass_QStyleOptionViewItemV3             sipModuleAPI_trikControl_QtGui->em_types[615]->u.td_wrapper_type
+
+#define sipType_QStyleOptionViewItemV3_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[616]
+#define sipEnum_QStyleOptionViewItemV3_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[616]->u.td_py_type
+
+#define sipType_QStyleOptionToolBoxV2              sipModuleAPI_trikControl_QtGui->em_types[598]
+#define sipClass_QStyleOptionToolBoxV2             sipModuleAPI_trikControl_QtGui->em_types[598]->u.td_wrapper_type
+
+#define sipType_QStyleOptionToolBoxV2_SelectedPosition              sipModuleAPI_trikControl_QtGui->em_types[599]
+#define sipEnum_QStyleOptionToolBoxV2_SelectedPosition              sipModuleAPI_trikControl_QtGui->em_types[599]->u.td_py_type
+#define sipType_QStyleOptionToolBoxV2_TabPosition              sipModuleAPI_trikControl_QtGui->em_types[601]
+#define sipEnum_QStyleOptionToolBoxV2_TabPosition              sipModuleAPI_trikControl_QtGui->em_types[601]->u.td_py_type
+#define sipType_QStyleOptionToolBoxV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[600]
+#define sipEnum_QStyleOptionToolBoxV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[600]->u.td_py_type
+
+#define sipType_QStyleHintReturnVariant              sipModuleAPI_trikControl_QtGui->em_types[495]
+#define sipClass_QStyleHintReturnVariant             sipModuleAPI_trikControl_QtGui->em_types[495]->u.td_wrapper_type
+
+#define sipType_QStyleHintReturnVariant_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[497]
+#define sipEnum_QStyleHintReturnVariant_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[497]->u.td_py_type
+#define sipType_QStyleHintReturnVariant_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[496]
+#define sipEnum_QStyleHintReturnVariant_StyleOptionType              sipModuleAPI_trikControl_QtGui->em_types[496]->u.td_py_type
+
+#define sipType_QStyleOptionViewItemV4              sipModuleAPI_trikControl_QtGui->em_types[617]
+#define sipClass_QStyleOptionViewItemV4             sipModuleAPI_trikControl_QtGui->em_types[617]->u.td_wrapper_type
+
+#define sipType_QStyleOptionViewItemV4_ViewItemPosition              sipModuleAPI_trikControl_QtGui->em_types[619]
+#define sipEnum_QStyleOptionViewItemV4_ViewItemPosition              sipModuleAPI_trikControl_QtGui->em_types[619]->u.td_py_type
+#define sipType_QStyleOptionViewItemV4_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[618]
+#define sipEnum_QStyleOptionViewItemV4_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[618]->u.td_py_type
+
+#define sipType_QStyleOptionFrameV3              sipModuleAPI_trikControl_QtGui->em_types[528]
+#define sipClass_QStyleOptionFrameV3             sipModuleAPI_trikControl_QtGui->em_types[528]->u.td_wrapper_type
+
+#define sipType_QStyleOptionFrameV3_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[529]
+#define sipEnum_QStyleOptionFrameV3_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[529]->u.td_py_type
+
+#define sipType_QStyleOptionTabBarBaseV2              sipModuleAPI_trikControl_QtGui->em_types[575]
+#define sipClass_QStyleOptionTabBarBaseV2             sipModuleAPI_trikControl_QtGui->em_types[575]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabBarBaseV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[576]
+#define sipEnum_QStyleOptionTabBarBaseV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[576]->u.td_py_type
+
+#define sipType_QStyleOptionTabV3              sipModuleAPI_trikControl_QtGui->em_types[579]
+#define sipClass_QStyleOptionTabV3             sipModuleAPI_trikControl_QtGui->em_types[579]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabV3_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[580]
+#define sipEnum_QStyleOptionTabV3_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[580]->u.td_py_type
+
+#define sipType_QStyleOptionTabWidgetFrameV2              sipModuleAPI_trikControl_QtGui->em_types[584]
+#define sipClass_QStyleOptionTabWidgetFrameV2             sipModuleAPI_trikControl_QtGui->em_types[584]->u.td_wrapper_type
+
+#define sipType_QStyleOptionTabWidgetFrameV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[585]
+#define sipEnum_QStyleOptionTabWidgetFrameV2_StyleOptionVersion              sipModuleAPI_trikControl_QtGui->em_types[585]->u.td_py_type
+
+#define sipType_QStylePainter              sipModuleAPI_trikControl_QtGui->em_types[620]
+#define sipClass_QStylePainter             sipModuleAPI_trikControl_QtGui->em_types[620]->u.td_wrapper_type
+
+#define sipType_QSyntaxHighlighter              sipModuleAPI_trikControl_QtGui->em_types[624]
+#define sipClass_QSyntaxHighlighter             sipModuleAPI_trikControl_QtGui->em_types[624]->u.td_wrapper_type
+
+#define sipType_QSystemTrayIcon              sipModuleAPI_trikControl_QtGui->em_types[625]
+#define sipClass_QSystemTrayIcon             sipModuleAPI_trikControl_QtGui->em_types[625]->u.td_wrapper_type
+
+#define sipType_QSystemTrayIcon_MessageIcon              sipModuleAPI_trikControl_QtGui->em_types[627]
+#define sipEnum_QSystemTrayIcon_MessageIcon              sipModuleAPI_trikControl_QtGui->em_types[627]->u.td_py_type
+#define sipType_QSystemTrayIcon_ActivationReason              sipModuleAPI_trikControl_QtGui->em_types[626]
+#define sipEnum_QSystemTrayIcon_ActivationReason              sipModuleAPI_trikControl_QtGui->em_types[626]->u.td_py_type
+
+#define sipType_QTabBar              sipModuleAPI_trikControl_QtGui->em_types[628]
+#define sipClass_QTabBar             sipModuleAPI_trikControl_QtGui->em_types[628]->u.td_wrapper_type
+
+#define sipType_QTabBar_SelectionBehavior              sipModuleAPI_trikControl_QtGui->em_types[630]
+#define sipEnum_QTabBar_SelectionBehavior              sipModuleAPI_trikControl_QtGui->em_types[630]->u.td_py_type
+#define sipType_QTabBar_ButtonPosition              sipModuleAPI_trikControl_QtGui->em_types[629]
+#define sipEnum_QTabBar_ButtonPosition              sipModuleAPI_trikControl_QtGui->em_types[629]->u.td_py_type
+#define sipType_QTabBar_Shape              sipModuleAPI_trikControl_QtGui->em_types[631]
+#define sipEnum_QTabBar_Shape              sipModuleAPI_trikControl_QtGui->em_types[631]->u.td_py_type
+
+#define sipType_QTableView              sipModuleAPI_trikControl_QtGui->em_types[635]
+#define sipClass_QTableView             sipModuleAPI_trikControl_QtGui->em_types[635]->u.td_wrapper_type
+
+#define sipType_QTableWidgetSelectionRange              sipModuleAPI_trikControl_QtGui->em_types[639]
+#define sipClass_QTableWidgetSelectionRange             sipModuleAPI_trikControl_QtGui->em_types[639]->u.td_wrapper_type
+
+#define sipType_QTableWidgetItem              sipModuleAPI_trikControl_QtGui->em_types[637]
+#define sipClass_QTableWidgetItem             sipModuleAPI_trikControl_QtGui->em_types[637]->u.td_wrapper_type
+
+#define sipType_QTableWidgetItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[638]
+#define sipEnum_QTableWidgetItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[638]->u.td_py_type
+
+#define sipType_QTableWidget              sipModuleAPI_trikControl_QtGui->em_types[636]
+#define sipClass_QTableWidget             sipModuleAPI_trikControl_QtGui->em_types[636]->u.td_wrapper_type
+
+#define sipType_QTabWidget              sipModuleAPI_trikControl_QtGui->em_types[632]
+#define sipClass_QTabWidget             sipModuleAPI_trikControl_QtGui->em_types[632]->u.td_wrapper_type
+
+#define sipType_QTabWidget_TabShape              sipModuleAPI_trikControl_QtGui->em_types[634]
+#define sipEnum_QTabWidget_TabShape              sipModuleAPI_trikControl_QtGui->em_types[634]->u.td_py_type
+#define sipType_QTabWidget_TabPosition              sipModuleAPI_trikControl_QtGui->em_types[633]
+#define sipEnum_QTabWidget_TabPosition              sipModuleAPI_trikControl_QtGui->em_types[633]->u.td_py_type
+
+#define sipType_QTextEdit              sipModuleAPI_trikControl_QtGui->em_types[667]
+#define sipClass_QTextEdit             sipModuleAPI_trikControl_QtGui->em_types[667]->u.td_wrapper_type
+
+#define sipType_QTextEdit_AutoFormattingFlag              sipModuleAPI_trikControl_QtGui->em_types[669]
+#define sipEnum_QTextEdit_AutoFormattingFlag              sipModuleAPI_trikControl_QtGui->em_types[669]->u.td_py_type
+#define sipType_QTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtGui->em_types[671]
+#define sipEnum_QTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtGui->em_types[671]->u.td_py_type
+
+#define sipType_QTextBrowser              sipModuleAPI_trikControl_QtGui->em_types[651]
+#define sipClass_QTextBrowser             sipModuleAPI_trikControl_QtGui->em_types[651]->u.td_wrapper_type
+
+#define sipType_QTextCursor              sipModuleAPI_trikControl_QtGui->em_types[655]
+#define sipClass_QTextCursor             sipModuleAPI_trikControl_QtGui->em_types[655]->u.td_wrapper_type
+
+#define sipType_QTextCursor_SelectionType              sipModuleAPI_trikControl_QtGui->em_types[658]
+#define sipEnum_QTextCursor_SelectionType              sipModuleAPI_trikControl_QtGui->em_types[658]->u.td_py_type
+#define sipType_QTextCursor_MoveOperation              sipModuleAPI_trikControl_QtGui->em_types[657]
+#define sipEnum_QTextCursor_MoveOperation              sipModuleAPI_trikControl_QtGui->em_types[657]->u.td_py_type
+#define sipType_QTextCursor_MoveMode              sipModuleAPI_trikControl_QtGui->em_types[656]
+#define sipEnum_QTextCursor_MoveMode              sipModuleAPI_trikControl_QtGui->em_types[656]->u.td_py_type
 
 #if !defined(sipType_Qt)
-#define sipType_Qt              sipModuleAPI_trikControl_QtGui->em_types[375]
-#define sipClass_Qt             sipModuleAPI_trikControl_QtGui->em_types[375]->u.td_wrapper_type
+#define sipType_Qt              sipModuleAPI_trikControl_QtGui->em_types[775]
+#define sipClass_Qt             sipModuleAPI_trikControl_QtGui->em_types[775]->u.td_wrapper_type
 #endif
 
-#define sipType_QTextDocument              sipModuleAPI_trikControl_QtGui->em_types[291]
-#define sipClass_QTextDocument             sipModuleAPI_trikControl_QtGui->em_types[291]->u.td_wrapper_type
+#define sipType_Qt_WhiteSpaceMode              sipModuleAPI_trikControl_QtGui->em_types[777]
+#define sipEnum_Qt_WhiteSpaceMode              sipModuleAPI_trikControl_QtGui->em_types[777]->u.td_py_type
+#define sipType_Qt_HitTestAccuracy              sipModuleAPI_trikControl_QtGui->em_types[776]
+#define sipEnum_Qt_HitTestAccuracy              sipModuleAPI_trikControl_QtGui->em_types[776]->u.td_py_type
 
-#define sipType_QTextDocument_Stacks              sipModuleAPI_trikControl_QtGui->em_types[296]
-#define sipEnum_QTextDocument_Stacks              sipModuleAPI_trikControl_QtGui->em_types[296]->u.td_py_type
-#define sipType_QTextDocument_ResourceType              sipModuleAPI_trikControl_QtGui->em_types[295]
-#define sipEnum_QTextDocument_ResourceType              sipModuleAPI_trikControl_QtGui->em_types[295]->u.td_py_type
-#define sipType_QTextDocument_FindFlag              sipModuleAPI_trikControl_QtGui->em_types[292]
-#define sipEnum_QTextDocument_FindFlag              sipModuleAPI_trikControl_QtGui->em_types[292]->u.td_py_type
-#define sipType_QTextDocument_MetaInformation              sipModuleAPI_trikControl_QtGui->em_types[294]
-#define sipEnum_QTextDocument_MetaInformation              sipModuleAPI_trikControl_QtGui->em_types[294]->u.td_py_type
+#define sipType_QTextDocument              sipModuleAPI_trikControl_QtGui->em_types[659]
+#define sipClass_QTextDocument             sipModuleAPI_trikControl_QtGui->em_types[659]->u.td_wrapper_type
 
-#define sipType_QTextDocument_FindFlags              sipModuleAPI_trikControl_QtGui->em_types[293]
-#define sipClass_QTextDocument_FindFlags             sipModuleAPI_trikControl_QtGui->em_types[293]->u.td_wrapper_type
+#define sipType_QTextDocument_Stacks              sipModuleAPI_trikControl_QtGui->em_types[664]
+#define sipEnum_QTextDocument_Stacks              sipModuleAPI_trikControl_QtGui->em_types[664]->u.td_py_type
+#define sipType_QTextDocument_ResourceType              sipModuleAPI_trikControl_QtGui->em_types[663]
+#define sipEnum_QTextDocument_ResourceType              sipModuleAPI_trikControl_QtGui->em_types[663]->u.td_py_type
+#define sipType_QTextDocument_FindFlag              sipModuleAPI_trikControl_QtGui->em_types[660]
+#define sipEnum_QTextDocument_FindFlag              sipModuleAPI_trikControl_QtGui->em_types[660]->u.td_py_type
+#define sipType_QTextDocument_MetaInformation              sipModuleAPI_trikControl_QtGui->em_types[662]
+#define sipEnum_QTextDocument_MetaInformation              sipModuleAPI_trikControl_QtGui->em_types[662]->u.td_py_type
 
-#define sipType_QTextDocumentFragment              sipModuleAPI_trikControl_QtGui->em_types[297]
-#define sipClass_QTextDocumentFragment             sipModuleAPI_trikControl_QtGui->em_types[297]->u.td_wrapper_type
+#define sipType_QTextDocument_FindFlags              sipModuleAPI_trikControl_QtGui->em_types[661]
+#define sipClass_QTextDocument_FindFlags             sipModuleAPI_trikControl_QtGui->em_types[661]->u.td_wrapper_type
 
-#define sipType_QTextDocumentWriter              sipModuleAPI_trikControl_QtGui->em_types[298]
-#define sipClass_QTextDocumentWriter             sipModuleAPI_trikControl_QtGui->em_types[298]->u.td_wrapper_type
+#define sipType_QTextDocumentFragment              sipModuleAPI_trikControl_QtGui->em_types[665]
+#define sipClass_QTextDocumentFragment             sipModuleAPI_trikControl_QtGui->em_types[665]->u.td_wrapper_type
 
-#define sipType_QTextLength              sipModuleAPI_trikControl_QtGui->em_types[319]
-#define sipClass_QTextLength             sipModuleAPI_trikControl_QtGui->em_types[319]->u.td_wrapper_type
+#define sipType_QTextDocumentWriter              sipModuleAPI_trikControl_QtGui->em_types[666]
+#define sipClass_QTextDocumentWriter             sipModuleAPI_trikControl_QtGui->em_types[666]->u.td_wrapper_type
 
-#define sipType_QTextLength_Type              sipModuleAPI_trikControl_QtGui->em_types[320]
-#define sipEnum_QTextLength_Type              sipModuleAPI_trikControl_QtGui->em_types[320]->u.td_py_type
+#define sipType_QTextEdit_ExtraSelection              sipModuleAPI_trikControl_QtGui->em_types[670]
+#define sipClass_QTextEdit_ExtraSelection             sipModuleAPI_trikControl_QtGui->em_types[670]->u.td_wrapper_type
 
-#define sipType_QTextFormat              sipModuleAPI_trikControl_QtGui->em_types[299]
-#define sipClass_QTextFormat             sipModuleAPI_trikControl_QtGui->em_types[299]->u.td_wrapper_type
+#define sipType_QTextEdit_AutoFormatting              sipModuleAPI_trikControl_QtGui->em_types[668]
+#define sipClass_QTextEdit_AutoFormatting             sipModuleAPI_trikControl_QtGui->em_types[668]->u.td_wrapper_type
 
-#define sipType_QTextFormat_Property              sipModuleAPI_trikControl_QtGui->em_types[304]
-#define sipEnum_QTextFormat_Property              sipModuleAPI_trikControl_QtGui->em_types[304]->u.td_py_type
-#define sipType_QTextFormat_PageBreakFlag              sipModuleAPI_trikControl_QtGui->em_types[302]
-#define sipEnum_QTextFormat_PageBreakFlag              sipModuleAPI_trikControl_QtGui->em_types[302]->u.td_py_type
-#define sipType_QTextFormat_ObjectTypes              sipModuleAPI_trikControl_QtGui->em_types[301]
-#define sipEnum_QTextFormat_ObjectTypes              sipModuleAPI_trikControl_QtGui->em_types[301]->u.td_py_type
-#define sipType_QTextFormat_FormatType              sipModuleAPI_trikControl_QtGui->em_types[300]
-#define sipEnum_QTextFormat_FormatType              sipModuleAPI_trikControl_QtGui->em_types[300]->u.td_py_type
+#define sipType_QTextLength              sipModuleAPI_trikControl_QtGui->em_types[692]
+#define sipClass_QTextLength             sipModuleAPI_trikControl_QtGui->em_types[692]->u.td_wrapper_type
 
-#define sipType_QTextFormat_PageBreakFlags              sipModuleAPI_trikControl_QtGui->em_types[303]
-#define sipClass_QTextFormat_PageBreakFlags             sipModuleAPI_trikControl_QtGui->em_types[303]->u.td_wrapper_type
+#define sipType_QTextLength_Type              sipModuleAPI_trikControl_QtGui->em_types[693]
+#define sipEnum_QTextLength_Type              sipModuleAPI_trikControl_QtGui->em_types[693]->u.td_py_type
 
-#define sipType_QTextCharFormat              sipModuleAPI_trikControl_QtGui->em_types[283]
-#define sipClass_QTextCharFormat             sipModuleAPI_trikControl_QtGui->em_types[283]->u.td_wrapper_type
+#define sipType_QTextFormat              sipModuleAPI_trikControl_QtGui->em_types[672]
+#define sipClass_QTextFormat             sipModuleAPI_trikControl_QtGui->em_types[672]->u.td_wrapper_type
 
-#define sipType_QTextCharFormat_FontPropertiesInheritanceBehavior              sipModuleAPI_trikControl_QtGui->em_types[284]
-#define sipEnum_QTextCharFormat_FontPropertiesInheritanceBehavior              sipModuleAPI_trikControl_QtGui->em_types[284]->u.td_py_type
-#define sipType_QTextCharFormat_UnderlineStyle              sipModuleAPI_trikControl_QtGui->em_types[285]
-#define sipEnum_QTextCharFormat_UnderlineStyle              sipModuleAPI_trikControl_QtGui->em_types[285]->u.td_py_type
-#define sipType_QTextCharFormat_VerticalAlignment              sipModuleAPI_trikControl_QtGui->em_types[286]
-#define sipEnum_QTextCharFormat_VerticalAlignment              sipModuleAPI_trikControl_QtGui->em_types[286]->u.td_py_type
+#define sipType_QTextFormat_Property              sipModuleAPI_trikControl_QtGui->em_types[677]
+#define sipEnum_QTextFormat_Property              sipModuleAPI_trikControl_QtGui->em_types[677]->u.td_py_type
+#define sipType_QTextFormat_PageBreakFlag              sipModuleAPI_trikControl_QtGui->em_types[675]
+#define sipEnum_QTextFormat_PageBreakFlag              sipModuleAPI_trikControl_QtGui->em_types[675]->u.td_py_type
+#define sipType_QTextFormat_ObjectTypes              sipModuleAPI_trikControl_QtGui->em_types[674]
+#define sipEnum_QTextFormat_ObjectTypes              sipModuleAPI_trikControl_QtGui->em_types[674]->u.td_py_type
+#define sipType_QTextFormat_FormatType              sipModuleAPI_trikControl_QtGui->em_types[673]
+#define sipEnum_QTextFormat_FormatType              sipModuleAPI_trikControl_QtGui->em_types[673]->u.td_py_type
 
-#define sipType_QTextBlockFormat              sipModuleAPI_trikControl_QtGui->em_types[279]
-#define sipClass_QTextBlockFormat             sipModuleAPI_trikControl_QtGui->em_types[279]->u.td_wrapper_type
+#define sipType_QTextFormat_PageBreakFlags              sipModuleAPI_trikControl_QtGui->em_types[676]
+#define sipClass_QTextFormat_PageBreakFlags             sipModuleAPI_trikControl_QtGui->em_types[676]->u.td_wrapper_type
 
-#define sipType_QTextBlockFormat_LineHeightTypes              sipModuleAPI_trikControl_QtGui->em_types[280]
-#define sipEnum_QTextBlockFormat_LineHeightTypes              sipModuleAPI_trikControl_QtGui->em_types[280]->u.td_py_type
+#define sipType_QTextCharFormat              sipModuleAPI_trikControl_QtGui->em_types[652]
+#define sipClass_QTextCharFormat             sipModuleAPI_trikControl_QtGui->em_types[652]->u.td_wrapper_type
 
-#define sipType_QTextListFormat              sipModuleAPI_trikControl_QtGui->em_types[325]
-#define sipClass_QTextListFormat             sipModuleAPI_trikControl_QtGui->em_types[325]->u.td_wrapper_type
+#define sipType_QTextCharFormat_UnderlineStyle              sipModuleAPI_trikControl_QtGui->em_types[653]
+#define sipEnum_QTextCharFormat_UnderlineStyle              sipModuleAPI_trikControl_QtGui->em_types[653]->u.td_py_type
+#define sipType_QTextCharFormat_VerticalAlignment              sipModuleAPI_trikControl_QtGui->em_types[654]
+#define sipEnum_QTextCharFormat_VerticalAlignment              sipModuleAPI_trikControl_QtGui->em_types[654]->u.td_py_type
 
-#define sipType_QTextListFormat_Style              sipModuleAPI_trikControl_QtGui->em_types[326]
-#define sipEnum_QTextListFormat_Style              sipModuleAPI_trikControl_QtGui->em_types[326]->u.td_py_type
+#define sipType_QTextBlockFormat              sipModuleAPI_trikControl_QtGui->em_types[647]
+#define sipClass_QTextBlockFormat             sipModuleAPI_trikControl_QtGui->em_types[647]->u.td_wrapper_type
 
-#define sipType_QTextImageFormat              sipModuleAPI_trikControl_QtGui->em_types[311]
-#define sipClass_QTextImageFormat             sipModuleAPI_trikControl_QtGui->em_types[311]->u.td_wrapper_type
+#define sipType_QTextBlockFormat_LineHeightTypes              sipModuleAPI_trikControl_QtGui->em_types[648]
+#define sipEnum_QTextBlockFormat_LineHeightTypes              sipModuleAPI_trikControl_QtGui->em_types[648]->u.td_py_type
 
-#define sipType_QTextFrameFormat              sipModuleAPI_trikControl_QtGui->em_types[308]
-#define sipClass_QTextFrameFormat             sipModuleAPI_trikControl_QtGui->em_types[308]->u.td_wrapper_type
+#define sipType_QTextListFormat              sipModuleAPI_trikControl_QtGui->em_types[698]
+#define sipClass_QTextListFormat             sipModuleAPI_trikControl_QtGui->em_types[698]->u.td_wrapper_type
 
-#define sipType_QTextFrameFormat_BorderStyle              sipModuleAPI_trikControl_QtGui->em_types[309]
-#define sipEnum_QTextFrameFormat_BorderStyle              sipModuleAPI_trikControl_QtGui->em_types[309]->u.td_py_type
-#define sipType_QTextFrameFormat_Position              sipModuleAPI_trikControl_QtGui->em_types[310]
-#define sipEnum_QTextFrameFormat_Position              sipModuleAPI_trikControl_QtGui->em_types[310]->u.td_py_type
+#define sipType_QTextListFormat_Style              sipModuleAPI_trikControl_QtGui->em_types[699]
+#define sipEnum_QTextListFormat_Style              sipModuleAPI_trikControl_QtGui->em_types[699]->u.td_py_type
 
-#define sipType_QTextTableFormat              sipModuleAPI_trikControl_QtGui->em_types[338]
-#define sipClass_QTextTableFormat             sipModuleAPI_trikControl_QtGui->em_types[338]->u.td_wrapper_type
+#define sipType_QTextImageFormat              sipModuleAPI_trikControl_QtGui->em_types[684]
+#define sipClass_QTextImageFormat             sipModuleAPI_trikControl_QtGui->em_types[684]->u.td_wrapper_type
 
-#define sipType_QTextTableCellFormat              sipModuleAPI_trikControl_QtGui->em_types[337]
-#define sipClass_QTextTableCellFormat             sipModuleAPI_trikControl_QtGui->em_types[337]->u.td_wrapper_type
+#define sipType_QTextFrameFormat              sipModuleAPI_trikControl_QtGui->em_types[681]
+#define sipClass_QTextFrameFormat             sipModuleAPI_trikControl_QtGui->em_types[681]->u.td_wrapper_type
 
-#define sipType_QTextInlineObject              sipModuleAPI_trikControl_QtGui->em_types[312]
-#define sipClass_QTextInlineObject             sipModuleAPI_trikControl_QtGui->em_types[312]->u.td_wrapper_type
+#define sipType_QTextFrameFormat_BorderStyle              sipModuleAPI_trikControl_QtGui->em_types[682]
+#define sipEnum_QTextFrameFormat_BorderStyle              sipModuleAPI_trikControl_QtGui->em_types[682]->u.td_py_type
+#define sipType_QTextFrameFormat_Position              sipModuleAPI_trikControl_QtGui->em_types[683]
+#define sipEnum_QTextFrameFormat_Position              sipModuleAPI_trikControl_QtGui->em_types[683]->u.td_py_type
 
-#define sipType_QTextLayout              sipModuleAPI_trikControl_QtGui->em_types[316]
-#define sipClass_QTextLayout             sipModuleAPI_trikControl_QtGui->em_types[316]->u.td_wrapper_type
+#define sipType_QTextTableFormat              sipModuleAPI_trikControl_QtGui->em_types[711]
+#define sipClass_QTextTableFormat             sipModuleAPI_trikControl_QtGui->em_types[711]->u.td_wrapper_type
 
-#define sipType_QTextLayout_CursorMode              sipModuleAPI_trikControl_QtGui->em_types[317]
-#define sipEnum_QTextLayout_CursorMode              sipModuleAPI_trikControl_QtGui->em_types[317]->u.td_py_type
+#define sipType_QTextTableCellFormat              sipModuleAPI_trikControl_QtGui->em_types[710]
+#define sipClass_QTextTableCellFormat             sipModuleAPI_trikControl_QtGui->em_types[710]->u.td_wrapper_type
 
-#define sipType_QTextLayout_FormatRange              sipModuleAPI_trikControl_QtGui->em_types[318]
-#define sipClass_QTextLayout_FormatRange             sipModuleAPI_trikControl_QtGui->em_types[318]->u.td_wrapper_type
+#define sipType_QTextInlineObject              sipModuleAPI_trikControl_QtGui->em_types[685]
+#define sipClass_QTextInlineObject             sipModuleAPI_trikControl_QtGui->em_types[685]->u.td_wrapper_type
 
-#define sipType_QTextLine              sipModuleAPI_trikControl_QtGui->em_types[321]
-#define sipClass_QTextLine             sipModuleAPI_trikControl_QtGui->em_types[321]->u.td_wrapper_type
+#define sipType_QTextLayout              sipModuleAPI_trikControl_QtGui->em_types[689]
+#define sipClass_QTextLayout             sipModuleAPI_trikControl_QtGui->em_types[689]->u.td_wrapper_type
 
-#define sipType_QTextLine_CursorPosition              sipModuleAPI_trikControl_QtGui->em_types[322]
-#define sipEnum_QTextLine_CursorPosition              sipModuleAPI_trikControl_QtGui->em_types[322]->u.td_py_type
-#define sipType_QTextLine_Edge              sipModuleAPI_trikControl_QtGui->em_types[323]
-#define sipEnum_QTextLine_Edge              sipModuleAPI_trikControl_QtGui->em_types[323]->u.td_py_type
+#define sipType_QTextLayout_CursorMode              sipModuleAPI_trikControl_QtGui->em_types[690]
+#define sipEnum_QTextLayout_CursorMode              sipModuleAPI_trikControl_QtGui->em_types[690]->u.td_py_type
 
-#define sipType_QTextObject              sipModuleAPI_trikControl_QtGui->em_types[327]
-#define sipClass_QTextObject             sipModuleAPI_trikControl_QtGui->em_types[327]->u.td_wrapper_type
+#define sipType_QTextLayout_FormatRange              sipModuleAPI_trikControl_QtGui->em_types[691]
+#define sipClass_QTextLayout_FormatRange             sipModuleAPI_trikControl_QtGui->em_types[691]->u.td_wrapper_type
 
-#define sipType_QTextBlockGroup              sipModuleAPI_trikControl_QtGui->em_types[281]
-#define sipClass_QTextBlockGroup             sipModuleAPI_trikControl_QtGui->em_types[281]->u.td_wrapper_type
+#define sipType_QTextLine              sipModuleAPI_trikControl_QtGui->em_types[694]
+#define sipClass_QTextLine             sipModuleAPI_trikControl_QtGui->em_types[694]->u.td_wrapper_type
 
-#define sipType_QTextList              sipModuleAPI_trikControl_QtGui->em_types[324]
-#define sipClass_QTextList             sipModuleAPI_trikControl_QtGui->em_types[324]->u.td_wrapper_type
+#define sipType_QTextLine_CursorPosition              sipModuleAPI_trikControl_QtGui->em_types[695]
+#define sipEnum_QTextLine_CursorPosition              sipModuleAPI_trikControl_QtGui->em_types[695]->u.td_py_type
+#define sipType_QTextLine_Edge              sipModuleAPI_trikControl_QtGui->em_types[696]
+#define sipEnum_QTextLine_Edge              sipModuleAPI_trikControl_QtGui->em_types[696]->u.td_py_type
 
-#define sipType_QTextFrame              sipModuleAPI_trikControl_QtGui->em_types[306]
-#define sipClass_QTextFrame             sipModuleAPI_trikControl_QtGui->em_types[306]->u.td_wrapper_type
+#define sipType_QTextObject              sipModuleAPI_trikControl_QtGui->em_types[700]
+#define sipClass_QTextObject             sipModuleAPI_trikControl_QtGui->em_types[700]->u.td_wrapper_type
 
-#define sipType_QTextFrame_iterator              sipModuleAPI_trikControl_QtGui->em_types[307]
-#define sipClass_QTextFrame_iterator             sipModuleAPI_trikControl_QtGui->em_types[307]->u.td_wrapper_type
+#define sipType_QTextBlockGroup              sipModuleAPI_trikControl_QtGui->em_types[649]
+#define sipClass_QTextBlockGroup             sipModuleAPI_trikControl_QtGui->em_types[649]->u.td_wrapper_type
 
-#define sipType_QTextBlock              sipModuleAPI_trikControl_QtGui->em_types[277]
-#define sipClass_QTextBlock             sipModuleAPI_trikControl_QtGui->em_types[277]->u.td_wrapper_type
+#define sipType_QTextList              sipModuleAPI_trikControl_QtGui->em_types[697]
+#define sipClass_QTextList             sipModuleAPI_trikControl_QtGui->em_types[697]->u.td_wrapper_type
 
-#define sipType_QTextBlock_iterator              sipModuleAPI_trikControl_QtGui->em_types[278]
-#define sipClass_QTextBlock_iterator             sipModuleAPI_trikControl_QtGui->em_types[278]->u.td_wrapper_type
+#define sipType_QTextFrame              sipModuleAPI_trikControl_QtGui->em_types[679]
+#define sipClass_QTextFrame             sipModuleAPI_trikControl_QtGui->em_types[679]->u.td_wrapper_type
 
-#define sipType_QTextFragment              sipModuleAPI_trikControl_QtGui->em_types[305]
-#define sipClass_QTextFragment             sipModuleAPI_trikControl_QtGui->em_types[305]->u.td_wrapper_type
+#define sipType_QTextFrame_iterator              sipModuleAPI_trikControl_QtGui->em_types[680]
+#define sipClass_QTextFrame_iterator             sipModuleAPI_trikControl_QtGui->em_types[680]->u.td_wrapper_type
 
-#define sipType_QTextBlockUserData              sipModuleAPI_trikControl_QtGui->em_types[282]
-#define sipClass_QTextBlockUserData             sipModuleAPI_trikControl_QtGui->em_types[282]->u.td_wrapper_type
+#define sipType_QTextBlock              sipModuleAPI_trikControl_QtGui->em_types[645]
+#define sipClass_QTextBlock             sipModuleAPI_trikControl_QtGui->em_types[645]->u.td_wrapper_type
 
-#define sipType_QTextOption              sipModuleAPI_trikControl_QtGui->em_types[329]
-#define sipClass_QTextOption             sipModuleAPI_trikControl_QtGui->em_types[329]->u.td_wrapper_type
+#define sipType_QTextBlock_iterator              sipModuleAPI_trikControl_QtGui->em_types[646]
+#define sipClass_QTextBlock_iterator             sipModuleAPI_trikControl_QtGui->em_types[646]->u.td_wrapper_type
 
-#define sipType_QTextOption_TabType              sipModuleAPI_trikControl_QtGui->em_types[333]
-#define sipEnum_QTextOption_TabType              sipModuleAPI_trikControl_QtGui->em_types[333]->u.td_py_type
-#define sipType_QTextOption_Flag              sipModuleAPI_trikControl_QtGui->em_types[330]
-#define sipEnum_QTextOption_Flag              sipModuleAPI_trikControl_QtGui->em_types[330]->u.td_py_type
-#define sipType_QTextOption_WrapMode              sipModuleAPI_trikControl_QtGui->em_types[334]
-#define sipEnum_QTextOption_WrapMode              sipModuleAPI_trikControl_QtGui->em_types[334]->u.td_py_type
+#define sipType_QTextFragment              sipModuleAPI_trikControl_QtGui->em_types[678]
+#define sipClass_QTextFragment             sipModuleAPI_trikControl_QtGui->em_types[678]->u.td_wrapper_type
 
-#define sipType_QTextOption_Flags              sipModuleAPI_trikControl_QtGui->em_types[331]
-#define sipClass_QTextOption_Flags             sipModuleAPI_trikControl_QtGui->em_types[331]->u.td_wrapper_type
+#define sipType_QTextBlockUserData              sipModuleAPI_trikControl_QtGui->em_types[650]
+#define sipClass_QTextBlockUserData             sipModuleAPI_trikControl_QtGui->em_types[650]->u.td_wrapper_type
 
-#define sipType_QTextOption_Tab              sipModuleAPI_trikControl_QtGui->em_types[332]
-#define sipClass_QTextOption_Tab             sipModuleAPI_trikControl_QtGui->em_types[332]->u.td_wrapper_type
+#define sipType_QTextOption              sipModuleAPI_trikControl_QtGui->em_types[702]
+#define sipClass_QTextOption             sipModuleAPI_trikControl_QtGui->em_types[702]->u.td_wrapper_type
 
-#define sipType_QTextTableCell              sipModuleAPI_trikControl_QtGui->em_types[336]
-#define sipClass_QTextTableCell             sipModuleAPI_trikControl_QtGui->em_types[336]->u.td_wrapper_type
+#define sipType_QTextOption_TabType              sipModuleAPI_trikControl_QtGui->em_types[706]
+#define sipEnum_QTextOption_TabType              sipModuleAPI_trikControl_QtGui->em_types[706]->u.td_py_type
+#define sipType_QTextOption_Flag              sipModuleAPI_trikControl_QtGui->em_types[703]
+#define sipEnum_QTextOption_Flag              sipModuleAPI_trikControl_QtGui->em_types[703]->u.td_py_type
+#define sipType_QTextOption_WrapMode              sipModuleAPI_trikControl_QtGui->em_types[707]
+#define sipEnum_QTextOption_WrapMode              sipModuleAPI_trikControl_QtGui->em_types[707]->u.td_py_type
 
-#define sipType_QTextTable              sipModuleAPI_trikControl_QtGui->em_types[335]
-#define sipClass_QTextTable             sipModuleAPI_trikControl_QtGui->em_types[335]->u.td_wrapper_type
+#define sipType_QTextOption_Flags              sipModuleAPI_trikControl_QtGui->em_types[704]
+#define sipClass_QTextOption_Flags             sipModuleAPI_trikControl_QtGui->em_types[704]->u.td_wrapper_type
 
-#define sipType_QTouchDevice              sipModuleAPI_trikControl_QtGui->em_types[339]
-#define sipClass_QTouchDevice             sipModuleAPI_trikControl_QtGui->em_types[339]->u.td_wrapper_type
+#define sipType_QTextOption_Tab              sipModuleAPI_trikControl_QtGui->em_types[705]
+#define sipClass_QTextOption_Tab             sipModuleAPI_trikControl_QtGui->em_types[705]->u.td_wrapper_type
 
-#define sipType_QTouchDevice_CapabilityFlag              sipModuleAPI_trikControl_QtGui->em_types[341]
-#define sipEnum_QTouchDevice_CapabilityFlag              sipModuleAPI_trikControl_QtGui->em_types[341]->u.td_py_type
-#define sipType_QTouchDevice_DeviceType              sipModuleAPI_trikControl_QtGui->em_types[342]
-#define sipEnum_QTouchDevice_DeviceType              sipModuleAPI_trikControl_QtGui->em_types[342]->u.td_py_type
+#define sipType_QTextTableCell              sipModuleAPI_trikControl_QtGui->em_types[709]
+#define sipClass_QTextTableCell             sipModuleAPI_trikControl_QtGui->em_types[709]->u.td_wrapper_type
 
-#define sipType_QTouchDevice_Capabilities              sipModuleAPI_trikControl_QtGui->em_types[340]
-#define sipClass_QTouchDevice_Capabilities             sipModuleAPI_trikControl_QtGui->em_types[340]->u.td_wrapper_type
+#define sipType_QTextTable              sipModuleAPI_trikControl_QtGui->em_types[708]
+#define sipClass_QTextTable             sipModuleAPI_trikControl_QtGui->em_types[708]->u.td_wrapper_type
 
-#define sipType_QTransform              sipModuleAPI_trikControl_QtGui->em_types[347]
-#define sipClass_QTransform             sipModuleAPI_trikControl_QtGui->em_types[347]->u.td_wrapper_type
+#define sipType_QToolBar              sipModuleAPI_trikControl_QtGui->em_types[713]
+#define sipClass_QToolBar             sipModuleAPI_trikControl_QtGui->em_types[713]->u.td_wrapper_type
 
-#define sipType_QTransform_TransformationType              sipModuleAPI_trikControl_QtGui->em_types[348]
-#define sipEnum_QTransform_TransformationType              sipModuleAPI_trikControl_QtGui->em_types[348]->u.td_py_type
+#define sipType_QToolBox              sipModuleAPI_trikControl_QtGui->em_types[714]
+#define sipClass_QToolBox             sipModuleAPI_trikControl_QtGui->em_types[714]->u.td_wrapper_type
 
-#define sipType_QValidator              sipModuleAPI_trikControl_QtGui->em_types[349]
-#define sipClass_QValidator             sipModuleAPI_trikControl_QtGui->em_types[349]->u.td_wrapper_type
+#define sipType_QToolButton              sipModuleAPI_trikControl_QtGui->em_types[715]
+#define sipClass_QToolButton             sipModuleAPI_trikControl_QtGui->em_types[715]->u.td_wrapper_type
 
-#define sipType_QValidator_State              sipModuleAPI_trikControl_QtGui->em_types[350]
-#define sipEnum_QValidator_State              sipModuleAPI_trikControl_QtGui->em_types[350]->u.td_py_type
+#define sipType_QToolButton_ToolButtonPopupMode              sipModuleAPI_trikControl_QtGui->em_types[716]
+#define sipEnum_QToolButton_ToolButtonPopupMode              sipModuleAPI_trikControl_QtGui->em_types[716]->u.td_py_type
 
-#define sipType_QIntValidator              sipModuleAPI_trikControl_QtGui->em_types[82]
-#define sipClass_QIntValidator             sipModuleAPI_trikControl_QtGui->em_types[82]->u.td_wrapper_type
+#define sipType_QToolTip              sipModuleAPI_trikControl_QtGui->em_types[717]
+#define sipClass_QToolTip             sipModuleAPI_trikControl_QtGui->em_types[717]->u.td_wrapper_type
 
-#define sipType_QDoubleValidator              sipModuleAPI_trikControl_QtGui->em_types[20]
-#define sipClass_QDoubleValidator             sipModuleAPI_trikControl_QtGui->em_types[20]->u.td_wrapper_type
+#define sipType_QTransform              sipModuleAPI_trikControl_QtGui->em_types[721]
+#define sipClass_QTransform             sipModuleAPI_trikControl_QtGui->em_types[721]->u.td_wrapper_type
 
-#define sipType_QDoubleValidator_Notation              sipModuleAPI_trikControl_QtGui->em_types[21]
-#define sipEnum_QDoubleValidator_Notation              sipModuleAPI_trikControl_QtGui->em_types[21]->u.td_py_type
+#define sipType_QTransform_TransformationType              sipModuleAPI_trikControl_QtGui->em_types[722]
+#define sipEnum_QTransform_TransformationType              sipModuleAPI_trikControl_QtGui->em_types[722]->u.td_py_type
 
-#define sipType_QRegExpValidator              sipModuleAPI_trikControl_QtGui->em_types[242]
-#define sipClass_QRegExpValidator             sipModuleAPI_trikControl_QtGui->em_types[242]->u.td_wrapper_type
+#define sipType_QTreeView              sipModuleAPI_trikControl_QtGui->em_types[723]
+#define sipClass_QTreeView             sipModuleAPI_trikControl_QtGui->em_types[723]->u.td_wrapper_type
 
-#define sipType_QRegularExpressionValidator              sipModuleAPI_trikControl_QtGui->em_types[245]
-#define sipClass_QRegularExpressionValidator             sipModuleAPI_trikControl_QtGui->em_types[245]->u.td_wrapper_type
+#define sipType_QTreeWidgetItem              sipModuleAPI_trikControl_QtGui->em_types[725]
+#define sipClass_QTreeWidgetItem             sipModuleAPI_trikControl_QtGui->em_types[725]->u.td_wrapper_type
 
-#define sipType_QVector2D              sipModuleAPI_trikControl_QtGui->em_types[351]
-#define sipClass_QVector2D             sipModuleAPI_trikControl_QtGui->em_types[351]->u.td_wrapper_type
+#define sipType_QTreeWidgetItem_ChildIndicatorPolicy              sipModuleAPI_trikControl_QtGui->em_types[726]
+#define sipEnum_QTreeWidgetItem_ChildIndicatorPolicy              sipModuleAPI_trikControl_QtGui->em_types[726]->u.td_py_type
+#define sipType_QTreeWidgetItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[727]
+#define sipEnum_QTreeWidgetItem_ItemType              sipModuleAPI_trikControl_QtGui->em_types[727]->u.td_py_type
 
-#define sipType_QVector3D              sipModuleAPI_trikControl_QtGui->em_types[352]
-#define sipClass_QVector3D             sipModuleAPI_trikControl_QtGui->em_types[352]->u.td_wrapper_type
+#define sipType_QTreeWidget              sipModuleAPI_trikControl_QtGui->em_types[724]
+#define sipClass_QTreeWidget             sipModuleAPI_trikControl_QtGui->em_types[724]->u.td_wrapper_type
 
-#define sipType_QVector4D              sipModuleAPI_trikControl_QtGui->em_types[353]
-#define sipClass_QVector4D             sipModuleAPI_trikControl_QtGui->em_types[353]->u.td_wrapper_type
+#define sipType_QTreeWidgetItemIterator              sipModuleAPI_trikControl_QtGui->em_types[728]
+#define sipClass_QTreeWidgetItemIterator             sipModuleAPI_trikControl_QtGui->em_types[728]->u.td_wrapper_type
 
-#define sipType_QList_0111QTouchDevice      sipModuleAPI_trikControl_QtGui->em_types[104]
+#define sipType_QTreeWidgetItemIterator_IteratorFlag              sipModuleAPI_trikControl_QtGui->em_types[729]
+#define sipEnum_QTreeWidgetItemIterator_IteratorFlag              sipModuleAPI_trikControl_QtGui->em_types[729]->u.td_py_type
 
-#define sipType_QList_0101QTextFrame      sipModuleAPI_trikControl_QtGui->em_types[101]
+#define sipType_QTreeWidgetItemIterator_IteratorFlags              sipModuleAPI_trikControl_QtGui->em_types[730]
+#define sipClass_QTreeWidgetItemIterator_IteratorFlags             sipModuleAPI_trikControl_QtGui->em_types[730]->u.td_wrapper_type
 
-#define sipType_QList_0100QTextBlock      sipModuleAPI_trikControl_QtGui->em_types[100]
+#define sipType_QUndoGroup              sipModuleAPI_trikControl_QtGui->em_types[732]
+#define sipClass_QUndoGroup             sipModuleAPI_trikControl_QtGui->em_types[732]->u.td_wrapper_type
 
-#define sipType_QList_0100QGlyphRun      sipModuleAPI_trikControl_QtGui->em_types[90]
+#define sipType_QUndoCommand              sipModuleAPI_trikControl_QtGui->em_types[731]
+#define sipClass_QUndoCommand             sipModuleAPI_trikControl_QtGui->em_types[731]->u.td_wrapper_type
 
-#define sipType_QVector_0100QTextLayout_FormatRange      sipModuleAPI_trikControl_QtGui->em_types[364]
+#define sipType_QUndoStack              sipModuleAPI_trikControl_QtGui->em_types[733]
+#define sipClass_QUndoStack             sipModuleAPI_trikControl_QtGui->em_types[733]->u.td_wrapper_type
 
-#define sipType_QList_0100QTextLayout_FormatRange      sipModuleAPI_trikControl_QtGui->em_types[102]
+#define sipType_QUndoView              sipModuleAPI_trikControl_QtGui->em_types[734]
+#define sipClass_QUndoView             sipModuleAPI_trikControl_QtGui->em_types[734]->u.td_wrapper_type
 
-#define sipType_QList_0100QTextOption_Tab      sipModuleAPI_trikControl_QtGui->em_types[103]
+#define sipType_QValidator              sipModuleAPI_trikControl_QtGui->em_types[736]
+#define sipClass_QValidator             sipModuleAPI_trikControl_QtGui->em_types[736]->u.td_wrapper_type
 
-#define sipType_QVector_0100QTextLength      sipModuleAPI_trikControl_QtGui->em_types[365]
+#define sipType_QValidator_State              sipModuleAPI_trikControl_QtGui->em_types[737]
+#define sipEnum_QValidator_State              sipModuleAPI_trikControl_QtGui->em_types[737]->u.td_py_type
 
-#define sipType_QVector_0100QTextFormat      sipModuleAPI_trikControl_QtGui->em_types[363]
+#define sipType_QIntValidator              sipModuleAPI_trikControl_QtGui->em_types[256]
+#define sipClass_QIntValidator             sipModuleAPI_trikControl_QtGui->em_types[256]->u.td_wrapper_type
 
-#define sipType_QList_0101QStandardItem      sipModuleAPI_trikControl_QtGui->em_types[99]
+#define sipType_QDoubleValidator              sipModuleAPI_trikControl_QtGui->em_types[97]
+#define sipClass_QDoubleValidator             sipModuleAPI_trikControl_QtGui->em_types[97]->u.td_wrapper_type
 
-#define sipType_QList_0100QPolygonF      sipModuleAPI_trikControl_QtGui->em_types[96]
+#define sipType_QDoubleValidator_Notation              sipModuleAPI_trikControl_QtGui->em_types[98]
+#define sipEnum_QDoubleValidator_Notation              sipModuleAPI_trikControl_QtGui->em_types[98]->u.td_py_type
 
-#define sipType_QVector_0100QRect      sipModuleAPI_trikControl_QtGui->em_types[360]
+#define sipType_QRegExpValidator              sipModuleAPI_trikControl_QtGui->em_types[434]
+#define sipClass_QRegExpValidator             sipModuleAPI_trikControl_QtGui->em_types[434]->u.td_wrapper_type
 
-#define sipType_QVector_0100QRectF      sipModuleAPI_trikControl_QtGui->em_types[361]
+#define sipType_QVector2D              sipModuleAPI_trikControl_QtGui->em_types[738]
+#define sipClass_QVector2D             sipModuleAPI_trikControl_QtGui->em_types[738]->u.td_wrapper_type
 
-#define sipType_QVector_0100QPoint      sipModuleAPI_trikControl_QtGui->em_types[359]
+#define sipType_QVector3D              sipModuleAPI_trikControl_QtGui->em_types[739]
+#define sipClass_QVector3D             sipModuleAPI_trikControl_QtGui->em_types[739]->u.td_wrapper_type
 
-#define sipType_QVector_0100QLine      sipModuleAPI_trikControl_QtGui->em_types[356]
+#define sipType_QVector4D              sipModuleAPI_trikControl_QtGui->em_types[740]
+#define sipClass_QVector4D             sipModuleAPI_trikControl_QtGui->em_types[740]->u.td_wrapper_type
 
-#define sipType_QVector_0100QLineF      sipModuleAPI_trikControl_QtGui->em_types[357]
+#define sipType_QWhatsThis              sipModuleAPI_trikControl_QtGui->em_types[752]
+#define sipClass_QWhatsThis             sipModuleAPI_trikControl_QtGui->em_types[752]->u.td_wrapper_type
 
-#define sipType_QList_0101QOpenGLShader      sipModuleAPI_trikControl_QtGui->em_types[95]
+#define sipType_QWidget_RenderFlags              sipModuleAPI_trikControl_QtGui->em_types[757]
+#define sipClass_QWidget_RenderFlags             sipModuleAPI_trikControl_QtGui->em_types[757]->u.td_wrapper_type
 
-#define sipType_QVector_0100QSize      sipModuleAPI_trikControl_QtGui->em_types[362]
+#define sipType_QWidgetAction              sipModuleAPI_trikControl_QtGui->em_types[758]
+#define sipClass_QWidgetAction             sipModuleAPI_trikControl_QtGui->em_types[758]->u.td_wrapper_type
 
-#define sipType_QList_0100QOpenGLDebugMessage      sipModuleAPI_trikControl_QtGui->em_types[94]
+#define sipType_QWizard              sipModuleAPI_trikControl_QtGui->em_types[761]
+#define sipClass_QWizard             sipModuleAPI_trikControl_QtGui->em_types[761]->u.td_wrapper_type
 
-#define sipType_QSet_0100QByteArray      sipModuleAPI_trikControl_QtGui->em_types[254]
+#define sipType_QWizard_WizardOption              sipModuleAPI_trikControl_QtGui->em_types[763]
+#define sipEnum_QWizard_WizardOption              sipModuleAPI_trikControl_QtGui->em_types[763]->u.td_py_type
+#define sipType_QWizard_WizardStyle              sipModuleAPI_trikControl_QtGui->em_types[766]
+#define sipEnum_QWizard_WizardStyle              sipModuleAPI_trikControl_QtGui->em_types[766]->u.td_py_type
+#define sipType_QWizard_WizardPixmap              sipModuleAPI_trikControl_QtGui->em_types[765]
+#define sipEnum_QWizard_WizardPixmap              sipModuleAPI_trikControl_QtGui->em_types[765]->u.td_py_type
+#define sipType_QWizard_WizardButton              sipModuleAPI_trikControl_QtGui->em_types[762]
+#define sipEnum_QWizard_WizardButton              sipModuleAPI_trikControl_QtGui->em_types[762]->u.td_py_type
 
-#define sipType_QList_0101QOpenGLContext      sipModuleAPI_trikControl_QtGui->em_types[93]
+#define sipType_QWizard_WizardOptions              sipModuleAPI_trikControl_QtGui->em_types[764]
+#define sipClass_QWizard_WizardOptions             sipModuleAPI_trikControl_QtGui->em_types[764]->u.td_wrapper_type
 
-#define sipType_QList_0100QKeySequence      sipModuleAPI_trikControl_QtGui->em_types[92]
+#define sipType_QWizardPage              sipModuleAPI_trikControl_QtGui->em_types[767]
+#define sipClass_QWizardPage             sipModuleAPI_trikControl_QtGui->em_types[767]->u.td_wrapper_type
 
-#define sipType_QList_0101QScreen      sipModuleAPI_trikControl_QtGui->em_types[97]
+#define sipType_QWorkspace              sipModuleAPI_trikControl_QtGui->em_types[768]
+#define sipClass_QWorkspace             sipModuleAPI_trikControl_QtGui->em_types[768]->u.td_wrapper_type
 
-#define sipType_QList_0100QTouchEvent_TouchPoint      sipModuleAPI_trikControl_QtGui->em_types[105]
+#define sipType_QWorkspace_WindowOrder              sipModuleAPI_trikControl_QtGui->em_types[769]
+#define sipEnum_QWorkspace_WindowOrder              sipModuleAPI_trikControl_QtGui->em_types[769]->u.td_py_type
 
-#define sipType_QList_0100QInputMethodEvent_Attribute      sipModuleAPI_trikControl_QtGui->em_types[91]
+#define sipType_QX11EmbedWidget              sipModuleAPI_trikControl_QtGui->em_types[772]
+#define sipClass_QX11EmbedWidget             sipModuleAPI_trikControl_QtGui->em_types[772]->u.td_wrapper_type
 
-#define sipType_QList_0100QSize      sipModuleAPI_trikControl_QtGui->em_types[98]
+#define sipType_QX11EmbedWidget_Error              sipModuleAPI_trikControl_QtGui->em_types[773]
+#define sipEnum_QX11EmbedWidget_Error              sipModuleAPI_trikControl_QtGui->em_types[773]->u.td_py_type
 
-#define sipType_QVector_0100QAbstractTextDocumentLayout_Selection      sipModuleAPI_trikControl_QtGui->em_types[355]
+#define sipType_QX11EmbedContainer              sipModuleAPI_trikControl_QtGui->em_types[770]
+#define sipClass_QX11EmbedContainer             sipModuleAPI_trikControl_QtGui->em_types[770]->u.td_wrapper_type
 
-#define sipType_QList_0101QWindow      sipModuleAPI_trikControl_QtGui->em_types[106]
+#define sipType_QX11EmbedContainer_Error              sipModuleAPI_trikControl_QtGui->em_types[771]
+#define sipEnum_QX11EmbedContainer_Error              sipModuleAPI_trikControl_QtGui->em_types[771]->u.td_py_type
 
-#define sipType_QVector_0600QPair_2400_0100QColor      sipModuleAPI_trikControl_QtGui->em_types[358]
+#define sipType_Display              sipModuleAPI_trikControl_QtGui->em_types[0]
+#define sipClass_Display             sipModuleAPI_trikControl_QtGui->em_types[0]->u.td_wrapper_type
 
-#define sipType_QVector_3900      sipModuleAPI_trikControl_QtGui->em_types[354]
+#define sipType_QX11Info              sipModuleAPI_trikControl_QtGui->em_types[774]
+#define sipClass_QX11Info             sipModuleAPI_trikControl_QtGui->em_types[774]->u.td_wrapper_type
 
-#define sipType_QVector_2400      sipModuleAPI_trikControl_QtGui->em_types[367]
+#define sipType_QPyTextObject              sipModuleAPI_trikControl_QtGui->em_types[428]
+#define sipClass_QPyTextObject             sipModuleAPI_trikControl_QtGui->em_types[428]->u.td_wrapper_type
 
-#define sipType_QVector_2200      sipModuleAPI_trikControl_QtGui->em_types[366]
+#define sipType_QList_0101QUndoStack      sipModuleAPI_trikControl_QtGui->em_types[311]
 
-#define sipType_QVector_1900      sipModuleAPI_trikControl_QtGui->em_types[368]
+#define sipType_QList_0101QTreeWidgetItem      sipModuleAPI_trikControl_QtGui->em_types[310]
 
-#define sipType_QPair_2200_2200      sipModuleAPI_trikControl_QtGui->em_types[212]
+#define sipType_QList_0101QTextFrame      sipModuleAPI_trikControl_QtGui->em_types[306]
 
-#define sipType_QPair_0100QOpenGLTexture_Filter_0100QOpenGLTexture_Filter      sipModuleAPI_trikControl_QtGui->em_types[211]
+#define sipType_QList_0100QTextBlock      sipModuleAPI_trikControl_QtGui->em_types[304]
 
-#define sipType_QList_0100QFontDatabase_WritingSystem      sipModuleAPI_trikControl_QtGui->em_types[89]
+#define sipType_QList_0100QGlyphRun      sipModuleAPI_trikControl_QtGui->em_types[286]
+
+#define sipType_QVector_0100QTextLayout_FormatRange      sipModuleAPI_trikControl_QtGui->em_types[750]
+
+#define sipType_QList_0100QTextLayout_FormatRange      sipModuleAPI_trikControl_QtGui->em_types[307]
+
+#define sipType_QList_0100QTextOption_Tab      sipModuleAPI_trikControl_QtGui->em_types[308]
+
+#define sipType_QVector_0100QTextLength      sipModuleAPI_trikControl_QtGui->em_types[751]
+
+#define sipType_QVector_0100QTextFormat      sipModuleAPI_trikControl_QtGui->em_types[749]
+
+#define sipType_QList_0101QTableWidgetItem      sipModuleAPI_trikControl_QtGui->em_types[302]
+
+#define sipType_QList_0100QTableWidgetSelectionRange      sipModuleAPI_trikControl_QtGui->em_types[303]
+
+#define sipType_QList_0101QStandardItem      sipModuleAPI_trikControl_QtGui->em_types[301]
+
+#define sipType_QList_0100QPrinterInfo      sipModuleAPI_trikControl_QtGui->em_types[298]
+
+#define sipType_QList_0100QTextEdit_ExtraSelection      sipModuleAPI_trikControl_QtGui->em_types[305]
+
+#define sipType_QList_0100QPolygonF      sipModuleAPI_trikControl_QtGui->em_types[296]
+
+#define sipType_QVector_0100QRect      sipModuleAPI_trikControl_QtGui->em_types[747]
+
+#define sipType_QVector_0100QRectF      sipModuleAPI_trikControl_QtGui->em_types[748]
+
+#define sipType_QVector_0100QPoint      sipModuleAPI_trikControl_QtGui->em_types[745]
+
+#define sipType_QVector_0100QLine      sipModuleAPI_trikControl_QtGui->em_types[742]
+
+#define sipType_QVector_0100QLineF      sipModuleAPI_trikControl_QtGui->em_types[743]
+
+#define sipType_QList_0101QMdiSubWindow      sipModuleAPI_trikControl_QtGui->em_types[294]
+
+#define sipType_QList_0101QDockWidget      sipModuleAPI_trikControl_QtGui->em_types[283]
+
+#define sipType_QList_0101QListWidgetItem      sipModuleAPI_trikControl_QtGui->em_types[293]
+
+#define sipType_QList_0100QRectF      sipModuleAPI_trikControl_QtGui->em_types[299]
+
+#define sipType_QList_0101QGraphicsView      sipModuleAPI_trikControl_QtGui->em_types[289]
+
+#define sipType_QList_0600QPair_2400_0100QPointF      sipModuleAPI_trikControl_QtGui->em_types[295]
+
+#define sipType_QList_0101QGraphicsTransform      sipModuleAPI_trikControl_QtGui->em_types[288]
+
+#define sipType_QList_0101QGraphicsItem      sipModuleAPI_trikControl_QtGui->em_types[287]
+
+#define sipType_QVector_0100QPointF      sipModuleAPI_trikControl_QtGui->em_types[746]
+
+#define sipType_QList_0101QGesture      sipModuleAPI_trikControl_QtGui->em_types[285]
+
+#define sipType_QList_0100QTouchEvent_TouchPoint      sipModuleAPI_trikControl_QtGui->em_types[309]
+
+#define sipType_QList_0100QInputMethodEvent_Attribute      sipModuleAPI_trikControl_QtGui->em_types[291]
+
+#define sipType_QMap_0100QDate_0100QTextCharFormat      sipModuleAPI_trikControl_QtGui->em_types[326]
+
+#define sipType_QList_0101QAbstractButton      sipModuleAPI_trikControl_QtGui->em_types[281]
+
+#define sipType_QList_0101QGraphicsWidget      sipModuleAPI_trikControl_QtGui->em_types[290]
+
+#define sipType_QList_0100QKeySequence      sipModuleAPI_trikControl_QtGui->em_types[292]
+
+#define sipType_QList_0101QAction      sipModuleAPI_trikControl_QtGui->em_types[282]
+
+#define sipType_QList_0100QSize      sipModuleAPI_trikControl_QtGui->em_types[300]
+
+#define sipType_QVector_0100QAbstractTextDocumentLayout_Selection      sipModuleAPI_trikControl_QtGui->em_types[741]
+
+#define sipType_QList_0101QWidget      sipModuleAPI_trikControl_QtGui->em_types[312]
+
+#define sipType_QVector_0600QPair_2400_0100QColor      sipModuleAPI_trikControl_QtGui->em_types[744]
+
+#define sipType_QList_0100QWizard_WizardButton      sipModuleAPI_trikControl_QtGui->em_types[313]
+
+#define sipType_QList_0100QPrinter_PageSize      sipModuleAPI_trikControl_QtGui->em_types[297]
+
+#define sipType_QList_0100QFontDatabase_WritingSystem      sipModuleAPI_trikControl_QtGui->em_types[284]
+
+#define sipType_XEvent      sipModuleAPI_trikControl_QtGui->em_types[778]
 extern const sipExportedModuleDef *sipModuleAPI_trikControl_QtGui;
-
-#define sipType_QWidget              sipModuleAPI_trikControl_QtWidgets->em_types[456]
-#define sipClass_QWidget             sipModuleAPI_trikControl_QtWidgets->em_types[456]->u.td_wrapper_type
-
-#define sipType_QWidget_RenderFlag              sipModuleAPI_trikControl_QtWidgets->em_types[457]
-#define sipEnum_QWidget_RenderFlag              sipModuleAPI_trikControl_QtWidgets->em_types[457]->u.td_py_type
-
-#define sipType_QAbstractButton              sipModuleAPI_trikControl_QtWidgets->em_types[0]
-#define sipClass_QAbstractButton             sipModuleAPI_trikControl_QtWidgets->em_types[0]->u.td_wrapper_type
-
-#define sipType_QAbstractItemDelegate              sipModuleAPI_trikControl_QtWidgets->em_types[2]
-#define sipClass_QAbstractItemDelegate             sipModuleAPI_trikControl_QtWidgets->em_types[2]->u.td_wrapper_type
-
-#define sipType_QAbstractItemDelegate_EndEditHint              sipModuleAPI_trikControl_QtWidgets->em_types[3]
-#define sipEnum_QAbstractItemDelegate_EndEditHint              sipModuleAPI_trikControl_QtWidgets->em_types[3]->u.td_py_type
-
-#define sipType_QFrame              sipModuleAPI_trikControl_QtWidgets->em_types[98]
-#define sipClass_QFrame             sipModuleAPI_trikControl_QtWidgets->em_types[98]->u.td_wrapper_type
-
-#define sipType_QFrame_StyleMask              sipModuleAPI_trikControl_QtWidgets->em_types[101]
-#define sipEnum_QFrame_StyleMask              sipModuleAPI_trikControl_QtWidgets->em_types[101]->u.td_py_type
-#define sipType_QFrame_Shape              sipModuleAPI_trikControl_QtWidgets->em_types[100]
-#define sipEnum_QFrame_Shape              sipModuleAPI_trikControl_QtWidgets->em_types[100]->u.td_py_type
-#define sipType_QFrame_Shadow              sipModuleAPI_trikControl_QtWidgets->em_types[99]
-#define sipEnum_QFrame_Shadow              sipModuleAPI_trikControl_QtWidgets->em_types[99]->u.td_py_type
-
-#define sipType_QAbstractScrollArea              sipModuleAPI_trikControl_QtWidgets->em_types[15]
-#define sipClass_QAbstractScrollArea             sipModuleAPI_trikControl_QtWidgets->em_types[15]->u.td_wrapper_type
-
-#define sipType_QAbstractScrollArea_SizeAdjustPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[16]
-#define sipEnum_QAbstractScrollArea_SizeAdjustPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[16]->u.td_py_type
-
-#define sipType_QAbstractItemView              sipModuleAPI_trikControl_QtWidgets->em_types[4]
-#define sipClass_QAbstractItemView             sipModuleAPI_trikControl_QtWidgets->em_types[4]->u.td_wrapper_type
-
-#define sipType_QAbstractItemView_DropIndicatorPosition              sipModuleAPI_trikControl_QtWidgets->em_types[7]
-#define sipEnum_QAbstractItemView_DropIndicatorPosition              sipModuleAPI_trikControl_QtWidgets->em_types[7]->u.td_py_type
-#define sipType_QAbstractItemView_State              sipModuleAPI_trikControl_QtWidgets->em_types[14]
-#define sipEnum_QAbstractItemView_State              sipModuleAPI_trikControl_QtWidgets->em_types[14]->u.td_py_type
-#define sipType_QAbstractItemView_CursorAction              sipModuleAPI_trikControl_QtWidgets->em_types[5]
-#define sipEnum_QAbstractItemView_CursorAction              sipModuleAPI_trikControl_QtWidgets->em_types[5]->u.td_py_type
-#define sipType_QAbstractItemView_SelectionMode              sipModuleAPI_trikControl_QtWidgets->em_types[13]
-#define sipEnum_QAbstractItemView_SelectionMode              sipModuleAPI_trikControl_QtWidgets->em_types[13]->u.td_py_type
-#define sipType_QAbstractItemView_SelectionBehavior              sipModuleAPI_trikControl_QtWidgets->em_types[12]
-#define sipEnum_QAbstractItemView_SelectionBehavior              sipModuleAPI_trikControl_QtWidgets->em_types[12]->u.td_py_type
-#define sipType_QAbstractItemView_ScrollMode              sipModuleAPI_trikControl_QtWidgets->em_types[11]
-#define sipEnum_QAbstractItemView_ScrollMode              sipModuleAPI_trikControl_QtWidgets->em_types[11]->u.td_py_type
-#define sipType_QAbstractItemView_ScrollHint              sipModuleAPI_trikControl_QtWidgets->em_types[10]
-#define sipEnum_QAbstractItemView_ScrollHint              sipModuleAPI_trikControl_QtWidgets->em_types[10]->u.td_py_type
-#define sipType_QAbstractItemView_EditTrigger              sipModuleAPI_trikControl_QtWidgets->em_types[8]
-#define sipEnum_QAbstractItemView_EditTrigger              sipModuleAPI_trikControl_QtWidgets->em_types[8]->u.td_py_type
-#define sipType_QAbstractItemView_DragDropMode              sipModuleAPI_trikControl_QtWidgets->em_types[6]
-#define sipEnum_QAbstractItemView_DragDropMode              sipModuleAPI_trikControl_QtWidgets->em_types[6]->u.td_py_type
-
-#define sipType_QAbstractItemView_EditTriggers              sipModuleAPI_trikControl_QtWidgets->em_types[9]
-#define sipClass_QAbstractItemView_EditTriggers             sipModuleAPI_trikControl_QtWidgets->em_types[9]->u.td_wrapper_type
-
-#define sipType_QAbstractSlider              sipModuleAPI_trikControl_QtWidgets->em_types[17]
-#define sipClass_QAbstractSlider             sipModuleAPI_trikControl_QtWidgets->em_types[17]->u.td_wrapper_type
-
-#define sipType_QAbstractSlider_SliderChange              sipModuleAPI_trikControl_QtWidgets->em_types[19]
-#define sipEnum_QAbstractSlider_SliderChange              sipModuleAPI_trikControl_QtWidgets->em_types[19]->u.td_py_type
-#define sipType_QAbstractSlider_SliderAction              sipModuleAPI_trikControl_QtWidgets->em_types[18]
-#define sipEnum_QAbstractSlider_SliderAction              sipModuleAPI_trikControl_QtWidgets->em_types[18]->u.td_py_type
-
-#define sipType_QAbstractSpinBox              sipModuleAPI_trikControl_QtWidgets->em_types[20]
-#define sipClass_QAbstractSpinBox             sipModuleAPI_trikControl_QtWidgets->em_types[20]->u.td_wrapper_type
-
-#define sipType_QAbstractSpinBox_CorrectionMode              sipModuleAPI_trikControl_QtWidgets->em_types[22]
-#define sipEnum_QAbstractSpinBox_CorrectionMode              sipModuleAPI_trikControl_QtWidgets->em_types[22]->u.td_py_type
-#define sipType_QAbstractSpinBox_ButtonSymbols              sipModuleAPI_trikControl_QtWidgets->em_types[21]
-#define sipEnum_QAbstractSpinBox_ButtonSymbols              sipModuleAPI_trikControl_QtWidgets->em_types[21]->u.td_py_type
-#define sipType_QAbstractSpinBox_StepEnabledFlag              sipModuleAPI_trikControl_QtWidgets->em_types[24]
-#define sipEnum_QAbstractSpinBox_StepEnabledFlag              sipModuleAPI_trikControl_QtWidgets->em_types[24]->u.td_py_type
-
-#define sipType_QAbstractSpinBox_StepEnabled              sipModuleAPI_trikControl_QtWidgets->em_types[23]
-#define sipClass_QAbstractSpinBox_StepEnabled             sipModuleAPI_trikControl_QtWidgets->em_types[23]->u.td_wrapper_type
-
-#define sipType_QAction              sipModuleAPI_trikControl_QtWidgets->em_types[25]
-#define sipClass_QAction             sipModuleAPI_trikControl_QtWidgets->em_types[25]->u.td_wrapper_type
-
-#define sipType_QAction_Priority              sipModuleAPI_trikControl_QtWidgets->em_types[28]
-#define sipEnum_QAction_Priority              sipModuleAPI_trikControl_QtWidgets->em_types[28]->u.td_py_type
-#define sipType_QAction_MenuRole              sipModuleAPI_trikControl_QtWidgets->em_types[27]
-#define sipEnum_QAction_MenuRole              sipModuleAPI_trikControl_QtWidgets->em_types[27]->u.td_py_type
-#define sipType_QAction_ActionEvent              sipModuleAPI_trikControl_QtWidgets->em_types[26]
-#define sipEnum_QAction_ActionEvent              sipModuleAPI_trikControl_QtWidgets->em_types[26]->u.td_py_type
-
-#define sipType_QActionGroup              sipModuleAPI_trikControl_QtWidgets->em_types[29]
-#define sipClass_QActionGroup             sipModuleAPI_trikControl_QtWidgets->em_types[29]->u.td_wrapper_type
-
-#define sipType_QApplication              sipModuleAPI_trikControl_QtWidgets->em_types[30]
-#define sipClass_QApplication             sipModuleAPI_trikControl_QtWidgets->em_types[30]->u.td_wrapper_type
-
-#define sipType_QApplication_ColorSpec              sipModuleAPI_trikControl_QtWidgets->em_types[31]
-#define sipEnum_QApplication_ColorSpec              sipModuleAPI_trikControl_QtWidgets->em_types[31]->u.td_py_type
-
-#define sipType_QLayoutItem              sipModuleAPI_trikControl_QtWidgets->em_types[188]
-#define sipClass_QLayoutItem             sipModuleAPI_trikControl_QtWidgets->em_types[188]->u.td_wrapper_type
-
-#define sipType_QLayout              sipModuleAPI_trikControl_QtWidgets->em_types[186]
-#define sipClass_QLayout             sipModuleAPI_trikControl_QtWidgets->em_types[186]->u.td_wrapper_type
-
-#define sipType_QLayout_SizeConstraint              sipModuleAPI_trikControl_QtWidgets->em_types[187]
-#define sipEnum_QLayout_SizeConstraint              sipModuleAPI_trikControl_QtWidgets->em_types[187]->u.td_py_type
-
-#define sipType_QBoxLayout              sipModuleAPI_trikControl_QtWidgets->em_types[32]
-#define sipClass_QBoxLayout             sipModuleAPI_trikControl_QtWidgets->em_types[32]->u.td_wrapper_type
-
-#define sipType_QBoxLayout_Direction              sipModuleAPI_trikControl_QtWidgets->em_types[33]
-#define sipEnum_QBoxLayout_Direction              sipModuleAPI_trikControl_QtWidgets->em_types[33]->u.td_py_type
-
-#define sipType_QHBoxLayout              sipModuleAPI_trikControl_QtWidgets->em_types[170]
-#define sipClass_QHBoxLayout             sipModuleAPI_trikControl_QtWidgets->em_types[170]->u.td_wrapper_type
-
-#define sipType_QVBoxLayout              sipModuleAPI_trikControl_QtWidgets->em_types[454]
-#define sipClass_QVBoxLayout             sipModuleAPI_trikControl_QtWidgets->em_types[454]->u.td_wrapper_type
-
-#define sipType_QButtonGroup              sipModuleAPI_trikControl_QtWidgets->em_types[34]
-#define sipClass_QButtonGroup             sipModuleAPI_trikControl_QtWidgets->em_types[34]->u.td_wrapper_type
-
-#define sipType_QCalendarWidget              sipModuleAPI_trikControl_QtWidgets->em_types[35]
-#define sipClass_QCalendarWidget             sipModuleAPI_trikControl_QtWidgets->em_types[35]->u.td_wrapper_type
-
-#define sipType_QCalendarWidget_SelectionMode              sipModuleAPI_trikControl_QtWidgets->em_types[37]
-#define sipEnum_QCalendarWidget_SelectionMode              sipModuleAPI_trikControl_QtWidgets->em_types[37]->u.td_py_type
-#define sipType_QCalendarWidget_VerticalHeaderFormat              sipModuleAPI_trikControl_QtWidgets->em_types[38]
-#define sipEnum_QCalendarWidget_VerticalHeaderFormat              sipModuleAPI_trikControl_QtWidgets->em_types[38]->u.td_py_type
-#define sipType_QCalendarWidget_HorizontalHeaderFormat              sipModuleAPI_trikControl_QtWidgets->em_types[36]
-#define sipEnum_QCalendarWidget_HorizontalHeaderFormat              sipModuleAPI_trikControl_QtWidgets->em_types[36]->u.td_py_type
-
-#define sipType_QCheckBox              sipModuleAPI_trikControl_QtWidgets->em_types[39]
-#define sipClass_QCheckBox             sipModuleAPI_trikControl_QtWidgets->em_types[39]->u.td_wrapper_type
-
-#define sipType_QDialog              sipModuleAPI_trikControl_QtWidgets->em_types[60]
-#define sipClass_QDialog             sipModuleAPI_trikControl_QtWidgets->em_types[60]->u.td_wrapper_type
-
-#define sipType_QDialog_DialogCode              sipModuleAPI_trikControl_QtWidgets->em_types[61]
-#define sipEnum_QDialog_DialogCode              sipModuleAPI_trikControl_QtWidgets->em_types[61]->u.td_py_type
-
-#define sipType_QColorDialog              sipModuleAPI_trikControl_QtWidgets->em_types[40]
-#define sipClass_QColorDialog             sipModuleAPI_trikControl_QtWidgets->em_types[40]->u.td_wrapper_type
-
-#define sipType_QColorDialog_ColorDialogOption              sipModuleAPI_trikControl_QtWidgets->em_types[41]
-#define sipEnum_QColorDialog_ColorDialogOption              sipModuleAPI_trikControl_QtWidgets->em_types[41]->u.td_py_type
-
-#define sipType_QColorDialog_ColorDialogOptions              sipModuleAPI_trikControl_QtWidgets->em_types[42]
-#define sipClass_QColorDialog_ColorDialogOptions             sipModuleAPI_trikControl_QtWidgets->em_types[42]->u.td_wrapper_type
-
-#define sipType_QColumnView              sipModuleAPI_trikControl_QtWidgets->em_types[43]
-#define sipClass_QColumnView             sipModuleAPI_trikControl_QtWidgets->em_types[43]->u.td_wrapper_type
-
-#define sipType_QComboBox              sipModuleAPI_trikControl_QtWidgets->em_types[44]
-#define sipClass_QComboBox             sipModuleAPI_trikControl_QtWidgets->em_types[44]->u.td_wrapper_type
-
-#define sipType_QComboBox_SizeAdjustPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[46]
-#define sipEnum_QComboBox_SizeAdjustPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[46]->u.td_py_type
-#define sipType_QComboBox_InsertPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[45]
-#define sipEnum_QComboBox_InsertPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[45]->u.td_py_type
-
-#define sipType_QPushButton              sipModuleAPI_trikControl_QtWidgets->em_types[253]
-#define sipClass_QPushButton             sipModuleAPI_trikControl_QtWidgets->em_types[253]->u.td_wrapper_type
-
-#define sipType_QCommandLinkButton              sipModuleAPI_trikControl_QtWidgets->em_types[47]
-#define sipClass_QCommandLinkButton             sipModuleAPI_trikControl_QtWidgets->em_types[47]->u.td_wrapper_type
-
-#define sipType_QStyle              sipModuleAPI_trikControl_QtWidgets->em_types[285]
-#define sipClass_QStyle             sipModuleAPI_trikControl_QtWidgets->em_types[285]->u.td_wrapper_type
-
-#define sipType_QStyle_RequestSoftwareInputPanel              sipModuleAPI_trikControl_QtWidgets->em_types[291]
-#define sipEnum_QStyle_RequestSoftwareInputPanel              sipModuleAPI_trikControl_QtWidgets->em_types[291]->u.td_py_type
-#define sipType_QStyle_StandardPixmap              sipModuleAPI_trikControl_QtWidgets->em_types[292]
-#define sipEnum_QStyle_StandardPixmap              sipModuleAPI_trikControl_QtWidgets->em_types[292]->u.td_py_type
-#define sipType_QStyle_StyleHint              sipModuleAPI_trikControl_QtWidgets->em_types[295]
-#define sipEnum_QStyle_StyleHint              sipModuleAPI_trikControl_QtWidgets->em_types[295]->u.td_py_type
-#define sipType_QStyle_ContentsType              sipModuleAPI_trikControl_QtWidgets->em_types[287]
-#define sipEnum_QStyle_ContentsType              sipModuleAPI_trikControl_QtWidgets->em_types[287]->u.td_py_type
-#define sipType_QStyle_PixelMetric              sipModuleAPI_trikControl_QtWidgets->em_types[289]
-#define sipEnum_QStyle_PixelMetric              sipModuleAPI_trikControl_QtWidgets->em_types[289]->u.td_py_type
-#define sipType_QStyle_SubControl              sipModuleAPI_trikControl_QtWidgets->em_types[296]
-#define sipEnum_QStyle_SubControl              sipModuleAPI_trikControl_QtWidgets->em_types[296]->u.td_py_type
-#define sipType_QStyle_ComplexControl              sipModuleAPI_trikControl_QtWidgets->em_types[286]
-#define sipEnum_QStyle_ComplexControl              sipModuleAPI_trikControl_QtWidgets->em_types[286]->u.td_py_type
-#define sipType_QStyle_SubElement              sipModuleAPI_trikControl_QtWidgets->em_types[298]
-#define sipEnum_QStyle_SubElement              sipModuleAPI_trikControl_QtWidgets->em_types[298]->u.td_py_type
-#define sipType_QStyle_ControlElement              sipModuleAPI_trikControl_QtWidgets->em_types[288]
-#define sipEnum_QStyle_ControlElement              sipModuleAPI_trikControl_QtWidgets->em_types[288]->u.td_py_type
-#define sipType_QStyle_PrimitiveElement              sipModuleAPI_trikControl_QtWidgets->em_types[290]
-#define sipEnum_QStyle_PrimitiveElement              sipModuleAPI_trikControl_QtWidgets->em_types[290]->u.td_py_type
-#define sipType_QStyle_StateFlag              sipModuleAPI_trikControl_QtWidgets->em_types[294]
-#define sipEnum_QStyle_StateFlag              sipModuleAPI_trikControl_QtWidgets->em_types[294]->u.td_py_type
-
-#define sipType_QCommonStyle              sipModuleAPI_trikControl_QtWidgets->em_types[48]
-#define sipClass_QCommonStyle             sipModuleAPI_trikControl_QtWidgets->em_types[48]->u.td_wrapper_type
-
-#define sipType_QCompleter              sipModuleAPI_trikControl_QtWidgets->em_types[49]
-#define sipClass_QCompleter             sipModuleAPI_trikControl_QtWidgets->em_types[49]->u.td_wrapper_type
-
-#define sipType_QCompleter_ModelSorting              sipModuleAPI_trikControl_QtWidgets->em_types[51]
-#define sipEnum_QCompleter_ModelSorting              sipModuleAPI_trikControl_QtWidgets->em_types[51]->u.td_py_type
-#define sipType_QCompleter_CompletionMode              sipModuleAPI_trikControl_QtWidgets->em_types[50]
-#define sipEnum_QCompleter_CompletionMode              sipModuleAPI_trikControl_QtWidgets->em_types[50]->u.td_py_type
-
-#define sipType_QDataWidgetMapper              sipModuleAPI_trikControl_QtWidgets->em_types[52]
-#define sipClass_QDataWidgetMapper             sipModuleAPI_trikControl_QtWidgets->em_types[52]->u.td_wrapper_type
-
-#define sipType_QDataWidgetMapper_SubmitPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[53]
-#define sipEnum_QDataWidgetMapper_SubmitPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[53]->u.td_py_type
-
-#define sipType_QDateTimeEdit              sipModuleAPI_trikControl_QtWidgets->em_types[55]
-#define sipClass_QDateTimeEdit             sipModuleAPI_trikControl_QtWidgets->em_types[55]->u.td_wrapper_type
-
-#define sipType_QDateTimeEdit_Section              sipModuleAPI_trikControl_QtWidgets->em_types[56]
-#define sipEnum_QDateTimeEdit_Section              sipModuleAPI_trikControl_QtWidgets->em_types[56]->u.td_py_type
-
-#define sipType_QDateTimeEdit_Sections              sipModuleAPI_trikControl_QtWidgets->em_types[57]
-#define sipClass_QDateTimeEdit_Sections             sipModuleAPI_trikControl_QtWidgets->em_types[57]->u.td_wrapper_type
-
-#define sipType_QTimeEdit              sipModuleAPI_trikControl_QtWidgets->em_types[436]
-#define sipClass_QTimeEdit             sipModuleAPI_trikControl_QtWidgets->em_types[436]->u.td_wrapper_type
-
-#define sipType_QDateEdit              sipModuleAPI_trikControl_QtWidgets->em_types[54]
-#define sipClass_QDateEdit             sipModuleAPI_trikControl_QtWidgets->em_types[54]->u.td_wrapper_type
-
-#define sipType_QDesktopWidget              sipModuleAPI_trikControl_QtWidgets->em_types[58]
-#define sipClass_QDesktopWidget             sipModuleAPI_trikControl_QtWidgets->em_types[58]->u.td_wrapper_type
-
-#define sipType_QDial              sipModuleAPI_trikControl_QtWidgets->em_types[59]
-#define sipClass_QDial             sipModuleAPI_trikControl_QtWidgets->em_types[59]->u.td_wrapper_type
-
-#define sipType_QDialogButtonBox              sipModuleAPI_trikControl_QtWidgets->em_types[62]
-#define sipClass_QDialogButtonBox             sipModuleAPI_trikControl_QtWidgets->em_types[62]->u.td_wrapper_type
-
-#define sipType_QDialogButtonBox_StandardButton              sipModuleAPI_trikControl_QtWidgets->em_types[65]
-#define sipEnum_QDialogButtonBox_StandardButton              sipModuleAPI_trikControl_QtWidgets->em_types[65]->u.td_py_type
-#define sipType_QDialogButtonBox_ButtonRole              sipModuleAPI_trikControl_QtWidgets->em_types[64]
-#define sipEnum_QDialogButtonBox_ButtonRole              sipModuleAPI_trikControl_QtWidgets->em_types[64]->u.td_py_type
-#define sipType_QDialogButtonBox_ButtonLayout              sipModuleAPI_trikControl_QtWidgets->em_types[63]
-#define sipEnum_QDialogButtonBox_ButtonLayout              sipModuleAPI_trikControl_QtWidgets->em_types[63]->u.td_py_type
-
-#define sipType_QDialogButtonBox_StandardButtons              sipModuleAPI_trikControl_QtWidgets->em_types[66]
-#define sipClass_QDialogButtonBox_StandardButtons             sipModuleAPI_trikControl_QtWidgets->em_types[66]->u.td_wrapper_type
-
-#define sipType_QDirModel              sipModuleAPI_trikControl_QtWidgets->em_types[67]
-#define sipClass_QDirModel             sipModuleAPI_trikControl_QtWidgets->em_types[67]->u.td_wrapper_type
-
-#define sipType_QDirModel_Roles              sipModuleAPI_trikControl_QtWidgets->em_types[68]
-#define sipEnum_QDirModel_Roles              sipModuleAPI_trikControl_QtWidgets->em_types[68]->u.td_py_type
-
-#define sipType_QDockWidget              sipModuleAPI_trikControl_QtWidgets->em_types[69]
-#define sipClass_QDockWidget             sipModuleAPI_trikControl_QtWidgets->em_types[69]->u.td_wrapper_type
-
-#define sipType_QDockWidget_DockWidgetFeature              sipModuleAPI_trikControl_QtWidgets->em_types[70]
-#define sipEnum_QDockWidget_DockWidgetFeature              sipModuleAPI_trikControl_QtWidgets->em_types[70]->u.td_py_type
-
-#define sipType_QDockWidget_DockWidgetFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[71]
-#define sipClass_QDockWidget_DockWidgetFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[71]->u.td_wrapper_type
-
-#define sipType_QErrorMessage              sipModuleAPI_trikControl_QtWidgets->em_types[73]
-#define sipClass_QErrorMessage             sipModuleAPI_trikControl_QtWidgets->em_types[73]->u.td_wrapper_type
-
-#define sipType_QFileDialog              sipModuleAPI_trikControl_QtWidgets->em_types[74]
-#define sipClass_QFileDialog             sipModuleAPI_trikControl_QtWidgets->em_types[74]->u.td_wrapper_type
-
-#define sipType_QFileDialog_Option              sipModuleAPI_trikControl_QtWidgets->em_types[78]
-#define sipEnum_QFileDialog_Option              sipModuleAPI_trikControl_QtWidgets->em_types[78]->u.td_py_type
-#define sipType_QFileDialog_DialogLabel              sipModuleAPI_trikControl_QtWidgets->em_types[76]
-#define sipEnum_QFileDialog_DialogLabel              sipModuleAPI_trikControl_QtWidgets->em_types[76]->u.td_py_type
-#define sipType_QFileDialog_AcceptMode              sipModuleAPI_trikControl_QtWidgets->em_types[75]
-#define sipEnum_QFileDialog_AcceptMode              sipModuleAPI_trikControl_QtWidgets->em_types[75]->u.td_py_type
-#define sipType_QFileDialog_FileMode              sipModuleAPI_trikControl_QtWidgets->em_types[77]
-#define sipEnum_QFileDialog_FileMode              sipModuleAPI_trikControl_QtWidgets->em_types[77]->u.td_py_type
-#define sipType_QFileDialog_ViewMode              sipModuleAPI_trikControl_QtWidgets->em_types[80]
-#define sipEnum_QFileDialog_ViewMode              sipModuleAPI_trikControl_QtWidgets->em_types[80]->u.td_py_type
-
-#define sipType_QFileDialog_Options              sipModuleAPI_trikControl_QtWidgets->em_types[79]
-#define sipClass_QFileDialog_Options             sipModuleAPI_trikControl_QtWidgets->em_types[79]->u.td_wrapper_type
-
-#define sipType_QFileIconProvider              sipModuleAPI_trikControl_QtWidgets->em_types[81]
-#define sipClass_QFileIconProvider             sipModuleAPI_trikControl_QtWidgets->em_types[81]->u.td_wrapper_type
-
-#define sipType_QFileIconProvider_Option              sipModuleAPI_trikControl_QtWidgets->em_types[83]
-#define sipEnum_QFileIconProvider_Option              sipModuleAPI_trikControl_QtWidgets->em_types[83]->u.td_py_type
-#define sipType_QFileIconProvider_IconType              sipModuleAPI_trikControl_QtWidgets->em_types[82]
-#define sipEnum_QFileIconProvider_IconType              sipModuleAPI_trikControl_QtWidgets->em_types[82]->u.td_py_type
-
-#define sipType_QFileIconProvider_Options              sipModuleAPI_trikControl_QtWidgets->em_types[84]
-#define sipClass_QFileIconProvider_Options             sipModuleAPI_trikControl_QtWidgets->em_types[84]->u.td_wrapper_type
-
-#define sipType_QFileSystemModel              sipModuleAPI_trikControl_QtWidgets->em_types[85]
-#define sipClass_QFileSystemModel             sipModuleAPI_trikControl_QtWidgets->em_types[85]->u.td_wrapper_type
-
-#define sipType_QFileSystemModel_Roles              sipModuleAPI_trikControl_QtWidgets->em_types[86]
-#define sipEnum_QFileSystemModel_Roles              sipModuleAPI_trikControl_QtWidgets->em_types[86]->u.td_py_type
-
-#define sipType_QFocusFrame              sipModuleAPI_trikControl_QtWidgets->em_types[87]
-#define sipClass_QFocusFrame             sipModuleAPI_trikControl_QtWidgets->em_types[87]->u.td_wrapper_type
-
-#define sipType_QFontComboBox              sipModuleAPI_trikControl_QtWidgets->em_types[88]
-#define sipClass_QFontComboBox             sipModuleAPI_trikControl_QtWidgets->em_types[88]->u.td_wrapper_type
-
-#define sipType_QFontComboBox_FontFilter              sipModuleAPI_trikControl_QtWidgets->em_types[89]
-#define sipEnum_QFontComboBox_FontFilter              sipModuleAPI_trikControl_QtWidgets->em_types[89]->u.td_py_type
-
-#define sipType_QFontComboBox_FontFilters              sipModuleAPI_trikControl_QtWidgets->em_types[90]
-#define sipClass_QFontComboBox_FontFilters             sipModuleAPI_trikControl_QtWidgets->em_types[90]->u.td_wrapper_type
-
-#define sipType_QFontDialog              sipModuleAPI_trikControl_QtWidgets->em_types[91]
-#define sipClass_QFontDialog             sipModuleAPI_trikControl_QtWidgets->em_types[91]->u.td_wrapper_type
-
-#define sipType_QFontDialog_FontDialogOption              sipModuleAPI_trikControl_QtWidgets->em_types[92]
-#define sipEnum_QFontDialog_FontDialogOption              sipModuleAPI_trikControl_QtWidgets->em_types[92]->u.td_py_type
-
-#define sipType_QFontDialog_FontDialogOptions              sipModuleAPI_trikControl_QtWidgets->em_types[93]
-#define sipClass_QFontDialog_FontDialogOptions             sipModuleAPI_trikControl_QtWidgets->em_types[93]->u.td_wrapper_type
-
-#define sipType_QFormLayout              sipModuleAPI_trikControl_QtWidgets->em_types[94]
-#define sipClass_QFormLayout             sipModuleAPI_trikControl_QtWidgets->em_types[94]->u.td_wrapper_type
-
-#define sipType_QFormLayout_ItemRole              sipModuleAPI_trikControl_QtWidgets->em_types[96]
-#define sipEnum_QFormLayout_ItemRole              sipModuleAPI_trikControl_QtWidgets->em_types[96]->u.td_py_type
-#define sipType_QFormLayout_RowWrapPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[97]
-#define sipEnum_QFormLayout_RowWrapPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[97]->u.td_py_type
-#define sipType_QFormLayout_FieldGrowthPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[95]
-#define sipEnum_QFormLayout_FieldGrowthPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[95]->u.td_py_type
-
-#define sipType_QGesture              sipModuleAPI_trikControl_QtWidgets->em_types[102]
-#define sipClass_QGesture             sipModuleAPI_trikControl_QtWidgets->em_types[102]->u.td_wrapper_type
-
-#define sipType_QGesture_GestureCancelPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[103]
-#define sipEnum_QGesture_GestureCancelPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[103]->u.td_py_type
-
-#define sipType_QPanGesture              sipModuleAPI_trikControl_QtWidgets->em_types[242]
-#define sipClass_QPanGesture             sipModuleAPI_trikControl_QtWidgets->em_types[242]->u.td_wrapper_type
-
-#define sipType_QPinchGesture              sipModuleAPI_trikControl_QtWidgets->em_types[243]
-#define sipClass_QPinchGesture             sipModuleAPI_trikControl_QtWidgets->em_types[243]->u.td_wrapper_type
-
-#define sipType_QPinchGesture_ChangeFlag              sipModuleAPI_trikControl_QtWidgets->em_types[244]
-#define sipEnum_QPinchGesture_ChangeFlag              sipModuleAPI_trikControl_QtWidgets->em_types[244]->u.td_py_type
-
-#define sipType_QPinchGesture_ChangeFlags              sipModuleAPI_trikControl_QtWidgets->em_types[245]
-#define sipClass_QPinchGesture_ChangeFlags             sipModuleAPI_trikControl_QtWidgets->em_types[245]->u.td_wrapper_type
-
-#define sipType_QSwipeGesture              sipModuleAPI_trikControl_QtWidgets->em_types[411]
-#define sipClass_QSwipeGesture             sipModuleAPI_trikControl_QtWidgets->em_types[411]->u.td_wrapper_type
-
-#define sipType_QSwipeGesture_SwipeDirection              sipModuleAPI_trikControl_QtWidgets->em_types[412]
-#define sipEnum_QSwipeGesture_SwipeDirection              sipModuleAPI_trikControl_QtWidgets->em_types[412]->u.td_py_type
-
-#define sipType_QTapGesture              sipModuleAPI_trikControl_QtWidgets->em_types[429]
-#define sipClass_QTapGesture             sipModuleAPI_trikControl_QtWidgets->em_types[429]->u.td_wrapper_type
-
-#define sipType_QTapAndHoldGesture              sipModuleAPI_trikControl_QtWidgets->em_types[428]
-#define sipClass_QTapAndHoldGesture             sipModuleAPI_trikControl_QtWidgets->em_types[428]->u.td_wrapper_type
-
-#define sipType_QGestureEvent              sipModuleAPI_trikControl_QtWidgets->em_types[104]
-#define sipClass_QGestureEvent             sipModuleAPI_trikControl_QtWidgets->em_types[104]->u.td_wrapper_type
-
-#define sipType_QGestureRecognizer              sipModuleAPI_trikControl_QtWidgets->em_types[105]
-#define sipClass_QGestureRecognizer             sipModuleAPI_trikControl_QtWidgets->em_types[105]->u.td_wrapper_type
-
-#define sipType_QGestureRecognizer_ResultFlag              sipModuleAPI_trikControl_QtWidgets->em_types[107]
-#define sipEnum_QGestureRecognizer_ResultFlag              sipModuleAPI_trikControl_QtWidgets->em_types[107]->u.td_py_type
-
-#define sipType_QGestureRecognizer_Result              sipModuleAPI_trikControl_QtWidgets->em_types[106]
-#define sipClass_QGestureRecognizer_Result             sipModuleAPI_trikControl_QtWidgets->em_types[106]->u.td_wrapper_type
-
-#define sipType_QGraphicsAnchor              sipModuleAPI_trikControl_QtWidgets->em_types[108]
-#define sipClass_QGraphicsAnchor             sipModuleAPI_trikControl_QtWidgets->em_types[108]->u.td_wrapper_type
-
-#define sipType_QGraphicsLayoutItem              sipModuleAPI_trikControl_QtWidgets->em_types[129]
-#define sipClass_QGraphicsLayoutItem             sipModuleAPI_trikControl_QtWidgets->em_types[129]->u.td_wrapper_type
-
-#define sipType_QGraphicsLayout              sipModuleAPI_trikControl_QtWidgets->em_types[128]
-#define sipClass_QGraphicsLayout             sipModuleAPI_trikControl_QtWidgets->em_types[128]->u.td_wrapper_type
-
-#define sipType_QGraphicsAnchorLayout              sipModuleAPI_trikControl_QtWidgets->em_types[109]
-#define sipClass_QGraphicsAnchorLayout             sipModuleAPI_trikControl_QtWidgets->em_types[109]->u.td_wrapper_type
-
-#define sipType_QGraphicsEffect              sipModuleAPI_trikControl_QtWidgets->em_types[115]
-#define sipClass_QGraphicsEffect             sipModuleAPI_trikControl_QtWidgets->em_types[115]->u.td_wrapper_type
-
-#define sipType_QGraphicsEffect_PixmapPadMode              sipModuleAPI_trikControl_QtWidgets->em_types[118]
-#define sipEnum_QGraphicsEffect_PixmapPadMode              sipModuleAPI_trikControl_QtWidgets->em_types[118]->u.td_py_type
-#define sipType_QGraphicsEffect_ChangeFlag              sipModuleAPI_trikControl_QtWidgets->em_types[116]
-#define sipEnum_QGraphicsEffect_ChangeFlag              sipModuleAPI_trikControl_QtWidgets->em_types[116]->u.td_py_type
-
-#define sipType_QGraphicsEffect_ChangeFlags              sipModuleAPI_trikControl_QtWidgets->em_types[117]
-#define sipClass_QGraphicsEffect_ChangeFlags             sipModuleAPI_trikControl_QtWidgets->em_types[117]->u.td_wrapper_type
-
-#define sipType_QGraphicsColorizeEffect              sipModuleAPI_trikControl_QtWidgets->em_types[113]
-#define sipClass_QGraphicsColorizeEffect             sipModuleAPI_trikControl_QtWidgets->em_types[113]->u.td_wrapper_type
-
-#define sipType_QGraphicsBlurEffect              sipModuleAPI_trikControl_QtWidgets->em_types[110]
-#define sipClass_QGraphicsBlurEffect             sipModuleAPI_trikControl_QtWidgets->em_types[110]->u.td_wrapper_type
-
-#define sipType_QGraphicsBlurEffect_BlurHint              sipModuleAPI_trikControl_QtWidgets->em_types[111]
-#define sipEnum_QGraphicsBlurEffect_BlurHint              sipModuleAPI_trikControl_QtWidgets->em_types[111]->u.td_py_type
-
-#define sipType_QGraphicsBlurEffect_BlurHints              sipModuleAPI_trikControl_QtWidgets->em_types[112]
-#define sipClass_QGraphicsBlurEffect_BlurHints             sipModuleAPI_trikControl_QtWidgets->em_types[112]->u.td_wrapper_type
-
-#define sipType_QGraphicsDropShadowEffect              sipModuleAPI_trikControl_QtWidgets->em_types[114]
-#define sipClass_QGraphicsDropShadowEffect             sipModuleAPI_trikControl_QtWidgets->em_types[114]->u.td_wrapper_type
-
-#define sipType_QGraphicsOpacityEffect              sipModuleAPI_trikControl_QtWidgets->em_types[133]
-#define sipClass_QGraphicsOpacityEffect             sipModuleAPI_trikControl_QtWidgets->em_types[133]->u.td_wrapper_type
-
-#define sipType_QGraphicsGridLayout              sipModuleAPI_trikControl_QtWidgets->em_types[120]
-#define sipClass_QGraphicsGridLayout             sipModuleAPI_trikControl_QtWidgets->em_types[120]->u.td_wrapper_type
-
-#define sipType_QGraphicsItem              sipModuleAPI_trikControl_QtWidgets->em_types[121]
-#define sipClass_QGraphicsItem             sipModuleAPI_trikControl_QtWidgets->em_types[121]->u.td_wrapper_type
-
-#define sipType_QGraphicsItem_PanelModality              sipModuleAPI_trikControl_QtWidgets->em_types[126]
-#define sipEnum_QGraphicsItem_PanelModality              sipModuleAPI_trikControl_QtWidgets->em_types[126]->u.td_py_type
-#define sipType_QGraphicsItem_GraphicsItemFlag              sipModuleAPI_trikControl_QtWidgets->em_types[124]
-#define sipEnum_QGraphicsItem_GraphicsItemFlag              sipModuleAPI_trikControl_QtWidgets->em_types[124]->u.td_py_type
-#define sipType_QGraphicsItem_GraphicsItemChange              sipModuleAPI_trikControl_QtWidgets->em_types[123]
-#define sipEnum_QGraphicsItem_GraphicsItemChange              sipModuleAPI_trikControl_QtWidgets->em_types[123]->u.td_py_type
-#define sipType_QGraphicsItem_CacheMode              sipModuleAPI_trikControl_QtWidgets->em_types[122]
-#define sipEnum_QGraphicsItem_CacheMode              sipModuleAPI_trikControl_QtWidgets->em_types[122]->u.td_py_type
-
-#define sipType_QGraphicsItem_GraphicsItemFlags              sipModuleAPI_trikControl_QtWidgets->em_types[125]
-#define sipClass_QGraphicsItem_GraphicsItemFlags             sipModuleAPI_trikControl_QtWidgets->em_types[125]->u.td_wrapper_type
-
-#define sipType_QAbstractGraphicsShapeItem              sipModuleAPI_trikControl_QtWidgets->em_types[1]
-#define sipClass_QAbstractGraphicsShapeItem             sipModuleAPI_trikControl_QtWidgets->em_types[1]->u.td_wrapper_type
-
-#define sipType_QGraphicsPathItem              sipModuleAPI_trikControl_QtWidgets->em_types[134]
-#define sipClass_QGraphicsPathItem             sipModuleAPI_trikControl_QtWidgets->em_types[134]->u.td_wrapper_type
-
-#define sipType_QGraphicsRectItem              sipModuleAPI_trikControl_QtWidgets->em_types[139]
-#define sipClass_QGraphicsRectItem             sipModuleAPI_trikControl_QtWidgets->em_types[139]->u.td_wrapper_type
-
-#define sipType_QGraphicsEllipseItem              sipModuleAPI_trikControl_QtWidgets->em_types[119]
-#define sipClass_QGraphicsEllipseItem             sipModuleAPI_trikControl_QtWidgets->em_types[119]->u.td_wrapper_type
-
-#define sipType_QGraphicsPolygonItem              sipModuleAPI_trikControl_QtWidgets->em_types[137]
-#define sipClass_QGraphicsPolygonItem             sipModuleAPI_trikControl_QtWidgets->em_types[137]->u.td_wrapper_type
-
-#define sipType_QGraphicsLineItem              sipModuleAPI_trikControl_QtWidgets->em_types[130]
-#define sipClass_QGraphicsLineItem             sipModuleAPI_trikControl_QtWidgets->em_types[130]->u.td_wrapper_type
-
-#define sipType_QGraphicsPixmapItem              sipModuleAPI_trikControl_QtWidgets->em_types[135]
-#define sipClass_QGraphicsPixmapItem             sipModuleAPI_trikControl_QtWidgets->em_types[135]->u.td_wrapper_type
-
-#define sipType_QGraphicsPixmapItem_ShapeMode              sipModuleAPI_trikControl_QtWidgets->em_types[136]
-#define sipEnum_QGraphicsPixmapItem_ShapeMode              sipModuleAPI_trikControl_QtWidgets->em_types[136]->u.td_py_type
-
-#define sipType_QGraphicsSimpleTextItem              sipModuleAPI_trikControl_QtWidgets->em_types[156]
-#define sipClass_QGraphicsSimpleTextItem             sipModuleAPI_trikControl_QtWidgets->em_types[156]->u.td_wrapper_type
-
-#define sipType_QGraphicsItemGroup              sipModuleAPI_trikControl_QtWidgets->em_types[127]
-#define sipClass_QGraphicsItemGroup             sipModuleAPI_trikControl_QtWidgets->em_types[127]->u.td_wrapper_type
-
-#define sipType_QGraphicsObject              sipModuleAPI_trikControl_QtWidgets->em_types[132]
-#define sipClass_QGraphicsObject             sipModuleAPI_trikControl_QtWidgets->em_types[132]->u.td_wrapper_type
-
-#define sipType_QGraphicsTextItem              sipModuleAPI_trikControl_QtWidgets->em_types[157]
-#define sipClass_QGraphicsTextItem             sipModuleAPI_trikControl_QtWidgets->em_types[157]->u.td_wrapper_type
-
-#define sipType_QGraphicsLinearLayout              sipModuleAPI_trikControl_QtWidgets->em_types[131]
-#define sipClass_QGraphicsLinearLayout             sipModuleAPI_trikControl_QtWidgets->em_types[131]->u.td_wrapper_type
-
-#define sipType_QGraphicsWidget              sipModuleAPI_trikControl_QtWidgets->em_types[167]
-#define sipClass_QGraphicsWidget             sipModuleAPI_trikControl_QtWidgets->em_types[167]->u.td_wrapper_type
-
-#define sipType_QGraphicsProxyWidget              sipModuleAPI_trikControl_QtWidgets->em_types[138]
-#define sipClass_QGraphicsProxyWidget             sipModuleAPI_trikControl_QtWidgets->em_types[138]->u.td_wrapper_type
-
-#define sipType_QGraphicsScene              sipModuleAPI_trikControl_QtWidgets->em_types[142]
-#define sipClass_QGraphicsScene             sipModuleAPI_trikControl_QtWidgets->em_types[142]->u.td_wrapper_type
-
-#define sipType_QGraphicsScene_SceneLayer              sipModuleAPI_trikControl_QtWidgets->em_types[144]
-#define sipEnum_QGraphicsScene_SceneLayer              sipModuleAPI_trikControl_QtWidgets->em_types[144]->u.td_py_type
-#define sipType_QGraphicsScene_ItemIndexMethod              sipModuleAPI_trikControl_QtWidgets->em_types[143]
-#define sipEnum_QGraphicsScene_ItemIndexMethod              sipModuleAPI_trikControl_QtWidgets->em_types[143]->u.td_py_type
-
-#define sipType_QGraphicsScene_SceneLayers              sipModuleAPI_trikControl_QtWidgets->em_types[145]
-#define sipClass_QGraphicsScene_SceneLayers             sipModuleAPI_trikControl_QtWidgets->em_types[145]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneEvent              sipModuleAPI_trikControl_QtWidgets->em_types[149]
-#define sipClass_QGraphicsSceneEvent             sipModuleAPI_trikControl_QtWidgets->em_types[149]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneMouseEvent              sipModuleAPI_trikControl_QtWidgets->em_types[152]
-#define sipClass_QGraphicsSceneMouseEvent             sipModuleAPI_trikControl_QtWidgets->em_types[152]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneWheelEvent              sipModuleAPI_trikControl_QtWidgets->em_types[155]
-#define sipClass_QGraphicsSceneWheelEvent             sipModuleAPI_trikControl_QtWidgets->em_types[155]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneContextMenuEvent              sipModuleAPI_trikControl_QtWidgets->em_types[146]
-#define sipClass_QGraphicsSceneContextMenuEvent             sipModuleAPI_trikControl_QtWidgets->em_types[146]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneContextMenuEvent_Reason              sipModuleAPI_trikControl_QtWidgets->em_types[147]
-#define sipEnum_QGraphicsSceneContextMenuEvent_Reason              sipModuleAPI_trikControl_QtWidgets->em_types[147]->u.td_py_type
-
-#define sipType_QGraphicsSceneHoverEvent              sipModuleAPI_trikControl_QtWidgets->em_types[151]
-#define sipClass_QGraphicsSceneHoverEvent             sipModuleAPI_trikControl_QtWidgets->em_types[151]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneHelpEvent              sipModuleAPI_trikControl_QtWidgets->em_types[150]
-#define sipClass_QGraphicsSceneHelpEvent             sipModuleAPI_trikControl_QtWidgets->em_types[150]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneDragDropEvent              sipModuleAPI_trikControl_QtWidgets->em_types[148]
-#define sipClass_QGraphicsSceneDragDropEvent             sipModuleAPI_trikControl_QtWidgets->em_types[148]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneResizeEvent              sipModuleAPI_trikControl_QtWidgets->em_types[154]
-#define sipClass_QGraphicsSceneResizeEvent             sipModuleAPI_trikControl_QtWidgets->em_types[154]->u.td_wrapper_type
-
-#define sipType_QGraphicsSceneMoveEvent              sipModuleAPI_trikControl_QtWidgets->em_types[153]
-#define sipClass_QGraphicsSceneMoveEvent             sipModuleAPI_trikControl_QtWidgets->em_types[153]->u.td_wrapper_type
-
-#define sipType_QGraphicsTransform              sipModuleAPI_trikControl_QtWidgets->em_types[158]
-#define sipClass_QGraphicsTransform             sipModuleAPI_trikControl_QtWidgets->em_types[158]->u.td_wrapper_type
-
-#define sipType_QGraphicsScale              sipModuleAPI_trikControl_QtWidgets->em_types[141]
-#define sipClass_QGraphicsScale             sipModuleAPI_trikControl_QtWidgets->em_types[141]->u.td_wrapper_type
-
-#define sipType_QGraphicsRotation              sipModuleAPI_trikControl_QtWidgets->em_types[140]
-#define sipClass_QGraphicsRotation             sipModuleAPI_trikControl_QtWidgets->em_types[140]->u.td_wrapper_type
-
-#define sipType_QGraphicsView              sipModuleAPI_trikControl_QtWidgets->em_types[159]
-#define sipClass_QGraphicsView             sipModuleAPI_trikControl_QtWidgets->em_types[159]->u.td_wrapper_type
-
-#define sipType_QGraphicsView_OptimizationFlag              sipModuleAPI_trikControl_QtWidgets->em_types[163]
-#define sipEnum_QGraphicsView_OptimizationFlag              sipModuleAPI_trikControl_QtWidgets->em_types[163]->u.td_py_type
-#define sipType_QGraphicsView_ViewportUpdateMode              sipModuleAPI_trikControl_QtWidgets->em_types[166]
-#define sipEnum_QGraphicsView_ViewportUpdateMode              sipModuleAPI_trikControl_QtWidgets->em_types[166]->u.td_py_type
-#define sipType_QGraphicsView_ViewportAnchor              sipModuleAPI_trikControl_QtWidgets->em_types[165]
-#define sipEnum_QGraphicsView_ViewportAnchor              sipModuleAPI_trikControl_QtWidgets->em_types[165]->u.td_py_type
-#define sipType_QGraphicsView_DragMode              sipModuleAPI_trikControl_QtWidgets->em_types[162]
-#define sipEnum_QGraphicsView_DragMode              sipModuleAPI_trikControl_QtWidgets->em_types[162]->u.td_py_type
-#define sipType_QGraphicsView_CacheModeFlag              sipModuleAPI_trikControl_QtWidgets->em_types[161]
-#define sipEnum_QGraphicsView_CacheModeFlag              sipModuleAPI_trikControl_QtWidgets->em_types[161]->u.td_py_type
-
-#define sipType_QGraphicsView_CacheMode              sipModuleAPI_trikControl_QtWidgets->em_types[160]
-#define sipClass_QGraphicsView_CacheMode             sipModuleAPI_trikControl_QtWidgets->em_types[160]->u.td_wrapper_type
-
-#define sipType_QGraphicsView_OptimizationFlags              sipModuleAPI_trikControl_QtWidgets->em_types[164]
-#define sipClass_QGraphicsView_OptimizationFlags             sipModuleAPI_trikControl_QtWidgets->em_types[164]->u.td_wrapper_type
-
-#define sipType_QGridLayout              sipModuleAPI_trikControl_QtWidgets->em_types[168]
-#define sipClass_QGridLayout             sipModuleAPI_trikControl_QtWidgets->em_types[168]->u.td_wrapper_type
-
-#define sipType_QGroupBox              sipModuleAPI_trikControl_QtWidgets->em_types[169]
-#define sipClass_QGroupBox             sipModuleAPI_trikControl_QtWidgets->em_types[169]->u.td_wrapper_type
-
-#define sipType_QHeaderView              sipModuleAPI_trikControl_QtWidgets->em_types[171]
-#define sipClass_QHeaderView             sipModuleAPI_trikControl_QtWidgets->em_types[171]->u.td_wrapper_type
-
-#define sipType_QHeaderView_ResizeMode              sipModuleAPI_trikControl_QtWidgets->em_types[172]
-#define sipEnum_QHeaderView_ResizeMode              sipModuleAPI_trikControl_QtWidgets->em_types[172]->u.td_py_type
-
-#define sipType_QInputDialog              sipModuleAPI_trikControl_QtWidgets->em_types[173]
-#define sipClass_QInputDialog             sipModuleAPI_trikControl_QtWidgets->em_types[173]->u.td_wrapper_type
-
-#define sipType_QInputDialog_InputMode              sipModuleAPI_trikControl_QtWidgets->em_types[176]
-#define sipEnum_QInputDialog_InputMode              sipModuleAPI_trikControl_QtWidgets->em_types[176]->u.td_py_type
-#define sipType_QInputDialog_InputDialogOption              sipModuleAPI_trikControl_QtWidgets->em_types[174]
-#define sipEnum_QInputDialog_InputDialogOption              sipModuleAPI_trikControl_QtWidgets->em_types[174]->u.td_py_type
-
-#define sipType_QInputDialog_InputDialogOptions              sipModuleAPI_trikControl_QtWidgets->em_types[175]
-#define sipClass_QInputDialog_InputDialogOptions             sipModuleAPI_trikControl_QtWidgets->em_types[175]->u.td_wrapper_type
-
-#define sipType_QItemDelegate              sipModuleAPI_trikControl_QtWidgets->em_types[177]
-#define sipClass_QItemDelegate             sipModuleAPI_trikControl_QtWidgets->em_types[177]->u.td_wrapper_type
-
-#define sipType_QItemEditorCreatorBase              sipModuleAPI_trikControl_QtWidgets->em_types[178]
-#define sipClass_QItemEditorCreatorBase             sipModuleAPI_trikControl_QtWidgets->em_types[178]->u.td_wrapper_type
-
-#define sipType_QItemEditorFactory              sipModuleAPI_trikControl_QtWidgets->em_types[179]
-#define sipClass_QItemEditorFactory             sipModuleAPI_trikControl_QtWidgets->em_types[179]->u.td_wrapper_type
-
-#define sipType_QKeyEventTransition              sipModuleAPI_trikControl_QtWidgets->em_types[180]
-#define sipClass_QKeyEventTransition             sipModuleAPI_trikControl_QtWidgets->em_types[180]->u.td_wrapper_type
-
-#define sipType_QKeySequenceEdit              sipModuleAPI_trikControl_QtWidgets->em_types[181]
-#define sipClass_QKeySequenceEdit             sipModuleAPI_trikControl_QtWidgets->em_types[181]->u.td_wrapper_type
-
-#define sipType_QLabel              sipModuleAPI_trikControl_QtWidgets->em_types[185]
-#define sipClass_QLabel             sipModuleAPI_trikControl_QtWidgets->em_types[185]->u.td_wrapper_type
-
-#define sipType_QSpacerItem              sipModuleAPI_trikControl_QtWidgets->em_types[276]
-#define sipClass_QSpacerItem             sipModuleAPI_trikControl_QtWidgets->em_types[276]->u.td_wrapper_type
-
-#define sipType_QWidgetItem              sipModuleAPI_trikControl_QtWidgets->em_types[460]
-#define sipClass_QWidgetItem             sipModuleAPI_trikControl_QtWidgets->em_types[460]->u.td_wrapper_type
-
-#define sipType_QLCDNumber              sipModuleAPI_trikControl_QtWidgets->em_types[182]
-#define sipClass_QLCDNumber             sipModuleAPI_trikControl_QtWidgets->em_types[182]->u.td_wrapper_type
-
-#define sipType_QLCDNumber_SegmentStyle              sipModuleAPI_trikControl_QtWidgets->em_types[184]
-#define sipEnum_QLCDNumber_SegmentStyle              sipModuleAPI_trikControl_QtWidgets->em_types[184]->u.td_py_type
-#define sipType_QLCDNumber_Mode              sipModuleAPI_trikControl_QtWidgets->em_types[183]
-#define sipEnum_QLCDNumber_Mode              sipModuleAPI_trikControl_QtWidgets->em_types[183]->u.td_py_type
-
-#define sipType_QLineEdit              sipModuleAPI_trikControl_QtWidgets->em_types[189]
-#define sipClass_QLineEdit             sipModuleAPI_trikControl_QtWidgets->em_types[189]->u.td_wrapper_type
-
-#define sipType_QLineEdit_ActionPosition              sipModuleAPI_trikControl_QtWidgets->em_types[190]
-#define sipEnum_QLineEdit_ActionPosition              sipModuleAPI_trikControl_QtWidgets->em_types[190]->u.td_py_type
-#define sipType_QLineEdit_EchoMode              sipModuleAPI_trikControl_QtWidgets->em_types[191]
-#define sipEnum_QLineEdit_EchoMode              sipModuleAPI_trikControl_QtWidgets->em_types[191]->u.td_py_type
-
-#define sipType_QListView              sipModuleAPI_trikControl_QtWidgets->em_types[211]
-#define sipClass_QListView             sipModuleAPI_trikControl_QtWidgets->em_types[211]->u.td_wrapper_type
-
-#define sipType_QListView_ViewMode              sipModuleAPI_trikControl_QtWidgets->em_types[216]
-#define sipEnum_QListView_ViewMode              sipModuleAPI_trikControl_QtWidgets->em_types[216]->u.td_py_type
-#define sipType_QListView_LayoutMode              sipModuleAPI_trikControl_QtWidgets->em_types[213]
-#define sipEnum_QListView_LayoutMode              sipModuleAPI_trikControl_QtWidgets->em_types[213]->u.td_py_type
-#define sipType_QListView_ResizeMode              sipModuleAPI_trikControl_QtWidgets->em_types[215]
-#define sipEnum_QListView_ResizeMode              sipModuleAPI_trikControl_QtWidgets->em_types[215]->u.td_py_type
-#define sipType_QListView_Flow              sipModuleAPI_trikControl_QtWidgets->em_types[212]
-#define sipEnum_QListView_Flow              sipModuleAPI_trikControl_QtWidgets->em_types[212]->u.td_py_type
-#define sipType_QListView_Movement              sipModuleAPI_trikControl_QtWidgets->em_types[214]
-#define sipEnum_QListView_Movement              sipModuleAPI_trikControl_QtWidgets->em_types[214]->u.td_py_type
-
-#define sipType_QListWidgetItem              sipModuleAPI_trikControl_QtWidgets->em_types[218]
-#define sipClass_QListWidgetItem             sipModuleAPI_trikControl_QtWidgets->em_types[218]->u.td_wrapper_type
-
-#define sipType_QListWidgetItem_ItemType              sipModuleAPI_trikControl_QtWidgets->em_types[219]
-#define sipEnum_QListWidgetItem_ItemType              sipModuleAPI_trikControl_QtWidgets->em_types[219]->u.td_py_type
-
-#define sipType_QListWidget              sipModuleAPI_trikControl_QtWidgets->em_types[217]
-#define sipClass_QListWidget             sipModuleAPI_trikControl_QtWidgets->em_types[217]->u.td_wrapper_type
-
-#define sipType_QMainWindow              sipModuleAPI_trikControl_QtWidgets->em_types[220]
-#define sipClass_QMainWindow             sipModuleAPI_trikControl_QtWidgets->em_types[220]->u.td_wrapper_type
-
-#define sipType_QMainWindow_DockOption              sipModuleAPI_trikControl_QtWidgets->em_types[221]
-#define sipEnum_QMainWindow_DockOption              sipModuleAPI_trikControl_QtWidgets->em_types[221]->u.td_py_type
-
-#define sipType_QMainWindow_DockOptions              sipModuleAPI_trikControl_QtWidgets->em_types[222]
-#define sipClass_QMainWindow_DockOptions             sipModuleAPI_trikControl_QtWidgets->em_types[222]->u.td_wrapper_type
-
-#define sipType_QMdiArea              sipModuleAPI_trikControl_QtWidgets->em_types[224]
-#define sipClass_QMdiArea             sipModuleAPI_trikControl_QtWidgets->em_types[224]->u.td_wrapper_type
-
-#define sipType_QMdiArea_WindowOrder              sipModuleAPI_trikControl_QtWidgets->em_types[228]
-#define sipEnum_QMdiArea_WindowOrder              sipModuleAPI_trikControl_QtWidgets->em_types[228]->u.td_py_type
-#define sipType_QMdiArea_ViewMode              sipModuleAPI_trikControl_QtWidgets->em_types[227]
-#define sipEnum_QMdiArea_ViewMode              sipModuleAPI_trikControl_QtWidgets->em_types[227]->u.td_py_type
-#define sipType_QMdiArea_AreaOption              sipModuleAPI_trikControl_QtWidgets->em_types[225]
-#define sipEnum_QMdiArea_AreaOption              sipModuleAPI_trikControl_QtWidgets->em_types[225]->u.td_py_type
-
-#define sipType_QMdiArea_AreaOptions              sipModuleAPI_trikControl_QtWidgets->em_types[226]
-#define sipClass_QMdiArea_AreaOptions             sipModuleAPI_trikControl_QtWidgets->em_types[226]->u.td_wrapper_type
-
-#define sipType_QMdiSubWindow              sipModuleAPI_trikControl_QtWidgets->em_types[229]
-#define sipClass_QMdiSubWindow             sipModuleAPI_trikControl_QtWidgets->em_types[229]->u.td_wrapper_type
-
-#define sipType_QMdiSubWindow_SubWindowOption              sipModuleAPI_trikControl_QtWidgets->em_types[230]
-#define sipEnum_QMdiSubWindow_SubWindowOption              sipModuleAPI_trikControl_QtWidgets->em_types[230]->u.td_py_type
-
-#define sipType_QMdiSubWindow_SubWindowOptions              sipModuleAPI_trikControl_QtWidgets->em_types[231]
-#define sipClass_QMdiSubWindow_SubWindowOptions             sipModuleAPI_trikControl_QtWidgets->em_types[231]->u.td_wrapper_type
-
-#define sipType_QMenu              sipModuleAPI_trikControl_QtWidgets->em_types[232]
-#define sipClass_QMenu             sipModuleAPI_trikControl_QtWidgets->em_types[232]->u.td_wrapper_type
-
-#define sipType_QMenuBar              sipModuleAPI_trikControl_QtWidgets->em_types[233]
-#define sipClass_QMenuBar             sipModuleAPI_trikControl_QtWidgets->em_types[233]->u.td_wrapper_type
-
-#define sipType_QMessageBox              sipModuleAPI_trikControl_QtWidgets->em_types[234]
-#define sipClass_QMessageBox             sipModuleAPI_trikControl_QtWidgets->em_types[234]->u.td_wrapper_type
-
-#define sipType_QMessageBox_StandardButton              sipModuleAPI_trikControl_QtWidgets->em_types[237]
-#define sipEnum_QMessageBox_StandardButton              sipModuleAPI_trikControl_QtWidgets->em_types[237]->u.td_py_type
-#define sipType_QMessageBox_Icon              sipModuleAPI_trikControl_QtWidgets->em_types[236]
-#define sipEnum_QMessageBox_Icon              sipModuleAPI_trikControl_QtWidgets->em_types[236]->u.td_py_type
-#define sipType_QMessageBox_ButtonRole              sipModuleAPI_trikControl_QtWidgets->em_types[235]
-#define sipEnum_QMessageBox_ButtonRole              sipModuleAPI_trikControl_QtWidgets->em_types[235]->u.td_py_type
-
-#define sipType_QMessageBox_StandardButtons              sipModuleAPI_trikControl_QtWidgets->em_types[238]
-#define sipClass_QMessageBox_StandardButtons             sipModuleAPI_trikControl_QtWidgets->em_types[238]->u.td_wrapper_type
-
-#define sipType_QMouseEventTransition              sipModuleAPI_trikControl_QtWidgets->em_types[239]
-#define sipClass_QMouseEventTransition             sipModuleAPI_trikControl_QtWidgets->em_types[239]->u.td_wrapper_type
-
-#define sipType_QOpenGLWidget              sipModuleAPI_trikControl_QtWidgets->em_types[240]
-#define sipClass_QOpenGLWidget             sipModuleAPI_trikControl_QtWidgets->em_types[240]->u.td_wrapper_type
-
-#define sipType_QOpenGLWidget_UpdateBehavior              sipModuleAPI_trikControl_QtWidgets->em_types[241]
-#define sipEnum_QOpenGLWidget_UpdateBehavior              sipModuleAPI_trikControl_QtWidgets->em_types[241]->u.td_py_type
-
-#define sipType_QPlainTextEdit              sipModuleAPI_trikControl_QtWidgets->em_types[247]
-#define sipClass_QPlainTextEdit             sipModuleAPI_trikControl_QtWidgets->em_types[247]->u.td_wrapper_type
-
-#define sipType_QPlainTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtWidgets->em_types[248]
-#define sipEnum_QPlainTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtWidgets->em_types[248]->u.td_py_type
-
-#define sipType_QPlainTextDocumentLayout              sipModuleAPI_trikControl_QtWidgets->em_types[246]
-#define sipClass_QPlainTextDocumentLayout             sipModuleAPI_trikControl_QtWidgets->em_types[246]->u.td_wrapper_type
-
-#define sipType_QProgressBar              sipModuleAPI_trikControl_QtWidgets->em_types[249]
-#define sipClass_QProgressBar             sipModuleAPI_trikControl_QtWidgets->em_types[249]->u.td_wrapper_type
-
-#define sipType_QProgressBar_Direction              sipModuleAPI_trikControl_QtWidgets->em_types[250]
-#define sipEnum_QProgressBar_Direction              sipModuleAPI_trikControl_QtWidgets->em_types[250]->u.td_py_type
-
-#define sipType_QProgressDialog              sipModuleAPI_trikControl_QtWidgets->em_types[251]
-#define sipClass_QProgressDialog             sipModuleAPI_trikControl_QtWidgets->em_types[251]->u.td_wrapper_type
-
-#define sipType_QProxyStyle              sipModuleAPI_trikControl_QtWidgets->em_types[252]
-#define sipClass_QProxyStyle             sipModuleAPI_trikControl_QtWidgets->em_types[252]->u.td_wrapper_type
-
-#define sipType_QRadioButton              sipModuleAPI_trikControl_QtWidgets->em_types[254]
-#define sipClass_QRadioButton             sipModuleAPI_trikControl_QtWidgets->em_types[254]->u.td_wrapper_type
-
-#define sipType_QRubberBand              sipModuleAPI_trikControl_QtWidgets->em_types[255]
-#define sipClass_QRubberBand             sipModuleAPI_trikControl_QtWidgets->em_types[255]->u.td_wrapper_type
-
-#define sipType_QRubberBand_Shape              sipModuleAPI_trikControl_QtWidgets->em_types[256]
-#define sipEnum_QRubberBand_Shape              sipModuleAPI_trikControl_QtWidgets->em_types[256]->u.td_py_type
-
-#define sipType_QScrollArea              sipModuleAPI_trikControl_QtWidgets->em_types[257]
-#define sipClass_QScrollArea             sipModuleAPI_trikControl_QtWidgets->em_types[257]->u.td_wrapper_type
-
-#define sipType_QScrollBar              sipModuleAPI_trikControl_QtWidgets->em_types[258]
-#define sipClass_QScrollBar             sipModuleAPI_trikControl_QtWidgets->em_types[258]->u.td_wrapper_type
-
-#define sipType_QScroller              sipModuleAPI_trikControl_QtWidgets->em_types[259]
-#define sipClass_QScroller             sipModuleAPI_trikControl_QtWidgets->em_types[259]->u.td_wrapper_type
-
-#define sipType_QScroller_Input              sipModuleAPI_trikControl_QtWidgets->em_types[260]
-#define sipEnum_QScroller_Input              sipModuleAPI_trikControl_QtWidgets->em_types[260]->u.td_py_type
-#define sipType_QScroller_ScrollerGestureType              sipModuleAPI_trikControl_QtWidgets->em_types[261]
-#define sipEnum_QScroller_ScrollerGestureType              sipModuleAPI_trikControl_QtWidgets->em_types[261]->u.td_py_type
-#define sipType_QScroller_State              sipModuleAPI_trikControl_QtWidgets->em_types[262]
-#define sipEnum_QScroller_State              sipModuleAPI_trikControl_QtWidgets->em_types[262]->u.td_py_type
-
-#define sipType_QScrollerProperties              sipModuleAPI_trikControl_QtWidgets->em_types[263]
-#define sipClass_QScrollerProperties             sipModuleAPI_trikControl_QtWidgets->em_types[263]->u.td_wrapper_type
-
-#define sipType_QScrollerProperties_ScrollMetric              sipModuleAPI_trikControl_QtWidgets->em_types[266]
-#define sipEnum_QScrollerProperties_ScrollMetric              sipModuleAPI_trikControl_QtWidgets->em_types[266]->u.td_py_type
-#define sipType_QScrollerProperties_FrameRates              sipModuleAPI_trikControl_QtWidgets->em_types[264]
-#define sipEnum_QScrollerProperties_FrameRates              sipModuleAPI_trikControl_QtWidgets->em_types[264]->u.td_py_type
-#define sipType_QScrollerProperties_OvershootPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[265]
-#define sipEnum_QScrollerProperties_OvershootPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[265]->u.td_py_type
-
-#define sipType_QShortcut              sipModuleAPI_trikControl_QtWidgets->em_types[267]
-#define sipClass_QShortcut             sipModuleAPI_trikControl_QtWidgets->em_types[267]->u.td_wrapper_type
-
-#define sipType_QSizeGrip              sipModuleAPI_trikControl_QtWidgets->em_types[268]
-#define sipClass_QSizeGrip             sipModuleAPI_trikControl_QtWidgets->em_types[268]->u.td_wrapper_type
-
-#define sipType_QSizePolicy              sipModuleAPI_trikControl_QtWidgets->em_types[269]
-#define sipClass_QSizePolicy             sipModuleAPI_trikControl_QtWidgets->em_types[269]->u.td_wrapper_type
-
-#define sipType_QSizePolicy_ControlType              sipModuleAPI_trikControl_QtWidgets->em_types[270]
-#define sipEnum_QSizePolicy_ControlType              sipModuleAPI_trikControl_QtWidgets->em_types[270]->u.td_py_type
-#define sipType_QSizePolicy_Policy              sipModuleAPI_trikControl_QtWidgets->em_types[272]
-#define sipEnum_QSizePolicy_Policy              sipModuleAPI_trikControl_QtWidgets->em_types[272]->u.td_py_type
-#define sipType_QSizePolicy_PolicyFlag              sipModuleAPI_trikControl_QtWidgets->em_types[273]
-#define sipEnum_QSizePolicy_PolicyFlag              sipModuleAPI_trikControl_QtWidgets->em_types[273]->u.td_py_type
-
-#define sipType_QSizePolicy_ControlTypes              sipModuleAPI_trikControl_QtWidgets->em_types[271]
-#define sipClass_QSizePolicy_ControlTypes             sipModuleAPI_trikControl_QtWidgets->em_types[271]->u.td_wrapper_type
-
-#define sipType_QSlider              sipModuleAPI_trikControl_QtWidgets->em_types[274]
-#define sipClass_QSlider             sipModuleAPI_trikControl_QtWidgets->em_types[274]->u.td_wrapper_type
-
-#define sipType_QSlider_TickPosition              sipModuleAPI_trikControl_QtWidgets->em_types[275]
-#define sipEnum_QSlider_TickPosition              sipModuleAPI_trikControl_QtWidgets->em_types[275]->u.td_py_type
-
-#define sipType_QSpinBox              sipModuleAPI_trikControl_QtWidgets->em_types[277]
-#define sipClass_QSpinBox             sipModuleAPI_trikControl_QtWidgets->em_types[277]->u.td_wrapper_type
-
-#define sipType_QDoubleSpinBox              sipModuleAPI_trikControl_QtWidgets->em_types[72]
-#define sipClass_QDoubleSpinBox             sipModuleAPI_trikControl_QtWidgets->em_types[72]->u.td_wrapper_type
-
-#define sipType_QSplashScreen              sipModuleAPI_trikControl_QtWidgets->em_types[278]
-#define sipClass_QSplashScreen             sipModuleAPI_trikControl_QtWidgets->em_types[278]->u.td_wrapper_type
-
-#define sipType_QSplitter              sipModuleAPI_trikControl_QtWidgets->em_types[279]
-#define sipClass_QSplitter             sipModuleAPI_trikControl_QtWidgets->em_types[279]->u.td_wrapper_type
-
-#define sipType_QSplitterHandle              sipModuleAPI_trikControl_QtWidgets->em_types[280]
-#define sipClass_QSplitterHandle             sipModuleAPI_trikControl_QtWidgets->em_types[280]->u.td_wrapper_type
-
-#define sipType_QStackedLayout              sipModuleAPI_trikControl_QtWidgets->em_types[281]
-#define sipClass_QStackedLayout             sipModuleAPI_trikControl_QtWidgets->em_types[281]->u.td_wrapper_type
-
-#define sipType_QStackedLayout_StackingMode              sipModuleAPI_trikControl_QtWidgets->em_types[282]
-#define sipEnum_QStackedLayout_StackingMode              sipModuleAPI_trikControl_QtWidgets->em_types[282]->u.td_py_type
-
-#define sipType_QStackedWidget              sipModuleAPI_trikControl_QtWidgets->em_types[283]
-#define sipClass_QStackedWidget             sipModuleAPI_trikControl_QtWidgets->em_types[283]->u.td_wrapper_type
-
-#define sipType_QStatusBar              sipModuleAPI_trikControl_QtWidgets->em_types[284]
-#define sipClass_QStatusBar             sipModuleAPI_trikControl_QtWidgets->em_types[284]->u.td_wrapper_type
-
-#define sipType_QStyle_State              sipModuleAPI_trikControl_QtWidgets->em_types[293]
-#define sipClass_QStyle_State             sipModuleAPI_trikControl_QtWidgets->em_types[293]->u.td_wrapper_type
-
-#define sipType_QStyle_SubControls              sipModuleAPI_trikControl_QtWidgets->em_types[297]
-#define sipClass_QStyle_SubControls             sipModuleAPI_trikControl_QtWidgets->em_types[297]->u.td_wrapper_type
-
-#define sipType_QStyledItemDelegate              sipModuleAPI_trikControl_QtWidgets->em_types[410]
-#define sipClass_QStyledItemDelegate             sipModuleAPI_trikControl_QtWidgets->em_types[410]->u.td_wrapper_type
-
-#define sipType_QStyleFactory              sipModuleAPI_trikControl_QtWidgets->em_types[299]
-#define sipClass_QStyleFactory             sipModuleAPI_trikControl_QtWidgets->em_types[299]->u.td_wrapper_type
-
-#define sipType_QStyleOption              sipModuleAPI_trikControl_QtWidgets->em_types[310]
-#define sipClass_QStyleOption             sipModuleAPI_trikControl_QtWidgets->em_types[310]->u.td_wrapper_type
-
-#define sipType_QStyleOption_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[313]
-#define sipEnum_QStyleOption_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[313]->u.td_py_type
-#define sipType_QStyleOption_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[312]
-#define sipEnum_QStyleOption_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[312]->u.td_py_type
-#define sipType_QStyleOption_OptionType              sipModuleAPI_trikControl_QtWidgets->em_types[311]
-#define sipEnum_QStyleOption_OptionType              sipModuleAPI_trikControl_QtWidgets->em_types[311]->u.td_py_type
-
-#define sipType_QStyleOptionFocusRect              sipModuleAPI_trikControl_QtWidgets->em_types[328]
-#define sipClass_QStyleOptionFocusRect             sipModuleAPI_trikControl_QtWidgets->em_types[328]->u.td_wrapper_type
-
-#define sipType_QStyleOptionFocusRect_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[330]
-#define sipEnum_QStyleOptionFocusRect_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[330]->u.td_py_type
-#define sipType_QStyleOptionFocusRect_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[329]
-#define sipEnum_QStyleOptionFocusRect_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[329]->u.td_py_type
-
-#define sipType_QStyleOptionFrame              sipModuleAPI_trikControl_QtWidgets->em_types[331]
-#define sipClass_QStyleOptionFrame             sipModuleAPI_trikControl_QtWidgets->em_types[331]->u.td_wrapper_type
-
-#define sipType_QStyleOptionFrame_FrameFeature              sipModuleAPI_trikControl_QtWidgets->em_types[332]
-#define sipEnum_QStyleOptionFrame_FrameFeature              sipModuleAPI_trikControl_QtWidgets->em_types[332]->u.td_py_type
-#define sipType_QStyleOptionFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[335]
-#define sipEnum_QStyleOptionFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[335]->u.td_py_type
-#define sipType_QStyleOptionFrame_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[334]
-#define sipEnum_QStyleOptionFrame_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[334]->u.td_py_type
-
-#define sipType_QStyleOptionFrame_FrameFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[333]
-#define sipClass_QStyleOptionFrame_FrameFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[333]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTabWidgetFrame              sipModuleAPI_trikControl_QtWidgets->em_types[380]
-#define sipClass_QStyleOptionTabWidgetFrame             sipModuleAPI_trikControl_QtWidgets->em_types[380]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTabWidgetFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[382]
-#define sipEnum_QStyleOptionTabWidgetFrame_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[382]->u.td_py_type
-#define sipType_QStyleOptionTabWidgetFrame_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[381]
-#define sipEnum_QStyleOptionTabWidgetFrame_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[381]->u.td_py_type
-
-#define sipType_QStyleOptionTabBarBase              sipModuleAPI_trikControl_QtWidgets->em_types[377]
-#define sipClass_QStyleOptionTabBarBase             sipModuleAPI_trikControl_QtWidgets->em_types[377]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTabBarBase_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[379]
-#define sipEnum_QStyleOptionTabBarBase_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[379]->u.td_py_type
-#define sipType_QStyleOptionTabBarBase_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[378]
-#define sipEnum_QStyleOptionTabBarBase_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[378]->u.td_py_type
-
-#define sipType_QStyleOptionHeader              sipModuleAPI_trikControl_QtWidgets->em_types[342]
-#define sipClass_QStyleOptionHeader             sipModuleAPI_trikControl_QtWidgets->em_types[342]->u.td_wrapper_type
-
-#define sipType_QStyleOptionHeader_SortIndicator              sipModuleAPI_trikControl_QtWidgets->em_types[345]
-#define sipEnum_QStyleOptionHeader_SortIndicator              sipModuleAPI_trikControl_QtWidgets->em_types[345]->u.td_py_type
-#define sipType_QStyleOptionHeader_SelectedPosition              sipModuleAPI_trikControl_QtWidgets->em_types[344]
-#define sipEnum_QStyleOptionHeader_SelectedPosition              sipModuleAPI_trikControl_QtWidgets->em_types[344]->u.td_py_type
-#define sipType_QStyleOptionHeader_SectionPosition              sipModuleAPI_trikControl_QtWidgets->em_types[343]
-#define sipEnum_QStyleOptionHeader_SectionPosition              sipModuleAPI_trikControl_QtWidgets->em_types[343]->u.td_py_type
-#define sipType_QStyleOptionHeader_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[347]
-#define sipEnum_QStyleOptionHeader_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[347]->u.td_py_type
-#define sipType_QStyleOptionHeader_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[346]
-#define sipEnum_QStyleOptionHeader_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[346]->u.td_py_type
-
-#define sipType_QStyleOptionButton              sipModuleAPI_trikControl_QtWidgets->em_types[314]
-#define sipClass_QStyleOptionButton             sipModuleAPI_trikControl_QtWidgets->em_types[314]->u.td_wrapper_type
-
-#define sipType_QStyleOptionButton_ButtonFeature              sipModuleAPI_trikControl_QtWidgets->em_types[315]
-#define sipEnum_QStyleOptionButton_ButtonFeature              sipModuleAPI_trikControl_QtWidgets->em_types[315]->u.td_py_type
-#define sipType_QStyleOptionButton_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[318]
-#define sipEnum_QStyleOptionButton_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[318]->u.td_py_type
-#define sipType_QStyleOptionButton_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[317]
-#define sipEnum_QStyleOptionButton_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[317]->u.td_py_type
-
-#define sipType_QStyleOptionButton_ButtonFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[316]
-#define sipClass_QStyleOptionButton_ButtonFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[316]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTab              sipModuleAPI_trikControl_QtWidgets->em_types[368]
-#define sipClass_QStyleOptionTab             sipModuleAPI_trikControl_QtWidgets->em_types[368]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTab_TabFeature              sipModuleAPI_trikControl_QtWidgets->em_types[374]
-#define sipEnum_QStyleOptionTab_TabFeature              sipModuleAPI_trikControl_QtWidgets->em_types[374]->u.td_py_type
-#define sipType_QStyleOptionTab_CornerWidget              sipModuleAPI_trikControl_QtWidgets->em_types[369]
-#define sipEnum_QStyleOptionTab_CornerWidget              sipModuleAPI_trikControl_QtWidgets->em_types[369]->u.td_py_type
-#define sipType_QStyleOptionTab_SelectedPosition              sipModuleAPI_trikControl_QtWidgets->em_types[371]
-#define sipEnum_QStyleOptionTab_SelectedPosition              sipModuleAPI_trikControl_QtWidgets->em_types[371]->u.td_py_type
-#define sipType_QStyleOptionTab_TabPosition              sipModuleAPI_trikControl_QtWidgets->em_types[376]
-#define sipEnum_QStyleOptionTab_TabPosition              sipModuleAPI_trikControl_QtWidgets->em_types[376]->u.td_py_type
-#define sipType_QStyleOptionTab_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[373]
-#define sipEnum_QStyleOptionTab_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[373]->u.td_py_type
-#define sipType_QStyleOptionTab_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[372]
-#define sipEnum_QStyleOptionTab_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[372]->u.td_py_type
-
-#define sipType_QStyleOptionTab_CornerWidgets              sipModuleAPI_trikControl_QtWidgets->em_types[370]
-#define sipClass_QStyleOptionTab_CornerWidgets             sipModuleAPI_trikControl_QtWidgets->em_types[370]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTab_TabFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[375]
-#define sipClass_QStyleOptionTab_TabFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[375]->u.td_wrapper_type
-
-#define sipType_QStyleOptionProgressBar              sipModuleAPI_trikControl_QtWidgets->em_types[353]
-#define sipClass_QStyleOptionProgressBar             sipModuleAPI_trikControl_QtWidgets->em_types[353]->u.td_wrapper_type
-
-#define sipType_QStyleOptionProgressBar_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[355]
-#define sipEnum_QStyleOptionProgressBar_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[355]->u.td_py_type
-#define sipType_QStyleOptionProgressBar_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[354]
-#define sipEnum_QStyleOptionProgressBar_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[354]->u.td_py_type
-
-#define sipType_QStyleOptionMenuItem              sipModuleAPI_trikControl_QtWidgets->em_types[348]
-#define sipClass_QStyleOptionMenuItem             sipModuleAPI_trikControl_QtWidgets->em_types[348]->u.td_wrapper_type
-
-#define sipType_QStyleOptionMenuItem_CheckType              sipModuleAPI_trikControl_QtWidgets->em_types[349]
-#define sipEnum_QStyleOptionMenuItem_CheckType              sipModuleAPI_trikControl_QtWidgets->em_types[349]->u.td_py_type
-#define sipType_QStyleOptionMenuItem_MenuItemType              sipModuleAPI_trikControl_QtWidgets->em_types[350]
-#define sipEnum_QStyleOptionMenuItem_MenuItemType              sipModuleAPI_trikControl_QtWidgets->em_types[350]->u.td_py_type
-#define sipType_QStyleOptionMenuItem_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[352]
-#define sipEnum_QStyleOptionMenuItem_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[352]->u.td_py_type
-#define sipType_QStyleOptionMenuItem_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[351]
-#define sipEnum_QStyleOptionMenuItem_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[351]->u.td_py_type
-
-#define sipType_QStyleOptionDockWidget              sipModuleAPI_trikControl_QtWidgets->em_types[325]
-#define sipClass_QStyleOptionDockWidget             sipModuleAPI_trikControl_QtWidgets->em_types[325]->u.td_wrapper_type
-
-#define sipType_QStyleOptionDockWidget_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[327]
-#define sipEnum_QStyleOptionDockWidget_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[327]->u.td_py_type
-#define sipType_QStyleOptionDockWidget_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[326]
-#define sipEnum_QStyleOptionDockWidget_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[326]->u.td_py_type
-
-#define sipType_QStyleOptionViewItem              sipModuleAPI_trikControl_QtWidgets->em_types[402]
-#define sipClass_QStyleOptionViewItem             sipModuleAPI_trikControl_QtWidgets->em_types[402]->u.td_wrapper_type
-
-#define sipType_QStyleOptionViewItem_ViewItemPosition              sipModuleAPI_trikControl_QtWidgets->em_types[408]
-#define sipEnum_QStyleOptionViewItem_ViewItemPosition              sipModuleAPI_trikControl_QtWidgets->em_types[408]->u.td_py_type
-#define sipType_QStyleOptionViewItem_ViewItemFeature              sipModuleAPI_trikControl_QtWidgets->em_types[406]
-#define sipEnum_QStyleOptionViewItem_ViewItemFeature              sipModuleAPI_trikControl_QtWidgets->em_types[406]->u.td_py_type
-#define sipType_QStyleOptionViewItem_Position              sipModuleAPI_trikControl_QtWidgets->em_types[403]
-#define sipEnum_QStyleOptionViewItem_Position              sipModuleAPI_trikControl_QtWidgets->em_types[403]->u.td_py_type
-#define sipType_QStyleOptionViewItem_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[405]
-#define sipEnum_QStyleOptionViewItem_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[405]->u.td_py_type
-#define sipType_QStyleOptionViewItem_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[404]
-#define sipEnum_QStyleOptionViewItem_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[404]->u.td_py_type
-
-#define sipType_QStyleOptionViewItem_ViewItemFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[407]
-#define sipClass_QStyleOptionViewItem_ViewItemFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[407]->u.td_wrapper_type
-
-#define sipType_QStyleOptionToolBox              sipModuleAPI_trikControl_QtWidgets->em_types[392]
-#define sipClass_QStyleOptionToolBox             sipModuleAPI_trikControl_QtWidgets->em_types[392]->u.td_wrapper_type
-
-#define sipType_QStyleOptionToolBox_SelectedPosition              sipModuleAPI_trikControl_QtWidgets->em_types[393]
-#define sipEnum_QStyleOptionToolBox_SelectedPosition              sipModuleAPI_trikControl_QtWidgets->em_types[393]->u.td_py_type
-#define sipType_QStyleOptionToolBox_TabPosition              sipModuleAPI_trikControl_QtWidgets->em_types[396]
-#define sipEnum_QStyleOptionToolBox_TabPosition              sipModuleAPI_trikControl_QtWidgets->em_types[396]->u.td_py_type
-#define sipType_QStyleOptionToolBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[395]
-#define sipEnum_QStyleOptionToolBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[395]->u.td_py_type
-#define sipType_QStyleOptionToolBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[394]
-#define sipEnum_QStyleOptionToolBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[394]->u.td_py_type
-
-#define sipType_QStyleOptionRubberBand              sipModuleAPI_trikControl_QtWidgets->em_types[356]
-#define sipClass_QStyleOptionRubberBand             sipModuleAPI_trikControl_QtWidgets->em_types[356]->u.td_wrapper_type
-
-#define sipType_QStyleOptionRubberBand_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[358]
-#define sipEnum_QStyleOptionRubberBand_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[358]->u.td_py_type
-#define sipType_QStyleOptionRubberBand_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[357]
-#define sipEnum_QStyleOptionRubberBand_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[357]->u.td_py_type
-
-#define sipType_QStyleOptionComplex              sipModuleAPI_trikControl_QtWidgets->em_types[322]
-#define sipClass_QStyleOptionComplex             sipModuleAPI_trikControl_QtWidgets->em_types[322]->u.td_wrapper_type
-
-#define sipType_QStyleOptionComplex_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[324]
-#define sipEnum_QStyleOptionComplex_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[324]->u.td_py_type
-#define sipType_QStyleOptionComplex_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[323]
-#define sipEnum_QStyleOptionComplex_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[323]->u.td_py_type
-
-#define sipType_QStyleOptionSlider              sipModuleAPI_trikControl_QtWidgets->em_types[362]
-#define sipClass_QStyleOptionSlider             sipModuleAPI_trikControl_QtWidgets->em_types[362]->u.td_wrapper_type
-
-#define sipType_QStyleOptionSlider_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[364]
-#define sipEnum_QStyleOptionSlider_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[364]->u.td_py_type
-#define sipType_QStyleOptionSlider_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[363]
-#define sipEnum_QStyleOptionSlider_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[363]->u.td_py_type
-
-#define sipType_QStyleOptionSpinBox              sipModuleAPI_trikControl_QtWidgets->em_types[365]
-#define sipClass_QStyleOptionSpinBox             sipModuleAPI_trikControl_QtWidgets->em_types[365]->u.td_wrapper_type
-
-#define sipType_QStyleOptionSpinBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[367]
-#define sipEnum_QStyleOptionSpinBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[367]->u.td_py_type
-#define sipType_QStyleOptionSpinBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[366]
-#define sipEnum_QStyleOptionSpinBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[366]->u.td_py_type
-
-#define sipType_QStyleOptionToolButton              sipModuleAPI_trikControl_QtWidgets->em_types[397]
-#define sipClass_QStyleOptionToolButton             sipModuleAPI_trikControl_QtWidgets->em_types[397]->u.td_wrapper_type
-
-#define sipType_QStyleOptionToolButton_ToolButtonFeature              sipModuleAPI_trikControl_QtWidgets->em_types[400]
-#define sipEnum_QStyleOptionToolButton_ToolButtonFeature              sipModuleAPI_trikControl_QtWidgets->em_types[400]->u.td_py_type
-#define sipType_QStyleOptionToolButton_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[399]
-#define sipEnum_QStyleOptionToolButton_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[399]->u.td_py_type
-#define sipType_QStyleOptionToolButton_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[398]
-#define sipEnum_QStyleOptionToolButton_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[398]->u.td_py_type
-
-#define sipType_QStyleOptionToolButton_ToolButtonFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[401]
-#define sipClass_QStyleOptionToolButton_ToolButtonFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[401]->u.td_wrapper_type
-
-#define sipType_QStyleOptionComboBox              sipModuleAPI_trikControl_QtWidgets->em_types[319]
-#define sipClass_QStyleOptionComboBox             sipModuleAPI_trikControl_QtWidgets->em_types[319]->u.td_wrapper_type
-
-#define sipType_QStyleOptionComboBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[321]
-#define sipEnum_QStyleOptionComboBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[321]->u.td_py_type
-#define sipType_QStyleOptionComboBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[320]
-#define sipEnum_QStyleOptionComboBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[320]->u.td_py_type
-
-#define sipType_QStyleOptionTitleBar              sipModuleAPI_trikControl_QtWidgets->em_types[383]
-#define sipClass_QStyleOptionTitleBar             sipModuleAPI_trikControl_QtWidgets->em_types[383]->u.td_wrapper_type
-
-#define sipType_QStyleOptionTitleBar_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[385]
-#define sipEnum_QStyleOptionTitleBar_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[385]->u.td_py_type
-#define sipType_QStyleOptionTitleBar_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[384]
-#define sipEnum_QStyleOptionTitleBar_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[384]->u.td_py_type
-
-#define sipType_QStyleHintReturn              sipModuleAPI_trikControl_QtWidgets->em_types[300]
-#define sipClass_QStyleHintReturn             sipModuleAPI_trikControl_QtWidgets->em_types[300]->u.td_wrapper_type
-
-#define sipType_QStyleHintReturn_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[303]
-#define sipEnum_QStyleHintReturn_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[303]->u.td_py_type
-#define sipType_QStyleHintReturn_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[302]
-#define sipEnum_QStyleHintReturn_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[302]->u.td_py_type
-#define sipType_QStyleHintReturn_HintReturnType              sipModuleAPI_trikControl_QtWidgets->em_types[301]
-#define sipEnum_QStyleHintReturn_HintReturnType              sipModuleAPI_trikControl_QtWidgets->em_types[301]->u.td_py_type
-
-#define sipType_QStyleHintReturnMask              sipModuleAPI_trikControl_QtWidgets->em_types[304]
-#define sipClass_QStyleHintReturnMask             sipModuleAPI_trikControl_QtWidgets->em_types[304]->u.td_wrapper_type
-
-#define sipType_QStyleHintReturnMask_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[306]
-#define sipEnum_QStyleHintReturnMask_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[306]->u.td_py_type
-#define sipType_QStyleHintReturnMask_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[305]
-#define sipEnum_QStyleHintReturnMask_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[305]->u.td_py_type
-
-#define sipType_QStyleOptionToolBar              sipModuleAPI_trikControl_QtWidgets->em_types[386]
-#define sipClass_QStyleOptionToolBar             sipModuleAPI_trikControl_QtWidgets->em_types[386]->u.td_wrapper_type
-
-#define sipType_QStyleOptionToolBar_ToolBarFeature              sipModuleAPI_trikControl_QtWidgets->em_types[389]
-#define sipEnum_QStyleOptionToolBar_ToolBarFeature              sipModuleAPI_trikControl_QtWidgets->em_types[389]->u.td_py_type
-#define sipType_QStyleOptionToolBar_ToolBarPosition              sipModuleAPI_trikControl_QtWidgets->em_types[391]
-#define sipEnum_QStyleOptionToolBar_ToolBarPosition              sipModuleAPI_trikControl_QtWidgets->em_types[391]->u.td_py_type
-#define sipType_QStyleOptionToolBar_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[388]
-#define sipEnum_QStyleOptionToolBar_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[388]->u.td_py_type
-#define sipType_QStyleOptionToolBar_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[387]
-#define sipEnum_QStyleOptionToolBar_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[387]->u.td_py_type
-
-#define sipType_QStyleOptionToolBar_ToolBarFeatures              sipModuleAPI_trikControl_QtWidgets->em_types[390]
-#define sipClass_QStyleOptionToolBar_ToolBarFeatures             sipModuleAPI_trikControl_QtWidgets->em_types[390]->u.td_wrapper_type
-
-#define sipType_QStyleOptionGroupBox              sipModuleAPI_trikControl_QtWidgets->em_types[339]
-#define sipClass_QStyleOptionGroupBox             sipModuleAPI_trikControl_QtWidgets->em_types[339]->u.td_wrapper_type
-
-#define sipType_QStyleOptionGroupBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[341]
-#define sipEnum_QStyleOptionGroupBox_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[341]->u.td_py_type
-#define sipType_QStyleOptionGroupBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[340]
-#define sipEnum_QStyleOptionGroupBox_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[340]->u.td_py_type
-
-#define sipType_QStyleOptionSizeGrip              sipModuleAPI_trikControl_QtWidgets->em_types[359]
-#define sipClass_QStyleOptionSizeGrip             sipModuleAPI_trikControl_QtWidgets->em_types[359]->u.td_wrapper_type
-
-#define sipType_QStyleOptionSizeGrip_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[361]
-#define sipEnum_QStyleOptionSizeGrip_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[361]->u.td_py_type
-#define sipType_QStyleOptionSizeGrip_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[360]
-#define sipEnum_QStyleOptionSizeGrip_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[360]->u.td_py_type
-
-#define sipType_QStyleOptionGraphicsItem              sipModuleAPI_trikControl_QtWidgets->em_types[336]
-#define sipClass_QStyleOptionGraphicsItem             sipModuleAPI_trikControl_QtWidgets->em_types[336]->u.td_wrapper_type
-
-#define sipType_QStyleOptionGraphicsItem_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[338]
-#define sipEnum_QStyleOptionGraphicsItem_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[338]->u.td_py_type
-#define sipType_QStyleOptionGraphicsItem_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[337]
-#define sipEnum_QStyleOptionGraphicsItem_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[337]->u.td_py_type
-
-#define sipType_QStyleHintReturnVariant              sipModuleAPI_trikControl_QtWidgets->em_types[307]
-#define sipClass_QStyleHintReturnVariant             sipModuleAPI_trikControl_QtWidgets->em_types[307]->u.td_wrapper_type
-
-#define sipType_QStyleHintReturnVariant_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[309]
-#define sipEnum_QStyleHintReturnVariant_StyleOptionVersion              sipModuleAPI_trikControl_QtWidgets->em_types[309]->u.td_py_type
-#define sipType_QStyleHintReturnVariant_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[308]
-#define sipEnum_QStyleHintReturnVariant_StyleOptionType              sipModuleAPI_trikControl_QtWidgets->em_types[308]->u.td_py_type
-
-#define sipType_QStylePainter              sipModuleAPI_trikControl_QtWidgets->em_types[409]
-#define sipClass_QStylePainter             sipModuleAPI_trikControl_QtWidgets->em_types[409]->u.td_wrapper_type
-
-#define sipType_QSystemTrayIcon              sipModuleAPI_trikControl_QtWidgets->em_types[413]
-#define sipClass_QSystemTrayIcon             sipModuleAPI_trikControl_QtWidgets->em_types[413]->u.td_wrapper_type
-
-#define sipType_QSystemTrayIcon_MessageIcon              sipModuleAPI_trikControl_QtWidgets->em_types[415]
-#define sipEnum_QSystemTrayIcon_MessageIcon              sipModuleAPI_trikControl_QtWidgets->em_types[415]->u.td_py_type
-#define sipType_QSystemTrayIcon_ActivationReason              sipModuleAPI_trikControl_QtWidgets->em_types[414]
-#define sipEnum_QSystemTrayIcon_ActivationReason              sipModuleAPI_trikControl_QtWidgets->em_types[414]->u.td_py_type
-
-#define sipType_QTabBar              sipModuleAPI_trikControl_QtWidgets->em_types[416]
-#define sipClass_QTabBar             sipModuleAPI_trikControl_QtWidgets->em_types[416]->u.td_wrapper_type
-
-#define sipType_QTabBar_SelectionBehavior              sipModuleAPI_trikControl_QtWidgets->em_types[418]
-#define sipEnum_QTabBar_SelectionBehavior              sipModuleAPI_trikControl_QtWidgets->em_types[418]->u.td_py_type
-#define sipType_QTabBar_ButtonPosition              sipModuleAPI_trikControl_QtWidgets->em_types[417]
-#define sipEnum_QTabBar_ButtonPosition              sipModuleAPI_trikControl_QtWidgets->em_types[417]->u.td_py_type
-#define sipType_QTabBar_Shape              sipModuleAPI_trikControl_QtWidgets->em_types[419]
-#define sipEnum_QTabBar_Shape              sipModuleAPI_trikControl_QtWidgets->em_types[419]->u.td_py_type
-
-#define sipType_QTableView              sipModuleAPI_trikControl_QtWidgets->em_types[423]
-#define sipClass_QTableView             sipModuleAPI_trikControl_QtWidgets->em_types[423]->u.td_wrapper_type
-
-#define sipType_QTableWidgetSelectionRange              sipModuleAPI_trikControl_QtWidgets->em_types[427]
-#define sipClass_QTableWidgetSelectionRange             sipModuleAPI_trikControl_QtWidgets->em_types[427]->u.td_wrapper_type
-
-#define sipType_QTableWidgetItem              sipModuleAPI_trikControl_QtWidgets->em_types[425]
-#define sipClass_QTableWidgetItem             sipModuleAPI_trikControl_QtWidgets->em_types[425]->u.td_wrapper_type
-
-#define sipType_QTableWidgetItem_ItemType              sipModuleAPI_trikControl_QtWidgets->em_types[426]
-#define sipEnum_QTableWidgetItem_ItemType              sipModuleAPI_trikControl_QtWidgets->em_types[426]->u.td_py_type
-
-#define sipType_QTableWidget              sipModuleAPI_trikControl_QtWidgets->em_types[424]
-#define sipClass_QTableWidget             sipModuleAPI_trikControl_QtWidgets->em_types[424]->u.td_wrapper_type
-
-#define sipType_QTabWidget              sipModuleAPI_trikControl_QtWidgets->em_types[420]
-#define sipClass_QTabWidget             sipModuleAPI_trikControl_QtWidgets->em_types[420]->u.td_wrapper_type
-
-#define sipType_QTabWidget_TabShape              sipModuleAPI_trikControl_QtWidgets->em_types[422]
-#define sipEnum_QTabWidget_TabShape              sipModuleAPI_trikControl_QtWidgets->em_types[422]->u.td_py_type
-#define sipType_QTabWidget_TabPosition              sipModuleAPI_trikControl_QtWidgets->em_types[421]
-#define sipEnum_QTabWidget_TabPosition              sipModuleAPI_trikControl_QtWidgets->em_types[421]->u.td_py_type
-
-#define sipType_QTextEdit              sipModuleAPI_trikControl_QtWidgets->em_types[431]
-#define sipClass_QTextEdit             sipModuleAPI_trikControl_QtWidgets->em_types[431]->u.td_wrapper_type
-
-#define sipType_QTextEdit_AutoFormattingFlag              sipModuleAPI_trikControl_QtWidgets->em_types[433]
-#define sipEnum_QTextEdit_AutoFormattingFlag              sipModuleAPI_trikControl_QtWidgets->em_types[433]->u.td_py_type
-#define sipType_QTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtWidgets->em_types[435]
-#define sipEnum_QTextEdit_LineWrapMode              sipModuleAPI_trikControl_QtWidgets->em_types[435]->u.td_py_type
-
-#define sipType_QTextBrowser              sipModuleAPI_trikControl_QtWidgets->em_types[430]
-#define sipClass_QTextBrowser             sipModuleAPI_trikControl_QtWidgets->em_types[430]->u.td_wrapper_type
-
-#define sipType_QTextEdit_ExtraSelection              sipModuleAPI_trikControl_QtWidgets->em_types[434]
-#define sipClass_QTextEdit_ExtraSelection             sipModuleAPI_trikControl_QtWidgets->em_types[434]->u.td_wrapper_type
-
-#define sipType_QTextEdit_AutoFormatting              sipModuleAPI_trikControl_QtWidgets->em_types[432]
-#define sipClass_QTextEdit_AutoFormatting             sipModuleAPI_trikControl_QtWidgets->em_types[432]->u.td_wrapper_type
-
-#define sipType_QToolBar              sipModuleAPI_trikControl_QtWidgets->em_types[437]
-#define sipClass_QToolBar             sipModuleAPI_trikControl_QtWidgets->em_types[437]->u.td_wrapper_type
-
-#define sipType_QToolBox              sipModuleAPI_trikControl_QtWidgets->em_types[438]
-#define sipClass_QToolBox             sipModuleAPI_trikControl_QtWidgets->em_types[438]->u.td_wrapper_type
-
-#define sipType_QToolButton              sipModuleAPI_trikControl_QtWidgets->em_types[439]
-#define sipClass_QToolButton             sipModuleAPI_trikControl_QtWidgets->em_types[439]->u.td_wrapper_type
-
-#define sipType_QToolButton_ToolButtonPopupMode              sipModuleAPI_trikControl_QtWidgets->em_types[440]
-#define sipEnum_QToolButton_ToolButtonPopupMode              sipModuleAPI_trikControl_QtWidgets->em_types[440]->u.td_py_type
-
-#define sipType_QToolTip              sipModuleAPI_trikControl_QtWidgets->em_types[441]
-#define sipClass_QToolTip             sipModuleAPI_trikControl_QtWidgets->em_types[441]->u.td_wrapper_type
-
-#define sipType_QTreeView              sipModuleAPI_trikControl_QtWidgets->em_types[442]
-#define sipClass_QTreeView             sipModuleAPI_trikControl_QtWidgets->em_types[442]->u.td_wrapper_type
-
-#define sipType_QTreeWidgetItem              sipModuleAPI_trikControl_QtWidgets->em_types[444]
-#define sipClass_QTreeWidgetItem             sipModuleAPI_trikControl_QtWidgets->em_types[444]->u.td_wrapper_type
-
-#define sipType_QTreeWidgetItem_ChildIndicatorPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[445]
-#define sipEnum_QTreeWidgetItem_ChildIndicatorPolicy              sipModuleAPI_trikControl_QtWidgets->em_types[445]->u.td_py_type
-#define sipType_QTreeWidgetItem_ItemType              sipModuleAPI_trikControl_QtWidgets->em_types[446]
-#define sipEnum_QTreeWidgetItem_ItemType              sipModuleAPI_trikControl_QtWidgets->em_types[446]->u.td_py_type
-
-#define sipType_QTreeWidget              sipModuleAPI_trikControl_QtWidgets->em_types[443]
-#define sipClass_QTreeWidget             sipModuleAPI_trikControl_QtWidgets->em_types[443]->u.td_wrapper_type
-
-#define sipType_QTreeWidgetItemIterator              sipModuleAPI_trikControl_QtWidgets->em_types[447]
-#define sipClass_QTreeWidgetItemIterator             sipModuleAPI_trikControl_QtWidgets->em_types[447]->u.td_wrapper_type
-
-#define sipType_QTreeWidgetItemIterator_IteratorFlag              sipModuleAPI_trikControl_QtWidgets->em_types[448]
-#define sipEnum_QTreeWidgetItemIterator_IteratorFlag              sipModuleAPI_trikControl_QtWidgets->em_types[448]->u.td_py_type
-
-#define sipType_QTreeWidgetItemIterator_IteratorFlags              sipModuleAPI_trikControl_QtWidgets->em_types[449]
-#define sipClass_QTreeWidgetItemIterator_IteratorFlags             sipModuleAPI_trikControl_QtWidgets->em_types[449]->u.td_wrapper_type
-
-#define sipType_QUndoGroup              sipModuleAPI_trikControl_QtWidgets->em_types[451]
-#define sipClass_QUndoGroup             sipModuleAPI_trikControl_QtWidgets->em_types[451]->u.td_wrapper_type
-
-#define sipType_QUndoCommand              sipModuleAPI_trikControl_QtWidgets->em_types[450]
-#define sipClass_QUndoCommand             sipModuleAPI_trikControl_QtWidgets->em_types[450]->u.td_wrapper_type
-
-#define sipType_QUndoStack              sipModuleAPI_trikControl_QtWidgets->em_types[452]
-#define sipClass_QUndoStack             sipModuleAPI_trikControl_QtWidgets->em_types[452]->u.td_wrapper_type
-
-#define sipType_QUndoView              sipModuleAPI_trikControl_QtWidgets->em_types[453]
-#define sipClass_QUndoView             sipModuleAPI_trikControl_QtWidgets->em_types[453]->u.td_wrapper_type
-
-#define sipType_QWhatsThis              sipModuleAPI_trikControl_QtWidgets->em_types[455]
-#define sipClass_QWhatsThis             sipModuleAPI_trikControl_QtWidgets->em_types[455]->u.td_wrapper_type
-
-#define sipType_QWidget_RenderFlags              sipModuleAPI_trikControl_QtWidgets->em_types[458]
-#define sipClass_QWidget_RenderFlags             sipModuleAPI_trikControl_QtWidgets->em_types[458]->u.td_wrapper_type
-
-#define sipType_QWidgetAction              sipModuleAPI_trikControl_QtWidgets->em_types[459]
-#define sipClass_QWidgetAction             sipModuleAPI_trikControl_QtWidgets->em_types[459]->u.td_wrapper_type
-
-#define sipType_QWizard              sipModuleAPI_trikControl_QtWidgets->em_types[461]
-#define sipClass_QWizard             sipModuleAPI_trikControl_QtWidgets->em_types[461]->u.td_wrapper_type
-
-#define sipType_QWizard_WizardOption              sipModuleAPI_trikControl_QtWidgets->em_types[463]
-#define sipEnum_QWizard_WizardOption              sipModuleAPI_trikControl_QtWidgets->em_types[463]->u.td_py_type
-#define sipType_QWizard_WizardStyle              sipModuleAPI_trikControl_QtWidgets->em_types[466]
-#define sipEnum_QWizard_WizardStyle              sipModuleAPI_trikControl_QtWidgets->em_types[466]->u.td_py_type
-#define sipType_QWizard_WizardPixmap              sipModuleAPI_trikControl_QtWidgets->em_types[465]
-#define sipEnum_QWizard_WizardPixmap              sipModuleAPI_trikControl_QtWidgets->em_types[465]->u.td_py_type
-#define sipType_QWizard_WizardButton              sipModuleAPI_trikControl_QtWidgets->em_types[462]
-#define sipEnum_QWizard_WizardButton              sipModuleAPI_trikControl_QtWidgets->em_types[462]->u.td_py_type
-
-#define sipType_QWizard_WizardOptions              sipModuleAPI_trikControl_QtWidgets->em_types[464]
-#define sipClass_QWizard_WizardOptions             sipModuleAPI_trikControl_QtWidgets->em_types[464]->u.td_wrapper_type
-
-#define sipType_QWizardPage              sipModuleAPI_trikControl_QtWidgets->em_types[467]
-#define sipClass_QWizardPage             sipModuleAPI_trikControl_QtWidgets->em_types[467]->u.td_wrapper_type
-
-#define sipType_QList_0101QUndoStack      sipModuleAPI_trikControl_QtWidgets->em_types[208]
-
-#define sipType_QList_0101QTreeWidgetItem      sipModuleAPI_trikControl_QtWidgets->em_types[207]
-
-#define sipType_QList_0101QTableWidgetItem      sipModuleAPI_trikControl_QtWidgets->em_types[204]
-
-#define sipType_QList_0100QTableWidgetSelectionRange      sipModuleAPI_trikControl_QtWidgets->em_types[205]
-
-#define sipType_QList_0101QScroller      sipModuleAPI_trikControl_QtWidgets->em_types[203]
-
-#define sipType_QList_0100QTextEdit_ExtraSelection      sipModuleAPI_trikControl_QtWidgets->em_types[206]
-
-#define sipType_QList_0101QMdiSubWindow      sipModuleAPI_trikControl_QtWidgets->em_types[201]
-
-#define sipType_QList_0101QDockWidget      sipModuleAPI_trikControl_QtWidgets->em_types[194]
-
-#define sipType_QList_0101QListWidgetItem      sipModuleAPI_trikControl_QtWidgets->em_types[200]
-
-#define sipType_QList_0100QRectF      sipModuleAPI_trikControl_QtWidgets->em_types[202]
-
-#define sipType_QList_0101QGraphicsView      sipModuleAPI_trikControl_QtWidgets->em_types[198]
-
-#define sipType_QList_0101QGraphicsTransform      sipModuleAPI_trikControl_QtWidgets->em_types[197]
-
-#define sipType_QList_0101QGraphicsItem      sipModuleAPI_trikControl_QtWidgets->em_types[196]
-
-#define sipType_QList_0101QGesture      sipModuleAPI_trikControl_QtWidgets->em_types[195]
-
-#define sipType_QMap_0100QDate_0100QTextCharFormat      sipModuleAPI_trikControl_QtWidgets->em_types[223]
-
-#define sipType_QList_0101QAbstractButton      sipModuleAPI_trikControl_QtWidgets->em_types[192]
-
-#define sipType_QList_0101QGraphicsWidget      sipModuleAPI_trikControl_QtWidgets->em_types[199]
-
-#define sipType_QList_0101QAction      sipModuleAPI_trikControl_QtWidgets->em_types[193]
-
-#define sipType_QList_0101QWidget      sipModuleAPI_trikControl_QtWidgets->em_types[209]
-
-#define sipType_QList_0100QWizard_WizardButton      sipModuleAPI_trikControl_QtWidgets->em_types[210]
-extern const sipExportedModuleDef *sipModuleAPI_trikControl_QtWidgets;
 
 typedef const QMetaObject *(*sip_qt_metaobject_func)(sipSimpleWrapper *,sipTypeDef *);
 extern sip_qt_metaobject_func sip_trikControl_qt_metaobject;
@@ -3929,7 +3653,7 @@ extern sip_qt_metaobject_func sip_trikControl_qt_metaobject;
 typedef int (*sip_qt_metacall_func)(sipSimpleWrapper *,sipTypeDef *,QMetaObject::Call,int,void **);
 extern sip_qt_metacall_func sip_trikControl_qt_metacall;
 
-typedef bool (*sip_qt_metacast_func)(sipSimpleWrapper *, const sipTypeDef *, const char *, void **);
+typedef int (*sip_qt_metacast_func)(sipSimpleWrapper *, sipTypeDef *, const char *);
 extern sip_qt_metacast_func sip_trikControl_qt_metacast;
 
 #endif

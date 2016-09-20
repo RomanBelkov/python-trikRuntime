@@ -10,57 +10,48 @@
 		#include <displayInterface.h>
 #line 12 "./siptrikControltrikControlDisplayInterface.cpp"
 
-#line 27 "/usr/share/sip/PyQt5/QtCore/qstring.sip"
+#line 31 "/usr/share/sip/PyQt4/QtCore/qstring.sip"
 #include <qstring.h>
 #line 16 "./siptrikControltrikControlDisplayInterface.cpp"
 #line 16 "DisplayWidgetInterface.sip"
 		#include <displayWidgetInterface.h>
 #line 19 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qmetaobject.sip"
-#include <qmetaobject.h>
+#line 26 "/usr/share/sip/PyQt4/QtCore/qcoreevent.sip"
+#include <qcoreevent.h>
 #line 22 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qcoreevent.sip"
+#line 368 "/usr/share/sip/PyQt4/QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
 #line 25 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 244 "/usr/share/sip/PyQt5/QtCore/qcoreevent.sip"
+#line 351 "/usr/share/sip/PyQt4/QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
 #line 28 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 232 "/usr/share/sip/PyQt5/QtCore/qcoreevent.sip"
-#include <qcoreevent.h>
-#line 31 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 28 "/usr/share/sip/PyQt5/QtCore/qobject.sip"
+#line 29 "/usr/share/sip/PyQt4/QtCore/qobject.sip"
 #include <qobject.h>
-#line 34 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qvariant.sip"
+#line 31 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 269 "/usr/share/sip/PyQt4/QtCore/qvariant.sip"
 #include <qvariant.h>
-#line 37 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 38 "/usr/share/sip/PyQt5/QtCore/qpycore_qlist.sip"
+#line 34 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 28 "/usr/share/sip/PyQt4/QtCore/qlist.sip"
 #include <qlist.h>
-#line 40 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 32 "/usr/share/sip/PyQt5/QtCore/qbytearray.sip"
+#line 37 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 32 "/usr/share/sip/PyQt4/QtCore/qbytearray.sip"
 #include <qbytearray.h>
+#line 40 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 30 "/usr/share/sip/PyQt4/QtCore/qnamespace.sip"
+#include <qnamespace.h>
 #line 43 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 148 "/usr/share/sip/PyQt5/QtCore/qpycore_qlist.sip"
+#line 115 "/usr/share/sip/PyQt4/QtCore/qlist.sip"
 #include <qlist.h>
 #line 46 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qnamespace.sip"
-#include <qnamespace.h>
-#line 49 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qthread.sip"
+#line 26 "/usr/share/sip/PyQt4/QtCore/qthread.sip"
 #include <qthread.h>
-#line 52 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qnamespace.sip"
-#include <qnamespace.h>
-#line 55 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qregexp.sip"
+#line 49 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 30 "/usr/share/sip/PyQt4/QtCore/qregexp.sip"
 #include <qregexp.h>
-#line 58 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qregularexpression.sip"
-#include <qregularexpression.h>
-#line 61 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt5/QtCore/qobjectdefs.sip"
+#line 52 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 26 "/usr/share/sip/PyQt4/QtCore/qobjectdefs.sip"
 #include <qobjectdefs.h>
-#line 64 "./siptrikControltrikControlDisplayInterface.cpp"
+#line 55 "./siptrikControltrikControlDisplayInterface.cpp"
 
 
 extern "C" {static PyObject *meth_trikControl_DisplayInterface_graphicsWidget(PyObject *, PyObject *);}
@@ -621,7 +612,7 @@ static void dealloc_trikControl_DisplayInterface(sipSimpleWrapper *sipSelf)
 
 
 /* Define this type's super-types. */
-static sipEncodedTypeDef supers_trikControl_DisplayInterface[] = {{165, 0, 1}};
+static sipEncodedTypeDef supers_trikControl_DisplayInterface[] = {{141, 0, 1}};
 
 
 static PyMethodDef methods_trikControl_DisplayInterface[] = {
@@ -644,13 +635,13 @@ static PyMethodDef methods_trikControl_DisplayInterface[] = {
 };
 
 
-pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayInterface = {
+pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayInterface = {
 {
     {
         -1,
         0,
         0,
-        SIP_TYPE_ABSTRACT|SIP_TYPE_SCC|SIP_TYPE_SUPER_INIT|SIP_TYPE_CLASS,
+        SIP_TYPE_ABSTRACT|SIP_TYPE_SCC|SIP_TYPE_CLASS,
         sipNameNr_trikControl__DisplayInterface,
         {0}
     },
@@ -693,7 +684,6 @@ pyqt5ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayInterface = {
     0
 },
     &trikControl::DisplayInterface::staticMetaObject,
-    0,
     0,
     0
 };
