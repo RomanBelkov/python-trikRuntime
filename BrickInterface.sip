@@ -2,9 +2,18 @@
 
 %Import QtCore/QtCoremod.sip
 //%Include DisplayWidgetInterface.sip
+
 %Include DisplayInterface.sip
 %Include MotorInterface.sip
 %Include KeysInterface.sip
+%Include SensorInterface.sip
+%Include LineSensorInterface.sip
+%Include ObjectSensorInterface.sip
+%Include LedInterface.sip
+%Include BatteryInterface.sip
+%Include VectorSensorInterface.sip
+
+
 
 namespace trikControl {
 
@@ -31,6 +40,22 @@ namespace trikControl {
 		virtual trikControl::KeysInterface *keys() = 0;
 
 		virtual trikControl::MotorInterface *motor(const QString &port) = 0;
+
+		virtual trikControl::SensorInterface *sensor(const QString &port) = 0;
+
+		virtual trikControl::LineSensorInterface *lineSensor(const QString &port) = 0;
+
+		virtual trikControl::ObjectSensorInterface *objectSensor(const QString &port) = 0;
+
+		virtual trikControl::LedInterface *led() = 0;
+
+		virtual trikControl::BatteryInterface *battery() = 0;
+
+		/// Returns on-board accelerometer.
+		virtual trikControl::VectorSensorInterface *accelerometer() = 0;
+
+		/// Returns on-board gyroscope.
+		virtual trikControl::VectorSensorInterface *gyroscope() = 0;
 
 	};
 };

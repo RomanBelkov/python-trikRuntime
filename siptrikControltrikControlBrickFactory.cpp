@@ -6,16 +6,20 @@
 
 #include "sipAPItrikControl.h"
 
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
 #line 20 "BrickFactory.sip"
 		#include <brickFactory.h>
-#line 12 "./siptrikControltrikControlBrickFactory.cpp"
+#line 14 "./siptrikControltrikControlBrickFactory.cpp"
 
-#line 14 "BrickInterface.sip"
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
+#line 23 "BrickInterface.sip"
 		#include <brickInterface.h>
-#line 16 "./siptrikControltrikControlBrickFactory.cpp"
-#line 31 "/usr/share/sip/PyQt4/QtCore/qstring.sip"
+#line 20 "./siptrikControltrikControlBrickFactory.cpp"
+#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
-#line 19 "./siptrikControltrikControlBrickFactory.cpp"
+#line 23 "./siptrikControltrikControlBrickFactory.cpp"
 
 
 extern "C" {static PyObject *meth_trikControl_BrickFactory_create(PyObject *, PyObject *);}

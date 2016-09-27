@@ -6,41 +6,81 @@
 
 #include "sipAPItrikControl.h"
 
-#line 29 "/usr/share/sip/PyQt4/QtCore/qobject.sip"
+#line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 12 "./siptrikControlcmodule.cpp"
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
+#line 11 "VectorSensorInterface.sip"
+		#include <vectorSensorInterface.h>
+#line 17 "./siptrikControlcmodule.cpp"
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
+#line 9 "BatteryInterface.sip"
+		#include <batteryInterface.h>
+#line 22 "./siptrikControlcmodule.cpp"
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
+#line 25 "./siptrikControlcmodule.cpp"
+#line 10 "ObjectSensorInterface.sip"
+		#include <objectSensorInterface.h>
+#line 28 "./siptrikControlcmodule.cpp"
+#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#include <qstring.h>
+#line 31 "./siptrikControlcmodule.cpp"
+#line 10 "LineSensorInterface.sip"
+		#include <lineSensorInterface.h>
+#line 34 "./siptrikControlcmodule.cpp"
+#line 9 "SensorInterface.sip"
+		#include <sensorInterface.h>
+#line 37 "./siptrikControlcmodule.cpp"
 #line 10 "MotorInterface.sip"
 		#include <motorInterface.h>
-#line 15 "./siptrikControlcmodule.cpp"
-#line 31 "/usr/share/sip/PyQt4/QtCore/qstring.sip"
-#include <qstring.h>
-#line 18 "./siptrikControlcmodule.cpp"
+#line 40 "./siptrikControlcmodule.cpp"
 #line 12 "KeysInterface.sip"
 		#include <keysInterface.h>
-#line 21 "./siptrikControlcmodule.cpp"
+#line 43 "./siptrikControlcmodule.cpp"
 #line 13 "DisplayInterface.sip"
 		#include <displayInterface.h>
-#line 24 "./siptrikControlcmodule.cpp"
+#line 46 "./siptrikControlcmodule.cpp"
 #line 16 "DisplayWidgetInterface.sip"
 		#include <displayWidgetInterface.h>
-#line 27 "./siptrikControlcmodule.cpp"
+#line 49 "./siptrikControlcmodule.cpp"
+#line 101 "/usr/share/sip/PyQt4//QtCore/qvector.sip"
+#include <qvector.h>
+#line 52 "./siptrikControlcmodule.cpp"
+#line 7 "TimeVal.sip"
+		#include <timeVal.h>
+#line 55 "./siptrikControlcmodule.cpp"
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
 #line 20 "BrickFactory.sip"
 		#include <brickFactory.h>
-#line 30 "./siptrikControlcmodule.cpp"
+#line 60 "./siptrikControlcmodule.cpp"
 
 /* Define the strings used by this module. */
 const char sipStrings_trikControl[] = {
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'D', 'i', 's', 'p', 'l', 'a', 'y', 'W', 'i', 'd', 'g', 'e', 't', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'V', 'e', 'c', 't', 'o', 'r', 'S', 'e', 'n', 's', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'O', 'b', 'j', 'e', 'c', 't', 'S', 'e', 'n', 's', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'S', 'e', 'n', 's', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', ':', ':', 'T', 'y', 'p', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'M', 'o', 't', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', ':', ':', 'T', 'y', 'p', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'L', 'i', 'n', 'e', 'S', 'e', 'n', 's', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'B', 'a', 't', 't', 'e', 'r', 'y', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'D', 'i', 's', 'p', 'l', 'a', 'y', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'S', 'e', 'n', 's', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     'P', 'y', 'Q', 't', '4', '.', 'Q', 't', 'C', 'o', 'r', 'e', '.', 'p', 'y', 'q', 't', 'W', 'r', 'a', 'p', 'p', 'e', 'r', 'T', 'y', 'p', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'B', 'r', 'i', 'c', 'k', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'M', 'o', 't', 'o', 'r', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'K', 'e', 'y', 's', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'B', 'r', 'i', 'c', 'k', 'F', 'a', 'c', 't', 'o', 'r', 'y', 0,
+    't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', ':', ':', 'L', 'e', 'd', 'I', 'n', 't', 'e', 'r', 'f', 'a', 'c', 'e', 0,
     'w', 'i', 'n', 'd', 'o', 'w', 'A', 'c', 't', 'i', 'v', 'a', 't', 'i', 'o', 'n', 'C', 'h', 'a', 'n', 'g', 'e', 0,
     'm', 'o', 'u', 's', 'e', 'D', 'o', 'u', 'b', 'l', 'e', 'C', 'l', 'i', 'c', 'k', 'E', 'v', 'e', 'n', 't', 0,
+    't', 'r', 'i', 'k', 'K', 'e', 'r', 'n', 'e', 'l', ':', ':', 'T', 'i', 'm', 'e', 'V', 'a', 'l', 0,
+    'g', 'e', 't', 'D', 'e', 't', 'e', 'c', 't', 'P', 'a', 'r', 'a', 'm', 'e', 't', 'e', 'r', 's', 0,
     'd', 'e', 'f', 'a', 'u', 'l', 't', 'B', 'u', 't', 't', 'o', 'n', 'N', 'u', 'm', 'b', 'e', 'r', 0,
+    'r', 'e', 'a', 'd', 'R', 'a', 'w', 'D', 'a', 't', 'a', 'V', 'o', 'l', 't', 'a', 'g', 'e', 0,
     'f', 'o', 'c', 'u', 's', 'P', 'r', 'e', 'v', 'i', 'o', 'u', 's', 'C', 'h', 'i', 'l', 'd', 0,
     'e', 's', 'c', 'a', 'p', 'e', 'B', 'u', 't', 't', 'o', 'n', 'N', 'u', 'm', 'b', 'e', 'r', 0,
     'f', 'o', 'c', 'u', 's', 'N', 'e', 'x', 't', 'P', 'r', 'e', 'v', 'C', 'h', 'i', 'l', 'd', 0,
@@ -67,6 +107,9 @@ const char sipStrings_trikControl[] = {
     'd', 'r', 'a', 'g', 'L', 'e', 'a', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'd', 'r', 'a', 'g', 'E', 'n', 't', 'e', 'r', 'E', 'v', 'e', 'n', 't', 0,
     'm', 'o', 'u', 's', 'e', 'M', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
+    'a', 'c', 'c', 'e', 'l', 'e', 'r', 'o', 'm', 'e', 't', 'e', 'r', 0,
+    's', 'p', 'e', 'c', 'i', 'a', 'l', 'S', 'e', 'n', 's', 'o', 'r', 0,
+    'd', 'i', 'g', 'i', 't', 'a', 'l', 'S', 'e', 'n', 's', 'o', 'r', 0,
     'c', 'h', 'a', 'n', 'g', 'e', 'd', 'S', 'i', 'g', 'n', 'a', 'l', 0,
     'p', 'a', 'l', 'e', 't', 't', 'e', 'C', 'h', 'a', 'n', 'g', 'e', 0,
     'e', 'n', 'a', 'b', 'l', 'e', 'd', 'C', 'h', 'a', 'n', 'g', 'e', 0,
@@ -78,12 +121,15 @@ const char sipStrings_trikControl[] = {
     'd', 'r', 'a', 'g', 'M', 'o', 'v', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'f', 'o', 'c', 'u', 's', 'O', 'u', 't', 'E', 'v', 'e', 'n', 't', 0,
     'k', 'e', 'y', 'P', 'r', 'e', 's', 's', 'E', 'v', 'e', 'n', 't', 0,
+    'o', 'b', 'j', 'e', 'c', 't', 'S', 'e', 'n', 's', 'o', 'r', 0,
+    'a', 'n', 'a', 'l', 'o', 'g', 'S', 'e', 'n', 's', 'o', 'r', 0,
     'r', 'e', 'm', 'o', 'v', 'e', 'L', 'a', 'b', 'e', 'l', 's', 0,
     's', 'o', 'u', 'r', 'c', 'e', 'R', 'e', 'g', 'i', 'o', 'n', 0,
     't', 'a', 'r', 'g', 'e', 't', 'O', 'f', 'f', 's', 'e', 't', 0,
     'b', 'o', 'u', 'n', 'd', 'i', 'n', 'g', 'R', 'e', 'c', 't', 0,
     'm', 'i', 'd', 'L', 'i', 'n', 'e', 'W', 'i', 'd', 't', 'h', 0,
     'f', 'o', 'c', 'u', 's', 'I', 'n', 'E', 'v', 'e', 'n', 't', 0,
+    'r', 'e', 'a', 'd', 'V', 'o', 'l', 't', 'a', 'g', 'e', 0,
     't', 'a', 'b', 'l', 'e', 't', 'E', 'v', 'e', 'n', 't', 0,
     'd', 'r', 'a', 'w', 'E', 'l', 'l', 'i', 'p', 's', 'e', 0,
     'b', 'u', 't', 't', 'o', 'n', '2', 'T', 'e', 'x', 't', 0,
@@ -92,7 +138,10 @@ const char sipStrings_trikControl[] = {
     'r', 'e', 's', 'i', 'z', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'c', 'h', 'a', 'n', 'g', 'e', 'E', 'v', 'e', 'n', 't', 0,
     'c', 'u', 's', 't', 'o', 'm', 'E', 'v', 'e', 'n', 't', 0,
+    'r', 'e', 'a', 'd', 'R', 'a', 'w', 'D', 'a', 't', 'a', 0,
     't', 'r', 'i', 'k', 'C', 'o', 'n', 't', 'r', 'o', 'l', 0,
+    'l', 'i', 'n', 'e', 'S', 'e', 'n', 's', 'o', 'r', 0,
+    't', 'r', 'i', 'k', 'K', 'e', 'r', 'n', 'e', 'l', 0,
     'b', 'u', 't', 't', 'o', 'n', 'C', 'o', 'd', 'e', 0,
     'w', 'a', 's', 'P', 'r', 'e', 's', 's', 'e', 'd', 0,
     'm', 'a', 'x', 'C', 'o', 'n', 't', 'r', 'o', 'l', 0,
@@ -111,6 +160,7 @@ const char sipStrings_trikControl[] = {
     'f', 'i', 'e', 'l', 'd', 'W', 'i', 'd', 't', 'h', 0,
     'c', 'h', 'i', 'l', 'd', 'E', 'v', 'e', 'n', 't', 0,
     't', 'i', 'm', 'e', 'r', 'E', 'v', 'e', 'n', 't', 0,
+    'g', 'y', 'r', 'o', 's', 'c', 'o', 'p', 'e', 0,
     'p', 'l', 'a', 'y', 'S', 'o', 'u', 'n', 'd', 0,
     'i', 's', 'P', 'r', 'e', 's', 's', 'e', 'd', 0,
     's', 'h', 'o', 'w', 'I', 'm', 'a', 'g', 'e', 0,
@@ -125,6 +175,8 @@ const char sipStrings_trikControl[] = {
     'a', 'l', 'i', 'g', 'n', 'm', 'e', 'n', 't', 0,
     'r', 'e', 'c', 'e', 'i', 'v', 'e', 'r', 's', 0,
     'p', 'r', 'e', 'c', 'i', 's', 'i', 'o', 'n', 0,
+    'm', 'a', 'x', 'V', 'a', 'l', 'u', 'e', 0,
+    'm', 'i', 'n', 'V', 'a', 'l', 'u', 'e', 0,
     'p', 'o', 'w', 'e', 'r', 'O', 'f', 'f', 0,
     's', 'e', 't', 'P', 'o', 'w', 'e', 'r', 0,
     'a', 'd', 'd', 'L', 'a', 'b', 'e', 'l', 0,
@@ -139,6 +191,9 @@ const char sipStrings_trikControl[] = {
     'p', 'o', 's', 'i', 't', 'i', 'o', 'n', 0,
     'f', 'i', 'l', 'l', 'C', 'h', 'a', 'r', 0,
     'p', 'r', 'o', 'p', 'e', 'r', 't', 'y', 0,
+    'b', 'a', 't', 't', 'e', 'r', 'y', 0,
+    'n', 'e', 'w', 'D', 'a', 't', 'a', 0,
+    't', 'o', 'M', 'c', 'S', 'e', 'c', 0,
     'd', 'e', 's', 't', 'r', 'o', 'y', 0,
     'e', 'x', 'p', 'o', 's', 'e', 'd', 0,
     'd', 'r', 'a', 'w', 'A', 'r', 'c', 0,
@@ -150,9 +205,13 @@ const char sipStrings_trikControl[] = {
     'r', 'o', 'w', 'S', 'p', 'a', 'n', 0,
     'c', 'a', 'p', 't', 'i', 'o', 'n', 0,
     'd', 'i', 's', 'p', 'l', 'a', 'y', 0,
+    's', 't', 'o', 'p', 'p', 'e', 'd', 0,
     'o', 'p', 't', 'i', 'o', 'n', 's', 0,
     'e', 'n', 'a', 'b', 'l', 'e', 'd', 0,
     'f', 'i', 'l', 't', 'e', 'r', 's', 0,
+    's', 'e', 'n', 's', 'o', 'r', 0,
+    'o', 'r', 'a', 'n', 'g', 'e', 0,
+    'd', 'e', 't', 'e', 'c', 't', 0,
     'r', 'e', 'd', 'r', 'a', 'w', 0,
     'y', 'R', 'o', 'u', 'n', 'd', 0,
     'x', 'R', 'o', 'u', 'n', 'd', 0,
@@ -196,6 +255,8 @@ const char sipStrings_trikControl[] = {
     'e', 'v', 'e', 'n', 't', 0,
     'm', 's', 'e', 'c', 's', 0,
     's', 't', 'a', 't', 'e', 0,
+    'g', 'r', 'e', 'e', 'n', 0,
+    'i', 'n', 'i', 't', 0,
     'h', 'i', 'd', 'e', 0,
     'k', 'e', 'y', 's', 0,
     'm', 'o', 'd', 'e', 0,
@@ -204,15 +265,79 @@ const char sipStrings_trikControl[] = {
     'f', 'i', 'l', 'l', 0,
     'f', 'r', 'o', 'm', 0,
     's', 'o', 'r', 't', 0,
+    'r', 'e', 'a', 'd', 0,
+    's', 't', 'o', 'p', 0,
     'p', 'e', 'n', 0,
+    'o', 'f', 'f', 0,
     'e', 'n', 'd', 0,
     'p', 'o', 's', 0,
+    'r', 'e', 'd', 0,
     's', 'w', 0,
     's', 'y', 0,
     's', 'x', 0,
 };
 
-trikControl::MotorInterface* sipVH_trikControl_0(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
+trikControl::VectorSensorInterface* sipVH_trikControl_0(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    trikControl::VectorSensorInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_VectorSensorInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::BatteryInterface* sipVH_trikControl_1(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    trikControl::BatteryInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_BatteryInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::LedInterface* sipVH_trikControl_2(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    trikControl::LedInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_LedInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::ObjectSensorInterface* sipVH_trikControl_3(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
+{
+    trikControl::ObjectSensorInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "N",new QString(a0),sipType_QString,NULL);
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_ObjectSensorInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::LineSensorInterface* sipVH_trikControl_4(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
+{
+    trikControl::LineSensorInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "N",new QString(a0),sipType_QString,NULL);
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_LineSensorInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::SensorInterface* sipVH_trikControl_5(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
+{
+    trikControl::SensorInterface* sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "N",new QString(a0),sipType_QString,NULL);
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H0", sipType_trikControl_SensorInterface, &sipRes);
+
+    return sipRes;
+}
+
+trikControl::MotorInterface* sipVH_trikControl_6(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0)
 {
     trikControl::MotorInterface* sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "N",new QString(a0),sipType_QString,NULL);
@@ -222,7 +347,7 @@ trikControl::MotorInterface* sipVH_trikControl_0(sip_gilstate_t sipGILState, sip
     return sipRes;
 }
 
-trikControl::KeysInterface* sipVH_trikControl_1(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+trikControl::KeysInterface* sipVH_trikControl_7(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
 {
     trikControl::KeysInterface* sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
@@ -232,7 +357,7 @@ trikControl::KeysInterface* sipVH_trikControl_1(sip_gilstate_t sipGILState, sipV
     return sipRes;
 }
 
-trikControl::DisplayInterface* sipVH_trikControl_2(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+trikControl::DisplayInterface* sipVH_trikControl_8(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
 {
     trikControl::DisplayInterface* sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
@@ -242,7 +367,7 @@ trikControl::DisplayInterface* sipVH_trikControl_2(sip_gilstate_t sipGILState, s
     return sipRes;
 }
 
-trikControl::DisplayWidgetInterface* sipVH_trikControl_3(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+trikControl::DisplayWidgetInterface* sipVH_trikControl_9(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
 {
     trikControl::DisplayWidgetInterface* sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
@@ -252,7 +377,27 @@ trikControl::DisplayWidgetInterface* sipVH_trikControl_3(sip_gilstate_t sipGILSt
     return sipRes;
 }
 
-int sipVH_trikControl_4(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, bool a0)
+QVector<int> sipVH_trikControl_10(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    QVector<int> sipRes;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "H5", sipType_QVector_1800, &sipRes);
+
+    return sipRes;
+}
+
+float sipVH_trikControl_11(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+{
+    float sipRes = 0;
+    PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
+
+    sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "f", &sipRes);
+
+    return sipRes;
+}
+
+int sipVH_trikControl_12(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, bool a0)
 {
     int sipRes = 0;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "b",a0);
@@ -262,42 +407,42 @@ int sipVH_trikControl_4(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipE
     return sipRes;
 }
 
-void sipVH_trikControl_5(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,bool a1)
+void sipVH_trikControl_13(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,bool a1)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "ib",a0,a1);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_6(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,int a4,int a5)
+void sipVH_trikControl_14(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,int a4,int a5)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "iiiiii",a0,a1,a2,a3,a4,a5);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_7(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,bool a4)
+void sipVH_trikControl_15(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3,bool a4)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "iiiib",a0,a1,a2,a3,a4);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_8(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3)
+void sipVH_trikControl_16(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, int a0,int a1,int a2,int a3)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "iiii",a0,a1,a2,a3);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-void sipVH_trikControl_9(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0,int a1,int a2)
+void sipVH_trikControl_17(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod, const QString& a0,int a1,int a2)
 {
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "Nii",new QString(a0),sipType_QString,NULL,a1,a2);
 
     sipParseResultEx(sipGILState, sipErrorHandler, sipPySelf, sipMethod, sipResObj, "Z");
 }
 
-trikControl::DisplayWidgetInterface& sipVH_trikControl_10(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
+trikControl::DisplayWidgetInterface& sipVH_trikControl_18(sip_gilstate_t sipGILState, sipVirtErrorHandlerFunc sipErrorHandler, sipSimpleWrapper *sipPySelf, PyObject *sipMethod)
 {
     trikControl::DisplayWidgetInterface *sipRes;
     PyObject *sipResObj = sipCallMethod(0, sipMethod, "");
@@ -310,7 +455,8 @@ trikControl::DisplayWidgetInterface& sipVH_trikControl_10(sip_gilstate_t sipGILS
     return *sipRes;
 }
 static sipEnumTypeDef enumTypes[] = {
-    {{-1, 0, 0, SIP_TYPE_ENUM, sipNameNr_trikControl__MotorInterface__Type, {0}}, sipNameNr_Type, 6, NULL},
+    {{-1, 0, 0, SIP_TYPE_ENUM, sipNameNr_trikControl__SensorInterface__Type, {0}}, sipNameNr_Type, 12, NULL},
+    {{-1, 0, 0, SIP_TYPE_ENUM, sipNameNr_trikControl__MotorInterface__Type, {0}}, sipNameNr_Type, 9, NULL},
 };
 
 
@@ -319,13 +465,22 @@ static sipEnumTypeDef enumTypes[] = {
  */
 static sipTypeDef *typesTable[] = {
     &sipTypeDef_trikControl_trikControl.super.ctd_base,
+    &sipTypeDef_trikControl_trikControl_BatteryInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_BrickFactory.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_BrickInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_DisplayInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_DisplayWidgetInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_KeysInterface.super.ctd_base,
+    &sipTypeDef_trikControl_trikControl_LedInterface.super.ctd_base,
+    &sipTypeDef_trikControl_trikControl_LineSensorInterface.super.ctd_base,
     &sipTypeDef_trikControl_trikControl_MotorInterface.super.ctd_base,
+    &enumTypes[1].etd_base,
+    &sipTypeDef_trikControl_trikControl_ObjectSensorInterface.super.ctd_base,
+    &sipTypeDef_trikControl_trikControl_SensorInterface.super.ctd_base,
     &enumTypes[0].etd_base,
+    &sipTypeDef_trikControl_trikControl_VectorSensorInterface.super.ctd_base,
+    &sipTypeDef_trikControl_trikKernel.super.ctd_base,
+    &sipTypeDef_trikControl_trikKernel_TimeVal.super.ctd_base,
 };
 
 
@@ -345,6 +500,14 @@ static sipVirtHandlerFunc virtHandlersTable[] = {
     (sipVirtHandlerFunc)sipVH_trikControl_8,
     (sipVirtHandlerFunc)sipVH_trikControl_9,
     (sipVirtHandlerFunc)sipVH_trikControl_10,
+    (sipVirtHandlerFunc)sipVH_trikControl_11,
+    (sipVirtHandlerFunc)sipVH_trikControl_12,
+    (sipVirtHandlerFunc)sipVH_trikControl_13,
+    (sipVirtHandlerFunc)sipVH_trikControl_14,
+    (sipVirtHandlerFunc)sipVH_trikControl_15,
+    (sipVirtHandlerFunc)sipVH_trikControl_16,
+    (sipVirtHandlerFunc)sipVH_trikControl_17,
+    (sipVirtHandlerFunc)sipVH_trikControl_18,
 };
 
 
@@ -366,7 +529,7 @@ sipExportedModuleDef sipModuleAPI_trikControl = {
     sipStrings_trikControl,
     importsTable,
     NULL,
-    8,
+    17,
     typesTable,
     NULL,
     0,

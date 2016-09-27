@@ -6,24 +6,21 @@
 
 #include "sipAPItrikControl.h"
 
-#line 6 "LedInterface.sip"
-		#include <ledInterface.h>
-#line 12 "./siptrikControltrikControl.cpp"
 
 
 
-pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl = {
+pyqt4ClassTypeDef sipTypeDef_trikControl_trikKernel = {
 {
     {
         -1,
         0,
         0,
         SIP_TYPE_NAMESPACE,
-        sipNameNr_trikControl,
+        sipNameNr_trikKernel,
         {0}
     },
     {
-        sipNameNr_trikControl,
+        sipNameNr_trikKernel,
         {0, 0, 1},
         0, 0,
         0, 0,

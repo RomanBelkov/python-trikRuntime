@@ -10,46 +10,46 @@
 		#include <displayInterface.h>
 #line 12 "./siptrikControltrikControlDisplayInterface.cpp"
 
-#line 31 "/usr/share/sip/PyQt4/QtCore/qstring.sip"
+#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 16 "./siptrikControltrikControlDisplayInterface.cpp"
 #line 16 "DisplayWidgetInterface.sip"
 		#include <displayWidgetInterface.h>
 #line 19 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt4/QtCore/qcoreevent.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
 #line 22 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 368 "/usr/share/sip/PyQt4/QtCore/qcoreevent.sip"
+#line 368 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
 #line 25 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 351 "/usr/share/sip/PyQt4/QtCore/qcoreevent.sip"
+#line 351 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
 #line 28 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 29 "/usr/share/sip/PyQt4/QtCore/qobject.sip"
+#line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 31 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4/QtCore/qvariant.sip"
+#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
 #line 34 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 28 "/usr/share/sip/PyQt4/QtCore/qlist.sip"
+#line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
 #include <qlist.h>
 #line 37 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 32 "/usr/share/sip/PyQt4/QtCore/qbytearray.sip"
+#line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
 #line 40 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4/QtCore/qnamespace.sip"
+#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
 #line 43 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 115 "/usr/share/sip/PyQt4/QtCore/qlist.sip"
+#line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
 #include <qlist.h>
 #line 46 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt4/QtCore/qthread.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
 #line 49 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4/QtCore/qregexp.sip"
+#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
 #line 52 "./siptrikControltrikControlDisplayInterface.cpp"
-#line 26 "/usr/share/sip/PyQt4/QtCore/qobjectdefs.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"
 #include <qobjectdefs.h>
 #line 55 "./siptrikControltrikControlDisplayInterface.cpp"
 

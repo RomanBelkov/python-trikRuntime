@@ -1,33 +1,75 @@
+from PyQt4 import QtGui, QtCore
 import trikControl
 import sys
-from PyQt4 import QtGui
+import time
 
-print(sys.argv)
+
+def wait():
+	time.sleep(2)
+
+
+def doSomethingWithButtons(code, value):
+	print("AAAA")
+	if code == 28:
+		print("OLOLOLOLOLO")
+
+def doSomethingWithGyro(array, time):
+	print(array)
+
+#print(sys.argv)
 app = QtGui.QApplication(sys.argv)
 
 
-# w = QtGui.QWidget()
-# w.resize(250, 150)
-# w.move(300, 300)
-# w.setWindowTitle('Simple')
-# w.show()
-
 #print(dir(trikControl))
-b = trikControl.trikControl.BrickFactory.create("./trik/", "./trik/media/")
-b.playSound("beep.wav")
+b = trikControl.trikControl.BrickFactory.create("./trik/", "./trik/media/")  #("./../../bin/x86-release/", "./../../bin/x86-release/media") #(./trik/", "./trik/media/")
+
+print(b.battery().readVoltage())
+k = b.keys()
+gyro = b.gyroscope()
+#print(dir(k))
+
+#k.buttonPressed.connect(doSomething)
+
+
+QtCore.QObject.connect(k, QtCore.SIGNAL("buttonPressed(int,int)"), doSomethingWithButtons)
+
+
+QtCore.QObject.connect(gyro, QtCore.SIGNAL("newData(QVector<int>,trikKernel::TimeVal)"), doSomethingWithGyro)
+#print("fok of")
+
+# b.playSound("beep.wav")
+# wait()
+
+# b.led().orange()
+# wait()
 # scr = b.display()
+# print(dir(scr))
+# scr.reset()
 # scr.drawPoint(10,10)
 # scr.reset()
-# scr.showImage("/home/rb/Documents/trikRuntime/trikControl/pythonPlayground/wat.jpg")
+# scr.showImage("/home/root/wat.jpg")
 
-m = b.motor("M4")
+# sens = b.sensor("A6")
+# print(sens.read())
+# wait()
+# print(sens.readRawData())
+# wait()
 
-print(dir(m))
+# m = b.motor("M1")
+# m.setPower(50)
+# wait()
+# m.powerOff()
 
 
-m.setPower(100)
+# b.motor("S6").setPower(60)
+# wait()
+# b.motor("S6").setPower(-60)
+# wait()
+# b.motor("S6").powerOff()
 
-
-b.keys().reset()
+# lineDetect = b.lineSensor("video1")
+# lineDetect.init(True)
+# lineDetect.detect()
+# print(lineDetect.read())
 
 sys.exit(app.exec_())
