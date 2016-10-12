@@ -238,7 +238,7 @@ static void dealloc_trikControl_DisplayWidgetInterface(sipSimpleWrapper *sipSelf
 
 
 /* Define this type's super-types. */
-static sipEncodedTypeDef supers_trikControl_DisplayWidgetInterface[] = {{755, 1, 1}};
+static sipEncodedTypeDef supers_trikControl_DisplayWidgetInterface[] = {{755, 2, 1}};
 
 
 pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_DisplayWidgetInterface = {

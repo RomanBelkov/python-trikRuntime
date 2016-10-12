@@ -1,4 +1,5 @@
 %Module trikControl
 
-%Include DisplayInterface.sip
 %Include BrickFactory.sip
+%Include GamepadFactory.sip
+%Include MailboxFactory.sip

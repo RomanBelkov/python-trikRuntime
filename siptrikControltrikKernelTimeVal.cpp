@@ -134,7 +134,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikKernel_TimeVal = {
     },
     {
         sipNameNr_TimeVal,
-        {15, 255, 0},
+        {16, 255, 0},
         1, methods_trikKernel_TimeVal,
         0, 0,
         0, 0,

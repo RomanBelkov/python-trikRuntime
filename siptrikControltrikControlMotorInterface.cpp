@@ -247,8 +247,8 @@ static PyMethodDef methods_trikControl_MotorInterface[] = {
 };
 
 static sipEnumMemberDef enummembers_trikControl_MotorInterface[] = {
-    {sipName_powerMotor, static_cast<int>(trikControl::MotorInterface::Type::powerMotor), 10},
-    {sipName_servoMotor, static_cast<int>(trikControl::MotorInterface::Type::servoMotor), 10},
+    {sipName_powerMotor, static_cast<int>(trikControl::MotorInterface::Type::powerMotor), 11},
+    {sipName_servoMotor, static_cast<int>(trikControl::MotorInterface::Type::servoMotor), 11},
 };
 
 

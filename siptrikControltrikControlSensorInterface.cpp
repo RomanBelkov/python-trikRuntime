@@ -214,9 +214,9 @@ static PyMethodDef methods_trikControl_SensorInterface[] = {
 };
 
 static sipEnumMemberDef enummembers_trikControl_SensorInterface[] = {
-    {sipName_analogSensor, static_cast<int>(trikControl::SensorInterface::Type::analogSensor), 13},
-    {sipName_digitalSensor, static_cast<int>(trikControl::SensorInterface::Type::digitalSensor), 13},
-    {sipName_specialSensor, static_cast<int>(trikControl::SensorInterface::Type::specialSensor), 13},
+    {sipName_analogSensor, static_cast<int>(trikControl::SensorInterface::Type::analogSensor), 14},
+    {sipName_digitalSensor, static_cast<int>(trikControl::SensorInterface::Type::digitalSensor), 14},
+    {sipName_specialSensor, static_cast<int>(trikControl::SensorInterface::Type::specialSensor), 14},
 };
 
 

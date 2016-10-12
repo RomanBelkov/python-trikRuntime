@@ -1,7 +1,9 @@
 TARGET = trikControl.so
-SPECIAL_SIP_CASES = TCmod.sip TimeVal.sip
+SPECIAL_SIP_CASES = TCmod.sip TimeVal.sip GamepadInterface.sip GamepadFactory.sip MailboxInterface.sip MailboxFactory.sip
 SIP_SRC = $(filter-out $(SPECIAL_SIP_CASES), $(wildcard *.sip))
-OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC)) siptrikControlcmodule.o siptrikControltrikControl.o siptrikControltrikKernel.o siptrikControltrikKernelTimeVal.o
+OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC)) siptrikControlcmodule.o siptrikControltrikControl.o siptrikControltrikKernel.o siptrikControltrikKernelTimeVal.o \
+siptrikControltrikNetwork.o siptrikControltrikNetworkGamepadInterface.o siptrikControltrikNetworkGamepadFactory.o \
+siptrikControltrikNetworkMailboxInterface.o siptrikControltrikNetworkMailboxFactory.o 
 #OFILES = siptrikControlcmodule.o siptrikControltrikControlBrickFactory.o siptrikControltrikControlBrickInterface.o siptrikControltrikControl.o
 HFILES = sipAPItrikControl.h 
 CPPFILES = $(patsubst %.o, %.cpp, $(OFILES))
@@ -23,8 +25,11 @@ endif
 #CC = gcc
 #CXX = g++
 #LINK = g++
-INCPATH  = -I. -I../include/trikControl -I../../trikKernel/include -I../../trikKernel/include/trikKernel -I../qslog -I$(QT_INSTALL_HEADERS)/QtCore -I$(QT_INSTALL_HEADERS) \
--I../trikHal/include -I$(QT_INSTALL_HEADERS)/QtWidgets -I$(QT_INSTALL_HEADERS)/QtGui 
+INCPATH  = -I. -I../include/trikControl -I../../trikKernel/include -I../../trikKernel/include/trikKernel \
+-I../../trikNetwork/include/trikNetwork/ \
+-I../qslog -I$(QT_INSTALL_HEADERS)/QtCore -I$(QT_INSTALL_HEADERS) \
+-I../trikHal/include -I$(QT_INSTALL_HEADERS)/QtWidgets -I$(QT_INSTALL_HEADERS)/QtGui -I$(QT_INSTALL_HEADERS)/QtNetwork 
+#-I$(QT_INSTALL_HEADERS)/QtXml
 # -I../../../Qt/5.7/gcc_64/include -I../../../Qt/5.7/gcc_64/include/QtMultimedia 
 # -I../../../Qt/5.7/gcc_64/include/QtXml -I../../../Qt/5.7/gcc_64/include/QtNetwork -I../../../Qt/5.7/gcc_64/include/QtCore -I.build/x86-release/.moc -I../../../Qt/5.7/gcc_64/mkspecs/linux-g++
 CPPFLAGS = -DNDEBUG -I. -I$(PYTHONHOME)/include/python2.7/ -I/opt/trik-sdk/sysroots/arm926ejste-oe-linux-gnueabi/usr/include/python2.7/ $(INCPATH)
@@ -34,7 +39,7 @@ CPPFLAGS = -DNDEBUG -I. -I$(PYTHONHOME)/include/python2.7/ -I/opt/trik-sdk/sysro
 CFLAGS = -pipe -fPIC -O2 -Wall -W
 CXXFLAGS = $(CFLAGS) -std=c++11
 LFLAGS = -shared -Wl,--version-script=trikControl.exp
-LIBS = -L$(TRIK_CONTROL_LIB_DIR) -ltrikControl
+LIBS = -L$(TRIK_CONTROL_LIB_DIR) -ltrikControl -ltrikKernel -ltrikNetwork
 
 all: $(TARGET)
 
