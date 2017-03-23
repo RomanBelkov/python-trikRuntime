@@ -1,6 +1,6 @@
 %Import QtCore/QtCoremod.sip
 
-namespace trikNetwork {
+namespace trikControl {
 
 /// Class to support remote control of a robot using TCP client.
 class GamepadInterface : public QObject /Abstract/ {

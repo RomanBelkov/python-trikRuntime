@@ -13,6 +13,7 @@
 %Include BatteryInterface.sip
 %Include VectorSensorInterface.sip
 %Include EncoderInterface.sip
+%Include GamepadInterface.sip
 
 
 namespace trikControl {
@@ -55,6 +56,8 @@ namespace trikControl {
 		virtual trikControl::VectorSensorInterface *gyroscope() = 0;
 
 		virtual trikControl::EncoderInterface *encoder(const QString &port) = 0;
+
+		virtual GamepadInterface *gamepad() = 0;
 
 		/// Plays given music file on a speaker (in format accepted by aplay or cvlc utilities).
 		virtual void playSound(const QString &soundFileName) = 0;
