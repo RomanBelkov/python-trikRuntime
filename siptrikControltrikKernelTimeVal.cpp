@@ -6,14 +6,14 @@
 
 #include "sipAPItrikControl.h"
 
-#line 7 "TimeVal.sip"
+#line 8 "TimeVal.sip"
 		#include <timeVal.h>
 #line 12 "./siptrikControltrikKernelTimeVal.cpp"
 
 
 
-extern "C" {static PyObject *meth_trikKernel_TimeVal_toMcSec(PyObject *, PyObject *);}
-static PyObject *meth_trikKernel_TimeVal_toMcSec(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikKernel_TimeVal_packedUInt32(PyObject *, PyObject *);}
+static PyObject *meth_trikKernel_TimeVal_packedUInt32(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
 
@@ -24,14 +24,65 @@ static PyObject *meth_trikKernel_TimeVal_toMcSec(PyObject *sipSelf, PyObject *si
         {
             int sipRes;
 
-            sipRes = sipCpp->toMcSec();
+            sipRes = sipCpp->packedUInt32();
 
             return SIPLong_FromLong(sipRes);
         }
     }
 
     /* Raise an exception if the arguments couldn't be parsed. */
-    sipNoMethod(sipParseErr, sipName_TimeVal, sipName_toMcSec, NULL);
+    sipNoMethod(sipParseErr, sipName_TimeVal, sipName_packedUInt32, NULL);
+
+    return NULL;
+}
+
+
+extern "C" {static PyObject *meth_trikKernel_TimeVal_fromPackedUInt32(PyObject *, PyObject *);}
+static PyObject *meth_trikKernel_TimeVal_fromPackedUInt32(PyObject *, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+
+    {
+        int a0;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "i", &a0))
+        {
+            trikKernel::TimeVal*sipRes;
+
+            sipRes = new trikKernel::TimeVal(trikKernel::TimeVal::fromPackedUInt32(a0));
+
+            return sipConvertFromNewType(sipRes,sipType_trikKernel_TimeVal,NULL);
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_TimeVal, sipName_fromPackedUInt32, NULL);
+
+    return NULL;
+}
+
+
+extern "C" {static PyObject *meth_trikKernel_TimeVal_timeInterval(PyObject *, PyObject *);}
+static PyObject *meth_trikKernel_TimeVal_timeInterval(PyObject *, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+
+    {
+        int a0;
+        int a1;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "ii", &a0, &a1))
+        {
+            int sipRes;
+
+            sipRes = trikKernel::TimeVal::timeInterval(a0,a1);
+
+            return SIPLong_FromLong(sipRes);
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_TimeVal, sipName_timeInterval, NULL);
 
     return NULL;
 }
@@ -42,27 +93,6 @@ extern "C" {static void release_trikKernel_TimeVal(void *, int);}
 static void release_trikKernel_TimeVal(void *sipCppV,int)
 {
     delete reinterpret_cast<trikKernel::TimeVal *>(sipCppV);
-}
-
-
-extern "C" {static void assign_trikKernel_TimeVal(void *, SIP_SSIZE_T, const void *);}
-static void assign_trikKernel_TimeVal(void *sipDst, SIP_SSIZE_T sipDstIdx, const void *sipSrc)
-{
-    reinterpret_cast<trikKernel::TimeVal *>(sipDst)[sipDstIdx] = *reinterpret_cast<const trikKernel::TimeVal *>(sipSrc);
-}
-
-
-extern "C" {static void *array_trikKernel_TimeVal(SIP_SSIZE_T);}
-static void *array_trikKernel_TimeVal(SIP_SSIZE_T sipNrElem)
-{
-    return new trikKernel::TimeVal[sipNrElem];
-}
-
-
-extern "C" {static void *copy_trikKernel_TimeVal(const void *, SIP_SSIZE_T);}
-static void *copy_trikKernel_TimeVal(const void *sipSrc, SIP_SSIZE_T sipSrcIdx)
-{
-    return new trikKernel::TimeVal(reinterpret_cast<const trikKernel::TimeVal *>(sipSrc)[sipSrcIdx]);
 }
 
 
@@ -82,9 +112,12 @@ static void *init_type_trikKernel_TimeVal(sipSimpleWrapper *, PyObject *sipArgs,
     trikKernel::TimeVal *sipCpp = 0;
 
     {
-        if (sipParseKwdArgs(sipParseErr, sipArgs, sipKwds, NULL, sipUnused, ""))
+        int a0;
+        int a1;
+
+        if (sipParseKwdArgs(sipParseErr, sipArgs, sipKwds, NULL, sipUnused, "ii", &a0, &a1))
         {
-            sipCpp = new trikKernel::TimeVal();
+            sipCpp = new trikKernel::TimeVal(a0,a1);
 
             return sipCpp;
         }
@@ -101,24 +134,14 @@ static void *init_type_trikKernel_TimeVal(sipSimpleWrapper *, PyObject *sipArgs,
         }
     }
 
-    {
-        int a0;
-        int a1;
-
-        if (sipParseKwdArgs(sipParseErr, sipArgs, sipKwds, NULL, sipUnused, "ii", &a0, &a1))
-        {
-            sipCpp = new trikKernel::TimeVal(a0,a1);
-
-            return sipCpp;
-        }
-    }
-
     return NULL;
 }
 
 
 static PyMethodDef methods_trikKernel_TimeVal[] = {
-    {SIP_MLNAME_CAST(sipName_toMcSec), meth_trikKernel_TimeVal_toMcSec, METH_VARARGS, NULL}
+    {SIP_MLNAME_CAST(sipName_fromPackedUInt32), meth_trikKernel_TimeVal_fromPackedUInt32, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_packedUInt32), meth_trikKernel_TimeVal_packedUInt32, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_timeInterval), meth_trikKernel_TimeVal_timeInterval, METH_VARARGS, NULL}
 };
 
 
@@ -134,8 +157,8 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikKernel_TimeVal = {
     },
     {
         sipNameNr_TimeVal,
-        {16, 255, 0},
-        1, methods_trikKernel_TimeVal,
+        {17, 255, 0},
+        3, methods_trikKernel_TimeVal,
         0, 0,
         0, 0,
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -158,9 +181,9 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikKernel_TimeVal = {
     0,
 #endif
     dealloc_trikKernel_TimeVal,
-    assign_trikKernel_TimeVal,
-    array_trikKernel_TimeVal,
-    copy_trikKernel_TimeVal,
+    0,
+    0,
+    0,
     release_trikKernel_TimeVal,
     0,
     0,

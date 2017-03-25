@@ -22,7 +22,7 @@
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 25 "./siptrikControltrikControlLedInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
 #line 28 "./siptrikControltrikControlLedInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -31,7 +31,7 @@
 #line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
 #line 34 "./siptrikControltrikControlLedInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
 #line 37 "./siptrikControltrikControlLedInterface.cpp"
 #line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -40,10 +40,10 @@
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
 #line 43 "./siptrikControltrikControlLedInterface.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 46 "./siptrikControltrikControlLedInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
 #line 49 "./siptrikControltrikControlLedInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"

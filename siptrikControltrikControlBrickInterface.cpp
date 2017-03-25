@@ -10,88 +10,95 @@
 		#include <ledInterface.h>
 #line 6 "EncoderInterface.sip"
 		#include <encoderInterface.h>
-#line 23 "BrickInterface.sip"
+#line 24 "BrickInterface.sip"
 		#include <brickInterface.h>
 #line 16 "./siptrikControltrikControlBrickInterface.cpp"
 
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#include <qstring.h>
+#line 20 "./siptrikControltrikControlBrickInterface.cpp"
 #line 6 "LedInterface.sip"
 		#include <ledInterface.h>
 #line 6 "EncoderInterface.sip"
 		#include <encoderInterface.h>
-#line 22 "./siptrikControltrikControlBrickInterface.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
-#include <qstring.h>
-#line 25 "./siptrikControltrikControlBrickInterface.cpp"
+#line 9 "GamepadInterface.sip"
+		#include <gamepadInterface.h>
+#line 27 "./siptrikControltrikControlBrickInterface.cpp"
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
+#line 6 "EncoderInterface.sip"
+		#include <encoderInterface.h>
+#line 32 "./siptrikControltrikControlBrickInterface.cpp"
 #line 6 "LedInterface.sip"
 		#include <ledInterface.h>
 #line 11 "VectorSensorInterface.sip"
 		#include <vectorSensorInterface.h>
-#line 30 "./siptrikControltrikControlBrickInterface.cpp"
+#line 37 "./siptrikControltrikControlBrickInterface.cpp"
 #line 6 "LedInterface.sip"
 		#include <ledInterface.h>
 #line 9 "BatteryInterface.sip"
 		#include <batteryInterface.h>
-#line 35 "./siptrikControltrikControlBrickInterface.cpp"
+#line 42 "./siptrikControltrikControlBrickInterface.cpp"
 #line 6 "LedInterface.sip"
 		#include <ledInterface.h>
-#line 38 "./siptrikControltrikControlBrickInterface.cpp"
+#line 45 "./siptrikControltrikControlBrickInterface.cpp"
 #line 10 "ObjectSensorInterface.sip"
 		#include <objectSensorInterface.h>
-#line 41 "./siptrikControltrikControlBrickInterface.cpp"
+#line 48 "./siptrikControltrikControlBrickInterface.cpp"
 #line 10 "LineSensorInterface.sip"
 		#include <lineSensorInterface.h>
-#line 44 "./siptrikControltrikControlBrickInterface.cpp"
+#line 51 "./siptrikControltrikControlBrickInterface.cpp"
 #line 9 "SensorInterface.sip"
 		#include <sensorInterface.h>
-#line 47 "./siptrikControltrikControlBrickInterface.cpp"
+#line 54 "./siptrikControltrikControlBrickInterface.cpp"
 #line 10 "MotorInterface.sip"
 		#include <motorInterface.h>
-#line 50 "./siptrikControltrikControlBrickInterface.cpp"
+#line 57 "./siptrikControltrikControlBrickInterface.cpp"
 #line 12 "KeysInterface.sip"
 		#include <keysInterface.h>
-#line 53 "./siptrikControltrikControlBrickInterface.cpp"
+#line 60 "./siptrikControltrikControlBrickInterface.cpp"
 #line 13 "DisplayInterface.sip"
 		#include <displayInterface.h>
-#line 56 "./siptrikControltrikControlBrickInterface.cpp"
+#line 63 "./siptrikControltrikControlBrickInterface.cpp"
 #line 16 "DisplayWidgetInterface.sip"
 		#include <displayWidgetInterface.h>
-#line 59 "./siptrikControltrikControlBrickInterface.cpp"
+#line 66 "./siptrikControltrikControlBrickInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
-#line 62 "./siptrikControltrikControlBrickInterface.cpp"
+#line 69 "./siptrikControltrikControlBrickInterface.cpp"
 #line 368 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
-#line 65 "./siptrikControltrikControlBrickInterface.cpp"
+#line 72 "./siptrikControltrikControlBrickInterface.cpp"
 #line 351 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
-#line 68 "./siptrikControltrikControlBrickInterface.cpp"
+#line 75 "./siptrikControltrikControlBrickInterface.cpp"
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
-#line 71 "./siptrikControltrikControlBrickInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 78 "./siptrikControltrikControlBrickInterface.cpp"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
-#line 74 "./siptrikControltrikControlBrickInterface.cpp"
+#line 81 "./siptrikControltrikControlBrickInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
 #include <qlist.h>
-#line 77 "./siptrikControltrikControlBrickInterface.cpp"
+#line 84 "./siptrikControltrikControlBrickInterface.cpp"
 #line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
-#line 80 "./siptrikControltrikControlBrickInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
+#line 87 "./siptrikControltrikControlBrickInterface.cpp"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
-#line 83 "./siptrikControltrikControlBrickInterface.cpp"
+#line 90 "./siptrikControltrikControlBrickInterface.cpp"
 #line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
 #include <qlist.h>
-#line 86 "./siptrikControltrikControlBrickInterface.cpp"
+#line 93 "./siptrikControltrikControlBrickInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
-#line 89 "./siptrikControltrikControlBrickInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 96 "./siptrikControltrikControlBrickInterface.cpp"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
-#line 92 "./siptrikControltrikControlBrickInterface.cpp"
+#line 99 "./siptrikControltrikControlBrickInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"
 #include <qobjectdefs.h>
-#line 95 "./siptrikControltrikControlBrickInterface.cpp"
+#line 102 "./siptrikControltrikControlBrickInterface.cpp"
 
 
 extern "C" {static PyObject *meth_trikControl_BrickInterface_graphicsWidget(PyObject *, PyObject *);}
@@ -121,40 +128,6 @@ static PyObject *meth_trikControl_BrickInterface_graphicsWidget(PyObject *sipSel
 
     /* Raise an exception if the arguments couldn't be parsed. */
     sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_graphicsWidget, NULL);
-
-    return NULL;
-}
-
-
-extern "C" {static PyObject *meth_trikControl_BrickInterface_playSound(PyObject *, PyObject *);}
-static PyObject *meth_trikControl_BrickInterface_playSound(PyObject *sipSelf, PyObject *sipArgs)
-{
-    PyObject *sipParseErr = NULL;
-    PyObject *sipOrigSelf = sipSelf;
-
-    {
-        const QString* a0;
-        int a0State = 0;
-        trikControl::BrickInterface *sipCpp;
-
-        if (sipParseArgs(&sipParseErr, sipArgs, "BJ1", &sipSelf, sipType_trikControl_BrickInterface, &sipCpp, sipType_QString,&a0, &a0State))
-        {
-            if (!sipOrigSelf)
-            {
-                sipAbstractMethod(sipName_BrickInterface, sipName_playSound);
-                return NULL;
-            }
-
-            sipCpp->playSound(*a0);
-            sipReleaseType(const_cast<QString *>(a0),sipType_QString,a0State);
-
-            Py_INCREF(Py_None);
-            return Py_None;
-        }
-    }
-
-    /* Raise an exception if the arguments couldn't be parsed. */
-    sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_playSound, NULL);
 
     return NULL;
 }
@@ -527,6 +500,170 @@ static PyObject *meth_trikControl_BrickInterface_encoder(PyObject *sipSelf, PyOb
 }
 
 
+extern "C" {static PyObject *meth_trikControl_BrickInterface_gamepad(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_BrickInterface_gamepad(PyObject *sipSelf, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+    PyObject *sipOrigSelf = sipSelf;
+
+    {
+        trikControl::BrickInterface *sipCpp;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikControl_BrickInterface, &sipCpp))
+        {
+            trikControl::GamepadInterface*sipRes;
+
+            if (!sipOrigSelf)
+            {
+                sipAbstractMethod(sipName_BrickInterface, sipName_gamepad);
+                return NULL;
+            }
+
+            sipRes = sipCpp->gamepad();
+
+            return sipConvertFromType(sipRes,sipType_trikControl_GamepadInterface,NULL);
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_gamepad, NULL);
+
+    return NULL;
+}
+
+
+extern "C" {static PyObject *meth_trikControl_BrickInterface_playSound(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_BrickInterface_playSound(PyObject *sipSelf, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+    PyObject *sipOrigSelf = sipSelf;
+
+    {
+        const QString* a0;
+        int a0State = 0;
+        trikControl::BrickInterface *sipCpp;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "BJ1", &sipSelf, sipType_trikControl_BrickInterface, &sipCpp, sipType_QString,&a0, &a0State))
+        {
+            if (!sipOrigSelf)
+            {
+                sipAbstractMethod(sipName_BrickInterface, sipName_playSound);
+                return NULL;
+            }
+
+            sipCpp->playSound(*a0);
+            sipReleaseType(const_cast<QString *>(a0),sipType_QString,a0State);
+
+            Py_INCREF(Py_None);
+            return Py_None;
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_playSound, NULL);
+
+    return NULL;
+}
+
+
+extern "C" {static PyObject *meth_trikControl_BrickInterface_playTone(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_BrickInterface_playTone(PyObject *sipSelf, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+    PyObject *sipOrigSelf = sipSelf;
+
+    {
+        int a0;
+        int a1;
+        trikControl::BrickInterface *sipCpp;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "Bii", &sipSelf, sipType_trikControl_BrickInterface, &sipCpp, &a0, &a1))
+        {
+            if (!sipOrigSelf)
+            {
+                sipAbstractMethod(sipName_BrickInterface, sipName_playTone);
+                return NULL;
+            }
+
+            sipCpp->playTone(a0,a1);
+
+            Py_INCREF(Py_None);
+            return Py_None;
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_playTone, NULL);
+
+    return NULL;
+}
+
+
+extern "C" {static PyObject *meth_trikControl_BrickInterface_say(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_BrickInterface_say(PyObject *sipSelf, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+    PyObject *sipOrigSelf = sipSelf;
+
+    {
+        const QString* a0;
+        int a0State = 0;
+        trikControl::BrickInterface *sipCpp;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "BJ1", &sipSelf, sipType_trikControl_BrickInterface, &sipCpp, sipType_QString,&a0, &a0State))
+        {
+            if (!sipOrigSelf)
+            {
+                sipAbstractMethod(sipName_BrickInterface, sipName_say);
+                return NULL;
+            }
+
+            sipCpp->say(*a0);
+            sipReleaseType(const_cast<QString *>(a0),sipType_QString,a0State);
+
+            Py_INCREF(Py_None);
+            return Py_None;
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_say, NULL);
+
+    return NULL;
+}
+
+
+extern "C" {static PyObject *meth_trikControl_BrickInterface_stop(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_BrickInterface_stop(PyObject *sipSelf, PyObject *sipArgs)
+{
+    PyObject *sipParseErr = NULL;
+    PyObject *sipOrigSelf = sipSelf;
+
+    {
+        trikControl::BrickInterface *sipCpp;
+
+        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikControl_BrickInterface, &sipCpp))
+        {
+            if (!sipOrigSelf)
+            {
+                sipAbstractMethod(sipName_BrickInterface, sipName_stop);
+                return NULL;
+            }
+
+            sipCpp->stop();
+
+            Py_INCREF(Py_None);
+            return Py_None;
+        }
+    }
+
+    /* Raise an exception if the arguments couldn't be parsed. */
+    sipNoMethod(sipParseErr, sipName_BrickInterface, sipName_stop, NULL);
+
+    return NULL;
+}
+
+
 /* Call the instance's destructor. */
 extern "C" {static void release_trikControl_BrickInterface(void *, int);}
 static void release_trikControl_BrickInterface(void *sipCppV,int)
@@ -559,6 +696,7 @@ static PyMethodDef methods_trikControl_BrickInterface[] = {
     {SIP_MLNAME_CAST(sipName_battery), meth_trikControl_BrickInterface_battery, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_display), meth_trikControl_BrickInterface_display, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_encoder), meth_trikControl_BrickInterface_encoder, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_gamepad), meth_trikControl_BrickInterface_gamepad, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_graphicsWidget), meth_trikControl_BrickInterface_graphicsWidget, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_gyroscope), meth_trikControl_BrickInterface_gyroscope, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_keys), meth_trikControl_BrickInterface_keys, METH_VARARGS, NULL},
@@ -567,7 +705,10 @@ static PyMethodDef methods_trikControl_BrickInterface[] = {
     {SIP_MLNAME_CAST(sipName_motor), meth_trikControl_BrickInterface_motor, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_objectSensor), meth_trikControl_BrickInterface_objectSensor, METH_VARARGS, NULL},
     {SIP_MLNAME_CAST(sipName_playSound), meth_trikControl_BrickInterface_playSound, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_sensor), meth_trikControl_BrickInterface_sensor, METH_VARARGS, NULL}
+    {SIP_MLNAME_CAST(sipName_playTone), meth_trikControl_BrickInterface_playTone, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_say), meth_trikControl_BrickInterface_say, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_sensor), meth_trikControl_BrickInterface_sensor, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_stop), meth_trikControl_BrickInterface_stop, METH_VARARGS, NULL}
 };
 
 
@@ -584,7 +725,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_BrickInterface = {
     {
         sipNameNr_BrickInterface,
         {0, 255, 0},
-        13, methods_trikControl_BrickInterface,
+        17, methods_trikControl_BrickInterface,
         0, 0,
         0, 0,
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},

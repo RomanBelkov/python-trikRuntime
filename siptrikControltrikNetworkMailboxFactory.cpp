@@ -125,7 +125,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikNetwork_MailboxFactory = {
     },
     {
         sipNameNr_MailboxFactory,
-        {18, 255, 0},
+        {19, 255, 0},
         1, methods_trikNetwork_MailboxFactory,
         0, 0,
         0, 0,

@@ -6,61 +6,65 @@
 
 #include "sipAPItrikControl.h"
 
+#line 6 "LedInterface.sip"
+		#include <ledInterface.h>
+#line 6 "EncoderInterface.sip"
+		#include <encoderInterface.h>
 #line 9 "GamepadInterface.sip"
 		#include <gamepadInterface.h>
-#line 12 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 16 "./siptrikControltrikControlGamepadInterface.cpp"
 
 #line 26 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
-#line 16 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 20 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 368 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
-#line 19 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 23 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 351 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
 #include <qcoreevent.h>
-#line 22 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 26 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
-#line 25 "./siptrikControltrikNetworkGamepadInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 29 "./siptrikControltrikControlGamepadInterface.cpp"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
-#line 28 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 32 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
 #include <qlist.h>
-#line 31 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 35 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
-#line 34 "./siptrikControltrikNetworkGamepadInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
+#line 38 "./siptrikControltrikControlGamepadInterface.cpp"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
-#line 37 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 41 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
 #include <qlist.h>
-#line 40 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 44 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
-#line 43 "./siptrikControltrikNetworkGamepadInterface.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 47 "./siptrikControltrikControlGamepadInterface.cpp"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
-#line 46 "./siptrikControltrikNetworkGamepadInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 50 "./siptrikControltrikControlGamepadInterface.cpp"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
-#line 49 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 53 "./siptrikControltrikControlGamepadInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"
 #include <qobjectdefs.h>
-#line 52 "./siptrikControltrikNetworkGamepadInterface.cpp"
+#line 56 "./siptrikControltrikControlGamepadInterface.cpp"
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_reset(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_reset(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_reset(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_reset(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
-        trikNetwork::GamepadInterface *sipCpp;
+        trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp))
+        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp))
         {
             if (!sipOrigSelf)
             {
@@ -82,17 +86,17 @@ static PyObject *meth_trikNetwork_GamepadInterface_reset(PyObject *sipSelf, PyOb
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_buttonWasPressed(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_buttonWasPressed(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_buttonWasPressed(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_buttonWasPressed(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
         int a0;
-        trikNetwork::GamepadInterface *sipCpp;
+        trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp, &a0))
+        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp, &a0))
         {
             bool sipRes;
 
@@ -115,17 +119,17 @@ static PyObject *meth_trikNetwork_GamepadInterface_buttonWasPressed(PyObject *si
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_buttonIsPressed(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_buttonIsPressed(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_buttonIsPressed(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_buttonIsPressed(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
         int a0;
-        trikNetwork::GamepadInterface *sipCpp;
+        trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp, &a0))
+        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp, &a0))
         {
             bool sipRes;
 
@@ -148,17 +152,17 @@ static PyObject *meth_trikNetwork_GamepadInterface_buttonIsPressed(PyObject *sip
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_isPadPressed(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_isPadPressed(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_isPadPressed(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_isPadPressed(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
         int a0;
-        const trikNetwork::GamepadInterface *sipCpp;
+        const trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp, &a0))
+        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp, &a0))
         {
             bool sipRes;
 
@@ -181,17 +185,17 @@ static PyObject *meth_trikNetwork_GamepadInterface_isPadPressed(PyObject *sipSel
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_padX(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_padX(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_padX(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_padX(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
         int a0;
-        const trikNetwork::GamepadInterface *sipCpp;
+        const trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp, &a0))
+        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp, &a0))
         {
             int sipRes;
 
@@ -214,17 +218,17 @@ static PyObject *meth_trikNetwork_GamepadInterface_padX(PyObject *sipSelf, PyObj
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_padY(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_padY(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_padY(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_padY(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
         int a0;
-        const trikNetwork::GamepadInterface *sipCpp;
+        const trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp, &a0))
+        if (sipParseArgs(&sipParseErr, sipArgs, "Bi", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp, &a0))
         {
             int sipRes;
 
@@ -247,16 +251,16 @@ static PyObject *meth_trikNetwork_GamepadInterface_padY(PyObject *sipSelf, PyObj
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_wheel(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_wheel(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_wheel(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_wheel(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
-        const trikNetwork::GamepadInterface *sipCpp;
+        const trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp))
+        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp))
         {
             int sipRes;
 
@@ -279,16 +283,16 @@ static PyObject *meth_trikNetwork_GamepadInterface_wheel(PyObject *sipSelf, PyOb
 }
 
 
-extern "C" {static PyObject *meth_trikNetwork_GamepadInterface_isConnected(PyObject *, PyObject *);}
-static PyObject *meth_trikNetwork_GamepadInterface_isConnected(PyObject *sipSelf, PyObject *sipArgs)
+extern "C" {static PyObject *meth_trikControl_GamepadInterface_isConnected(PyObject *, PyObject *);}
+static PyObject *meth_trikControl_GamepadInterface_isConnected(PyObject *sipSelf, PyObject *sipArgs)
 {
     PyObject *sipParseErr = NULL;
     PyObject *sipOrigSelf = sipSelf;
 
     {
-        const trikNetwork::GamepadInterface *sipCpp;
+        const trikControl::GamepadInterface *sipCpp;
 
-        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikNetwork_GamepadInterface, &sipCpp))
+        if (sipParseArgs(&sipParseErr, sipArgs, "B", &sipSelf, sipType_trikControl_GamepadInterface, &sipCpp))
         {
             bool sipRes;
 
@@ -312,10 +316,10 @@ static PyObject *meth_trikNetwork_GamepadInterface_isConnected(PyObject *sipSelf
 
 
 /* Call the instance's destructor. */
-extern "C" {static void release_trikNetwork_GamepadInterface(void *, int);}
-static void release_trikNetwork_GamepadInterface(void *sipCppV,int)
+extern "C" {static void release_trikControl_GamepadInterface(void *, int);}
+static void release_trikControl_GamepadInterface(void *sipCppV,int)
 {
-    trikNetwork::GamepadInterface *sipCpp = reinterpret_cast<trikNetwork::GamepadInterface *>(sipCppV);
+    trikControl::GamepadInterface *sipCpp = reinterpret_cast<trikControl::GamepadInterface *>(sipCppV);
 
     if (QThread::currentThread() == sipCpp->thread())
         delete sipCpp;
@@ -324,34 +328,34 @@ static void release_trikNetwork_GamepadInterface(void *sipCppV,int)
 }
 
 
-extern "C" {static void dealloc_trikNetwork_GamepadInterface(sipSimpleWrapper *);}
-static void dealloc_trikNetwork_GamepadInterface(sipSimpleWrapper *sipSelf)
+extern "C" {static void dealloc_trikControl_GamepadInterface(sipSimpleWrapper *);}
+static void dealloc_trikControl_GamepadInterface(sipSimpleWrapper *sipSelf)
 {
     if (sipIsPyOwned(sipSelf))
     {
-        release_trikNetwork_GamepadInterface(sipGetAddress(sipSelf),0);
+        release_trikControl_GamepadInterface(sipGetAddress(sipSelf),0);
     }
 }
 
 
 /* Define this type's super-types. */
-static sipEncodedTypeDef supers_trikNetwork_GamepadInterface[] = {{141, 0, 1}};
+static sipEncodedTypeDef supers_trikControl_GamepadInterface[] = {{141, 0, 1}};
 
 
-static PyMethodDef methods_trikNetwork_GamepadInterface[] = {
-    {SIP_MLNAME_CAST(sipName_buttonIsPressed), meth_trikNetwork_GamepadInterface_buttonIsPressed, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_buttonWasPressed), meth_trikNetwork_GamepadInterface_buttonWasPressed, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_isConnected), meth_trikNetwork_GamepadInterface_isConnected, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_isPadPressed), meth_trikNetwork_GamepadInterface_isPadPressed, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_padX), meth_trikNetwork_GamepadInterface_padX, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_padY), meth_trikNetwork_GamepadInterface_padY, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_reset), meth_trikNetwork_GamepadInterface_reset, METH_VARARGS, NULL},
-    {SIP_MLNAME_CAST(sipName_wheel), meth_trikNetwork_GamepadInterface_wheel, METH_VARARGS, NULL}
+static PyMethodDef methods_trikControl_GamepadInterface[] = {
+    {SIP_MLNAME_CAST(sipName_buttonIsPressed), meth_trikControl_GamepadInterface_buttonIsPressed, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_buttonWasPressed), meth_trikControl_GamepadInterface_buttonWasPressed, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_isConnected), meth_trikControl_GamepadInterface_isConnected, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_isPadPressed), meth_trikControl_GamepadInterface_isPadPressed, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_padX), meth_trikControl_GamepadInterface_padX, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_padY), meth_trikControl_GamepadInterface_padY, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_reset), meth_trikControl_GamepadInterface_reset, METH_VARARGS, NULL},
+    {SIP_MLNAME_CAST(sipName_wheel), meth_trikControl_GamepadInterface_wheel, METH_VARARGS, NULL}
 };
 
 
 /* Define this type's signals. */
-static const pyqt4QtSignal signals_trikNetwork_GamepadInterface[] = {
+static const pyqt4QtSignal signals_trikControl_GamepadInterface[] = {
     {"disconnect()", 0, 0, 0},
     {"connected()", 0, 0, 0},
     {"button(int,int)", 0, 0, 0},
@@ -362,20 +366,20 @@ static const pyqt4QtSignal signals_trikNetwork_GamepadInterface[] = {
 };
 
 
-pyqt4ClassTypeDef sipTypeDef_trikControl_trikNetwork_GamepadInterface = {
+pyqt4ClassTypeDef sipTypeDef_trikControl_trikControl_GamepadInterface = {
 {
     {
         -1,
         0,
         0,
         SIP_TYPE_ABSTRACT|SIP_TYPE_SCC|SIP_TYPE_CLASS,
-        sipNameNr_trikNetwork__GamepadInterface,
+        sipNameNr_trikControl__GamepadInterface,
         {0}
     },
     {
         sipNameNr_GamepadInterface,
-        {18, 255, 0},
-        8, methods_trikNetwork_GamepadInterface,
+        {0, 255, 0},
+        8, methods_trikControl_GamepadInterface,
         0, 0,
         0, 0,
         {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
@@ -383,7 +387,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikNetwork_GamepadInterface = {
     0,
     -1,
     -1,
-    supers_trikNetwork_GamepadInterface,
+    supers_trikControl_GamepadInterface,
     0,
     0,
     0,
@@ -397,11 +401,11 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikNetwork_GamepadInterface = {
     0,
     0,
 #endif
-    dealloc_trikNetwork_GamepadInterface,
+    dealloc_trikControl_GamepadInterface,
     0,
     0,
     0,
-    release_trikNetwork_GamepadInterface,
+    release_trikControl_GamepadInterface,
     0,
     0,
     0,
@@ -410,7 +414,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikNetwork_GamepadInterface = {
     0,
     0
 },
-    &trikNetwork::GamepadInterface::staticMetaObject,
+    &trikControl::GamepadInterface::staticMetaObject,
     0,
-    signals_trikNetwork_GamepadInterface,
+    signals_trikControl_GamepadInterface,
 };

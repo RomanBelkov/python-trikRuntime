@@ -24,7 +24,7 @@
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 27 "./siptrikControltrikControlBatteryInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
 #line 30 "./siptrikControltrikControlBatteryInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -33,7 +33,7 @@
 #line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
 #line 36 "./siptrikControltrikControlBatteryInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
 #line 39 "./siptrikControltrikControlBatteryInterface.cpp"
 #line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -42,10 +42,10 @@
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
 #line 45 "./siptrikControltrikControlBatteryInterface.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 48 "./siptrikControltrikControlBatteryInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
 #line 51 "./siptrikControltrikControlBatteryInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"

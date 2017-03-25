@@ -25,7 +25,7 @@
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 28 "./siptrikControltrikControlLineSensorInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
 #line 31 "./siptrikControltrikControlLineSensorInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -34,7 +34,7 @@
 #line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
 #line 37 "./siptrikControltrikControlLineSensorInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
 #line 40 "./siptrikControltrikControlLineSensorInterface.cpp"
 #line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -43,10 +43,10 @@
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
 #line 46 "./siptrikControltrikControlLineSensorInterface.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 49 "./siptrikControltrikControlLineSensorInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
 #line 52 "./siptrikControltrikControlLineSensorInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"

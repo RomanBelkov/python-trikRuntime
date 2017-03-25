@@ -18,10 +18,10 @@
 		#include <ledInterface.h>
 #line 6 "EncoderInterface.sip"
 		#include <encoderInterface.h>
-#line 23 "BrickInterface.sip"
+#line 24 "BrickInterface.sip"
 		#include <brickInterface.h>
 #line 24 "./siptrikControltrikControlBrickFactory.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 27 "./siptrikControltrikControlBrickFactory.cpp"
 

@@ -10,10 +10,10 @@
 		#include <mailboxInterface.h>
 #line 12 "./siptrikControltrikNetworkMailboxInterface.cpp"
 
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 16 "./siptrikControltrikNetworkMailboxInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtNetwork/qhostaddress.sip"
+#line 26 "/usr/share/sip/PyQt4//QtNetwork/qhostaddress.sip"
 #include <qhostaddress.h>
 #line 19 "./siptrikControltrikNetworkMailboxInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"
@@ -28,7 +28,7 @@
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 31 "./siptrikControltrikNetworkMailboxInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
 #line 34 "./siptrikControltrikNetworkMailboxInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -43,7 +43,7 @@
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
 #line 46 "./siptrikControltrikNetworkMailboxInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
 #line 49 "./siptrikControltrikNetworkMailboxInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"
@@ -545,7 +545,7 @@ pyqt4ClassTypeDef sipTypeDef_trikControl_trikNetwork_MailboxInterface = {
     },
     {
         sipNameNr_MailboxInterface,
-        {18, 255, 0},
+        {19, 255, 0},
         12, methods_trikNetwork_MailboxInterface,
         0, 0,
         0, 0,

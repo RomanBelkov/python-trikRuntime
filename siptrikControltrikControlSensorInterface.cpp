@@ -22,7 +22,7 @@
 #line 29 "/usr/share/sip/PyQt4//QtCore/qobject.sip"
 #include <qobject.h>
 #line 25 "./siptrikControltrikControlSensorInterface.cpp"
-#line 269 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
+#line 265 "/usr/share/sip/PyQt4//QtCore/qvariant.sip"
 #include <qvariant.h>
 #line 28 "./siptrikControltrikControlSensorInterface.cpp"
 #line 28 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -31,7 +31,7 @@
 #line 32 "/usr/share/sip/PyQt4//QtCore/qbytearray.sip"
 #include <qbytearray.h>
 #line 34 "./siptrikControltrikControlSensorInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qnamespace.sip"
 #include <qnamespace.h>
 #line 37 "./siptrikControltrikControlSensorInterface.cpp"
 #line 115 "/usr/share/sip/PyQt4//QtCore/qlist.sip"
@@ -40,10 +40,10 @@
 #line 26 "/usr/share/sip/PyQt4//QtCore/qthread.sip"
 #include <qthread.h>
 #line 43 "./siptrikControltrikControlSensorInterface.cpp"
-#line 31 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
+#line 27 "/usr/share/sip/PyQt4//QtCore/qstring.sip"
 #include <qstring.h>
 #line 46 "./siptrikControltrikControlSensorInterface.cpp"
-#line 30 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
+#line 26 "/usr/share/sip/PyQt4//QtCore/qregexp.sip"
 #include <qregexp.h>
 #line 49 "./siptrikControltrikControlSensorInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qobjectdefs.sip"
@@ -214,9 +214,9 @@ static PyMethodDef methods_trikControl_SensorInterface[] = {
 };
 
 static sipEnumMemberDef enummembers_trikControl_SensorInterface[] = {
-    {sipName_analogSensor, static_cast<int>(trikControl::SensorInterface::Type::analogSensor), 14},
-    {sipName_digitalSensor, static_cast<int>(trikControl::SensorInterface::Type::digitalSensor), 14},
-    {sipName_specialSensor, static_cast<int>(trikControl::SensorInterface::Type::specialSensor), 14},
+    {sipName_analogSensor, static_cast<int>(trikControl::SensorInterface::Type::analogSensor), 15},
+    {sipName_digitalSensor, static_cast<int>(trikControl::SensorInterface::Type::digitalSensor), 15},
+    {sipName_specialSensor, static_cast<int>(trikControl::SensorInterface::Type::specialSensor), 15},
 };
 
 
