@@ -1,5 +1,5 @@
 TARGET = trikControl.so
-SPECIAL_SIP_CASES = TCmod.sip TimeVal.sip GamepadInterface.sip GamepadFactory.sip MailboxInterface.sip MailboxFactory.sip
+SPECIAL_SIP_CASES = TCmod.sip TimeVal.sip GamepadFactory.sip MailboxInterface.sip MailboxFactory.sip
 SIP_SRC = $(filter-out $(SPECIAL_SIP_CASES), $(wildcard *.sip))
 OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC)) siptrikControlcmodule.o siptrikControltrikControl.o siptrikControltrikKernel.o \
 siptrikControltrikKernelTimeVal.o siptrikControltrikNetwork.o  \
