@@ -1,9 +1,10 @@
 TARGET = trikControl.so
 SPECIAL_SIP_CASES = TCmod.sip TimeVal.sip GamepadInterface.sip GamepadFactory.sip MailboxInterface.sip MailboxFactory.sip
 SIP_SRC = $(filter-out $(SPECIAL_SIP_CASES), $(wildcard *.sip))
-OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC)) siptrikControlcmodule.o siptrikControltrikControl.o siptrikControltrikKernel.o siptrikControltrikKernelTimeVal.o \
-siptrikControltrikNetwork.o siptrikControltrikNetworkGamepadInterface.o siptrikControltrikNetworkGamepadFactory.o \
+OFILES = $(patsubst %.sip, siptrikControltrikControl%.o, $(SIP_SRC)) siptrikControlcmodule.o siptrikControltrikControl.o siptrikControltrikKernel.o \
+siptrikControltrikKernelTimeVal.o siptrikControltrikNetwork.o  \
 siptrikControltrikNetworkMailboxInterface.o siptrikControltrikNetworkMailboxFactory.o 
+# siptrikControltrikNetworkGamepadFactory.o
 #OFILES = siptrikControlcmodule.o siptrikControltrikControlBrickFactory.o siptrikControltrikControlBrickInterface.o siptrikControltrikControl.o
 HFILES = sipAPItrikControl.h 
 CPPFILES = $(patsubst %.o, %.cpp, $(OFILES))
