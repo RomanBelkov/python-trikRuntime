@@ -14,7 +14,7 @@ TRIK_CONTROL_LIB_DIR ?= /home/rb/Documents/trikRuntime/bin/x86-release/
 PYQT_INSTALL_LOCATION ?= /usr/share/sip/PyQt4/
 
 ifneq ($(OE_QMAKE_INCDIR_QT),)
-	QT_INSTALL_HEADERS = /opt/trik-sdk/sysroots/arm926ejste-oe-linux-gnueabi/usr/include/qt4
+	QT_INSTALL_HEADERS = $(OECORE_TARGET_SYSROOT)/usr/include/qt4
 	# $(OE_QMAKE_INCDIR_QT)
 endif
 
@@ -32,7 +32,7 @@ INCPATH  = -I. -I../include/trikControl -I../../trikKernel/include -I../../trikK
 #-I$(QT_INSTALL_HEADERS)/QtXml
 # -I../../../Qt/5.7/gcc_64/include -I../../../Qt/5.7/gcc_64/include/QtMultimedia 
 # -I../../../Qt/5.7/gcc_64/include/QtXml -I../../../Qt/5.7/gcc_64/include/QtNetwork -I../../../Qt/5.7/gcc_64/include/QtCore -I.build/x86-release/.moc -I../../../Qt/5.7/gcc_64/mkspecs/linux-g++
-CPPFLAGS = -DNDEBUG -I. -I$(PYTHONHOME)/include/python2.7/ -I/opt/trik-sdk/sysroots/arm926ejste-oe-linux-gnueabi/usr/include/python2.7/ $(INCPATH)
+CPPFLAGS = -DNDEBUG -I. -I$(PYTHONHOME)/include/python2.7/ -I$(OECORE_TARGET_SYSROOT)/usr/include/python2.7/ $(INCPATH)
 #-I/opt/trik-sdk/sysroots/arm926ejste-oe-linux-gnueabi/usr/include/python2.7/ 
 #-I/usr/include/python2.7/
 
