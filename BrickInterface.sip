@@ -14,6 +14,7 @@
 %Include VectorSensorInterface.sip
 %Include EncoderInterface.sip
 %Include GamepadInterface.sip
+%Include GyroSensorInterface.sip
 
 
 namespace trikControl {
@@ -53,7 +54,7 @@ namespace trikControl {
 		virtual trikControl::VectorSensorInterface *accelerometer() = 0;
 
 		/// Returns on-board gyroscope.
-		virtual trikControl::VectorSensorInterface *gyroscope() = 0;
+		virtual trikControl::GyroSensorInterface *gyroscope() = 0;
 
 		virtual trikControl::EncoderInterface *encoder(const QString &port) = 0;
 
