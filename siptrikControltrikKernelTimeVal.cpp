@@ -6,7 +6,7 @@
 
 #include "sipAPItrikControl.h"
 
-#line 8 "TimeVal.sip"
+#line 6 "TimeVal.sip"
 		#include <timeVal.h>
 #line 12 "./siptrikControltrikKernelTimeVal.cpp"
 

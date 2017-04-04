@@ -15,7 +15,7 @@
 #line 101 "/usr/share/sip/PyQt4//QtCore/qvector.sip"
 #include <qvector.h>
 #line 18 "./siptrikControltrikControlVectorSensorInterface.cpp"
-#line 8 "TimeVal.sip"
+#line 6 "TimeVal.sip"
 		#include <timeVal.h>
 #line 21 "./siptrikControltrikControlVectorSensorInterface.cpp"
 #line 26 "/usr/share/sip/PyQt4//QtCore/qcoreevent.sip"

@@ -632,7 +632,7 @@ static sipVirtHandlerFunc virtHandlersTable[] = {
 
 /* This defines the modules that this module needs to import. */
 static sipImportedModuleDef importsTable[] = {
-    {"PyQt4.QtCore", -1, NULL},
+    {"PyQt4.QtCore", 1, NULL},
     {"PyQt4.QtNetwork", -1, NULL},
     {"PyQt4.QtGui", -1, NULL},
     {NULL, -1, NULL}

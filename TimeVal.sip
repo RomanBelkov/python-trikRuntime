@@ -1,5 +1,3 @@
-%Import QtCore/QtCoremod.sip
-
 namespace trikKernel {
 /// Structure of a time value in a convenient format.
 class TimeVal {
